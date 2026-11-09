@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}اكتشف المدن — ملامح{% endblock %}
+{% block content %}
+<section class="page-intro wrap reveal"><p class="eyebrow">أطلس صغير لحكايات كبيرة</p><div class="intro-row"><h1>{% if only_saved %}حكاياتك،<br><em>على مهل.</em>{% else %}ست مدن.<br><em>وأكثر من حكاية.</em>{% endif %}</h1><p>{% if only_saved %}المدن التي حفظتها، لتعود إليها وقتما تشاء.<br>تُحفظ اختياراتك في هذا المتصفح.{% else %}اختر مكانًا يثير فضولك.<br>ودع التفاصيل تقودك إلى أهله.{% endif %}</p></div></section>
+<section class="wrap city-explorer">
+  <form class="filter-form" method="get" action="{% url 'main:cities' %}" role="search">
+    {% if only_saved %}<input type="hidden" name="saved" value="1">{% endif %}
+    <div class="search-field"><label for="city-search">اسم مدينة أو حكاية</label><div><input id="city-search" name="q" type="search" value="{{ query }}" placeholder="جرّب: جدة، الواحة، Jeddah…" maxlength="100"><button type="submit" aria-label="البحث في المدن">↖</button></div></div>
+    <div class="select-field"><label for="city-region">جهة الحكاية</label><select id="city-region" name="region"><option value="">كل الجهات</option>{% for item in regions %}<option value="{{ item.key }}" {% if region == item.key %}selected{% endif %}>{{ item.label }}</option>{% endfor %}</select></div>
+    <fieldset class="category-filters"><legend>ما الذي تحب اكتشافه؟</legend><label><input type="radio" name="category" value="" {% if not category %}checked{% endif %}><span>كل الملامح</span></label>{% for item in categories %}<label><input type="radio" name="category" value="{{ item.key }}" {% if category == item.key %}checked{% endif %}><span>{{ item.short }}</span></label>{% endfor %}</fieldset>
+    <button class="filter-submit" type="submit">استكشف <span aria-hidden="true">↖</span></button>
+  </form>
+  <div class="results-bar"><span aria-live="polite">{{ result_count }} حكايات بانتظارك</span><div>{% if query or category or region or only_saved %}<a href="{% url 'main:cities' %}">عرض كل المدن ×</a>{% else %}<span class="micro latin">CHOOSE YOUR NEXT STORY</span>{% endif %}</div></div>
+  <div class="cities-grid">
+    {% for city in cities %}<article class="city-card reveal" style="--city-accent:{{ city.data.accent }}">
+      <a class="city-card-image photo-frame" style="view-transition-name:city-{{ city.slug }}" href="{% url 'main:city_detail' slug=city.slug %}" aria-label="اكتشف {{ city.name }}">{% include 'includes/image.html' with image=city.data.hero alt=city.data.gallery.0.caption %}<span class="city-card-number latin">{{ city.number }} / 06</span><span class="photo-arrow" aria-hidden="true">↖</span></a>
+      <div class="city-card-top"><div><p class="micro">{{ city.region }}</p><h2><a href="{% url 'main:city_detail' slug=city.slug %}">{{ city.name }}</a></h2></div><span class="city-english latin">{{ city.english_name }}</span></div>
+      <p class="city-summary">{{ city.summary }}</p><div class="city-card-bottom"><span class="micro">{{ city.data.label }}</span>{% include 'includes/save.html' %}</div>
+    </article>{% empty %}<div class="empty-state"><span class="empty-mark" aria-hidden="true">↗</span><h2>{% if only_saved %}مساحة لحكايتك القادمة.{% else %}نبحث عن حكاية أخرى؟{% endif %}</h2><p>{% if only_saved %}احفظ مدينة من صفحة الاستكشاف، وستجدها هنا.{% else %}لم نجد مدينة بهذه الاختيارات. جرّب كلمة أقصر أو جهة أخرى.{% endif %}</p><a class="solid-link" href="{% url 'main:cities' %}">اكتشف كل المدن ↖</a></div>{% endfor %}
+  </div>
+  <p class="editorial-note">هذه مداخل مختارة لثقافات واسعة ومترابطة؛ بعض الملامح مشتركة بين المدن ومناطقها.</p>
+</section>
+{% endblock %}

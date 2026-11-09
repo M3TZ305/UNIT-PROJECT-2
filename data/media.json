@@ -1,0 +1,182 @@
+{
+  "jeddah-house": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Bayt_Nasif%2C_1872%2C_old_Jeddah%2C_Saudi_Arabia_%285%29_%2850703484406%29.jpg/960px-Bayt_Nasif%2C_1872%2C_old_Jeddah%2C_Saudi_Arabia_%285%29_%2850703484406%29.jpg",
+    "fallback": "images/jeddah-house.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bayt_Nasif,_1872,_old_Jeddah,_Saudi_Arabia_(5)_(50703484406).jpg",
+    "title": "Bayt Nasif, 1872, old Jeddah, Saudi Arabia (5) (50703484406).jpg",
+    "author": "Richard Mortel from Riyadh, Saudi Arabia",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 282646
+  },
+  "jeddah": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Old_Jeddah_%28Al_Balad%29_architecture_3_Feb_2022.jpg/960px-Old_Jeddah_%28Al_Balad%29_architecture_3_Feb_2022.jpg",
+    "fallback": "images/jeddah.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Old_Jeddah_(Al_Balad)_architecture_3_Feb_2022.jpg",
+    "title": "Old Jeddah (Al Balad) architecture 3 Feb 2022.jpg",
+    "author": "Francisco Anzola",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 257883
+  },
+  "jeddah-door": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Elaborately_carved_wooden_door%2C_old_Jeddah%2C_Saudi_Arabia_%282%29_%2850702743003%29.jpg/960px-Elaborately_carved_wooden_door%2C_old_Jeddah%2C_Saudi_Arabia_%282%29_%2850702743003%29.jpg",
+    "fallback": "images/jeddah-door.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Elaborately_carved_wooden_door,_old_Jeddah,_Saudi_Arabia_(2)_(50702743003).jpg",
+    "title": "Elaborately carved wooden door, old Jeddah, Saudi Arabia (2) (50702743003).jpg",
+    "author": "Richard Mortel from Riyadh, Saudi Arabia",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 463690
+  },
+  "riyadh": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Masmak_Fort_%2812753717253%29.jpg/960px-Masmak_Fort_%2812753717253%29.jpg",
+    "fallback": "images/riyadh.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Masmak_Fort_(12753717253).jpg",
+    "title": "Masmak Fort (12753717253).jpg",
+    "author": "Francisco Anzola",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 127030
+  },
+  "jeddah-green": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Green_woodwork_in_old_Jeddah_%28Al_Balad%29_October_8_2021.jpg/960px-Green_woodwork_in_old_Jeddah_%28Al_Balad%29_October_8_2021.jpg",
+    "fallback": "images/jeddah-green.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Green_woodwork_in_old_Jeddah_(Al_Balad)_October_8_2021.jpg",
+    "title": "Green woodwork in old Jeddah (Al Balad) October 8 2021.jpg",
+    "author": "Francisco Anzola",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 197156
+  },
+  "abha": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Abha_city.png/960px-Abha_city.png",
+    "fallback": "images/abha.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Abha_city.png",
+    "title": "Abha city.png",
+    "author": "أشخاص متنوعين ولكن هناك صورة مصورة من أمانة منطقة عسير وصورة مصورة من عوض زارب",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 1155274
+  },
+  "asir": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Rijal_Almaa_village_2021.jpg/960px-Rijal_Almaa_village_2021.jpg",
+    "fallback": "images/asir.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Rijal_Almaa_village_2021.jpg",
+    "title": "Rijal Almaa village 2021.jpg",
+    "author": "Richard Mortel",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 261176
+  },
+  "abha-palace": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/%D9%82%D8%B5%D8%B1_%D8%B4%D8%AF%D8%A72.jpg/960px-%D9%82%D8%B5%D8%B1_%D8%B4%D8%AF%D8%A72.jpg",
+    "fallback": "images/abha-palace.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B5%D8%B1_%D8%B4%D8%AF%D8%A72.jpg",
+    "title": "قصر شدا2.jpg",
+    "author": "Heritage Commission",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 406567
+  },
+  "hail": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/%D8%A8%D8%B1%D8%B2%D8%A7%D9%86.jpg/960px-%D8%A8%D8%B1%D8%B2%D8%A7%D9%86.jpg",
+    "fallback": "images/hail.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%A8%D8%B1%D8%B2%D8%A7%D9%86.jpg",
+    "title": "برزان.jpg",
+    "author": "Heritage Commission",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 137527
+  },
+  "hail-market": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Barzan_Corridor.jpg",
+    "fallback": "images/hail-market.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Barzan_Corridor.jpg",
+    "title": "Barzan Corridor.jpg",
+    "author": "Gertrude Bell (1868 – 1926)",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Barzan_Corridor.jpg",
+    "bytes": 91812
+  },
+  "hail-city": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/%D8%AD%D8%A7%D8%A6%D9%84_-_panoramio.jpg/960px-%D8%AD%D8%A7%D8%A6%D9%84_-_panoramio.jpg",
+    "fallback": "images/hail-city.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%AD%D8%A7%D8%A6%D9%84_-_panoramio.jpg",
+    "title": "حائل - panoramio.jpg",
+    "author": "Khalid Alhallabi",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "bytes": 235102
+  },
+  "ahsa-palace": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Ebrahimpal.jpg",
+    "fallback": "images/ahsa-palace.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ebrahimpal.jpg",
+    "title": "Ebrahimpal.jpg",
+    "author": "Wikimedia Commons contributor",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Ebrahimpal.jpg",
+    "bytes": 18510
+  },
+  "hofuf": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/%D9%86%D8%B3%D8%AE%D8%A9_%D9%85%D9%86_%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D9%82%D9%8A%D8%B5%D8%B1%D9%8A%D8%A9W5272.jpg/960px-%D9%86%D8%B3%D8%AE%D8%A9_%D9%85%D9%86_%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D9%82%D9%8A%D8%B5%D8%B1%D9%8A%D8%A9W5272.jpg",
+    "fallback": "images/hofuf.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%86%D8%B3%D8%AE%D8%A9_%D9%85%D9%86_%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D9%82%D9%8A%D8%B5%D8%B1%D9%8A%D8%A9W5272.jpg",
+    "title": "نسخة من سوق القيصريةW5272.jpg",
+    "author": "saudipics",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 168770
+  },
+  "alula": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Mada%27in_Saleh_2017.jpg/960px-Mada%27in_Saleh_2017.jpg",
+    "fallback": "images/alula.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Mada%27in_Saleh_2017.jpg",
+    "title": "Mada'in Saleh 2017.jpg",
+    "author": "Ahmad AlHasanat",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 203174
+  },
+  "alula-old": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Al_Ula_%286748577917%29.jpg/960px-Al_Ula_%286748577917%29.jpg",
+    "fallback": "images/alula-old.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Al_Ula_(6748577917).jpg",
+    "title": "Al Ula (6748577917).jpg",
+    "author": "Sammy Six",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 170698
+  },
+  "alula-hegra": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Madain_Saleh_%286735810223%29.jpg/960px-Madain_Saleh_%286735810223%29.jpg",
+    "fallback": "images/alula-hegra.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Madain_Saleh_(6735810223).jpg",
+    "title": "Madain Saleh (6735810223).jpg",
+    "author": "Sammy Six",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 107053
+  },
+  "coffee": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
+    "fallback": "images/coffee.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
+    "title": "A dallah a traditional Arabic coffee pot with cups and coffee beans.jpg",
+    "author": "Canbel",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 241984
+  },
+  "riyadh-detail": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Masmak_Citadel%2C_Riyadh_%2814372839641%29.jpg/960px-Masmak_Citadel%2C_Riyadh_%2814372839641%29.jpg",
+    "fallback": "images/riyadh-detail.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Masmak_Citadel,_Riyadh_(14372839641).jpg",
+    "title": "Masmak Citadel, Riyadh (14372839641).jpg",
+    "author": "Rick McCharles from Calgary, Canada",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 124084
+  }
+}
