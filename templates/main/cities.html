@@ -1,19 +1,19 @@
 {% extends 'base.html' %}{% load static site_assets %}
 {% block title %}اكتشف المدن — تَليد{% endblock %}
 {% block body_class %}taleed-theme taleed-directory{% endblock %}
-{% block extra_css %}<link rel="stylesheet" href="{% asset 'css/editorial.css' %}">{% endblock %}
+{% block extra_css %}{% endblock %}
 {% block layout_css %}<link rel="stylesheet" href="{% asset 'css/hierarchy.css' %}">{% endblock %}
 {% block content %}
 <div class="directory-wrap">
-  <section class="directory-intro"><p class="directory-kicker">تَليد / فهرس الأماكن</p><div><h1>{% if only_saved %}حكاياتٌ احتفظت بها.{% else %}لكل مدينة،<br>بابٌ إلى حكايتها.{% endif %}</h1><p>١٣ مدينة رئيسية، ومحافظتان أو ثلاث مختارة من كل منطقة.<br>ابدأ من ملامح المدينة، وتوغّل في تفاصيل المكان.</p></div><span class="directory-seal" aria-hidden="true">أطلس<br>المملكة<br><bdi>13 / {{ total_governorates }}</bdi></span></section>
-  <form method="get" class="directory-filters" role="search" aria-label="تصفّح أطالس المدن">
+  <section class="directory-intro"><p class="directory-kicker">تَليد / فهرس الأماكن</p><div><h1>{% if only_saved %}حكاياتٌ احتفظت بها.{% else %}لكل مدينة،<br>بابٌ إلى حكايتها.{% endif %}</h1><p>١٣ مدينة رئيسية، ومحافظتان أو ثلاث مختارة من كل منطقة.<br>ابدأ من ملامح المدينة، وتوغّل في تفاصيل المكان.</p></div><span class="directory-seal" aria-hidden="true">حكايات<br>المملكة<br><bdi>13 / {{ total_governorates }}</bdi></span></section>
+  <form method="get" class="directory-filters" role="search" aria-label="تصفّح حكايات المدن">
     {% if only_saved %}<input type="hidden" name="saved" value="1">{% endif %}
     <div class="directory-search"><label for="city-search">إلى أين تأخذك الحكاية؟</label><div><input type="search" id="city-search" name="q" value="{{ query }}" maxlength="100" placeholder="اسم مدينة أو محافظة…"><button type="submit" aria-label="البحث عن مكان">ابحث ↖</button></div></div>
     <div class="directory-direction"><label for="city-region">جهة المملكة</label><select name="region" id="city-region"><option value="">كل الجهات</option>{% for item in regions %}<option value="{{ item.key }}" {% if region == item.key %}selected{% endif %}>{{ item.label }}</option>{% endfor %}</select></div>
     <button class="directory-apply" type="submit">اعرض الأماكن ←</button>
   </form>
   <div class="directory-index"><div><a href="{% url 'main:cities' %}" {% if not only_saved %}aria-current="page"{% endif %}>كل المدن</a><a href="{% url 'main:cities' %}?saved=1" {% if only_saved %}aria-current="page"{% endif %}>حكاياتي <span data-saved-count>{{ saved_count }}</span></a></div><p><bdi>{{ result_count }}</bdi> {% if only_saved %}مكان محفوظ{% else %}مدينة{% endif %}{% if query %} · نتائج «{{ query }}»{% endif %}</p></div>
-  <section class="place-grid" aria-label="أطالس المدن">{% for card in city_cards %}{% include 'includes/place_plate.html' %}{% empty %}<div class="directory-empty"><span aria-hidden="true">✳</span><h2>{% if only_saved %}حكايتك الأولى بانتظارك.{% else %}لم نجد مكانًا بهذا الاسم.{% endif %}</h2><p>{% if only_saved %}احفظ مدينة أو محافظة بعلامة ◇ لتعود إليها هنا.{% else %}جرّب اسم المدينة أو المحافظة، أو ارجع إلى الفهرس كاملًا.{% endif %}</p><a href="{% url 'main:cities' %}">اكتشف كل المدن ←</a></div>{% endfor %}</section>
+  <section class="place-grid" aria-label="حكايات المدن">{% for card in city_cards %}{% include 'includes/place_plate.html' %}{% empty %}<div class="directory-empty"><span aria-hidden="true">✳</span><h2>{% if only_saved %}حكايتك الأولى بانتظارك.{% else %}لم نجد مكانًا بهذا الاسم.{% endif %}</h2><p>{% if only_saved %}احفظ مدينة أو محافظة بعلامة ◇ لتعود إليها هنا.{% else %}جرّب اسم المدينة أو المحافظة، أو ارجع إلى الفهرس كاملًا.{% endif %}</p><a href="{% url 'main:cities' %}">اكتشف كل المدن ←</a></div>{% endfor %}</section>
   <p class="directory-colophon">مدن رئيسية تمثل المناطق الثلاث عشرة. المحافظات المعروضة مختارات من كل منطقة، وترتبط إداريًا بالمنطقة.</p>
 </div>
 {% endblock %}

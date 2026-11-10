@@ -3,7 +3,7 @@
 {% block description %}{{ topic.subtitle }} {{ topic.intro }}{% endblock %}
 {% block body_class %}taleed-theme taleed-topic topic-{{ topic.key }}{% endblock %}
 {% block browser_color %}{% if theme == 'dark' %}#292e28{% else %}#d8d2b8{% endif %}{% endblock %}
-{% block extra_css %}<link rel="stylesheet" href="{% asset 'css/editorial.css' %}"><link rel="stylesheet" href="{% asset 'css/culture.css' %}">{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% asset 'css/culture.css' %}">{% endblock %}
 {% block content %}
 <article class="topic-page" data-culture-topic="{{ topic.key }}">
   <section class="topic-hero topic-wrap" aria-labelledby="topic-title">
@@ -21,12 +21,12 @@
       </figure>
       <div class="topic-piece-content"><p class="topic-region">{{ item.region }}</p><h3>{{ item.title }}</h3><p class="topic-story">{{ item.intro }}</p><div class="topic-materials"><span>{{ topic.material_label }}</span><ul>{% for material in item.materials %}<li>{{ material }}</li>{% endfor %}</ul></div>
         <details class="topic-making"><summary>{{ item.detail_title }}<span aria-hidden="true">+</span></summary><ol>{% for step in item.steps %}<li>{{ step }}</li>{% endfor %}</ol></details>
-        <div class="topic-related"><p>تابع الحكاية في أطلس</p><div>{% for city in item.related_cities %}<a href="{% url 'main:city_detail' slug=city.slug %}{% if topic.key == 'architecture' %}#landmarks{% else %}#people{% endif %}">{{ city.name }} <span aria-hidden="true">↗</span></a>{% endfor %}</div></div>
+        <div class="topic-related"><p>تابع الحكاية في</p><div>{% for city in item.related_cities %}<a href="{% url 'main:city_detail' slug=city.slug %}{% if topic.key == 'architecture' %}#landmarks{% else %}#people{% endif %}">{{ city.name }} <span aria-hidden="true">↗</span></a>{% endfor %}</div></div>
         <a class="topic-source" href="{{ item.source.url }}" target="_blank" rel="noopener noreferrer">{{ item.source.label }} ↗</a>
       </div>
     </article>{% endfor %}</div>
   </section>
-  <section class="topic-wrap topic-footnotes"><p>الموروث يتنقل بين المدن والمناطق، وقد تتنوع المواد وطرق الإعداد. روابط الأطالس تشير إلى الارتباط بالموروث، ولا تعني حصر أصله في مدينة واحدة.</p><a href="{% url 'main:sources' %}">المصادر وحقوق الصور ↗</a></section>
+  <section class="topic-wrap topic-footnotes"><p>الموروث يتنقل بين المدن والمناطق، وقد تتنوع المواد وطرق الإعداد. روابط الحكايات تشير إلى الارتباط بالموروث، ولا تعني حصر أصله في مدينة واحدة.</p><a href="{% url 'main:sources' %}">المصادر وحقوق الصور ↗</a></section>
   <section class="topic-next"><div class="topic-wrap"><p class="topic-eyebrow">تفصيل يقود إلى تفصيل</p><h2>أيّ حكاية نفتح بعدها؟</h2><div>{% for route in culture_topics %}{% if route.key != topic.key %}<a href="{% url 'main:culture_topic' topic=route.key %}"><bdi>{{ route.number }}</bdi><span>{{ route.title }}</span><span aria-hidden="true">←</span></a>{% endif %}{% endfor %}</div></div></section>
 </article>
 {% endblock %}

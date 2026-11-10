@@ -1,0 +1,2776 @@
+{
+  "gov:tabuk:tayma": {
+    "landmarks": [
+      {
+        "name": "بئر هداج",
+        "text": "بئر تاريخية من أبرز شواهد واحة تيماء.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة تيماء",
+          "url": "https://saudipedia.com/محافظة-تيماء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A6%D8%B1%20%D9%87%D8%AF%D8%A7%D8%AC%20%D8%AA%D9%8A%D9%85%D8%A7%D8%A1",
+        "caption": "بئر هداج"
+      },
+      {
+        "name": "قصر الحمراء",
+        "text": "بقايا قصر قديم يعود إلى القرن السادس قبل الميلاد.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة تيماء",
+          "url": "https://saudipedia.com/محافظة-تيماء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AD%D9%85%D8%B1%D8%A7%D8%A1%20%D8%AA%D9%8A%D9%85%D8%A7%D8%A1",
+        "caption": "قصر الحمراء"
+      },
+      {
+        "name": "قصر الرضم",
+        "text": "مبنى أثري يرتبط بمنتصف الألف الأول قبل الميلاد.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة تيماء",
+          "url": "https://saudipedia.com/محافظة-تيماء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B6%D9%85%20%D8%AA%D9%8A%D9%85%D8%A7%D8%A1",
+        "caption": "قصر الرضم"
+      },
+      {
+        "name": "قصر البجيدي",
+        "text": "قصر أثري من الفترة العباسية.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة تيماء",
+          "url": "https://saudipedia.com/محافظة-تيماء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%A8%D8%AC%D9%8A%D8%AF%D9%8A%20%D8%AA%D9%8A%D9%85%D8%A7%D8%A1",
+        "caption": "قصر البجيدي"
+      },
+      {
+        "name": "حقل رجوم صعصع",
+        "text": "مدافن ركامية ترجع إلى الألف الثالث قبل الميلاد.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة تيماء",
+          "url": "https://saudipedia.com/محافظة-تيماء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%AD%D9%82%D9%84%20%D8%B1%D8%AC%D9%88%D9%85%20%D8%B5%D8%B9%D8%B5%D8%B9%20%D8%AA%D9%8A%D9%85%D8%A7%D8%A1",
+        "caption": "حقل رجوم صعصع"
+      }
+    ],
+    "fame": {
+      "title": "واحة الحضارات",
+      "text": "واحة تاريخية تعاقبت عليها الحضارات واحتفظت بقصور ونقوش ومدافن قديمة.",
+      "source": {
+        "label": "سعوديبيديا — محافظة تيماء",
+        "url": "https://saudipedia.com/محافظة-تيماء"
+      }
+    },
+    "complete": true,
+    "region_key": "tabuk",
+    "name": "تيماء",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:jouf:al-qurayyat": {
+    "landmarks": [
+      {
+        "name": "قلعة كاف",
+        "text": "قلعة كانت مقرًا لإمارة القريات في بدايات الدولة السعودية.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة القريات",
+          "url": "https://saudipedia.com/محافظة-القريات"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D9%83%D8%A7%D9%81%20%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A7%D8%AA",
+        "caption": "قلعة كاف"
+      },
+      {
+        "name": "قصر إمارة الحديثة",
+        "text": "قصر تاريخي من معالم المحافظة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة القريات",
+          "url": "https://saudipedia.com/محافظة-القريات"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A5%D9%85%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9%20%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A7%D8%AA",
+        "caption": "قصر إمارة الحديثة"
+      },
+      {
+        "name": "قصر الرسلانية",
+        "text": "أحد القصور التاريخية التي تحفظ ذاكرة العمران المحلي.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة القريات",
+          "url": "https://saudipedia.com/محافظة-القريات"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%84%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A7%D8%AA",
+        "caption": "قصر الرسلانية"
+      },
+      {
+        "name": "قصر أم قصير",
+        "text": "قصر تاريخي ضمن مواقع القريات التراثية.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة القريات",
+          "url": "https://saudipedia.com/محافظة-القريات"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A3%D9%85%20%D9%82%D8%B5%D9%8A%D8%B1%20%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A7%D8%AA",
+        "caption": "قصر أم قصير"
+      },
+      {
+        "name": "قصر المذهن",
+        "text": "معلم من القصور القديمة في المحافظة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة القريات",
+          "url": "https://saudipedia.com/محافظة-القريات"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D8%B0%D9%87%D9%86%20%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A7%D8%AA",
+        "caption": "قصر المذهن"
+      }
+    ],
+    "fame": {
+      "title": "قرى القلاع والقصور",
+      "text": "تُعرف بقرى تاريخية وقلاع وقصور تعكس موقعها في شمال الجزيرة العربية.",
+      "source": {
+        "label": "سعوديبيديا — محافظة القريات",
+        "url": "https://saudipedia.com/محافظة-القريات"
+      }
+    },
+    "complete": true,
+    "region_key": "jouf",
+    "name": "القريات",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:jouf:dumat-al-jandal": {
+    "landmarks": [
+      {
+        "name": "قلعة مارد",
+        "text": "قلعة أثرية تحفظ آثارًا ونقوشًا من عصور متعاقبة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة دومة الجندل",
+          "url": "https://saudipedia.com/محافظة-دومة-الجندل"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D9%85%D8%A7%D8%B1%D8%AF%20%D8%AF%D9%88%D9%85%D8%A9%20%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%84",
+        "caption": "قلعة مارد"
+      },
+      {
+        "name": "حي الدرع التاريخي",
+        "text": "نسيج عمراني تاريخي من معالم دومة الجندل.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة دومة الجندل",
+          "url": "https://saudipedia.com/محافظة-دومة-الجندل"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%AD%D9%8A%20%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A%20%D8%AF%D9%88%D9%85%D8%A9%20%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%84",
+        "caption": "حي الدرع التاريخي"
+      },
+      {
+        "name": "مسجد عمر بن الخطاب",
+        "text": "مسجد تاريخي بارز في المدينة القديمة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة دومة الجندل",
+          "url": "https://saudipedia.com/محافظة-دومة-الجندل"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%B9%D9%85%D8%B1%20%D8%A8%D9%86%20%D8%A7%D9%84%D8%AE%D8%B7%D8%A7%D8%A8%20%D8%AF%D9%88%D9%85%D8%A9%20%D8%A7%D9%84%D8%AC%D9%86%D8%AF%D9%84",
+        "caption": "مسجد عمر بن الخطاب"
+      }
+    ],
+    "fame": {
+      "title": "ذاكرة الواحة",
+      "text": "حاضرة قديمة ذات صلات بحضارات شمال الجزيرة العربية.",
+      "source": {
+        "label": "سعوديبيديا — محافظة دومة الجندل",
+        "url": "https://saudipedia.com/محافظة-دومة-الجندل"
+      }
+    },
+    "complete": false,
+    "region_key": "jouf",
+    "name": "دومة الجندل",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:asir:rijal-almaa": {
+    "landmarks": [
+      {
+        "name": "قرية رُجال التراثية",
+        "text": "قرية ذات قصور حجرية متجاورة ومتعددة الطوابق تطل على وادي كسان.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة رجال ألمع",
+          "url": "https://saudipedia.com/محافظة-رجال-ألمع"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%B1%D9%8F%D8%AC%D8%A7%D9%84%20%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A%D8%A9%20%D8%B1%D8%AC%D8%A7%D9%84%20%D8%A3%D9%84%D9%85%D8%B9",
+        "caption": "مبانٍ تراثية في رجال ألمع",
+        "image_key": "asir"
+      }
+    ],
+    "fame": {
+      "title": "العمارة الحجرية",
+      "text": "تشتهر بالعمارة الحجرية والقرى التاريخية، وفي مقدمتها قرية رُجال.",
+      "source": {
+        "label": "سعوديبيديا — محافظة رجال ألمع",
+        "url": "https://saudipedia.com/محافظة-رجال-ألمع"
+      }
+    },
+    "complete": false,
+    "region_key": "asir",
+    "name": "رجال ألمع",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:asir:an-namas": {
+    "landmarks": [
+      {
+        "name": "مقابر وادي ترج",
+        "text": "مقابر قديمة من المواقع الأثرية في المحافظة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة النماص",
+          "url": "https://saudipedia.com/محافظة-النماص"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%82%D8%A7%D8%A8%D8%B1%20%D9%88%D8%A7%D8%AF%D9%8A%20%D8%AA%D8%B1%D8%AC%20%D8%A7%D9%84%D9%86%D9%85%D8%A7%D8%B5",
+        "caption": "مقابر وادي ترج"
+      },
+      {
+        "name": "مقابر رسوس طلاح",
+        "text": "موقع مقابر قديم ضمن شواهد الاستيطان بالمحافظة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة النماص",
+          "url": "https://saudipedia.com/محافظة-النماص"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%82%D8%A7%D8%A8%D8%B1%20%D8%B1%D8%B3%D9%88%D8%B3%20%D8%B7%D9%84%D8%A7%D8%AD%20%D8%A7%D9%84%D9%86%D9%85%D8%A7%D8%B5",
+        "caption": "مقابر رسوس طلاح"
+      },
+      {
+        "name": "مقابر وادي نكب",
+        "text": "مجموعة مقابر تاريخية واردة ضمن آثار النماص.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة النماص",
+          "url": "https://saudipedia.com/محافظة-النماص"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%82%D8%A7%D8%A8%D8%B1%20%D9%88%D8%A7%D8%AF%D9%8A%20%D9%86%D9%83%D8%A8%20%D8%A7%D9%84%D9%86%D9%85%D8%A7%D8%B5",
+        "caption": "مقابر وادي نكب"
+      },
+      {
+        "name": "موقع قرن الغلة",
+        "text": "موقع يضم شواهد كتابية ونقوشًا قديمة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة النماص",
+          "url": "https://saudipedia.com/محافظة-النماص"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%88%D9%82%D8%B9%20%D9%82%D8%B1%D9%86%20%D8%A7%D9%84%D8%BA%D9%84%D8%A9%20%D8%A7%D9%84%D9%86%D9%85%D8%A7%D8%B5",
+        "caption": "موقع قرن الغلة"
+      },
+      {
+        "name": "موقع الذلايل",
+        "text": "أحد مواضع النقوش والكتابات القديمة في النماص.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة النماص",
+          "url": "https://saudipedia.com/محافظة-النماص"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%88%D9%82%D8%B9%20%D8%A7%D9%84%D8%B0%D9%84%D8%A7%D9%8A%D9%84%20%D8%A7%D9%84%D9%86%D9%85%D8%A7%D8%B5",
+        "caption": "موقع الذلايل"
+      }
+    ],
+    "fame": {
+      "title": "آثار السروات",
+      "text": "تجمع بين قرى السروات وآثار الاستيطان القديم والنقوش الصخرية.",
+      "source": {
+        "label": "سعوديبيديا — محافظة النماص",
+        "url": "https://saudipedia.com/محافظة-النماص"
+      }
+    },
+    "complete": true,
+    "region_key": "asir",
+    "name": "النماص",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:asir:khamis-mushait": {
+    "landmarks": [
+      {
+        "name": "قصر شاهر الأثري",
+        "text": "قصر من الحجر والطين في قرية الوقبة، يحتفظ بعناصر العمارة العسيرية ومدافن الحبوب القديمة.",
+        "scope": "قرية الوقبة بمحافظة خميس مشيط",
+        "source": {
+          "label": "وكالة الأنباء السعودية — قصر شاهر بخميس مشيط",
+          "url": "https://www.spa.gov.sa/N2288910"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%B4%D8%A7%D9%87%D8%B1%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%20%D8%AE%D9%85%D9%8A%D8%B3%20%D9%85%D8%B4%D9%8A%D8%B7",
+        "caption": "قصر شاهر الأثري"
+      },
+      {
+        "name": "قصر الأمير سعيد بن مشيط",
+        "text": "قصر تاريخي من أبرز المباني التي تمثل التراث العمراني المحلي.",
+        "scope": "مدينة خميس مشيط",
+        "source": {
+          "label": "مكتبة الملك عبدالعزيز العامة — موسوعة المملكة",
+          "url": "https://saudiency.kapl.org.sa/Loader.aspx?BookID=68&PID=57&TOCID=2&pageid=24"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%20%D8%B3%D8%B9%D9%8A%D8%AF%20%D8%A8%D9%86%20%D9%85%D8%B4%D9%8A%D8%B7%20%D8%AE%D9%85%D9%8A%D8%B3%20%D9%85%D8%B4%D9%8A%D8%B7",
+        "caption": "قصر الأمير سعيد بن مشيط"
+      }
+    ],
+    "fame": {
+      "title": "التجارة والأسواق",
+      "text": "مركز تجاري تقليدي في عسير، اشتهر بموقعه الوسطي وحركة أسواقه.",
+      "source": {
+        "label": "سعوديبيديا — محافظة خميس مشيط",
+        "url": "https://saudipedia.com/محافظة-خميس-مشيط"
+      }
+    },
+    "complete": false,
+    "region_key": "asir",
+    "name": "خميس مشيط",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:tabuk:umluj": {
+    "landmarks": [
+      {
+        "name": "مسجد أبو جبل الأثري",
+        "text": "مسجد في المنطقة التاريخية شُيد وفق طراز البناء المحلي بالحجر والطين.",
+        "scope": "مدينة أملج",
+        "source": {
+          "label": "وكالة الأنباء السعودية — ترميم مسجد أبو جبل بأملج",
+          "url": "https://www.spa.gov.sa/1383069"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A3%D8%A8%D9%88%20%D8%AC%D8%A8%D9%84%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%20%D8%A3%D9%85%D9%84%D8%AC",
+        "caption": "مسجد أبو جبل الأثري"
+      },
+      {
+        "name": "قصر الإمارة التاريخي",
+        "text": "مقر تاريخي للإمارة في مدينة أملج القديمة.",
+        "scope": "مدينة أملج",
+        "source": {
+          "label": "مكتبة الملك عبدالعزيز العامة — موسوعة المملكة",
+          "url": "https://saudiency.kapl.org.sa/Loader.aspx?BookID=103&TOCID=66&pageid=30"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A%20%D8%A3%D9%85%D9%84%D8%AC",
+        "caption": "قصر الإمارة التاريخي"
+      }
+    ],
+    "fame": {
+      "title": "التراث البحري",
+      "text": "محافظة ساحلية ذات تراث بحري وعمران تاريخي من أبرز شواهده قصر الإمارة.",
+      "source": {
+        "label": "وكالة الأنباء السعودية — ترميم مسجد أبو جبل بأملج",
+        "url": "https://www.spa.gov.sa/1383069"
+      }
+    },
+    "complete": false,
+    "region_key": "tabuk",
+    "name": "أملج",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:tabuk:duba": {
+    "landmarks": [
+      {
+        "name": "قلعة الملك عبدالعزيز",
+        "text": "بنيت في عهد الملك عبدالعزيز لتكون مقرًا للحكم في ضباء.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة ضباء",
+          "url": "https://saudipedia.com/محافظة-ضباء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%B6%D8%A8%D8%A7%D8%A1",
+        "caption": "قلعة الملك عبدالعزيز"
+      },
+      {
+        "name": "المدرسة الأميرية في ضباء",
+        "text": "إحدى المدارس النظامية المبكرة في المنطقة، بجوار قلعة الملك عبدالعزيز.",
+        "scope": "مدينة ضباء",
+        "source": {
+          "label": "مكتبة الملك عبدالعزيز العامة — موسوعة المملكة",
+          "url": "https://saudiency.kapl.org.sa/Loader.aspx?BookID=103&TOCID=66&pageid=30"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%85%D8%AF%D8%B1%D8%B3%D8%A9%20%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%D9%8A%D8%A9%20%D9%81%D9%8A%20%D8%B6%D8%A8%D8%A7%D8%A1%20%D8%B6%D8%A8%D8%A7%D8%A1",
+        "caption": "المدرسة الأميرية في ضباء"
+      }
+    ],
+    "fame": {
+      "title": "محطة على درب الحج",
+      "text": "محطة تاريخية على مسار الحج المصري الساحلي.",
+      "source": {
+        "label": "سعوديبيديا — محافظة ضباء",
+        "url": "https://saudipedia.com/محافظة-ضباء"
+      }
+    },
+    "complete": false,
+    "region_key": "tabuk",
+    "name": "ضباء",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:hail:ash-shinan": {
+    "landmarks": [
+      {
+        "name": "مدينة فيد التاريخية وقصر خراش",
+        "text": "موقع تاريخي يضم آثار تحصينات ومبانٍ من الحجر البازلتي.",
+        "scope": "مركز فيد بمحافظة الشنان",
+        "source": {
+          "label": "سعوديبيديا — محافظة الشنان",
+          "url": "https://saudipedia.com/محافظة-الشنان"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%81%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A%D8%A9%20%D9%88%D9%82%D8%B5%D8%B1%20%D8%AE%D8%B1%D8%A7%D8%B4%20%D8%A7%D9%84%D8%B4%D9%86%D8%A7%D9%86",
+        "caption": "مدينة فيد التاريخية وقصر خراش"
+      }
+    ],
+    "fame": {
+      "title": "فيد وطرق القوافل",
+      "text": "تحتضن فيد التاريخية، من أبرز حواضر طرق القوافل والحج.",
+      "source": {
+        "label": "سعوديبيديا — محافظة الشنان",
+        "url": "https://saudipedia.com/محافظة-الشنان"
+      }
+    },
+    "complete": false,
+    "region_key": "hail",
+    "name": "الشنان",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:hail:al-hait": {
+    "landmarks": [
+      {
+        "name": "حصن الشمروخ",
+        "text": "حصن قديم من معالم الحائط المبنية بحجارة المنطقة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "بلدية محافظة الحائط — عن المحافظة",
+          "url": "https://alhait-muncipility.com/about"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%AD%D8%B5%D9%86%20%D8%A7%D9%84%D8%B4%D9%85%D8%B1%D9%88%D8%AE%20%D8%A7%D9%84%D8%AD%D8%A7%D8%A6%D8%B7",
+        "caption": "حصن الشمروخ"
+      },
+      {
+        "name": "قصر صلال",
+        "text": "قصر أثري وارد في حصر البلدية للمعالم التاريخية.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "بلدية محافظة الحائط — عن المحافظة",
+          "url": "https://alhait-muncipility.com/about"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%B5%D9%84%D8%A7%D9%84%20%D8%A7%D9%84%D8%AD%D8%A7%D8%A6%D8%B7",
+        "caption": "قصر صلال"
+      },
+      {
+        "name": "قصر حويش",
+        "text": "أحد القصور التاريخية في الحائط.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "بلدية محافظة الحائط — عن المحافظة",
+          "url": "https://alhait-muncipility.com/about"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%AD%D9%88%D9%8A%D8%B4%20%D8%A7%D9%84%D8%AD%D8%A7%D8%A6%D8%B7",
+        "caption": "قصر حويش"
+      },
+      {
+        "name": "قصر المجدورية",
+        "text": "قصر قديم من شواهد عمران فدك.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "بلدية محافظة الحائط — عن المحافظة",
+          "url": "https://alhait-muncipility.com/about"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D8%AC%D8%AF%D9%88%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%A6%D8%B7",
+        "caption": "قصر المجدورية"
+      },
+      {
+        "name": "نقش الملك نبونيد",
+        "text": "نقش صخري مسماري يتصل بالحضور البابلي في شمال الجزيرة العربية.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "بلدية محافظة الحائط — عن المحافظة",
+          "url": "https://alhait-muncipility.com/about"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%86%D9%82%D8%B4%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D9%86%D8%A8%D9%88%D9%86%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AD%D8%A7%D8%A6%D8%B7",
+        "caption": "نقش الملك نبونيد"
+      }
+    ],
+    "fame": {
+      "title": "فدك التاريخية",
+      "text": "عُرفت قديمًا بفدك، وتحفظ آثارًا ونقوشًا من عصور قبل الإسلام والفترات الإسلامية.",
+      "source": {
+        "label": "بلدية محافظة الحائط — عن المحافظة",
+        "url": "https://alhait-muncipility.com/about"
+      }
+    },
+    "complete": true,
+    "region_key": "hail",
+    "name": "الحائط",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:najran:badr-al-janub": {
+    "landmarks": [
+      {
+        "name": "قلعة القشلة",
+        "text": "قلعة تاريخية تقع على قمة جبل القهرة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة بدر الجنوب",
+          "url": "https://saudipedia.com/محافظة-بدر-الجنوب"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D8%A7%D9%84%D9%82%D8%B4%D9%84%D8%A9%20%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8",
+        "caption": "قلعة القشلة"
+      },
+      {
+        "name": "القصبة",
+        "text": "برج تاريخي مرتفع وسط منازل البلدة القديمة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة بدر الجنوب",
+          "url": "https://saudipedia.com/محافظة-بدر-الجنوب"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%82%D8%B5%D8%A8%D8%A9%20%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8",
+        "caption": "القصبة"
+      },
+      {
+        "name": "قصر الثغر",
+        "text": "مبنى حجري قديم يحيط به سور من الحجر.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة بدر الجنوب",
+          "url": "https://saudipedia.com/محافظة-بدر-الجنوب"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AB%D8%BA%D8%B1%20%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8",
+        "caption": "قصر الثغر"
+      }
+    ],
+    "fame": {
+      "title": "بيوت الطين والقلاع",
+      "text": "تتميز بعمارتها التاريخية من الطين والحجر وقلاعها الجبلية.",
+      "source": {
+        "label": "سعوديبيديا — محافظة بدر الجنوب",
+        "url": "https://saudipedia.com/محافظة-بدر-الجنوب"
+      }
+    },
+    "complete": false,
+    "region_key": "najran",
+    "name": "بدر الجنوب",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:najran:sharurah": {
+    "landmarks": [],
+    "fame": {
+      "title": "ذاكرة الرعي والصحراء",
+      "text": "عُرفت بوصفها موردًا موسميًا للرعي على أطراف الربع الخالي.",
+      "source": {
+        "label": "سعوديبيديا — محافظة شرورة",
+        "url": "https://saudipedia.com/محافظة-شرورة"
+      }
+    },
+    "complete": false,
+    "region_key": "najran",
+    "name": "شرورة",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:baha:al-makhwah": {
+    "landmarks": [
+      {
+        "name": "قرية ذي عين الأثرية",
+        "text": "قرية حجرية تاريخية من أبرز معالم تهامة الباحة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة المخواة",
+          "url": "https://saudipedia.com/محافظة-المخواة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%B0%D9%8A%20%D8%B9%D9%8A%D9%86%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AE%D9%88%D8%A7%D8%A9",
+        "caption": "قرية ذي عين التراثية في محافظة المخواة",
+        "image_key": "atlas-al-baha-2"
+      },
+      {
+        "name": "قرية عشم الأثرية",
+        "text": "موقع يحفظ كتابات ونقوشًا إسلامية مبكرة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة المخواة",
+          "url": "https://saudipedia.com/محافظة-المخواة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%B9%D8%B4%D9%85%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AE%D9%88%D8%A7%D8%A9",
+        "caption": "قرية عشم الأثرية"
+      },
+      {
+        "name": "قرية المدق",
+        "text": "قرية واردة ضمن المواقع الأثرية في المحافظة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة المخواة",
+          "url": "https://saudipedia.com/محافظة-المخواة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%82%20%D8%A7%D9%84%D9%85%D8%AE%D9%88%D8%A7%D8%A9",
+        "caption": "قرية المدق"
+      },
+      {
+        "name": "قرية بني شرفا",
+        "text": "قرية تاريخية من شواهد عمران المحافظة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة المخواة",
+          "url": "https://saudipedia.com/محافظة-المخواة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A8%D9%86%D9%8A%20%D8%B4%D8%B1%D9%81%D8%A7%20%D8%A7%D9%84%D9%85%D8%AE%D9%88%D8%A7%D8%A9",
+        "caption": "قرية بني شرفا"
+      },
+      {
+        "name": "قرية المشارفة",
+        "text": "إحدى القرى الأثرية المذكورة في المخواة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة المخواة",
+          "url": "https://saudipedia.com/محافظة-المخواة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%AE%D9%88%D8%A7%D8%A9",
+        "caption": "قرية المشارفة"
+      }
+    ],
+    "fame": {
+      "title": "القرى الحجرية",
+      "text": "تشتهر بالقرى الحجرية وآثار الاستيطان في تهامة الباحة.",
+      "source": {
+        "label": "سعوديبيديا — محافظة المخواة",
+        "url": "https://saudipedia.com/محافظة-المخواة"
+      }
+    },
+    "complete": true,
+    "region_key": "baha",
+    "name": "المخواة",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:baha:baljurashi": {
+    "landmarks": [
+      {
+        "name": "دار السوق",
+        "text": "القرية الأثرية في محافظة بلجرشي.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة بلجرشي",
+          "url": "https://saudipedia.com/محافظة-بلجرشي"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D9%82%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A",
+        "caption": "دار السوق"
+      },
+      {
+        "name": "سوق السبت التاريخي",
+        "text": "سوق تقليدي ارتبط بتجارة المحاصيل والحرف المحلية.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة بلجرشي",
+          "url": "https://saudipedia.com/محافظة-بلجرشي"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%88%D9%82%20%D8%A7%D9%84%D8%B3%D8%A8%D8%AA%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A",
+        "caption": "سوق السبت التاريخي"
+      },
+      {
+        "name": "قرية العبادل الأثرية",
+        "text": "قرية ذات ساحات وممرات مسقوفة ومبانٍ مجاورة للصخور.",
+        "scope": "مركز بني كبير بمحافظة بلجرشي",
+        "source": {
+          "label": "سعوديبيديا — محافظة بلجرشي",
+          "url": "https://saudipedia.com/محافظة-بلجرشي"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%AF%D9%84%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%D8%A9%20%D8%A8%D9%84%D8%AC%D8%B1%D8%B4%D9%8A",
+        "caption": "قرية العبادل الأثرية"
+      }
+    ],
+    "fame": {
+      "title": "سوق السبت",
+      "text": "مركز تجاري قديم في الباحة، ارتبط بسوق السبت والقرى الحجرية.",
+      "source": {
+        "label": "سعوديبيديا — محافظة بلجرشي",
+        "url": "https://saudipedia.com/محافظة-بلجرشي"
+      }
+    },
+    "complete": false,
+    "region_key": "baha",
+    "name": "بلجرشي",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:baha:al-mandaq": {
+    "landmarks": [
+      {
+        "name": "قرية المشايعة",
+        "text": "قرية تراثية على هضبة، تتلاصق بيوتها الحجرية وتطل على الأراضي الزراعية.",
+        "scope": "محافظة المندق",
+        "source": {
+          "label": "دراسة ميدانية — إعادة تأهيل القرى التراثية في محافظة المندق",
+          "url": "https://faculty.ksu.edu.sa/sites/default/files/%D8%A5%D8%B9%D8%A7%D8%AF%D8%A9%20%D8%AA%D8%A3%D9%87%D9%8A%D9%84%20%D8%A7%D9%84%D9%92%D9%82%D9%8F%D8%B1%D9%8E%D9%89%20%D8%A7%D9%84%D8%AA%D9%8F%D9%91%D8%B1%D9%8E%D8%A7%D8%AB%D9%8A%D9%91%D8%A9%20%D9%81%D9%8A%20%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%82%20%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9.pdf"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D9%8A%D8%B9%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%82",
+        "caption": "قرية المشايعة"
+      },
+      {
+        "name": "قرية عويرة",
+        "text": "قرية ضمن النسيج التراثي لمحافظة المندق، توثقها الدراسة الميدانية لقرى المنطقة.",
+        "scope": "محافظة المندق",
+        "source": {
+          "label": "دراسة ميدانية — إعادة تأهيل القرى التراثية في محافظة المندق",
+          "url": "https://faculty.ksu.edu.sa/sites/default/files/%D8%A5%D8%B9%D8%A7%D8%AF%D8%A9%20%D8%AA%D8%A3%D9%87%D9%8A%D9%84%20%D8%A7%D9%84%D9%92%D9%82%D9%8F%D8%B1%D9%8E%D9%89%20%D8%A7%D9%84%D8%AA%D9%8F%D9%91%D8%B1%D9%8E%D8%A7%D8%AB%D9%8A%D9%91%D8%A9%20%D9%81%D9%8A%20%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%82%20%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9.pdf"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%B9%D9%88%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%82",
+        "caption": "قرية عويرة"
+      },
+      {
+        "name": "قرية النصباء",
+        "text": "إحدى القرى التراثية بالمحافظة، ضمن مشهد القرى الحجرية في السروات.",
+        "scope": "محافظة المندق",
+        "source": {
+          "label": "دراسة ميدانية — إعادة تأهيل القرى التراثية في محافظة المندق",
+          "url": "https://faculty.ksu.edu.sa/sites/default/files/%D8%A5%D8%B9%D8%A7%D8%AF%D8%A9%20%D8%AA%D8%A3%D9%87%D9%8A%D9%84%20%D8%A7%D9%84%D9%92%D9%82%D9%8F%D8%B1%D9%8E%D9%89%20%D8%A7%D9%84%D8%AA%D9%8F%D9%91%D8%B1%D9%8E%D8%A7%D8%AB%D9%8A%D9%91%D8%A9%20%D9%81%D9%8A%20%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%82%20%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9.pdf"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%86%D8%B5%D8%A8%D8%A7%D8%A1%20%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%82",
+        "caption": "قرية النصباء"
+      },
+      {
+        "name": "قرية الجوفاء",
+        "text": "قرية تراثية ترد ضمن قرى المندق التي تناولتها الدراسة العمرانية.",
+        "scope": "محافظة المندق",
+        "source": {
+          "label": "دراسة ميدانية — إعادة تأهيل القرى التراثية في محافظة المندق",
+          "url": "https://faculty.ksu.edu.sa/sites/default/files/%D8%A5%D8%B9%D8%A7%D8%AF%D8%A9%20%D8%AA%D8%A3%D9%87%D9%8A%D9%84%20%D8%A7%D9%84%D9%92%D9%82%D9%8F%D8%B1%D9%8E%D9%89%20%D8%A7%D9%84%D8%AA%D9%8F%D9%91%D8%B1%D9%8E%D8%A7%D8%AB%D9%8A%D9%91%D8%A9%20%D9%81%D9%8A%20%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%82%20%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9.pdf"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D9%88%D9%81%D8%A7%D8%A1%20%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%82",
+        "caption": "قرية الجوفاء"
+      },
+      {
+        "name": "قرية رباع",
+        "text": "قرية من موروث المندق العمراني، ضمن القرى الواردة في الدراسة الميدانية.",
+        "scope": "محافظة المندق",
+        "source": {
+          "label": "دراسة ميدانية — إعادة تأهيل القرى التراثية في محافظة المندق",
+          "url": "https://faculty.ksu.edu.sa/sites/default/files/%D8%A5%D8%B9%D8%A7%D8%AF%D8%A9%20%D8%AA%D8%A3%D9%87%D9%8A%D9%84%20%D8%A7%D9%84%D9%92%D9%82%D9%8F%D8%B1%D9%8E%D9%89%20%D8%A7%D9%84%D8%AA%D9%8F%D9%91%D8%B1%D9%8E%D8%A7%D8%AB%D9%8A%D9%91%D8%A9%20%D9%81%D9%8A%20%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%82%20%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9.pdf"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%B1%D8%A8%D8%A7%D8%B9%20%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%82",
+        "caption": "قرية رباع"
+      }
+    ],
+    "fame": {
+      "title": "القرى والزراعة الجبلية",
+      "text": "من حواضر السروات ذات القرى والحصون التقليدية والزراعة الجبلية.",
+      "source": {
+        "label": "سعوديبيديا — محافظة المندق",
+        "url": "https://saudipedia.com/محافظة-المندق"
+      }
+    },
+    "complete": true,
+    "region_key": "baha",
+    "name": "المندق",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:jazan:fayfa": {
+    "landmarks": [
+      {
+        "name": "سوق النفيعة",
+        "text": "من الأسواق القديمة التي تحتفظ بدكاكينها وطابعها التقليدي.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة فيفاء",
+          "url": "https://saudipedia.com/محافظة-فيفاء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%88%D9%82%20%D8%A7%D9%84%D9%86%D9%81%D9%8A%D8%B9%D8%A9%20%D9%81%D9%8A%D9%81%D8%A7%D8%A1",
+        "caption": "سوق النفيعة"
+      }
+    ],
+    "fame": {
+      "title": "البن والعسل",
+      "text": "تشتهر بالبيوت الحجرية الأسطوانية والعمران الجبلي وزراعة البن وإنتاج العسل.",
+      "source": {
+        "label": "سعوديبيديا — محافظة فيفاء",
+        "url": "https://saudipedia.com/محافظة-فيفاء"
+      }
+    },
+    "complete": false,
+    "region_key": "jazan",
+    "name": "فيفاء",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:jazan:ad-dair": {
+    "landmarks": [
+      {
+        "name": "قرية قيار",
+        "text": "من القرى والحصون التاريخية التي توثق عمران جبال بني مالك الحجري.",
+        "scope": "محافظة الدائر بني مالك",
+        "source": {
+          "label": "واس — قرى وحصون جبال بني مالك",
+          "url": "https://www.spa.gov.sa/2299546"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D9%82%D9%8A%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1",
+        "caption": "قرية قيار"
+      },
+      {
+        "name": "قرية ذراع الخطم",
+        "text": "من القرى والحصون التاريخية التي توثق عمران جبال بني مالك الحجري.",
+        "scope": "محافظة الدائر بني مالك",
+        "source": {
+          "label": "واس — قرى وحصون جبال بني مالك",
+          "url": "https://www.spa.gov.sa/2299546"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%B0%D8%B1%D8%A7%D8%B9%20%D8%A7%D9%84%D8%AE%D8%B7%D9%85%20%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1",
+        "caption": "قرية ذراع الخطم"
+      },
+      {
+        "name": "قرية الثاهر",
+        "text": "من القرى والحصون التاريخية التي توثق عمران جبال بني مالك الحجري.",
+        "scope": "محافظة الدائر بني مالك",
+        "source": {
+          "label": "واس — قرى وحصون جبال بني مالك",
+          "url": "https://www.spa.gov.sa/2299546"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%87%D8%B1%20%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1",
+        "caption": "قرية الثاهر"
+      },
+      {
+        "name": "قرية الخديعي",
+        "text": "من القرى والحصون التاريخية التي توثق عمران جبال بني مالك الحجري.",
+        "scope": "محافظة الدائر بني مالك",
+        "source": {
+          "label": "واس — قرى وحصون جبال بني مالك",
+          "url": "https://www.spa.gov.sa/2299546"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AE%D8%AF%D9%8A%D8%B9%D9%8A%20%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1",
+        "caption": "قرية الخديعي"
+      },
+      {
+        "name": "قرية ريدة",
+        "text": "من القرى والحصون التاريخية التي توثق عمران جبال بني مالك الحجري.",
+        "scope": "محافظة الدائر بني مالك",
+        "source": {
+          "label": "واس — قرى وحصون جبال بني مالك",
+          "url": "https://www.spa.gov.sa/2299546"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%B1%D9%8A%D8%AF%D8%A9%20%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1",
+        "caption": "قرية ريدة"
+      }
+    ],
+    "fame": {
+      "title": "البن الخولاني",
+      "text": "تشتهر بالموروث الزراعي الجبلي وزراعة البن الخولاني.",
+      "source": {
+        "label": "سعوديبيديا — محافظة الدائر",
+        "url": "https://saudipedia.com/محافظة-الدائر"
+      }
+    },
+    "complete": true,
+    "region_key": "jazan",
+    "name": "الدائر",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:northern:turaif": {
+    "landmarks": [
+      {
+        "name": "قصر دوقرة",
+        "text": "قصر من الحجارة البركانية ترجح الدراسات امتداد استعماله إلى العصر الأموي.",
+        "scope": "نحو 40 كم جنوب غربي مدينة طريف",
+        "source": {
+          "label": "سعوديبيديا — محافظة طريف",
+          "url": "https://saudipedia.com/محافظة-طريف"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%AF%D9%88%D9%82%D8%B1%D8%A9%20%D8%B7%D8%B1%D9%8A%D9%81",
+        "caption": "قصر دوقرة"
+      },
+      {
+        "name": "سوق البسطة",
+        "text": "سوق شعبي قائم منذ ستينات القرن العشرين في وسط المحافظة.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "سعوديبيديا — محافظة طريف",
+          "url": "https://saudipedia.com/محافظة-طريف"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%88%D9%82%20%D8%A7%D9%84%D8%A8%D8%B3%D8%B7%D8%A9%20%D8%B7%D8%B1%D9%8A%D9%81",
+        "caption": "سوق البسطة"
+      }
+    ],
+    "fame": {
+      "title": "دوقرة وأسواق الشمال",
+      "text": "تحتضن دوقرة الأثرية، وتحفظ أسواقها جانبًا من تراث شمال المملكة.",
+      "source": {
+        "label": "سعوديبيديا — محافظة طريف",
+        "url": "https://saudipedia.com/محافظة-طريف"
+      }
+    },
+    "complete": false,
+    "region_key": "northern",
+    "name": "طريف",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:northern:rafha": {
+    "landmarks": [
+      {
+        "name": "قرية زبالا التاريخية",
+        "text": "محطة استيطان وحج تاريخية تضم بقايا عمرانية وآبارًا.",
+        "scope": "نحو 25 كم جنوب مدينة رفحاء",
+        "source": {
+          "label": "سعوديبيديا — محافظة رفحاء",
+          "url": "https://saudipedia.com/محافظة-رفحاء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%B2%D8%A8%D8%A7%D9%84%D8%A7%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A%D8%A9%20%D8%B1%D9%81%D8%AD%D8%A7%D8%A1",
+        "caption": "قرية زبالا التاريخية"
+      },
+      {
+        "name": "قرية لينة التاريخية",
+        "text": "قرية تاريخية تضم قصر الملك عبدالعزيز وسوقًا قديمًا ارتبط بالتبادل التجاري مع العراق.",
+        "scope": "نحو 70 كم جنوب مدينة رفحاء داخل المحافظة",
+        "source": {
+          "label": "سعوديبيديا — محافظة رفحاء",
+          "url": "https://saudipedia.com/محافظة-رفحاء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D9%84%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A%D8%A9%20%D8%B1%D9%81%D8%AD%D8%A7%D8%A1",
+        "caption": "قرية لينة التاريخية"
+      },
+      {
+        "name": "سوق رفحاء القديم",
+        "text": "سوق تاريخي ما زالت متاجره تحتفظ بطابعها التراثي، ارتبط بأهل الحاضرة والبادية.",
+        "scope": "مدينة رفحاء",
+        "source": {
+          "label": "سعوديبيديا — محافظة رفحاء",
+          "url": "https://saudipedia.com/محافظة-رفحاء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%88%D9%82%20%D8%B1%D9%81%D8%AD%D8%A7%D8%A1%20%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D9%85%20%D8%B1%D9%81%D8%AD%D8%A7%D8%A1",
+        "caption": "سوق رفحاء القديم"
+      }
+    ],
+    "fame": {
+      "title": "محطات درب زبيدة",
+      "text": "تضم محطات أثرية ارتبطت بطريق الحج الكوفي، وفي مقدمتها زبالا.",
+      "source": {
+        "label": "سعوديبيديا — محافظة رفحاء",
+        "url": "https://saudipedia.com/محافظة-رفحاء"
+      }
+    },
+    "complete": false,
+    "region_key": "northern",
+    "name": "رفحاء",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:abha": {
+    "landmarks": [
+      {
+        "name": "قصر شدا",
+        "text": "قصر حجري تاريخي كان مقرًا لإمارة عسير.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "سعوديبيديا — قصر شدا",
+          "url": "https://saudipedia.com/قصر-شدا"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%B4%D8%AF%D8%A7%20%D8%A3%D8%A8%D9%87%D8%A7",
+        "caption": "قصر شدا",
+        "image_key": "abha-palace"
+      },
+      {
+        "name": "قلعة شمسان",
+        "text": "قلعة دفاعية تاريخية على جبل شمسان في مدينة أبها.",
+        "scope": "داخل مدينة أبها",
+        "source": {
+          "label": "سعوديبيديا — قلعة شمسان",
+          "url": "https://saudipedia.com/قلعة-شمسان"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D8%B4%D9%85%D8%B3%D8%A7%D9%86%20%D8%A3%D8%A8%D9%87%D8%A7",
+        "caption": "قلعة شمسان"
+      },
+      {
+        "name": "سوق الثلاثاء الشعبي",
+        "text": "سوق تقليدي للحرف والمنتجات العسيرية.",
+        "scope": "داخل مدينة أبها",
+        "source": {
+          "label": "روح السعودية — الأسواق الشعبية في أبها",
+          "url": "https://www.visitsaudi.com/ar/aseer/stories/traditional-markets-in-abha"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%88%D9%82%20%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A%20%D8%A3%D8%A8%D9%87%D8%A7",
+        "caption": "سوق الثلاثاء الشعبي"
+      }
+    ],
+    "fame": {
+      "title": "القصور والأسواق",
+      "text": "من معالم أبها العمرانية قصر شدا الذي يروي جانبًا من تاريخ الإدارة المحلية.",
+      "source": {
+        "label": "سعوديبيديا — قصر شدا",
+        "url": "https://saudipedia.com/قصر-شدا"
+      }
+    },
+    "complete": false,
+    "region_key": "asir",
+    "name": "أبها",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:tabuk": {
+    "landmarks": [
+      {
+        "name": "قلعة تبوك",
+        "text": "قلعة تاريخية ارتبطت بمحطات الحج الشامي.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "سعوديبيديا — مدينة تبوك",
+          "url": "https://saudipedia.com/مدينة-تبوك"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D8%AA%D8%A8%D9%88%D9%83%20%D8%AA%D8%A8%D9%88%D9%83",
+        "caption": "قلعة تبوك",
+        "image_key": "city-tabuk"
+      },
+      {
+        "name": "مسجد التوبة",
+        "text": "مسجد تاريخي ارتبط بتاريخ تبوك الإسلامي وجُدد في العصر الحديث.",
+        "scope": "داخل مدينة تبوك",
+        "source": {
+          "label": "مكتبة الملك عبدالعزيز العامة — موسوعة المملكة",
+          "url": "https://saudiency.kapl.org.sa/Loader.aspx?BookID=109&PID=8&TOCID=31&pageid=30"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A8%D8%A9%20%D8%AA%D8%A8%D9%88%D9%83",
+        "caption": "مسجد التوبة",
+        "image_key": "atlas-tabuk-3"
+      },
+      {
+        "name": "محطة سكة حديد الحجاز بتبوك",
+        "text": "محطة تاريخية من منشآت سكة حديد الحجاز العثمانية.",
+        "scope": "داخل مدينة تبوك",
+        "source": {
+          "label": "مكتبة الملك عبدالعزيز العامة — موسوعة المملكة",
+          "url": "https://saudiency.kapl.org.sa/Loader.aspx?BookID=109&PID=8&TOCID=31&pageid=30"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AD%D8%B7%D8%A9%20%D8%B3%D9%83%D8%A9%20%D8%AD%D8%AF%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AD%D8%AC%D8%A7%D8%B2%20%D8%A8%D8%AA%D8%A8%D9%88%D9%83%20%D8%AA%D8%A8%D9%88%D9%83",
+        "caption": "محطة سكة حديد الحجاز بتبوك"
+      }
+    ],
+    "fame": {
+      "title": "دروب الحج والقوافل",
+      "text": "حاضرة تاريخية على مسارات القوافل بين الحجاز والشام.",
+      "source": {
+        "label": "سعوديبيديا — مدينة تبوك",
+        "url": "https://saudipedia.com/مدينة-تبوك"
+      }
+    },
+    "complete": false,
+    "region_key": "tabuk",
+    "name": "تبوك",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:hail": {
+    "landmarks": [
+      {
+        "name": "قلعة أعيرف",
+        "text": "قلعة حجرية وطينية تشرف على مدينة حائل.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "سعوديبيديا — مدينة حائل",
+          "url": "https://saudipedia.com/مدينة-حائل"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D8%A3%D8%B9%D9%8A%D8%B1%D9%81%20%D8%AD%D8%A7%D8%A6%D9%84",
+        "caption": "قلعة عيرف",
+        "image_key": "atlas-hail-1"
+      },
+      {
+        "name": "قصر القشلة",
+        "text": "قصر عسكري تاريخي من عمارة عهد الملك عبدالعزيز.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "سعوديبيديا — مدينة حائل",
+          "url": "https://saudipedia.com/مدينة-حائل"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D9%82%D8%B4%D9%84%D8%A9%20%D8%AD%D8%A7%D8%A6%D9%84",
+        "caption": "قصر القشلة",
+        "image_key": "atlas-hail-2"
+      },
+      {
+        "name": "بقايا قصر برزان",
+        "text": "بقي من القصر برجان يشهدان على تاريخه السياسي والعمراني.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "سعوديبيديا — مدينة حائل",
+          "url": "https://saudipedia.com/مدينة-حائل"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%82%D8%A7%D9%8A%D8%A7%20%D9%82%D8%B5%D8%B1%20%D8%A8%D8%B1%D8%B2%D8%A7%D9%86%20%D8%AD%D8%A7%D8%A6%D9%84",
+        "caption": "بقايا قصر برزان"
+      },
+      {
+        "name": "قصر رشيد بن ليلى",
+        "text": "قصر طيني تاريخي في حي لبدة يحفظ عناصر البيت التقليدي.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "سعوديبيديا — مدينة حائل",
+          "url": "https://saudipedia.com/مدينة-حائل"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%B1%D8%B4%D9%8A%D8%AF%20%D8%A8%D9%86%20%D9%84%D9%8A%D9%84%D9%89%20%D8%AD%D8%A7%D8%A6%D9%84",
+        "caption": "قصر رشيد بن ليلى"
+      }
+    ],
+    "fame": {
+      "title": "القلاع والقصور",
+      "text": "تتميز بالقصور الطينية والقلاع التي تعكس تاريخها السياسي والعمراني.",
+      "source": {
+        "label": "سعوديبيديا — مدينة حائل",
+        "url": "https://saudipedia.com/مدينة-حائل"
+      }
+    },
+    "complete": false,
+    "region_key": "hail",
+    "name": "حائل",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:arar": {
+    "landmarks": [
+      {
+        "name": "قصر الإمارة القديم",
+        "text": "قصر بُني سنة ١٩٥٤م مقرًا لأمير المنطقة، ويحفظ ملامح من تاريخ عرعر الإداري.",
+        "scope": "وسط مدينة عرعر",
+        "source": {
+          "label": "سعوديبيديا — قصر الإمارة القديم في عرعر",
+          "url": "https://saudipedia.com/قصر-الإمارة-القديم-في-عرعر"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D9%85%20%D8%B9%D8%B1%D8%B9%D8%B1",
+        "caption": "قصر الإمارة القديم"
+      }
+    ],
+    "fame": {
+      "title": "ذاكرة التابلاين",
+      "text": "نشأت عرعر الحديثة في سياق إنشاء خط التابلاين وتطورت مركزًا إداريًا للحدود الشمالية.",
+      "source": {
+        "label": "الأمم المتحدة ووزارة الشؤون البلدية — مستقبل المدن السعودية: عرعر",
+        "url": "https://saudiarabia.un.org/sites/default/files/2020-12/ARAR%20%281%29.pdf"
+      }
+    },
+    "complete": false,
+    "region_key": "northern",
+    "name": "عرعر",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:jazan": {
+    "landmarks": [
+      {
+        "name": "قلعة الدوسرية",
+        "text": "قلعة مربعة ذات أبراج دائرية استخدمت للدفاع والتعليم.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "سعوديبيديا — قلعة الدوسرية",
+          "url": "https://saudipedia.com/قلعة-الدوسرية"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D8%A7%D9%84%D8%AF%D9%88%D8%B3%D8%B1%D9%8A%D8%A9%20%D8%AC%D8%A7%D8%B2%D8%A7%D9%86",
+        "caption": "قلعة الدوسرية",
+        "image_key": "atlas-jazan-1"
+      }
+    ],
+    "fame": {
+      "title": "قلعة الدوسرية",
+      "text": "تحفظ قلعة الدوسرية جانبًا من تاريخ مدينة جازان العسكري والعلمي.",
+      "source": {
+        "label": "سعوديبيديا — قلعة الدوسرية",
+        "url": "https://saudipedia.com/قلعة-الدوسرية"
+      }
+    },
+    "complete": false,
+    "region_key": "jazan",
+    "name": "جازان",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:najran": {
+    "landmarks": [
+      {
+        "name": "موقع الأخدود الأثري",
+        "text": "بقايا مدينة قديمة تضم مباني ونقوشًا وآثار استيطان.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "سعوديبيديا — مدينة نجران",
+          "url": "https://saudipedia.com/مدينة-نجران"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%88%D9%82%D8%B9%20%D8%A7%D9%84%D8%A3%D8%AE%D8%AF%D9%88%D8%AF%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+        "caption": "الأخدود",
+        "image_key": "atlas-najran-1"
+      },
+      {
+        "name": "قصر الإمارة التاريخي",
+        "text": "قصر محصن في المدينة القديمة بني في عهد الملك عبدالعزيز.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "سعوديبيديا — مدينة نجران",
+          "url": "https://saudipedia.com/مدينة-نجران"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+        "caption": "قصر الإمارة التاريخي"
+      },
+      {
+        "name": "قصر العان",
+        "text": "قصر تراثي قديم غرب مدينة نجران.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "سعوديبيديا — مدينة نجران",
+          "url": "https://saudipedia.com/مدينة-نجران"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A7%D9%86%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+        "caption": "قصر العان",
+        "image_key": "atlas-najran-3"
+      },
+      {
+        "name": "قلعة رعوم",
+        "text": "قلعة تاريخية تعلو جبل رعوم.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "سعوديبيديا — مدينة نجران",
+          "url": "https://saudipedia.com/مدينة-نجران"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D8%B1%D8%B9%D9%88%D9%85%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86",
+        "caption": "قلعة رعوم",
+        "image_key": "city-najran"
+      }
+    ],
+    "fame": {
+      "title": "الأخدود والعمارة الطينية",
+      "text": "تشتهر بآثار الأخدود والعمارة الطينية والقصور التاريخية.",
+      "source": {
+        "label": "سعوديبيديا — مدينة نجران",
+        "url": "https://saudipedia.com/مدينة-نجران"
+      }
+    },
+    "complete": false,
+    "region_key": "najran",
+    "name": "نجران",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:al-baha": {
+    "landmarks": [
+      {
+        "name": "قرية الملد التراثية",
+        "text": "قرية حجرية تضم الحصنين المتجاورين ونسيجًا سكنيًا تقليديًا.",
+        "scope": "الملد جنوب شرق مدينة الباحة",
+        "source": {
+          "label": "سعوديبيديا — مدينة الباحة",
+          "url": "https://saudipedia.com/مدينة-الباحة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AD%D8%A9",
+        "caption": "قرية الملد التراثية"
+      }
+    ],
+    "fame": {
+      "title": "قرى السراة",
+      "text": "تتميز بقرى السراة الحجرية، ومنها قرية الملد وحصناها التاريخيان.",
+      "source": {
+        "label": "سعوديبيديا — مدينة الباحة",
+        "url": "https://saudipedia.com/مدينة-الباحة"
+      }
+    },
+    "complete": false,
+    "region_key": "baha",
+    "name": "الباحة",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:sakaka": {
+    "landmarks": [
+      {
+        "name": "قلعة زعبل",
+        "text": "حصن تاريخي على مرتفع في شمال غرب سكاكا.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "مكتبة الملك عبدالعزيز العامة — موسوعة المملكة",
+          "url": "https://saudiency.kapl.org.sa/Loader.aspx?BookID=145&PID=57&TOCID=47&pageid=38"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D8%B2%D8%B9%D8%A8%D9%84%20%D8%B3%D9%83%D8%A7%D9%83%D8%A7",
+        "caption": "قلعة زعبل",
+        "image_key": "city-sakaka"
+      },
+      {
+        "name": "بئر سيسرا",
+        "text": "بئر أثرية محفورة في الصخر من معالم سكاكا.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "مكتبة الملك عبدالعزيز العامة — موسوعة المملكة",
+          "url": "https://saudiency.kapl.org.sa/Loader.aspx?BookID=145&PID=57&TOCID=47&pageid=38"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A6%D8%B1%20%D8%B3%D9%8A%D8%B3%D8%B1%D8%A7%20%D8%B3%D9%83%D8%A7%D9%83%D8%A7",
+        "caption": "بئر سيسرا",
+        "image_key": "atlas-sakaka-2"
+      },
+      {
+        "name": "قلعة الطوير",
+        "text": "معلم من آثار العمران القديم في سكاكا.",
+        "scope": "داخل المدينة",
+        "source": {
+          "label": "مكتبة الملك عبدالعزيز العامة — موسوعة المملكة",
+          "url": "https://saudiency.kapl.org.sa/Loader.aspx?BookID=145&PID=57&TOCID=47&pageid=38"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D8%A7%D9%84%D8%B7%D9%88%D9%8A%D8%B1%20%D8%B3%D9%83%D8%A7%D9%83%D8%A7",
+        "caption": "قلعة الطوير"
+      }
+    ],
+    "fame": {
+      "title": "واحة الآثار",
+      "text": "تضم شواهد أثرية وعمرانية تعكس قدم الاستيطان في واحة سكاكا.",
+      "source": {
+        "label": "مكتبة الملك عبدالعزيز العامة — موسوعة المملكة",
+        "url": "https://saudiency.kapl.org.sa/Loader.aspx?BookID=145&PID=57&TOCID=47&pageid=38"
+      }
+    },
+    "complete": false,
+    "region_key": "jouf",
+    "name": "سكاكا",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:jazan:farasan": {
+    "landmarks": [
+      {
+        "name": "بيت الرفاعي",
+        "text": "منزل تاجر لؤلؤ تاريخي اشتهر بزخارفه.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "وكالة الأنباء السعودية — الآثار في جازان",
+          "url": "https://www.spa.gov.sa/522754"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D8%AA%20%D8%A7%D9%84%D8%B1%D9%81%D8%A7%D8%B9%D9%8A%20%D8%AC%D8%B2%D8%B1%20%D9%81%D8%B1%D8%B3%D8%A7%D9%86",
+        "caption": "بيت الرفاعي في فرسان",
+        "image_key": "atlas-jazan-3"
+      },
+      {
+        "name": "آثار وادي مطر",
+        "text": "بقايا مبانٍ ونقوش قديمة في جنوب جزيرة فرسان.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "وكالة الأنباء السعودية — الآثار في جازان",
+          "url": "https://www.spa.gov.sa/522754"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A2%D8%AB%D8%A7%D8%B1%20%D9%88%D8%A7%D8%AF%D9%8A%20%D9%85%D8%B7%D8%B1%20%D8%AC%D8%B2%D8%B1%20%D9%81%D8%B1%D8%B3%D8%A7%D9%86",
+        "caption": "آثار وادي مطر"
+      },
+      {
+        "name": "موقع الكدمي",
+        "text": "بقايا مبانٍ حجرية قديمة في قرية القصار.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "وكالة الأنباء السعودية — الآثار في جازان",
+          "url": "https://www.spa.gov.sa/522754"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%88%D9%82%D8%B9%20%D8%A7%D9%84%D9%83%D8%AF%D9%85%D9%8A%20%D8%AC%D8%B2%D8%B1%20%D9%81%D8%B1%D8%B3%D8%A7%D9%86",
+        "caption": "موقع الكدمي"
+      },
+      {
+        "name": "قلعة لقمان",
+        "text": "أنقاض تحصين قديم يعرف محليًا بجبل لقمان.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "وكالة الأنباء السعودية — الآثار في جازان",
+          "url": "https://www.spa.gov.sa/522754"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D9%84%D9%82%D9%85%D8%A7%D9%86%20%D8%AC%D8%B2%D8%B1%20%D9%81%D8%B1%D8%B3%D8%A7%D9%86",
+        "caption": "قلعة لقمان"
+      },
+      {
+        "name": "بيت الجرمل",
+        "text": "بقايا مبنى تاريخي في جزيرة قماح.",
+        "scope": "داخل النطاق الإداري",
+        "source": {
+          "label": "وكالة الأنباء السعودية — الآثار في جازان",
+          "url": "https://www.spa.gov.sa/522754"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D8%AA%20%D8%A7%D9%84%D8%AC%D8%B1%D9%85%D9%84%20%D8%AC%D8%B2%D8%B1%20%D9%81%D8%B1%D8%B3%D8%A7%D9%86",
+        "caption": "بيت الجرمل"
+      }
+    ],
+    "fame": {
+      "title": "اللؤلؤ والعمارة البحرية",
+      "text": "تحتفظ الجزر بآثار استيطان وعمارة مرتبطة بالتجارة البحرية واللؤلؤ.",
+      "source": {
+        "label": "وكالة الأنباء السعودية — الآثار في جازان",
+        "url": "https://www.spa.gov.sa/522754"
+      }
+    },
+    "complete": true,
+    "region_key": "jazan",
+    "name": "جزر فرسان",
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:riyadh:shaqra": {
+    "landmarks": [
+      {
+        "name": "قصر السبيعي",
+        "text": "قصر تراثي ارتبط بإقامة الملك عبدالعزيز في شقراء.",
+        "scope": "وسط مدينة شقراء التاريخي",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-شقراء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B3%D8%A8%D9%8A%D8%B9%D9%8A%20%D8%B4%D9%82%D8%B1%D8%A7%D8%A1",
+        "caption": "قصر السبيعي"
+      },
+      {
+        "name": "مسجد الحسيني",
+        "text": "مسجد تاريخي من معالم النسيج العمراني القديم في شقراء.",
+        "scope": "وسط مدينة شقراء التاريخي",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-شقراء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B3%D9%8A%D9%86%D9%8A%20%D8%B4%D9%82%D8%B1%D8%A7%D8%A1",
+        "caption": "مسجد الحسيني"
+      },
+      {
+        "name": "بيت آل الجميح",
+        "text": "بيت تراثي من مباني وسط شقراء التاريخي.",
+        "scope": "وسط مدينة شقراء التاريخي",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-شقراء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D8%AA%20%D8%A2%D9%84%20%D8%A7%D9%84%D8%AC%D9%85%D9%8A%D8%AD%20%D8%B4%D9%82%D8%B1%D8%A7%D8%A1",
+        "caption": "بيت آل الجميح"
+      },
+      {
+        "name": "بئر الحميضية",
+        "text": "بئر تاريخية ضمن الشواهد الباقية على منظومة المياه في شقراء القديمة.",
+        "scope": "وسط مدينة شقراء التاريخي",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-شقراء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A6%D8%B1%20%D8%A7%D9%84%D8%AD%D9%85%D9%8A%D8%B6%D9%8A%D8%A9%20%D8%B4%D9%82%D8%B1%D8%A7%D8%A1",
+        "caption": "بئر الحميضية"
+      },
+      {
+        "name": "سد وادي الريمة",
+        "text": "سد تاريخي من معالم المياه التي يذكرها المصدر ضمن تراث شقراء العمراني.",
+        "scope": "وسط مدينة شقراء التاريخي",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-شقراء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D8%AF%20%D9%88%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D9%85%D8%A9%20%D8%B4%D9%82%D8%B1%D8%A7%D8%A1",
+        "caption": "سد وادي الريمة"
+      }
+    ],
+    "fame": {
+      "title": "وسط عمراني تاريخي",
+      "text": "تحتفظ شقراء بوسط تاريخي يضم قصورًا وبيوتًا ومساجد وآبارًا وسدودًا.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-شقراء"
+      }
+    },
+    "region_key": "riyadh",
+    "name": "شقراء",
+    "complete": true,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:qassim:ar-rass": {
+    "landmarks": [
+      {
+        "name": "قصر عذلة",
+        "text": "قصر أثري يقع شرق الرس ويعد من معالم المحافظة التاريخية.",
+        "scope": "ضمن محافظة الرس",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الرس"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%B9%D8%B0%D9%84%D8%A9%20%D8%A7%D9%84%D8%B1%D8%B3",
+        "caption": "قصر عذلة"
+      },
+      {
+        "name": "ملح الجريف",
+        "text": "موقع تاريخي جنوب الرس ارتبط باستخراج الملح المستخدم في صناعة البارود.",
+        "scope": "ضمن محافظة الرس",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الرس"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%84%D8%AD%20%D8%A7%D9%84%D8%AC%D8%B1%D9%8A%D9%81%20%D8%A7%D9%84%D8%B1%D8%B3",
+        "caption": "ملح الجريف"
+      },
+      {
+        "name": "مقبرة الشهداء",
+        "text": "مقبرة تاريخية يذكرها المصدر ضمن أبرز معالم الرس.",
+        "scope": "ضمن محافظة الرس",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الرس"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%82%D8%A8%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B4%D9%87%D8%AF%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B1%D8%B3",
+        "caption": "مقبرة الشهداء"
+      },
+      {
+        "name": "مقصورة باب الأمير",
+        "text": "مقصورة شرق المحافظة، بقيت شاهدًا على السور القديم الذي كان يحيط بالرس.",
+        "scope": "ضمن محافظة الرس",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الرس"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%82%D8%B5%D9%88%D8%B1%D8%A9%20%D8%A8%D8%A7%D8%A8%20%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3",
+        "caption": "مقصورة باب الأمير"
+      },
+      {
+        "name": "برج الشنانة",
+        "text": "برج مراقبة طيني مخروطي في الجهة الجنوبية الغربية من محافظة الرس، شهد محيطه معارك تاريخية.",
+        "scope": "الشنانة، ضمن محافظة الرس",
+        "source": {
+          "label": "وكالة الأنباء السعودية",
+          "url": "https://www.spa.gov.sa/2221779"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%B1%D8%AC%20%D8%A7%D9%84%D8%B4%D9%86%D8%A7%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D8%B3",
+        "caption": "برج الشنانة"
+      }
+    ],
+    "fame": {
+      "title": "شواهد الدفاع القديمة",
+      "text": "تحفظ الرس معالم مرتبطة بتاريخ الدفاع عن البلدة، مثل مقصورة باب الأمير وبرج الشنانة.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-الرس"
+      }
+    },
+    "region_key": "qassim",
+    "name": "الرس",
+    "complete": true,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:qassim:al-bukayriyah": {
+    "landmarks": [
+      {
+        "name": "مقصورة السويلم",
+        "text": "مبنى أثري يعد من أبرز ما بقي من البلدة القديمة في البكيرية.",
+        "scope": "مدينة البكيرية",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-البكيرية"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%82%D8%B5%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D9%84%D9%85%20%D8%A7%D9%84%D8%A8%D9%83%D9%8A%D8%B1%D9%8A%D8%A9",
+        "caption": "مقصورة السويلم"
+      },
+      {
+        "name": "مقصورة الراجحي",
+        "text": "مقصورة تاريخية من معالم البلدة القديمة التي تحفظ ملامح العمارة النجدية.",
+        "scope": "مدينة البكيرية",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-البكيرية"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%82%D8%B5%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D8%AC%D8%AD%D9%8A%20%D8%A7%D9%84%D8%A8%D9%83%D9%8A%D8%B1%D9%8A%D8%A9",
+        "caption": "مقصورة الراجحي"
+      },
+      {
+        "name": "سور البكيرية الأثري",
+        "text": "سور دفاعي قديم في الجهة الشرقية من البكيرية، يزيد عمره على قرنين.",
+        "scope": "مدينة البكيرية",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-البكيرية"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%88%D8%B1%20%D8%A7%D9%84%D8%A8%D9%83%D9%8A%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%20%D8%A7%D9%84%D8%A8%D9%83%D9%8A%D8%B1%D9%8A%D8%A9",
+        "caption": "سور البكيرية الأثري"
+      }
+    ],
+    "fame": {
+      "title": "المقاصير النجدية",
+      "text": "تشهد مقصورتا السويلم والراجحي والسور القديم على تاريخ الاستقرار والعمارة في البكيرية.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-البكيرية"
+      }
+    },
+    "region_key": "qassim",
+    "name": "البكيرية",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:riyadh:al-kharj": {
+    "landmarks": [
+      {
+        "name": "قصر الملك عبدالعزيز بالسيح",
+        "text": "قصر تاريخي بحي العزيزية، أنشئ سنة 1359هـ، ويعرف أيضًا بقصر المشرف.",
+        "scope": "مدينة السيح ضمن محافظة الخرج",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الخرج"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%A8%D8%A7%D9%84%D8%B3%D9%8A%D8%AD%20%D8%A7%D9%84%D8%AE%D8%B1%D8%AC",
+        "caption": "قصر الملك عبدالعزيز بالسيح"
+      }
+    ],
+    "fame": {
+      "title": "الزراعة وصناعة الألبان",
+      "text": "تشتهر الخرج بالإنتاج الزراعي وصناعة الألبان، إلى جانب قصر الملك عبدالعزيز التاريخي في السيح.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-الخرج"
+      }
+    },
+    "region_key": "riyadh",
+    "name": "الخرج",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:eastern:al-ahsa": {
+    "landmarks": [
+      {
+        "name": "قصر إبراهيم",
+        "text": "قصر تاريخي في حي الكوت، من أبرز مواقع التراث العمراني في الأحساء.",
+        "scope": "مدينة الهفوف ضمن محافظة الأحساء",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الأحساء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1",
+        "caption": "قصر إبراهيم",
+        "image_key": "ahsa-palace"
+      },
+      {
+        "name": "بيت البيعة",
+        "text": "منزل آل الملا الذي شهد لقاء الملك عبدالعزيز ومبايعة الأهالي له؛ بني عام 1203هـ.",
+        "scope": "مدينة الهفوف ضمن محافظة الأحساء",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الأحساء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D8%AA%20%D8%A7%D9%84%D8%A8%D9%8A%D8%B9%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1",
+        "caption": "بيت البيعة"
+      },
+      {
+        "name": "المدرسة الأميرية",
+        "text": "مبنى مدرسة الهفوف الحكومية الأولى في حي الكوت؛ افتتح المبنى سنة 1360هـ.",
+        "scope": "مدينة الهفوف ضمن محافظة الأحساء",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الأحساء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%85%D8%AF%D8%B1%D8%B3%D8%A9%20%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1",
+        "caption": "المدرسة الأميرية"
+      },
+      {
+        "name": "قصر خزام",
+        "text": "قلعة دفاعية تاريخية بحي الرقيقة، شيدت في عهد الإمام سعود بن عبدالعزيز عام 1220هـ.",
+        "scope": "مدينة الهفوف ضمن محافظة الأحساء",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الأحساء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%AE%D8%B2%D8%A7%D9%85%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1",
+        "caption": "قصر خزام"
+      },
+      {
+        "name": "سوق القيصرية",
+        "text": "سوق تاريخية من أبرز المعالم التراثية والتجارية في الأحساء.",
+        "scope": "مدينة الهفوف ضمن محافظة الأحساء",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الأحساء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%88%D9%82%20%D8%A7%D9%84%D9%82%D9%8A%D8%B5%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1",
+        "caption": "سوق القيصرية",
+        "image_key": "hofuf"
+      }
+    ],
+    "fame": {
+      "title": "الواحة والتراث العمراني",
+      "text": "تجمع الأحساء تاريخ الاستيطان الزراعي بمعالم عمرانية كقصر إبراهيم والمدرسة الأميرية وبيت البيعة.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-الأحساء"
+      }
+    },
+    "region_key": "eastern",
+    "name": "الأحساء",
+    "complete": true,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:makkah:taif": {
+    "landmarks": [
+      {
+        "name": "قصر شبرا",
+        "text": "قصر تاريخي تحول إلى متحف، وارتبط بالإدارة الحكومية في عهد الملك عبدالعزيز.",
+        "scope": "مدينة الطائف",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الطائف"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%B4%D8%A8%D8%B1%D8%A7%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+        "caption": "قصر شبرا",
+        "image_key": "atlas-taif-1"
+      },
+      {
+        "name": "قصر الكعكي",
+        "text": "قصر تاريخي أنشئ عام 1358هـ، يجمع ثلاثة أدوار وبستانًا وملامح معمارية مميزة.",
+        "scope": "مدينة الطائف",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الطائف"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D9%83%D8%B9%D9%83%D9%8A%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+        "caption": "قصر الكعكي"
+      },
+      {
+        "name": "قصر الكاتب",
+        "text": "قصر يعرف بقصر النيابة، ارتبط بإقامة الملك فيصل الصيفية في الطائف.",
+        "scope": "مدينة الطائف",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الطائف"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D9%83%D8%A7%D8%AA%D8%A8%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+        "caption": "قصر الكاتب"
+      },
+      {
+        "name": "قصر جبرة",
+        "text": "قصر شمال شرقي الطائف قرب وادي وج، يضم طوابق وبهوًا وغرفًا مزخرفة.",
+        "scope": "مدينة الطائف",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الطائف"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%AC%D8%A8%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+        "caption": "قصر جبرة"
+      },
+      {
+        "name": "مسجد المدهون",
+        "text": "مسجد تاريخي في حي المثناة، بني في القرن الثالث عشر الهجري على سفح جبل المدهون.",
+        "scope": "مدينة الطائف",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الطائف"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D9%85%D8%AF%D9%87%D9%88%D9%86%20%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81",
+        "caption": "مسجد المدهون"
+      }
+    ],
+    "fame": {
+      "title": "القصور التاريخية",
+      "text": "تشتهر الطائف بقصورها التاريخية التي ارتبط بعضها بإقامة الحكومة والملوك في الصيف.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-الطائف"
+      }
+    },
+    "region_key": "makkah",
+    "name": "الطائف",
+    "complete": true,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:madinah:yanbu": {
+    "landmarks": [
+      {
+        "name": "بيت بابطين",
+        "text": "بيت تاريخي من مباني حي الصور، يحفظ جانبًا من التراث السكني والتجاري لينبع.",
+        "scope": "حي الصور التاريخي، ينبع البحر",
+        "source": {
+          "label": "هيئة التراث — مركز زوار حي الصور بينبع",
+          "url": "https://heritage.moc.gov.sa/-/media/Project/Ministries/Commission/heritage/Centers/yunbu.pdf"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D8%AA%20%D8%A8%D8%A7%D8%A8%D8%B7%D9%8A%D9%86%20%D9%8A%D9%86%D8%A8%D8%B9",
+        "caption": "بيت بابطين"
+      },
+      {
+        "name": "بيت الخطيب",
+        "text": "بيت تاريخي في حي الصور، من الشواهد على العمارة المحلية في ينبع البحر.",
+        "scope": "حي الصور التاريخي، ينبع البحر",
+        "source": {
+          "label": "هيئة التراث — مركز زوار حي الصور بينبع",
+          "url": "https://heritage.moc.gov.sa/-/media/Project/Ministries/Commission/heritage/Centers/yunbu.pdf"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D8%AA%20%D8%A7%D9%84%D8%AE%D8%B7%D9%8A%D8%A8%20%D9%8A%D9%86%D8%A8%D8%B9",
+        "caption": "بيت الخطيب"
+      },
+      {
+        "name": "بيت جبرتي",
+        "text": "بيت تراثي تدرجه هيئة التراث ضمن أبرز المباني التاريخية لحي الصور.",
+        "scope": "حي الصور التاريخي، ينبع البحر",
+        "source": {
+          "label": "هيئة التراث — مركز زوار حي الصور بينبع",
+          "url": "https://heritage.moc.gov.sa/-/media/Project/Ministries/Commission/heritage/Centers/yunbu.pdf"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D8%AA%20%D8%AC%D8%A8%D8%B1%D8%AA%D9%8A%20%D9%8A%D9%86%D8%A8%D8%B9",
+        "caption": "بيت جبرتي"
+      },
+      {
+        "name": "بيت الشامي",
+        "text": "أحد البيوت التاريخية المسماة في حي الصور بينبع البحر.",
+        "scope": "حي الصور التاريخي، ينبع البحر",
+        "source": {
+          "label": "هيئة التراث — مركز زوار حي الصور بينبع",
+          "url": "https://heritage.moc.gov.sa/-/media/Project/Ministries/Commission/heritage/Centers/yunbu.pdf"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D8%AA%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%8A%20%D9%8A%D9%86%D8%A8%D8%B9",
+        "caption": "بيت الشامي"
+      },
+      {
+        "name": "بيت آل درويش",
+        "text": "بيت تاريخي من مباني حي الصور التي توثق الموروث العمراني لينبع.",
+        "scope": "حي الصور التاريخي، ينبع البحر",
+        "source": {
+          "label": "هيئة التراث — مركز زوار حي الصور بينبع",
+          "url": "https://heritage.moc.gov.sa/-/media/Project/Ministries/Commission/heritage/Centers/yunbu.pdf"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D8%AA%20%D8%A2%D9%84%20%D8%AF%D8%B1%D9%88%D9%8A%D8%B4%20%D9%8A%D9%86%D8%A8%D8%B9",
+        "caption": "بيت آل درويش"
+      }
+    ],
+    "fame": {
+      "title": "الميناء والعمارة الساحلية",
+      "text": "حفظ حي الصور في ينبع البحر بيوت التجار وملامح البناء الساحلي المرتبط بتاريخ التجارة والحج.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-ينبع"
+      }
+    },
+    "region_key": "madinah",
+    "name": "ينبع",
+    "complete": true,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:makkah:al-qunfudhah": {
+    "landmarks": [
+      {
+        "name": "طاحونة القنفذة",
+        "text": "طاحونة حجرية تاريخية كانت تطحن الحبوب بمحرك شراعي، ثم استخدمت مخزنًا للوقود.",
+        "scope": "مدينة القنفذة",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-القنفذة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%B7%D8%A7%D8%AD%D9%88%D9%86%D8%A9%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9%20%D8%A7%D9%84%D9%82%D9%86%D9%81%D8%B0%D8%A9",
+        "caption": "طاحونة القنفذة"
+      }
+    ],
+    "fame": {
+      "title": "تجارة الساحل",
+      "text": "ارتبط تاريخ القنفذة بموقعها الساحلي على مسارات التجارة القديمة، وتبقى طاحونة المدينة من شواهد ماضيها.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-القنفذة"
+      }
+    },
+    "region_key": "makkah",
+    "name": "القنفذة",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:makkah:jeddah": {
+    "landmarks": [
+      {
+        "name": "بيت نصيف",
+        "text": "بيت حجازي تاريخي ارتبط بإقامة الملك عبدالعزيز عند دخوله جدة.",
+        "scope": "مدينة جدة",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/مدينة-جدة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D8%AA%20%D9%86%D8%B5%D9%8A%D9%81%20%D8%AC%D8%AF%D8%A9",
+        "caption": "بيت نصيف",
+        "image_key": "jeddah-house"
+      },
+      {
+        "name": "قصر خزام",
+        "text": "قصر ملكي تاريخي أمر ببنائه الملك عبدالعزيز، وأصبح مقرًا لمتحف جدة.",
+        "scope": "مدينة جدة",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/مدينة-جدة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%AE%D8%B2%D8%A7%D9%85%20%D8%AC%D8%AF%D8%A9",
+        "caption": "قصر خزام"
+      },
+      {
+        "name": "مسجد الشافعي",
+        "text": "مسجد تاريخي في حارة المظلوم، يتميز بساحته المكشوفة وعمارته التقليدية.",
+        "scope": "مدينة جدة",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/مدينة-جدة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D8%B4%D8%A7%D9%81%D8%B9%D9%8A%20%D8%AC%D8%AF%D8%A9",
+        "caption": "مسجد الشافعي"
+      },
+      {
+        "name": "مسجد المعمار",
+        "text": "مسجد تاريخي في جدة البلد، عرف بارتفاعه عن مستوى الشارع وعناصره الخشبية.",
+        "scope": "مدينة جدة",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/مدينة-جدة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D9%85%D8%B9%D9%85%D8%A7%D8%B1%20%D8%AC%D8%AF%D8%A9",
+        "caption": "مسجد المعمار"
+      },
+      {
+        "name": "مسجد عكاش",
+        "text": "مسجد تاريخي في جدة القديمة، يورد المصدر أن بناءه يعود إلى عام 1200هـ.",
+        "scope": "مدينة جدة",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/مدينة-جدة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%B9%D9%83%D8%A7%D8%B4%20%D8%AC%D8%AF%D8%A9",
+        "caption": "مسجد عكاش"
+      }
+    ],
+    "fame": {
+      "title": "العمارة الحجازية",
+      "text": "تحفظ جدة التاريخية بيوتًا ومساجد ذات عمارة حجازية، وارتبط بيت نصيف بإقامة الملك عبدالعزيز.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/مدينة-جدة"
+      }
+    },
+    "region_key": "makkah",
+    "name": "جدة",
+    "complete": true,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:madinah:alula": {
+    "landmarks": [
+      {
+        "name": "الحجر",
+        "text": "موقع أثري يشكل أحد النطاقات التراثية الأساسية في مخطط العلا.",
+        "scope": "ضمن محافظة العلا",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/العلا"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%AD%D8%AC%D8%B1%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7",
+        "caption": "الحجر"
+      },
+      {
+        "name": "دادان",
+        "text": "مدينة أثرية تمثل إحدى مناطق التراث الرئيسية في العلا.",
+        "scope": "ضمن محافظة العلا",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/العلا"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%AF%D8%A7%D8%AF%D8%A7%D9%86%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7",
+        "caption": "دادان"
+      },
+      {
+        "name": "جبل عكمة",
+        "text": "موقع تراثي للنقوش القديمة، ضمن المناطق الأساسية التي تعنى بها الهيئة الملكية.",
+        "scope": "ضمن محافظة العلا",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/العلا"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D8%A8%D9%84%20%D8%B9%D9%83%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7",
+        "caption": "جبل عكمة"
+      },
+      {
+        "name": "بلدة العلا القديمة",
+        "text": "بلدة تاريخية تشكل المنطقة الأولى في مخطط رحلة عبر الزمن بالعلا.",
+        "scope": "ضمن محافظة العلا",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/العلا"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%84%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7%20%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D9%85%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7",
+        "caption": "بلدة العلا القديمة"
+      },
+      {
+        "name": "قرية المابيات الأثرية",
+        "text": "مدينة إسلامية مبكرة عرفت بقرح؛ كشفت التنقيبات عن أسوار ومساكن وآثار من العصرين الأموي والعباسي.",
+        "scope": "قرح، ضمن محافظة العلا",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/العلا"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%A7%D8%A8%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D8%A7",
+        "caption": "قرية المابيات الأثرية"
+      }
+    ],
+    "fame": {
+      "title": "ممالك وآثار قديمة",
+      "text": "تشتهر العلا بالحجر ودادان وجبل عكمة والبلدة القديمة، وبآثار الاستيطان الإسلامي المبكر في قرح.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/العلا"
+      }
+    },
+    "region_key": "madinah",
+    "name": "العلا",
+    "complete": true,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:madinah": {
+    "landmarks": [
+      {
+        "name": "المسجد النبوي",
+        "text": "يرتبط تأسيس المسجد بهجرة النبي ﷺ إلى المدينة. وتكشف عمارته وتوسعاته المتعاقبة امتداد العناية به عبر القرون.",
+        "scope": "داخل المدينة",
+        "image_key": "city-madinah",
+        "caption": "المسجد النبوي",
+        "source": {
+          "label": "سعوديبيديا — المدينة المنورة",
+          "url": "https://saudipedia.com/المدينة-المنورة"
+        },
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+        "kind": "heritage-history"
+      },
+      {
+        "name": "مسجد الغمامة",
+        "text": "مسجد تاريخي جنوب غربي المسجد النبوي، شملته أعمال ترميم مواقع التاريخ الإسلامي.",
+        "scope": "مدينة المدينة المنورة",
+        "source": {
+          "label": "مصدر رسمي",
+          "url": "https://pep.gov.sa/ar/node/542"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D8%BA%D9%85%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+        "caption": "مسجد الغمامة"
+      },
+      {
+        "name": "مسجد أبي بكر الصديق",
+        "text": "مسجد تاريخي في منطقة الغمامة، أعيد تأهيله ضمن جهود العناية بتراث المدينة.",
+        "scope": "مدينة المدينة المنورة",
+        "source": {
+          "label": "مصدر رسمي",
+          "url": "https://pep.gov.sa/ar/node/542"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A3%D8%A8%D9%8A%20%D8%A8%D9%83%D8%B1%20%D8%A7%D9%84%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+        "caption": "مسجد أبي بكر الصديق"
+      },
+      {
+        "name": "مسجد عمر بن الخطاب",
+        "text": "مسجد تاريخي قرب الغمامة، من المواقع التي شملتها مشروعات التأهيل والترميم.",
+        "scope": "مدينة المدينة المنورة",
+        "source": {
+          "label": "مصدر رسمي",
+          "url": "https://pep.gov.sa/ar/node/542"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%B9%D9%85%D8%B1%20%D8%A8%D9%86%20%D8%A7%D9%84%D8%AE%D8%B7%D8%A7%D8%A8%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+        "caption": "مسجد عمر بن الخطاب"
+      },
+      {
+        "name": "مسجد قباء",
+        "text": "مسجد مرتبط ببداية الهجرة النبوية، يقع جنوب غربي المدينة المنورة.",
+        "scope": "مدينة المدينة المنورة",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/مسجد-قباء"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D9%82%D8%A8%D8%A7%D8%A1%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9",
+        "caption": "مسجد قباء",
+        "image_key": "atlas-madinah-2"
+      }
+    ],
+    "fame": {
+      "title": "مدينة الهجرة والمسجد النبوي",
+      "text": "ارتبطت المدينة المنورة بالهجرة النبوية، ويحتل المسجد النبوي مكانة محورية في تاريخها وحياة زوارها.",
+      "source": {
+        "label": "سعوديبيديا — المدينة المنورة",
+        "url": "https://saudipedia.com/المدينة-المنورة"
+      }
+    },
+    "region_key": "madinah",
+    "name": "المدينة المنورة",
+    "complete": true,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:makkah": {
+    "landmarks": [
+      {
+        "name": "المسجد الحرام",
+        "text": "تتوسطه الكعبة المشرفة، قبلة المسلمين. وترتبط به حكاية مكة والحج والعمرة والتوسعات المتعاقبة.",
+        "scope": "داخل المدينة",
+        "image_key": "atlas-makkah-1",
+        "caption": "المسجد الحرام",
+        "source": {
+          "label": "سعوديبيديا — مكة المكرمة",
+          "url": "https://saudipedia.com/مدينة-مكة-المكرمة"
+        },
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A7%D9%85%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+        "kind": "heritage-history"
+      },
+      {
+        "name": "قصر السقاف",
+        "text": "قصر تاريخي بحي المعابدة، ارتبط بإدارة الدولة واستقبال الضيوف والوفود.",
+        "scope": "مدينة مكة المكرمة",
+        "source": {
+          "label": "وكالة الأنباء السعودية",
+          "url": "https://www.spa.gov.sa/N2404473"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B3%D9%82%D8%A7%D9%81%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+        "caption": "قصر السقاف"
+      },
+      {
+        "name": "مسجد البيعة",
+        "text": "مسجد عباسي أنشئ تخليدًا لموضع بيعة العقبة، على حدود مشعر منى.",
+        "scope": "منى، شرق مكة المكرمة",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/مسجد-البيعة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D8%A8%D9%8A%D8%B9%D8%A9%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+        "caption": "مسجد البيعة"
+      },
+      {
+        "name": "مسجد الراية",
+        "text": "مسجد تاريخي بالجودرية، يرتبط موقعه بركز الراية عند فتح مكة.",
+        "scope": "مدينة مكة المكرمة",
+        "source": {
+          "label": "وكالة الأنباء السعودية",
+          "url": "https://www.spa.gov.sa/2132104"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D8%B1%D8%A7%D9%8A%D8%A9%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+        "caption": "مسجد الراية"
+      },
+      {
+        "name": "مسجد الجن",
+        "text": "مسجد تاريخي يعرف أيضًا بمسجد الحرس، من معالم مكة المرتبطة بالسيرة النبوية.",
+        "scope": "مدينة مكة المكرمة",
+        "source": {
+          "label": "وكالة الأنباء السعودية",
+          "url": "https://www.spa.gov.sa/2132104"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D8%AC%D9%86%20%D9%85%D9%83%D8%A9%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%85%D8%A9",
+        "caption": "مسجد الجن"
+      }
+    ],
+    "fame": {
+      "title": "البيت الحرام",
+      "text": "تُعرف مكة بالمسجد الحرام والكعبة، وارتباطها بالحج والعمرة وتاريخ الرسالة الإسلامية.",
+      "source": {
+        "label": "سعوديبيديا — مكة المكرمة",
+        "url": "https://saudipedia.com/مدينة-مكة-المكرمة"
+      }
+    },
+    "region_key": "makkah",
+    "name": "مكة المكرمة",
+    "complete": true,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:riyadh": {
+    "landmarks": [
+      {
+        "name": "قصر المصمك",
+        "text": "حصن تاريخي ارتبط باسترداد الملك عبدالعزيز للرياض سنة 1319هـ، ومقدمة توحيد البلاد.",
+        "scope": "مدينة الرياض",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/مدينة-الرياض"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D8%B5%D9%85%D9%83%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "caption": "قصر المصمك",
+        "image_key": "riyadh"
+      },
+      {
+        "name": "قصر المربع",
+        "text": "قصر الملك عبدالعزيز الذي انتقل إليه عام 1357هـ، بعد بناء مجمع قصور خارج أسوار الرياض القديمة.",
+        "scope": "مدينة الرياض",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قصر-المربع"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D9%85%D8%B1%D8%A8%D8%B9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "caption": "قصر المربع",
+        "image_key": "atlas-riyadh-2"
+      },
+      {
+        "name": "القصر الأحمر",
+        "text": "قصر شمال حديقة الفوطة، أمر الملك عبدالعزيز ببنائه لولي عهده سعود، ثم احتضن مجلس الوزراء.",
+        "scope": "مدينة الرياض",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/أين-يقع-قصر-الحمراء؟"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%A3%D8%AD%D9%85%D8%B1%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "caption": "القصر الأحمر"
+      },
+      {
+        "name": "قصر الحكم",
+        "text": "موضع تاريخي للحكم والسكن واستقبال الوفود في عهد الدولة السعودية الثانية والملك عبدالعزيز؛ أعيد بناؤه لاحقًا.",
+        "scope": "وسط مدينة الرياض",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قصر-الحكم"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AD%D9%83%D9%85%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "caption": "قصر الحكم"
+      },
+      {
+        "name": "جامع الإمام تركي بن عبدالله",
+        "text": "جامع تاريخي أنشئ قرب قصر الحكم في عهد مؤسس الدولة السعودية الثانية، وعرف بدوره العلمي.",
+        "scope": "وسط مدينة الرياض",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/جامع-الإمام-تركي-بن-عبدالله"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D8%A7%D9%85%D8%B9%20%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D9%85%20%D8%AA%D8%B1%D9%83%D9%8A%20%D8%A8%D9%86%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6",
+        "caption": "جامع الإمام تركي بن عبدالله"
+      }
+    ],
+    "fame": {
+      "title": "استرداد الرياض",
+      "text": "ارتبط حصن المصمك باسترداد الملك عبدالعزيز للرياض، الحدث الذي مهد لتوحيد البلاد.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/مدينة-الرياض"
+      }
+    },
+    "region_key": "riyadh",
+    "name": "الرياض",
+    "complete": true,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:buraidah": {
+    "landmarks": [
+      {
+        "name": "مسجد المعارك",
+        "text": "مسجد تاريخي من الطين والحجر، تعكس سرحته وخلوته ومئذنته أساليب العمارة النجدية.",
+        "scope": "حي وهطان في مدينة بريدة",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/مسجد-المعارك"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D9%83%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+        "caption": "مسجد المعارك"
+      },
+      {
+        "name": "قصر الدبيخي التراثي",
+        "text": "مبنى طيني في القويع مصنف ضمن المواقع الأثرية، ويضم مقتنيات توثق الحياة التقليدية والحرف والزراعة؛ افتتح متحفه عام 2012م.",
+        "scope": "القويع في الجهة الغربية من بريدة؛ تصفه واس بحي القويع في المدينة",
+        "source": {
+          "label": "سعوديبيديا — قصر الدبيخي التراثي",
+          "url": "https://saudipedia.com/قصر-الدبيخي-التراثي"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AF%D8%A8%D9%8A%D8%AE%D9%8A%20%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A%20%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9",
+        "caption": "قصر الدبيخي التراثي"
+      }
+    ],
+    "fame": {
+      "title": "العمارة النجدية",
+      "text": "يحفظ مسجد المعارك في بريدة نموذجًا للعمارة النجدية التقليدية بالطين والحجر وخشب الأثل.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/مسجد-المعارك"
+      }
+    },
+    "region_key": "qassim",
+    "name": "بريدة",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:eastern:qatif": {
+    "landmarks": [
+      {
+        "name": "قلعة تاروت",
+        "text": "قلعة تاريخية على تل أثري جنوب غربي بلدة تاروت القديمة، بعيدًا عن مدينة الدمام.",
+        "scope": "جزيرة تاروت ضمن محافظة القطيف",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قلعة-تاروت"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D9%84%D8%B9%D8%A9%20%D8%AA%D8%A7%D8%B1%D9%88%D8%AA%20%D8%A7%D9%84%D9%82%D8%B7%D9%8A%D9%81",
+        "caption": "قلعة تاروت",
+        "image_key": "atlas-qatif-1"
+      },
+      {
+        "name": "قصر دارين",
+        "text": "قلعة تعرف بقصر الفيحاني؛ أعيد بناؤها عام 1303هـ فوق أساسات سابقة قرب الساحل الجنوبي لدارين.",
+        "scope": "دارين، ضمن محافظة القطيف",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/آثار-جزيرة-دارين"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%AF%D8%A7%D8%B1%D9%8A%D9%86%20%D8%A7%D9%84%D9%82%D8%B7%D9%8A%D9%81",
+        "caption": "قصر دارين"
+      },
+      {
+        "name": "حفرية دارين",
+        "text": "موقع أثري في دارين، يدرجه المصدر ضمن المواقع الأثرية المسجلة في الجزيرة.",
+        "scope": "دارين، ضمن محافظة القطيف",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/آثار-جزيرة-دارين"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%AD%D9%81%D8%B1%D9%8A%D8%A9%20%D8%AF%D8%A7%D8%B1%D9%8A%D9%86%20%D8%A7%D9%84%D9%82%D8%B7%D9%8A%D9%81",
+        "caption": "حفرية دارين"
+      }
+    ],
+    "fame": {
+      "title": "تاريخ بحري وواحة قديمة",
+      "text": "تشتهر القطيف بتاريخ الاستيطان والزراعة والتجارة البحرية، وتضم قلعة تاروت وآثار دارين.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-القطيف"
+      }
+    },
+    "region_key": "eastern",
+    "name": "القطيف",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:dammam": {
+    "landmarks": [
+      {
+        "name": "الموقع التاريخي لقلعة الدمام",
+        "text": "تذكر الموسوعة قلعة كانت قائمة على طبقة صخرية على الشاطئ قرب مقر الإمارة. هذا توثيق للموقع التاريخي، وليس تأكيدًا لبقاء المبنى أو إتاحته للزيارة.",
+        "scope": "الساحل التاريخي لمدينة الدمام",
+        "source": {
+          "label": "مكتبة الملك عبدالعزيز العامة — موسوعة المملكة",
+          "url": "https://saudiency.kapl.org.sa/Loader.aspx?BookID=57&PID=92&TOCID=66&pageid=22"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B9%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A%20%D9%84%D9%82%D9%84%D8%B9%D8%A9%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85",
+        "caption": "الموقع التاريخي لقلعة الدمام"
+      }
+    ],
+    "fame": {
+      "title": "مقر إمارة الشرقية",
+      "text": "الدمام العاصمة الإدارية للمنطقة الشرقية ومقر إمارتها، وتقع جنوب محافظة القطيف على ساحل الخليج العربي.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-القطيف"
+      }
+    },
+    "region_key": "eastern",
+    "name": "الدمام",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:eastern:khobar": {
+    "landmarks": [
+      {
+        "name": "فرضة الخبر",
+        "text": "ميناء الخبر القديم، من المعالم التاريخية التي تذكرها هيئة تطوير المنطقة الشرقية ضمن إرث المدينة البحري والتجاري.",
+        "scope": "مدينة الخبر، الميناء القديم",
+        "source": {
+          "label": "هيئة تطوير المنطقة الشرقية — ملف مدينة الخبر",
+          "url": "https://sda.gov.sa/media/documents/d/sda-website/profile-imd-ar"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%81%D8%B1%D8%B6%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1%20%D8%A7%D9%84%D8%AE%D8%A8%D8%B1",
+        "caption": "فرضة الخبر"
+      }
+    ],
+    "fame": {
+      "title": "مدينة ساحلية",
+      "text": "تقع الخبر على ساحل الخليج العربي، وتبرز بوصفها مدينة تجارية وسياحية في المنطقة الشرقية.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-الخبر"
+      }
+    },
+    "region_key": "eastern",
+    "name": "الخبر",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:qassim:unaizah": {
+    "landmarks": [
+      {
+        "name": "بيت البسام",
+        "text": "بيت تراثي غرب المدينة يعكس أساليب العمارة النجدية، ويعود إلى سنة 1378هـ.",
+        "scope": "مدينة عنيزة",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-عنيزة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D9%8A%D8%AA%20%D8%A7%D9%84%D8%A8%D8%B3%D8%A7%D9%85%20%D8%B9%D9%86%D9%8A%D8%B2%D8%A9",
+        "caption": "بيت البسام",
+        "image_key": "atlas-unaizah-2"
+      },
+      {
+        "name": "مسجد الجوز",
+        "text": "مسجد تاريخي بني عام 1237هـ، يحتفظ بعناصر كالسرحة والمصباح والخلوة الملائمة للمناخ النجدي.",
+        "scope": "حي الجوز وسط عنيزة",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/مسجد-الجوز"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D8%AC%D9%88%D8%B2%20%D8%B9%D9%86%D9%8A%D8%B2%D8%A9",
+        "caption": "مسجد الجوز"
+      },
+      {
+        "name": "مسجد الفاخرية التراثي",
+        "text": "مسجد تراثي في عنيزة، تذكر وكالة الأنباء السعودية إسهام الحرفيين المحليين في مشروع ترميمه.",
+        "scope": "ضمن محافظة عنيزة",
+        "source": {
+          "label": "وكالة الأنباء السعودية",
+          "url": "https://www.spa.gov.sa/w730593"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D9%81%D8%A7%D8%AE%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A%20%D8%B9%D9%86%D9%8A%D8%B2%D8%A9",
+        "caption": "مسجد الفاخرية التراثي"
+      }
+    ],
+    "fame": {
+      "title": "محطة القوافل",
+      "text": "أسهم موقع عنيزة في جعلها ملتقى لقوافل التجارة والحج، وتحفظ بيوتًا ومساجد تاريخية.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-عنيزة"
+      }
+    },
+    "region_key": "qassim",
+    "name": "عنيزة",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:riyadh:diriyah": {
+    "landmarks": [
+      {
+        "name": "قصر سلوى",
+        "text": "قصر حكم الدولة السعودية الأولى في حي الطريف، ومن أبرز شواهد تاريخ الدرعية.",
+        "scope": "الدرعية التاريخية",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الدرعية"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%82%D8%B5%D8%B1%20%D8%B3%D9%84%D9%88%D9%89%20%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9",
+        "caption": "قصر سلوى",
+        "image_key": "atlas-diriyah-2"
+      },
+      {
+        "name": "حي غصيبة",
+        "text": "موضع تاريخي محصن اتخذه مانع المريدي مقرًا للحكم عند تأسيس الدرعية.",
+        "scope": "الدرعية التاريخية",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/محافظة-الدرعية"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%AD%D9%8A%20%D8%BA%D8%B5%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9",
+        "caption": "حي غصيبة"
+      },
+      {
+        "name": "مسجد الظويهرة",
+        "text": "مسجد تاريخي يعرف بمسجد الحوطة، يحفظ أروقة وخلوة وعناصر من العمارة المحلية.",
+        "scope": "حي البجيري بالدرعية",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/مسجد-الظويهرة"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AC%D8%AF%20%D8%A7%D9%84%D8%B8%D9%88%D9%8A%D9%87%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9",
+        "caption": "مسجد الظويهرة"
+      }
+    ],
+    "fame": {
+      "title": "عاصمة الدولة السعودية الأولى",
+      "text": "كانت الدرعية عاصمة الدولة السعودية الأولى، وتحفظ عمارتها الطينية وقصر الحكم في حي الطريف.",
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/محافظة-الدرعية"
+      }
+    },
+    "region_key": "riyadh",
+    "name": "الدرعية",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:dhahran": {
+    "fame": {
+      "title": "بدايات صناعة النفط",
+      "text": "ارتبط اسم الظهران ببدايات إنتاج النفط التجاري وبئر الدمام رقم ٧، التي عُرفت ببئر الخير.",
+      "source": {
+        "label": "سعوديبيديا — مدينة الظهران",
+        "url": "https://saudipedia.com/مدينة-الظهران"
+      }
+    },
+    "landmarks": [
+      {
+        "name": "بئر الدمام رقم ٧",
+        "text": "موقع تاريخي لصناعة النفط؛ بدأ منه إنتاج تجاري سنة ١٩٣٨م.",
+        "scope": "مدينة الظهران",
+        "source": {
+          "label": "سعوديبيديا — مدينة الظهران",
+          "url": "https://saudipedia.com/مدينة-الظهران"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A6%D8%B1%20%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85%20%D8%B1%D9%82%D9%85%20%D9%A7%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+        "caption": "بئر الدمام رقم ٧ — صورة من عام ١٩٣٨م",
+        "image_key": "atlas-dhahran-2"
+      },
+      {
+        "name": "مدافن الظهران الأثرية",
+        "text": "حقل مدافن تليّة يكشف عن استيطان قديم، وترتبط به شواهد من عصور متعاقبة.",
+        "scope": "جنوب مدينة الظهران",
+        "source": {
+          "label": "سعوديبيديا — الآثار في السعودية",
+          "url": "https://saudipedia.com/الآثار-في-السعودية"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AF%D8%A7%D9%81%D9%86%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+        "caption": "مدافن الظهران الأثرية"
+      }
+    ],
+    "region_key": "eastern",
+    "name": "الظهران",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:jubail": {
+    "fame": {
+      "title": "ذاكرة البحر والتجارة",
+      "text": "تحفظ الجبيل معالم من تاريخ التجارة والعمران الساحلي، إلى جانب مواقع أثرية في الجبيل الصناعية.",
+      "source": {
+        "label": "سعوديبيديا — محافظة الجبيل",
+        "url": "https://saudipedia.com/محافظة-الجبيل"
+      }
+    },
+    "landmarks": [
+      {
+        "name": "برج الطوية",
+        "text": "برج تاريخي ارتبط بحماية مصدر الماء في بدايات الدولة السعودية الحديثة.",
+        "scope": "مدينة الجبيل",
+        "source": {
+          "label": "سعوديبيديا — محافظة الجبيل",
+          "url": "https://saudipedia.com/محافظة-الجبيل"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%B1%D8%AC%20%D8%A7%D9%84%D8%B7%D9%88%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84",
+        "caption": "برج الطوية"
+      },
+      {
+        "name": "جمرك الجبيل التراثي",
+        "text": "موقع يرتبط بحركة التجارة البحرية في الجبيل القديمة.",
+        "scope": "مدينة الجبيل",
+        "source": {
+          "label": "سعوديبيديا — محافظة الجبيل",
+          "url": "https://saudipedia.com/محافظة-الجبيل"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%AC%D9%85%D8%B1%D9%83%20%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84%20%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A%20%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84",
+        "caption": "جمرك الجبيل التراثي"
+      },
+      {
+        "name": "موقع الدفي الأثري",
+        "text": "مستوطنة أثرية تحوي شواهد على تاريخ الاستقرار في الساحل الشرقي.",
+        "scope": "مدينة الجبيل الصناعية",
+        "source": {
+          "label": "سعوديبيديا — محافظة الجبيل",
+          "url": "https://saudipedia.com/محافظة-الجبيل"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%88%D9%82%D8%B9%20%D8%A7%D9%84%D8%AF%D9%81%D9%8A%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84",
+        "caption": "موقع الدفي الأثري"
+      },
+      {
+        "name": "موقع مردومة الأثري",
+        "text": "موقع أثري داخل الجبيل الصناعية، من سجل الاستيطان القديم للمنطقة.",
+        "scope": "مدينة الجبيل الصناعية",
+        "source": {
+          "label": "سعوديبيديا — محافظة الجبيل",
+          "url": "https://saudipedia.com/محافظة-الجبيل"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D9%88%D9%82%D8%B9%20%D9%85%D8%B1%D8%AF%D9%88%D9%85%D8%A9%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%20%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84",
+        "caption": "موقع مردومة الأثري"
+      }
+    ],
+    "region_key": "eastern",
+    "name": "الجبيل",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "city:hafar-al-batin": {
+    "fame": {
+      "title": "آبار على طريق الحجاج",
+      "text": "ارتبط تاريخ حفر الباطن بآبار أبي موسى، مورد الماء لقوافل الحج والتجارة بين العراق وداخل الجزيرة.",
+      "source": {
+        "label": "جامعة حفر الباطن — تقرير التنمية المستدامة",
+        "url": "https://www.uhb.edu.sa/Lists/Deanship%20Forms/تقرير%20التنمية%20المستدامة%202024.pdf"
+      }
+    },
+    "landmarks": [
+      {
+        "name": "آبار أبي موسى الأشعري",
+        "text": "مورد تاريخي ارتبط بنشأة الحفر وخدمة قوافل الحجاج عبر طريق البصرة.",
+        "scope": "مدينة حفر الباطن",
+        "source": {
+          "label": "جامعة حفر الباطن — تقرير التنمية المستدامة",
+          "url": "https://www.uhb.edu.sa/Lists/Deanship%20Forms/تقرير%20التنمية%20المستدامة%202024.pdf"
+        },
+        "kind": "heritage-history",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A2%D8%A8%D8%A7%D8%B1%20%D8%A3%D8%A8%D9%8A%20%D9%85%D9%88%D8%B3%D9%89%20%D8%A7%D9%84%D8%A3%D8%B4%D8%B9%D8%B1%D9%8A%20%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86",
+        "caption": "آبار أبي موسى الأشعري"
+      }
+    ],
+    "region_key": "eastern",
+    "name": "حفر الباطن",
+    "complete": false,
+    "coverage_note": "تعرض القائمة ما توثق داخل حدود المكان فقط، بحد أقصى خمسة معالم."
+  },
+  "gov:madinah:mahd-al-dhahab": {
+    "name": "مهد الذهب",
+    "region_key": "madinah",
+    "landmarks": [
+      {
+        "name": "معدن بني سليم الأثري",
+        "text": "موقع تعدين قديم يكشف عن آثار استقرار إسلامي وأدوات لاستخراج الذهب ومعالجته. عرض تاريخي للموقع؛ لا يعني إتاحة دخول مواقع التعدين العاملة.",
+        "scope": "داخل محافظة مهد الذهب",
+        "kind": "heritage-history",
+        "caption": "معدن بني سليم الأثري",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B9%D8%AF%D9%86%20%D8%A8%D9%86%D9%8A%20%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%A3%D8%AB%D8%B1%D9%8A%20%D9%85%D9%87%D8%AF%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8",
+        "source": {
+          "label": "سعوديبيديا — الآثار في منطقة المدينة المنورة",
+          "url": "https://saudipedia.com/الآثار-في-منطقة-المدينة-المنورة"
+        }
+      },
+      {
+        "name": "آثار بلدة العمق",
+        "text": "بقايا بلدة على طريق القوافل، تشمل آثار منشآت ماء وعمران قديم.",
+        "scope": "داخل محافظة مهد الذهب",
+        "kind": "heritage-history",
+        "caption": "آثار بلدة العمق",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%A2%D8%AB%D8%A7%D8%B1%20%D8%A8%D9%84%D8%AF%D8%A9%20%D8%A7%D9%84%D8%B9%D9%85%D9%82%20%D9%85%D9%87%D8%AF%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8",
+        "source": {
+          "label": "وكالة أنباء الإمارات — مهد الذهب، آثار وتاريخ",
+          "url": "https://www.wam.ae/ar/article/hsykfhx4-مهد-الذهب-اثار-وتاريخ-استطلاع-اضافة-اولى"
+        }
+      },
+      {
+        "name": "صفينة التاريخية",
+        "text": "قرية من قرى المحافظة ترتبط بذاكرة الاستقرار والشعر العربي، وترد ضمن تاريخ مهد الذهب.",
+        "scope": "داخل محافظة مهد الذهب",
+        "kind": "heritage-history",
+        "caption": "صفينة التاريخية",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=%D8%B5%D9%81%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A%D8%A9%20%D9%85%D9%87%D8%AF%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8",
+        "source": {
+          "label": "وكالة أنباء الإمارات — مهد الذهب، آثار وتاريخ",
+          "url": "https://www.wam.ae/ar/article/hsykfhx4-مهد-الذهب-اثار-وتاريخ-استطلاع-اضافة-اولى"
+        }
+      }
+    ],
+    "fame": {
+      "title": "ذاكرة الذهب والتعدين",
+      "text": "تُعرف مهد الذهب بتاريخ استخراج المعدن النفيس، وبشواهد عمرانية وأدوات قديمة ارتبطت بالتعدين.",
+      "source": {
+        "label": "سعوديبيديا — محافظة مهد الذهب",
+        "url": "https://saudipedia.com/محافظة-مهد-الذهب"
+      }
+    },
+    "complete": false,
+    "coverage_note": "معالم موثقة داخل حدود المحافظة؛ لا تُستكمل بمواقع من مناطق أخرى."
+  }
+}

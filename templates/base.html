@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="{% block browser_color %}{% if theme == 'dark' %}#211b21{% else %}#eae9e5{% endif %}{% endblock %}">
+  <meta name="theme-color" content="{% block browser_color %}{% if theme == 'dark' %}#292e28{% else %}#d8d2b8{% endif %}{% endblock %}">
   <meta name="description" content="{% block description %}تَليد — رحلة بصرية في ثقافات المدن السعودية، من العمارة والحرف إلى حكايات المائدة.{% endblock %}">
   <title>{% block title %}تَليد — موروث المدن، وحكايات أهلها{% endblock %}</title>
   <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
@@ -14,14 +14,16 @@
   <link rel="preload" href="{% static 'fonts/readex-pro-arabic-b8c67426.woff2' %}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{% asset 'css/fonts.css' %}">
   <link rel="stylesheet" href="{% asset 'css/style.css' %}">
+  <link rel="stylesheet" href="{% asset 'css/editorial.css' %}">
   {% block extra_css %}{% endblock %}
   <link rel="stylesheet" href="{% asset 'css/typography.css' %}">
   <link rel="stylesheet" href="{% asset 'css/composition.css' %}">
   {% block layout_css %}{% endblock %}
+  <link rel="stylesheet" href="{% asset 'css/shared-chrome.css' %}">
   <script src="{% static 'js/media.js' %}"></script>
   <script src="{% static 'js/main.js' %}" defer></script>
 </head>
-<body id="top" class="{% block body_class %}{% endblock %}">
+<body id="top" class="{% block body_class %}taleed-theme{% endblock %}">
   <a class="skip-link" href="#main-content">انتقل إلى المحتوى</a>
   <header class="site-header wrap">
     <a class="brand" href="{% url 'main:home' %}" aria-label="تَليد — الرئيسية">تَليد<span class="brand-dot" aria-hidden="true">◆</span></a>
@@ -40,12 +42,7 @@
     </div>
   </header>
   <main id="main-content">{% block content %}{% endblock %}</main>
-  {% block footer %}
-  <footer class="site-footer wrap">
-    <div class="footer-top"><a class="brand" href="{% url 'main:home' %}">تَليد<span class="brand-dot" aria-hidden="true">◆</span></a><p>نقترب من المكان.<br>فنكتشف ما يسكننا فيه.</p><a class="text-link" href="{% url 'main:cities' %}">حكايتك التالية <span aria-hidden="true">↖</span></a></div>
-    <div class="footer-bottom"><span>من المملكة، بإرثها وحكاياتها. <bdi>2026 ©</bdi></span><div><a href="{% url 'main:about' %}">عن المشروع</a><a href="{% url 'main:sources' %}">المصادر وحقوق الصور</a><a href="#top">إلى الأعلى ↑</a></div><span class="micro latin">CULTURE, IN MOTION.</span></div>
-  </footer>
-  {% endblock %}
+  {% block footer %}{% include 'includes/editorial_footer.html' %}{% endblock %}
   <div class="toast" role="status" aria-live="polite"></div>
   {% block dialogs %}{% endblock %}
 </body>

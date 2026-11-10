@@ -1,5 +1,9 @@
 [
   {
+    "name": "واحة تليد — افتتاحية المشهد السعودي، معدّلة من المرجع بإزالة واجهة الاستخدام",
+    "file": "images/taleed/oasis-hero-v1.png"
+  },
+  {
     "name": "افتتاحية ثقافات المدن والمسجد الحرام والمسجد النبوي",
     "file": "images/taleed/cities-collage-haramain-v2.png"
   },
@@ -51,5 +55,29 @@
     "type": "conceptual-illustration",
     "generator": "OpenAI built-in image generation",
     "prompt_file": "data/art_prompts/cultural-topics.json"
+  },
+  {
+    "name": "الزي الرجالي — رسوم تعليمية تصورية",
+    "file": "images/culture/dress-men-v1.jpg",
+    "type": "conceptual-illustration",
+    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية."
+  },
+  {
+    "name": "الزي النسائي — رسوم تعليمية تصورية",
+    "file": "images/culture/dress-women-v1.jpg",
+    "type": "conceptual-illustration",
+    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية."
+  },
+  {
+    "name": "الأطباق المناطقية — المجموعة الأولى، رسوم تصورية",
+    "file": "images/culture/dishes-a-v1.jpg",
+    "type": "conceptual-illustration",
+    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية."
+  },
+  {
+    "name": "الأطباق المناطقية — المجموعة الثانية، رسوم تصورية",
+    "file": "images/culture/dishes-b-v1.jpg",
+    "type": "conceptual-illustration",
+    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية."
   }
 ]

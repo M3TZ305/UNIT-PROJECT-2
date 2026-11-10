@@ -1,0 +1,46 @@
+/* Full-width oasis opening. Copy stays live HTML; mobile keeps the complete scene. */
+.taleed-home .th-hero{height:calc(90svh - 104px);min-height:560px;padding:0;isolation:isolate;background:var(--th-teal);overflow:hidden}
+.taleed-home .th-hero-inner{position:relative;display:block;width:100%;max-width:none;height:100%;margin:0}
+.taleed-home .th-sky{background:none;z-index:1;pointer-events:none}
+.taleed-home .th-scene-layer{position:absolute;inset:0;width:100%;height:100%;max-width:none;transform:none;margin:0;z-index:0;animation:oasis-arrive 1s ease both}
+.taleed-home .th-scene{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:43% 53%;filter:none;transform:none;transition:none}
+.taleed-home .th-hero-inner:after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to left,var(--th-teal) 0%,color-mix(in srgb,var(--th-teal) 70%,transparent) 22%,transparent 43%)}
+.taleed-home .th-hero-copy{position:absolute;inset-inline-start:6%;top:50%;translate:0 -38%;width:23%;max-width:360px;z-index:3;padding:0;margin:0}
+.taleed-home .th-edition{position:static;font-size:9px;letter-spacing:.13em;line-height:1.7;margin-bottom:15px;opacity:.75}
+.taleed-home h1.th-wordmark{font-size:64px;line-height:1.55;margin:0;text-align:start}
+.taleed-home .th-welcome{margin-top:8px;padding:0;text-align:start}
+.taleed-home .th-welcome>p{font-size:29px;line-height:1.65;max-width:300px;margin:0}
+.taleed-home .th-welcome>p br{display:initial}
+.taleed-home .th-discover{display:inline-flex;justify-content:space-between;align-items:center;width:min(100%,235px);margin-top:28px;padding:15px 20px;border:1px solid color-mix(in srgb,var(--th-ivory) 60%,transparent);background:color-mix(in srgb,var(--th-teal) 22%,transparent);color:var(--th-ivory);font-size:13px;transition:background .25s,translate .25s}
+.taleed-home .th-discover:hover{background:color-mix(in srgb,var(--th-ivory) 8%,transparent);translate:0 -2px}
+.taleed-home .th-scroll-cue{z-index:4;bottom:24px;left:6%;width:38px;height:38px;background:color-mix(in srgb,var(--th-teal) 25%,transparent)}
+.taleed-home .th-introduction{background:var(--th-cream);padding-top:0}
+.taleed-home .th-city-caption{color:var(--th-muted);padding:22px 24px 0;margin:0;font-size:11px;line-height:1.9}
+@keyframes oasis-arrive{from{opacity:0}to{opacity:1}}
+@media(min-width:1800px){.taleed-home .th-hero-copy{inset-inline-start:8%;width:20%}}
+@media(max-width:1000px) and (min-width:761px){.taleed-home .th-hero-copy{width:28%;inset-inline-start:4%}.taleed-home .th-scene{object-position:38% center}.taleed-home .th-welcome>p{font-size:25px}}
+@media(max-width:760px){
+ .taleed-home .th-hero{height:auto;min-height:0;padding:20px 0 60px}
+ .taleed-home .th-hero-inner{display:flex;flex-direction:column;width:100%;height:auto;gap:0}
+ .taleed-home .th-scene-layer{position:relative;inset:auto;order:0;width:100%;height:auto;aspect-ratio:2 / 1;max-width:none;animation:none}
+ .taleed-home .th-scene{width:100%;height:auto;aspect-ratio:2 / 1;object-fit:contain;object-position:center}
+ .taleed-home .th-hero-inner:after{display:none}
+ .taleed-home .th-hero-copy{position:relative;inset:auto;top:auto;translate:none;order:1;width:calc(100% - 48px);max-width:480px;margin:15px auto 0;text-align:center}
+ .taleed-home .th-edition{font-size:8px;margin-bottom:5px;text-align:center}
+ .taleed-home h1.th-wordmark{font-size:48px;text-align:center}
+ .taleed-home .th-welcome{text-align:center;margin-top:5px}
+ .taleed-home .th-welcome>p{font-size:25px;line-height:1.65;margin:auto;max-width:290px}
+ .taleed-home .th-welcome>p br{display:none}
+ .taleed-home .th-discover{margin-top:20px;padding:12px 18px;font-size:12px;width:220px}
+ .taleed-home .th-scroll-cue{left:50%;translate:-50% 0;bottom:13px;width:30px;height:30px}
+ .taleed-home .th-city-caption{padding:20px 24px 0;font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){.taleed-home .th-scene-layer,.taleed-home .th-discover{animation:none;transition:none}}
+
+.taleed-home .th-scene{mask-image:none;-webkit-mask-image:none}
+.taleed-home .th-scroll-cue{right:auto}
+
+/* A non-repeating paper tear, with the photo visible right up to its edge. */
+.taleed-home .th-hero::after{height:clamp(38px,4vw,64px);bottom:-1px;background:var(--th-cream);mask:url('../images/taleed/hero-paper-edge.svg') center bottom/100% 100% no-repeat;-webkit-mask:url('../images/taleed/hero-paper-edge.svg') center bottom/100% 100% no-repeat}
+.taleed-home .th-scroll-cue{bottom:60px}
+@media(max-width:760px){.taleed-home .th-scroll-cue{bottom:35px}}

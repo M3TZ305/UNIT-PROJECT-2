@@ -5,7 +5,7 @@ from functools import lru_cache
 from django.conf import settings
 
 
-@lru_cache(maxsize=4)
+@lru_cache(maxsize=16)
 def _read_json(path, modified):
     with path.open(encoding='utf-8') as source:
         return json.load(source)

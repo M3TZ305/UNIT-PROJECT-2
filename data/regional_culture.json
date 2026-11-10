@@ -1,0 +1,999 @@
+{
+  "madinah": {
+    "dress": {
+      "scope": "الرجال: الزي السعودي المشترك. النساء: نموذج من موروث المنطقة، مع اختلاف التفاصيل بين المدن والقرى والمناسبات.",
+      "men": {
+        "title": "الثوب والغترة والعقال",
+        "text": "ثوب مع الشماغ أو الغترة والعقال، ويُضاف البشت في المناسبات. نموذج من الزي السعودي المشترك، وليس زيًا حصريًا للمدينة.",
+        "source": {
+          "label": "سعوديبيديا — العقال",
+          "url": "https://saudipedia.com/العقال"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 0,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        },
+        "additional_sources": [
+          {
+            "label": "سعوديبيديا — المشلح",
+            "url": "https://saudipedia.com/المشلح"
+          }
+        ]
+      },
+      "women": {
+        "title": "الكرتة",
+        "text": "ثوب مزموم عند الخصر، تنوعت خاماته وألوانه.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 0,
+          "y": 0,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "الأرز المديني",
+        "text": "اختارته هيئة فنون الطهي طبقًا لمنطقة المدينة المنورة.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 0,
+          "y": 0,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "الشريك",
+        "text": "من مخبوزات المدينة المعروفة، يرش بالسمسم ويخبز دوائر.",
+        "source": {
+          "label": "سعوديبيديا — الأكلات الشعبية في منطقة المدينة المنورة",
+          "url": "https://saudipedia.com/الأكلات-الشعبية-في-منطقة-المدينة-المنورة"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 1,
+          "y": 0,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "makkah": {
+    "dress": {
+      "scope": "النساء: غرب السعودية، نطاق ثقافي أوسع من المنطقة الإدارية. الرجال: نموذج سعودي مشترك.",
+      "men": {
+        "title": "المشلح فوق الثوب",
+        "text": "رداء مناسبات سعودي مشترك، يلبس فوق الثوب.",
+        "source": {
+          "label": "سعوديبيديا — المشلح",
+          "url": "https://saudipedia.com/المشلح"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 0,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "المسدح",
+        "text": "ثوب واسع بأكمام مستطيلة، معروف في غرب السعودية.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 0,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "السليق",
+        "text": "اختارته هيئة فنون الطهي طبقًا لمنطقة مكة المكرمة.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 2,
+          "y": 0,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "المطبق",
+        "text": "أكلة شعبية بارزة بمكة وجدة ومدن الغرب، مشتركة الانتشار.",
+        "source": {
+          "label": "سعوديبيديا — ما المطبق؟",
+          "url": "https://saudipedia.com/ما-المطبق؟"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 3,
+          "y": 0,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "riyadh": {
+    "dress": {
+      "scope": "النساء: الرياض والقصيم؛ موروث وسطي مشترك. الرجال: الوسطى؛ نطاق تاريخي أوسع من الرياض.",
+      "men": {
+        "title": "الثوب والدقلة",
+        "text": "من لباس الوسطى؛ الدقلة رداء طويل مفتوح أمامًا بأكمام طويلة.",
+        "source": {
+          "label": "الأزياء التقليدية في عهد الدولة السعودية الأولى — إصدار توثيقي",
+          "url": "https://saudibureau.org/files/SAUDI-TRADITIONAL-FASHION.pdf"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 2,
+          "y": 0,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "المنيخل",
+        "text": "ثوب واسع الأكمام، ترفعه المرأة فوق رأسها.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 2,
+          "y": 0,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "المرقوق",
+        "text": "اختارته هيئة فنون الطهي طبقًا لمنطقة الرياض.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 0,
+          "y": 1,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "المصابيب",
+        "text": "من أكلات الرياض الشعبية، تصنع بدقيق البر والسمن والعسل.",
+        "source": {
+          "label": "سعوديبيديا — المطبخ السعودي",
+          "url": "https://saudipedia.com/المطبخ-السعودي"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 1,
+          "y": 1,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "eastern": {
+    "dress": {
+      "scope": "النساء: المنطقة الإدارية، دون حصره في كل محافظة. الرجال: صناعة أحسائية، والبشت لباس سعودي مشترك.",
+      "men": {
+        "title": "البشت الحساوي",
+        "text": "مشلح يدوي مشهور بصناعته في الأحساء، تطرز حواشيه بالزري.",
+        "source": {
+          "label": "سعوديبيديا — المشلح",
+          "url": "https://saudipedia.com/المشلح"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 0,
+          "y": 1,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "الثوب الهاشمي",
+        "text": "ثوب واسع الأكمام، مزخرف، يلبس فوق الملابس للزينة.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 0,
+          "y": 1,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "الأرز الحساوي",
+        "text": "اختارته هيئة فنون الطهي طبقًا للمنطقة الشرقية.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 2,
+          "y": 1,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "الهريس",
+        "text": "قمح ولحم يهرسان معًا؛ مشهور بالشرقية وخاصة الأحساء.",
+        "source": {
+          "label": "سعوديبيديا — الهريس",
+          "url": "https://saudipedia.com/الهريس"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 3,
+          "y": 1,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "qassim": {
+    "dress": {
+      "scope": "النساء: المنطقة الإدارية، دون حصره في كل محافظة. الرجال: القصيم، بوصفه موروثًا مناطقيًا.",
+      "men": {
+        "title": "المرودن",
+        "text": "ثوب فضفاض الأكمام يلبس فوق الثوب، خصوصًا عند أداء العرضة.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية في منطقة القصيم",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-في-منطقة-القصيم"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 1,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "المشلل والدراعة",
+        "text": "المشلل خفيف واسع، والدراعة طويلة إلى الكعبين.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية في منطقة القصيم",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-في-منطقة-القصيم"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 1,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "الكليجا",
+        "text": "اختارتها هيئة فنون الطهي طبقًا لمنطقة القصيم.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 0,
+          "y": 2,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        },
+        "image_key": "topic-kleeja"
+      },
+      {
+        "name": "الحنيني",
+        "text": "خبز بر يمزج بالتمر والسمن، تشتهر به القصيم شتاءً.",
+        "source": {
+          "label": "سعوديبيديا — الحنيني",
+          "url": "https://saudipedia.com/الحنيني"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 1,
+          "y": 2,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        },
+        "image_key": "topic-hanini"
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "asir": {
+    "dress": {
+      "scope": "النساء: المنطقة الإدارية، دون حصره في كل محافظة. الرجال: جنوب السعودية؛ لا يمثل كل بيئات عسير.",
+      "men": {
+        "title": "المصنف والشميز",
+        "text": "المصنف يلف حول الخصر، ويعلوه قميص؛ نموذج من أزياء الجنوب.",
+        "source": {
+          "label": "الأزياء التقليدية في عهد الدولة السعودية الأولى — إصدار توثيقي",
+          "url": "https://saudibureau.org/files/SAUDI-TRADITIONAL-FASHION.pdf"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 2,
+          "y": 1,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "الثوب العسيري",
+        "text": "ثوب أسود تزينه خيوط حريرية ذهبية وفضية.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 2,
+          "y": 1,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "الحنيذ",
+        "text": "اختارته هيئة فنون الطهي طبقًا لمنطقة عسير.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 2,
+          "y": 2,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "العصيدة",
+        "text": "دقيق بر يطبخ حتى يتماسك، ويقدم مع المرق أو اللبن.",
+        "source": {
+          "label": "سعوديبيديا — الأكلات الشعبية في منطقة عسير",
+          "url": "https://saudipedia.com/الأكلات-الشعبية-في-منطقة-عسير"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 3,
+          "y": 2,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "tabuk": {
+    "dress": {
+      "scope": "النساء: المنطقة الإدارية، دون حصره في كل محافظة. الرجال: شمال السعودية؛ المصدر لا يفصل المحافظات.",
+      "men": {
+        "title": "المرودن الشمالي",
+        "text": "زي تراثي موثق بشمال السعودية، أبيض عند الرجال غالبًا.",
+        "source": {
+          "label": "واس — ندوة الأزياء التراثية السعودية",
+          "url": "https://www.spa.gov.sa/w1839119"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 1,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "الثوب المزخرف والصديرية",
+        "text": "ثوب طويل منقوش، وصديرية مفتوحة بأزرار ذهبية.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 0,
+          "y": 2,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "الصيادية",
+        "text": "اختارتها هيئة فنون الطهي طبقًا لمنطقة تبوك.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 0,
+          "y": 3,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "خبز الصاج",
+        "text": "عجين قمح يخبز رقائق على الصاج، ويؤكل أحيانًا بالسمن.",
+        "source": {
+          "label": "واس — الأكلات الشعبية في منطقة تبوك — إضافة ثانية",
+          "url": "https://www.spa.gov.sa/641178"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 1,
+          "y": 3,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "hail": {
+    "dress": {
+      "scope": "النساء: حائل والجوف والحدود الشمالية؛ موروث شمالي مشترك. الرجال: شمال السعودية؛ المصدر لا يفصل المحافظات.",
+      "men": {
+        "title": "المرودن الشمالي",
+        "text": "زي تراثي موثق بشمال السعودية، أبيض عند الرجال غالبًا.",
+        "source": {
+          "label": "واس — ندوة الأزياء التراثية السعودية",
+          "url": "https://www.spa.gov.sa/w1839119"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 1,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "المرودن والمجوثل",
+        "text": "أثواب شمالية واسعة؛ يمتاز المرودن بأكمامه المثلثة الطويلة.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 2,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "كبيبة حائل",
+        "text": "اختارتها هيئة فنون الطهي طبقًا لمنطقة حائل.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 2,
+          "y": 3,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "المقشوش",
+        "text": "أرغفة حنطة صغيرة بالسمن والعسل أو الدبس؛ حلوى وطنية أيضًا.",
+        "source": {
+          "label": "واس — المقشوش والكبيبة الحائلية في حاتمية",
+          "url": "https://www.spa.gov.sa/N2028122"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-a-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 3,
+          "y": 3,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        },
+        "image_key": "topic-maqshush"
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "northern": {
+    "dress": {
+      "scope": "النساء: حائل والجوف والحدود الشمالية؛ موروث شمالي مشترك. الرجال: شمال السعودية؛ المصدر لا يفصل المحافظات.",
+      "men": {
+        "title": "المرودن الشمالي",
+        "text": "زي تراثي موثق بشمال السعودية، أبيض عند الرجال غالبًا.",
+        "source": {
+          "label": "واس — ندوة الأزياء التراثية السعودية",
+          "url": "https://www.spa.gov.sa/w1839119"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 1,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "المرودن والمجوثل",
+        "text": "أثواب شمالية واسعة؛ يمتاز المرودن بأكمامه المثلثة الطويلة.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 2,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "المليحية",
+        "text": "اختارتها هيئة فنون الطهي طبقًا لمنطقة الحدود الشمالية.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-b-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 0,
+          "y": 0,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "الثريد",
+        "text": "من أكلات المنطقة الشتوية، يجمع العجين والمرق ولحم الغنم.",
+        "source": {
+          "label": "سعوديبيديا — الأكلات الشعبية في منطقة الحدود الشمالية",
+          "url": "https://saudipedia.com/الأكلات-الشعبية-في-منطقة-الحدود-الشمالية"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-b-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 1,
+          "y": 0,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "jazan": {
+    "dress": {
+      "scope": "النساء: المنطقة الإدارية، دون حصره في كل محافظة. الرجال: جازان بتنوع بيئاتها الجبلية والساحلية.",
+      "men": {
+        "title": "الإزار والشميز والعمامة",
+        "text": "من قطع الزي الجازاني، وتختلف الخامات بين الجبال والسواحل.",
+        "source": {
+          "label": "واس — الأزياء الجازانية",
+          "url": "https://www.spa.gov.sa/ar/w2423655"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 0,
+          "y": 2,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "الكرتة المطرزة",
+        "text": "لباس مطرز يدويًا، يلبس تحته سروال طويل مقلم.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 2,
+          "y": 2,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "المغش",
+        "text": "اختارته هيئة فنون الطهي طبقًا لمنطقة جازان.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-b-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 2,
+          "y": 0,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "المحشوش",
+        "text": "لحم يطبخ في دهنه؛ تتشارك محافظات جازان إعداده مع اختلافات.",
+        "source": {
+          "label": "سعوديبيديا — المحشوش",
+          "url": "https://saudipedia.com/المحشوش"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-b-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 3,
+          "y": 0,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "najran": {
+    "dress": {
+      "scope": "النساء: المنطقة الإدارية، دون حصره في كل محافظة. الرجال: المصدر يصف موروث منطقة نجران.",
+      "men": {
+        "title": "المذيل والغرو",
+        "text": "المذيل ثوب أبيض طويل الأكمام، والغرو يوضع فوق الغترة.",
+        "source": {
+          "label": "سعوديبيديا — مدينة نجران",
+          "url": "https://saudipedia.com/مدينة-نجران"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 2,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "المكمم",
+        "text": "ثوب أسود طويل واسع الأكمام، مزين حول الصدر والخصر.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 0,
+          "y": 3,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "الرقش",
+        "text": "اختارته هيئة فنون الطهي طبقًا لمنطقة نجران.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-b-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 0,
+          "y": 1,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "البر والسمن",
+        "text": "بر نجراني مع سمن البقر أو الغنم، وقد يزين بالعسل.",
+        "source": {
+          "label": "واس — الرقش والبر والسمن في الخيمة النجرانية",
+          "url": "https://www.spa.gov.sa/N2133783"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-b-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 1,
+          "y": 1,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "baha": {
+    "dress": {
+      "scope": "النساء: المنطقة الإدارية، دون حصره في كل محافظة. الرجال: الباحة، مع اشتراك بعض القطع مع مناطق أخرى.",
+      "men": {
+        "title": "الثوب والمصنف والجنبية",
+        "text": "قطع من لباس الباحة التراثي، تتشارك بعض عناصرها مناطق أخرى.",
+        "source": {
+          "label": "واس — الجنبية والمكلف في قرية الباحة",
+          "url": "https://www.spa.gov.sa/w625766"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 2,
+          "y": 2,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "الثوب المشال",
+        "text": "ثوب مناسبات محفوظ للأفراح والأعياد، غني بالزينة.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 3,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "خبز المقناة",
+        "text": "اختارته هيئة فنون الطهي طبقًا لمنطقة الباحة.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-b-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 2,
+          "y": 1,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "الدغابيس",
+        "text": "أقراص عجين تطبخ في مرق اللحم أو الدجاج.",
+        "source": {
+          "label": "هيئة التراث — المحتوى العلمي لمركز زوار ذي عين",
+          "url": "https://heritage.moc.gov.sa/-/media/Project/Ministries/Commission/heritage/Centers/baha.pdf"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-b-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 3,
+          "y": 1,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  },
+  "jouf": {
+    "dress": {
+      "scope": "النساء: حائل والجوف والحدود الشمالية؛ موروث شمالي مشترك. الرجال: شمال السعودية؛ المصدر لا يفصل المحافظات.",
+      "men": {
+        "title": "المرودن الشمالي",
+        "text": "زي تراثي موثق بشمال السعودية، أبيض عند الرجال غالبًا.",
+        "source": {
+          "label": "واس — ندوة الأزياء التراثية السعودية",
+          "url": "https://www.spa.gov.sa/w1839119"
+        },
+        "illustration": {
+          "file": "images/culture/dress-men-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 1,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      },
+      "women": {
+        "title": "المرودن والمجوثل",
+        "text": "أثواب شمالية واسعة؛ يمتاز المرودن بأكمامه المثلثة الطويلة.",
+        "source": {
+          "label": "سعوديبيديا — الأزياء الشعبية النسائية في السعودية",
+          "url": "https://saudipedia.com/الأزياء-الشعبية-النسائية-في-السعودية"
+        },
+        "illustration": {
+          "file": "images/culture/dress-women-v1.jpg",
+          "columns": 3,
+          "rows": 4,
+          "x": 1,
+          "y": 2,
+          "ratio": "4096 / 4608",
+          "type": "conceptual-illustration"
+        }
+      }
+    },
+    "dishes": [
+      {
+        "name": "البكيلة",
+        "text": "اختارتها هيئة فنون الطهي طبقًا لمنطقة الجوف.",
+        "source": {
+          "label": "واس — هيئة فنون الطهي تسمي الأطباق المناطقية",
+          "url": "https://www.spa.gov.sa/N2025767"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-b-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 0,
+          "y": 2,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      },
+      {
+        "name": "المليحي",
+        "text": "أرز بالجميد والسمن واللحم، من الأطباق المشتركة بشمال السعودية.",
+        "source": {
+          "label": "سعوديبيديا — الأكلات الشعبية في منطقة الجوف",
+          "url": "https://saudipedia.com/الأكلات-الشعبية-في-منطقة-الجوف"
+        },
+        "illustration": {
+          "file": "images/culture/dishes-b-v1.jpg",
+          "columns": 4,
+          "rows": 4,
+          "x": 1,
+          "y": 2,
+          "ratio": "5016 / 5016",
+          "type": "conceptual-illustration"
+        }
+      }
+    ],
+    "scope_note": "نماذج من موروث المنطقة والنطاق الثقافي المبين؛ تتنوع الأزياء والأطباق بين المدن والمحافظات والمناسبات، وليست حصرًا على مكان واحد."
+  }
+}

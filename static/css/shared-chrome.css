@@ -1,0 +1,17 @@
+/* Original Taleed chrome, shared by every page. No page-specific header geometry. */
+body.taleed-theme{background:var(--th-cream);--paper:var(--th-cream);--ink:var(--th-ink);--muted:var(--th-muted)}
+body.taleed-theme .site-header{position:relative;inset:auto;display:grid;grid-template-columns:1fr auto 1fr;gap:30px;width:min(1360px,calc(100% - 96px));min-height:104px;margin-inline:auto;padding-block:14px;background:var(--th-cream);color:var(--th-ink);--ink:var(--th-ink);--paper:var(--th-cream);border:0;border-bottom:1px solid color-mix(in srgb,var(--th-ink) 18%,transparent)}
+body.taleed-theme .site-header .brand{justify-self:start}
+body.taleed-theme .site-header .site-nav{display:flex;position:static;order:initial;width:auto;margin:0;gap:40px;padding:0;font-size:13px;justify-content:center}
+body.taleed-theme .site-header .site-nav a[aria-current]{display:inline-block}
+body.taleed-theme .site-header .site-nav a::after{background:currentColor}
+body.taleed-theme .site-header .header-tools{justify-self:end}
+body.taleed-theme .site-header .theme-toggle{border-color:var(--th-ink)}
+body.taleed-theme .site-header .theme-knob{background:var(--th-ink)}
+body.taleed-theme .site-header .theme-sun{color:var(--th-cream)}
+body.taleed-theme .site-header .theme-moon{color:var(--th-ink)}
+[data-theme=dark] body.taleed-theme .site-header .theme-sun{color:var(--th-ink)}
+[data-theme=dark] body.taleed-theme .site-header .theme-moon{color:var(--th-cream)}
+body.taleed-theme .site-header .menu-toggle{display:none}
+body.taleed-theme .th-footer{background:var(--th-sage);color:var(--th-ink)}
+@media(max-width:760px){body.taleed-theme .site-header{width:calc(100% - 40px);grid-template-columns:1fr auto;gap:10px;min-height:104px;padding-block:12px}body.taleed-theme .site-header .header-tools{grid-column:2;grid-row:1}body.taleed-theme .site-header .site-nav{grid-column:1/-1;grid-row:2;gap:28px;font-size:11px}body.taleed-theme .site-header .site-nav a{padding-block:8px}}

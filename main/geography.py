@@ -51,7 +51,8 @@ def governorate_data(place):
 def governorate_atlas(place):
     raw = deepcopy(record_for_governorate(place.region_key, place.slug))
     media = get_media()
-    atlas = raw['atlas']
+    from .place_profiles import apply_profile
+    atlas = apply_profile({**raw['atlas'], 'sources': raw['sources']}, place.saved_key)
     credits, landmarks = [], []
     for entry in atlas['landmarks']:
         image = media.get(entry.get('image_key'))
@@ -66,9 +67,9 @@ def governorate_atlas(place):
             extras.append({**image, 'caption': entry['caption'], 'gallery_index': len(credits)})
             credits.append({k: image[k] for k in ('author', 'license', 'source')})
     atlas.update(landmarks=landmarks, extra_gallery=extras, gallery_credits=credits,
-                 history_image=media.get(raw.get('image_key')),
-                 history_caption=raw.get('image_caption', ''),
-                 intro=raw['intro'], sources=raw['sources'])
+                 history_image=media.get(atlas.get('history_image_key')),
+                 history_caption=atlas.get('history_caption', ''),
+                 intro=raw['intro'], sources=atlas['sources'])
     for field in ('heritage_picture', 'food_picture'):
         picture = atlas.get(field, {})
         if picture.get('image_key'):

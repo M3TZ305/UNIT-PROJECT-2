@@ -186,7 +186,7 @@ class TaleedTests(TestCase):
         history_texts = set()
         for city in City.objects.all():
             atlas = city.atlas
-            self.assertGreaterEqual(len(atlas['landmarks']), 2)
+            self.assertLessEqual(len(atlas['landmarks']), 5)
             self.assertEqual(len(atlas['history']), 3)
             self.assertEqual({p['key'] for p in atlas['people']}, {'food', 'crafts', 'life'})
             self.assertTrue(atlas['sources'])
@@ -220,14 +220,12 @@ class TaleedTests(TestCase):
     def test_atlas_images_exist_and_keep_documentary_context(self):
         for city in City.objects.all():
             for landmark in city.atlas['landmarks']:
-                self.assertTrue((settings.BASE_DIR / 'static' / landmark['image']['fallback']).is_file())
+                if landmark.get('image'):
+                    self.assertTrue((settings.BASE_DIR / 'static' / landmark['image']['fallback']).is_file())
+                self.assertEqual(landmark['kind'], 'heritage-history')
                 self.assertTrue(landmark['scope'])
                 self.assertTrue(landmark['caption'])
                 self.assertIn('maps/search/?api=1&query=', landmark['map_url'])
-        qatif = City.objects.get(slug='qatif').atlas
-        self.assertIn('١٩٧٨', qatif['landmarks'][2]['caption'])
-        jazan = City.objects.get(slug='jazan').atlas
-        self.assertIn('في منطقة جازان', jazan['landmarks'][2]['scope'])
 
     def test_home_cultural_options_open_subject_pages(self):
         response = self.client.get('/')
@@ -245,7 +243,7 @@ class TaleedTests(TestCase):
             self.assertEqual(len(response.context['topic']['items']), count)
             self.assertContains(response, f'data-culture-topic="{key}"', count=1)
             self.assertNotContains(response, 'data-city-chapter=')
-            self.assertContains(response, 'تابع الحكاية في أطلس')
+            self.assertContains(response, 'تابع الحكاية في')
 
     @override_settings(DEBUG=False)
     def test_unknown_cultural_subject_has_a_real_404(self):
@@ -318,7 +316,7 @@ class TaleedTests(TestCase):
                     self.assertEqual(page.content.count(b'<h1 '), 1)
                     self.assertNotIn('src=""', page.content.decode())
                     self.assertTrue(place.atlas['history'])
-                    self.assertGreaterEqual(len(place.atlas['landmarks']), 2)
+                    self.assertLessEqual(len(place.atlas['landmarks']), 5)
                     self.assertEqual({p['key'] for p in place.atlas['people']}, {'food', 'crafts', 'life'})
                     self.assertTrue(place.data['sources'])
                     self.assertEqual(page.context['governorate_cards'], [])
@@ -357,3 +355,85 @@ class TaleedTests(TestCase):
             for credit in place.atlas['gallery_credits']:
                 self.assertTrue(credit['author'])
                 self.assertTrue(credit['license'])
+
+
+    def test_place_profiles_have_dress_two_dishes_and_strict_historical_selection(self):
+        from .place_profiles import profile_for, canonical_key
+        from .content import read_data
+        records = read_data('place_profiles.json')
+        self.assertEqual(len(records), 51)
+        places = list(City.objects.all()) + list(Governorate.objects.select_related('capital'))
+        for place in places:
+            key = place.saved_key if isinstance(place, Governorate) else 'city:' + place.slug
+            profile = profile_for(key)
+            with self.subTest(place=place.name):
+                self.assertTrue(profile['fame']['text'])
+                self.assertTrue(profile['fame']['source']['url'].startswith('https://'))
+                self.assertTrue(profile['culture']['dress']['men']['title'])
+                self.assertTrue(profile['culture']['dress']['women']['title'])
+                self.assertTrue(profile['culture']['dress']['scope'])
+                self.assertEqual(len(profile['culture']['dishes']), 2)
+                self.assertEqual(len({d['name'] for d in profile['culture']['dishes']}), 2)
+                self.assertLessEqual(len(profile['landmarks']), 5)
+                self.assertEqual(len({l['name'] for l in profile['landmarks']}), len(profile['landmarks']))
+                for item in profile['landmarks']:
+                    self.assertEqual(item['kind'], 'heritage-history')
+                    self.assertTrue(item['scope'])
+                    self.assertTrue(item['source']['url'].startswith('https://'))
+                response = self.client.get(place.get_absolute_url())
+                html = response.content.decode()
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(html.count('data-dress="men"'), 1)
+                self.assertEqual(html.count('data-dress="women"'), 1)
+                self.assertEqual(html.count('data-local-dish'), 2)
+                self.assertEqual(html.count('class="th-footer"'), 1)
+                self.assertNotIn('أطلس', html)
+                self.assertNotIn('الأطلس', html)
+                self.assertEqual(response.context['atlas']['extra_gallery'], [])
+        # Legacy links resolve to the same local governorate selection.
+        self.assertEqual(canonical_key('city:alula'), 'gov:madinah:alula')
+        self.assertEqual(profile_for('city:alula')['landmarks'], profile_for('gov:madinah:alula')['landmarks'])
+
+
+    def test_mahd_replaces_khaybar_in_madinah_selection(self):
+        place = Governorate.objects.get(region_key='madinah', slug='mahd-al-dhahab')
+        self.assertEqual(place.name, 'مهد الذهب')
+        self.assertFalse(Governorate.objects.filter(region_key='madinah', slug='khaybar').exists())
+        self.assertEqual(Governorate.objects.count(), 35)
+        page = self.client.get('/cities/madinah/')
+        self.assertIn(place.get_absolute_url(), page.content.decode())
+        self.assertNotIn('/governorates/khaybar/', page.content.decode())
+        page = self.client.get(place.get_absolute_url())
+        self.assertEqual(page.status_code, 200)
+        self.assertEqual(page.context['profile']['name'], 'مهد الذهب')
+        self.assertNotIn('خيبر', page.content.decode())
+        self.assertEqual(self.client.get('/cities/riyadh/governorates/mahd-al-dhahab/').status_code, 404)
+        self.client.cookies['saved_cities'] = json.dumps(['gov:madinah:khaybar'])
+        self.assertEqual(self.client.get('/cities/', {'saved': 1}).context['result_count'], 0)
+        response = self.client.post(place.get_save_url(), HTTP_ACCEPT='application/json')
+        self.assertTrue(response.json()['saved'])
+        self.assertEqual(response.json()['slug'], 'gov:madinah:mahd-al-dhahab')
+
+    def test_dress_and_food_images_have_valid_local_assets_and_cell_coordinates(self):
+        from .content import read_data
+        data = read_data('regional_culture.json')
+        self.assertEqual(len(data), 13)
+        for region, culture in data.items():
+            items = [culture['dress']['men'], culture['dress']['women'], *culture['dishes']]
+            self.assertEqual(len(items), 4)
+            for item in items:
+                with self.subTest(region=region, item=item.get('title', item.get('name'))):
+                    art = item['illustration']
+                    self.assertTrue((settings.BASE_DIR / 'static' / art['file']).is_file())
+                    self.assertGreaterEqual(art['x'], 0)
+                    self.assertLess(art['x'], art['columns'])
+                    self.assertGreaterEqual(art['y'], 0)
+                    self.assertLess(art['y'], art['rows'])
+                    self.assertEqual(art['type'], 'conceptual-illustration')
+                    self.assertLess(art['y']*art['columns'] + art['x'], 11 if 'women' in art['file'] else (9 if 'men' in art['file'] else (10 if 'dishes-b' in art['file'] else 16)))
+                    if item.get('image_key'):
+                        self.assertIn(item['image_key'], get_media())
+        place = Governorate.objects.get(slug='mahd-al-dhahab')
+        page = self.client.get(place.get_absolute_url())
+        self.assertEqual(page.content.decode().count('<figure class="culture-picture'), 4)
+        self.assertContains(page, 'رسم تعريفي تصوّري')

@@ -43,3 +43,7 @@
 .place-sprite{left:50%;right:auto;top:auto;bottom:23px;translate:-50% 0;width:min(86%,225px);height:auto;aspect-ratio:var(--art-ratio)}
 
 .plate-governorates{font-size:10px;line-height:1.8;margin:9px 0 0;color:var(--plate-muted)}
+
+/* Use the same paper and ink as the original home identity. */
+body.taleed-directory,.hierarchy-atlas{--plate-paper:var(--th-cream);--plate-ink:var(--th-ink);--plate-muted:var(--th-muted)}
+[data-theme="dark"] body.taleed-directory,[data-theme="dark"] .hierarchy-atlas{--plate-paper:var(--th-cream);--plate-ink:var(--th-ink);--plate-muted:var(--th-muted)}

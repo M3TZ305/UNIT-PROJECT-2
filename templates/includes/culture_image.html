@@ -1,0 +1,10 @@
+{% load static %}
+<figure class="culture-picture {% if clothing %}is-clothing{% else %}is-food{% endif %}">
+{% if item.image %}
+  <div class="culture-photo-window">{% include 'includes/image.html' with image=item.image alt=label %}</div>
+  <figcaption><a href="{{ item.image.source }}" target="_blank" rel="noopener noreferrer">{{ item.image.author }} · {{ item.image.license }} ↗</a></figcaption>
+{% elif item.illustration %}
+  <div class="culture-picture-window" role="img" aria-label="{{ label }} — رسم تعريفي تصوّري" style="--picture-columns:{{ item.illustration.columns }};--picture-rows:{{ item.illustration.rows }};--picture-x:{{ item.illustration.x }};--picture-y:{{ item.illustration.y }};--picture-ratio:{{ item.illustration.ratio }}"><img src="{% static item.illustration.file %}" alt="" loading="lazy" decoding="async"></div>
+  <figcaption>رسم تعريفي تصوّري{% if clothing %} — تتنوع تفاصيل الزي{% endif %}</figcaption>
+{% endif %}
+</figure>

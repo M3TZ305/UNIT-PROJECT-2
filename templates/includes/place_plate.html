@@ -8,6 +8,6 @@
       {% else %}<div class="place-sprite" style="--art-columns:{{ card.art.columns }};--art-rows:{{ card.art.rows }};--art-x:{{ card.art.x }};--art-y:{{ card.art.y }};--art-ratio:{{ card.art.ratio }}"><img src="{% static card.art.file %}" alt="تكوين فني مستوحى من {% if card.kind == 'city' %}{{ card.name }}{% else %}{{ card.region }}{% endif %}" loading="lazy" decoding="async"></div>{% endif %}
       <span class="plate-scene-label">{% if card.image %}سجلّ مصوّر{% elif card.kind == 'city' %}ملامح المكان · رسم تصوّري{% else %}رسم تصوّري للمنطقة{% endif %}</span>
     </div>
-    <div class="place-plate-copy"><p>{{ card.region }}</p><h3>{{ card.name }} <span aria-hidden="true">↖</span></h3><p class="plate-tagline">{{ card.caption }}</p><span class="plate-open">{% if card.kind == 'city' %}أطلس المدينة{% if card.governorate_count %} · {{ card.governorate_count }} محافظات مختارة{% endif %}{% else %}افتح أطلس المحافظة{% endif %}</span>{% if card.governorate_names %}<p class="plate-governorates">{{ card.governorate_names }}</p>{% endif %}</div>
+    <div class="place-plate-copy"><p>{{ card.region }}</p><h3>{{ card.name }} <span aria-hidden="true">↖</span></h3><p class="plate-tagline">{{ card.caption }}</p><span class="plate-open">{% if card.kind == 'city' %}اكتشف المدينة{% if card.governorate_count %} · {{ card.governorate_count }} محافظات مختارة{% endif %}{% else %}اكتشف المحافظة{% endif %}</span>{% if card.governorate_names %}<p class="plate-governorates">{{ card.governorate_names }}</p>{% endif %}</div>
   </a>
 </article>

@@ -103,7 +103,7 @@ def atlas_response(request, place):
         governors = [governorate_plate(g, saved_slugs(request)) for g in place.governorates.all()]
     position = next(i for i, item in enumerate(siblings) if item.pk == place.pk)
     return render(request, 'main/city_detail.html', {
-        **common_context(request), 'city': place, 'atlas': place.atlas, 'nav': 'cities',
+        **common_context(request), 'city': place, 'atlas': place.atlas, 'profile': place.atlas['profile'], 'nav': 'cities',
         'is_governorate': is_governorate, 'parent_city': parent, 'region_info': region,
         'directory_slug': parent.slug if parent else (place.slug if place.slug in capital_slugs() else ''),
         'governorate_cards': governors, 'next_city': siblings[(position + 1) % len(siblings)],
@@ -137,6 +137,7 @@ def sources(request):
     return render(request, 'main/sources.html', {
         **common_context(request), 'cities': City.objects.all(),
         'culture_sources': list(read_data('culture.json').values()),
+        'regional_culture_sources': [dict(name=registry()['regions'][key]['label'], **value) for key, value in read_data('regional_culture.json').items()],
         'governorates': Governorate.objects.select_related('capital'), 'credits': get_media().values(), 'illustrations': read_data('design_assets.json'), 'nav': 'sources',
     })
 

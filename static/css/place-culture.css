@@ -1,0 +1,37 @@
+/* Extend the original paper-and-ink identity, without changing site chrome. */
+.place-culture{background:var(--th-cream);--culture-paper:var(--th-cream);--culture-paper-ink:#53594a}
+.place-culture .atlas-section-heading{margin-bottom:30px}
+.place-fame{border-block:1px solid var(--atlas-line);padding:28px 0 30px;max-width:780px;margin-bottom:42px}
+.place-fame h3{font-size:29px;font-weight:400;line-height:1.5;margin:7px 0 10px}
+.place-fame>p:not(.atlas-eyebrow){font-size:14px;line-height:2;max-width:700px}
+.place-culture-heading{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:18px}
+.place-culture-heading h3{font-size:30px;font-weight:400;white-space:nowrap}
+.place-culture-heading p{max-width:600px;font-size:11px;line-height:1.9;color:var(--th-muted)}
+.place-culture-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.place-culture-card{padding:0 0 24px;border:0;border-bottom:1px solid var(--atlas-line);background:transparent;min-width:0}
+.place-culture-label{font-size:10px;color:var(--th-muted)}
+.place-culture-card h4{font-family:var(--serif);font-size:27px;font-weight:400;line-height:1.5;margin:10px 0}
+.place-culture-card p{font-size:13px;line-height:2;max-width:550px}
+.place-dishes{margin-top:36px}.place-culture-note{font-size:11px;line-height:1.9;color:var(--th-muted);max-width:850px;margin-top:24px}
+.local-count{font-size:11px;color:var(--th-muted);margin:0 0 22px}.local-empty{font-size:13px;line-height:2;color:var(--th-muted);border:1px dashed var(--atlas-line);padding:25px}
+.hierarchy-atlas .atlas-landmark:not(:has(figure)){display:block;padding:22px;border:1px solid var(--atlas-line);border-inline-start:2px solid var(--atlas-rust)}
+.hierarchy-atlas .atlas-landmark.is-featured:not(:has(figure)){grid-row:auto}
+.hierarchy-atlas .atlas-time-layout:not(:has(.atlas-time-photo)){grid-template-columns:1fr}
+@media(max-width:640px){.place-culture-grid{grid-template-columns:1fr;gap:16px}.place-culture-heading{display:block}.place-culture-heading p{margin-top:8px}.place-culture-card{padding:0 0 20px}.place-fame h3{font-size:27px}}
+
+/* Image windows follow the same paper, ink and restrained proportions. */
+.culture-picture{display:grid;justify-items:center;gap:12px;margin:0 0 22px;padding:20px 12px 12px;background:var(--culture-paper);overflow:hidden}
+.culture-picture-window{position:relative;width:min(100%,280px);aspect-ratio:var(--picture-ratio);overflow:hidden;isolation:isolate;background:var(--culture-paper);clip-path:inset(2px)}
+.culture-picture-window>img{position:absolute;max-width:none;width:calc(var(--picture-columns) * 100%);height:calc(var(--picture-rows) * 100%);left:calc(var(--picture-x) * -100%);top:calc(var(--picture-y) * -100%);object-fit:fill;mix-blend-mode:darken}
+.culture-picture.is-clothing .culture-picture-window{width:min(100%,240px)}
+.culture-photo-window{width:min(100%,280px);aspect-ratio:1;overflow:hidden}
+.culture-photo-window>img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.85)}
+.culture-picture figcaption{color:var(--culture-paper-ink);font-size:9px;line-height:1.8;text-align:center;max-width:100%;padding:0 12px 12px}
+.culture-picture figcaption a{text-underline-offset:3px}
+@media(max-width:640px){.culture-picture.is-clothing .culture-picture-window{width:min(100%,220px)}}
+
+
+.place-culture-card>.place-culture-label,.place-culture-card>h4,.place-culture-card>p,.place-culture-card>.atlas-source-link{margin-inline:18px}
+.place-culture .place-culture-grid{gap:32px}
+[data-theme="dark"] .place-culture{--culture-paper:#d8d2b8;--culture-paper-ink:#53594a}
+@media(max-width:640px){.place-culture .place-culture-grid{gap:24px}.culture-picture{padding-top:16px}}

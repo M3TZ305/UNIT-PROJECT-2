@@ -32,14 +32,18 @@
           "aliases": []
         },
         {
-          "name": "خيبر",
-          "slug": "khaybar",
+          "name": "مهد الذهب",
+          "slug": "mahd-al-dhahab",
           "region_key": "madinah",
           "source": "https://saudipedia.com/قائمة-محافظات-منطقة-المدينة-المنورة",
-          "article_candidate": "https://saudipedia.com/محافظة-خيبر",
-          "article_validated": false,
+          "article_candidate": "https://saudipedia.com/محافظة-مهد-الذهب",
+          "article_validated": true,
           "existing_city_slug": null,
-          "aliases": []
+          "aliases": [
+            "المهد",
+            "مهدالذهب",
+            "Mahd adh Dhahab"
+          ]
         }
       ]
     },
