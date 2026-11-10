@@ -1,64 +1,20 @@
-{% extends 'base.html' %}{% load static %}
-{% block title %}{% if only_saved %}حكاياتي{% else %}فصول تليد — المدن{% endif %} — تَليد{% endblock %}
-{% block body_class %}taleed-theme taleed-chapters{% endblock %}
-{% block browser_color %}{% if theme == 'dark' %}#292e28{% else %}#d8d2b8{% endif %}{% endblock %}
-{% block extra_css %}<link rel="stylesheet" href="{% static 'css/editorial.css' %}"><link rel="stylesheet" href="{% static 'css/chapters.css' %}">{% endblock %}
+{% extends 'base.html' %}{% load static site_assets %}
+{% block title %}اكتشف المدن — تَليد{% endblock %}
+{% block body_class %}taleed-theme taleed-directory{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% asset 'css/editorial.css' %}">{% endblock %}
+{% block layout_css %}<link rel="stylesheet" href="{% asset 'css/hierarchy.css' %}">{% endblock %}
 {% block content %}
-<section class="chapters-intro">
-  <div class="th-wrap">
-    <p class="chapters-overline">فصول تليد</p>
-    <h1>{% if only_saved %}حكاياتٌ نعود إليها.{% else %}مدنٌ تُقرأ على مهل.{% endif %}</h1>
-    <p class="chapters-deck">{% if only_saved %}مدن حفظتها… لتكمل حكاياتها وقتما تشاء.{% else %}{{ total_cities }} مدينة رئيسية، من المناطق الثلاث عشرة. نبدأ من المدينة المنورة.{% endif %}</p>
-    <div class="chapters-controls">
-      <details class="chapters-filter" {% if query or province or region or category %}open{% endif %}>
-        <summary>حدّد وجهتك <span aria-hidden="true">↙</span></summary>
-        <form class="chapters-filter-form" data-filter-form method="get" action="{% url 'main:cities' %}#chapters">
-          {% if only_saved %}<input type="hidden" name="saved" value="1">{% endif %}
-          {% if region %}<input type="hidden" name="region" value="{{ region }}">{% endif %}
-          <div><label for="city-search">مدينة أو حكاية</label><input id="city-search" name="q" type="search" value="{{ query }}" placeholder="المدينة المنورة، جدة، Najran…" maxlength="100"></div>
-          <div><label for="city-province">المنطقة</label><select id="city-province" name="province"><option value="">كل المناطق</option>{% for item in provinces %}<option value="{{ item.key }}" {% if province == item.key %}selected{% endif %}>{{ item.label }}</option>{% endfor %}</select></div>
-          <div><label for="city-category">باب الثقافة</label><select id="city-category" name="category"><option value="">كل الحكايات</option>{% for item in categories %}<option value="{{ item.key }}" {% if category == item.key %}selected{% endif %}>{{ item.short }}</option>{% endfor %}</select></div>
-          <button type="submit">استكشف ↖</button>
-        </form>
-      </details>
-      <div class="chapters-views"><a href="{% url 'main:cities' %}" {% if not only_saved %}aria-current="page"{% endif %}>كل الفصول</a><a href="{% url 'main:cities' %}?saved=1" {% if only_saved %}aria-current="page"{% endif %}>حكاياتي <span data-saved-count>{{ saved_count }}</span></a></div>
-    </div>
-    {% if query or province or region or category or only_saved %}<div class="chapters-results"><span>{{ result_count }} من الحكايات تطابق اختياراتك</span><a href="{% url 'main:cities' %}">عرض كل المدن ×</a></div>{% endif %}
-  </div>
-</section>
-{% if cities %}
-<nav class="chapters-index" aria-label="فهرس فصول المدن">
-  <div class="th-wrap">
-    <span class="chapters-index-label">الفصول</span>
-    <div class="chapters-rail">{% for city in cities %}<a href="#chapter-{{ city.slug }}" data-chapter-link="{{ city.slug }}" {% if forloop.first %}aria-current="location"{% endif %}><span class="latin">{{ city.number }}</span><span>{{ city.name }}</span></a>{% endfor %}</div>
-    <label class="chapters-jump"><span>انتقل إلى مدينة</span><select data-chapter-jump aria-label="انتقل إلى فصل مدينة">{% for city in cities %}<option value="{{ city.slug }}">{{ city.number }} — {{ city.name }}</option>{% endfor %}</select></label>
-  </div>
-</nav>
-{% endif %}
-<div id="chapters" class="city-chapters">
-{% for city in cities %}
-  <section class="city-chapter" id="chapter-{{ city.slug }}" data-city-chapter="{{ city.slug }}" aria-labelledby="chapter-title-{{ city.slug }}">
-    <div class="chapter-layout th-wrap">
-      <div class="chapter-copy reveal">
-        <p class="chapter-eyebrow"><span class="latin">{{ city.number }} / {{ total_cities }}</span><span>{{ city.name }} / {{ city.region }}</span></p>
-        <h2 id="chapter-title-{{ city.slug }}"><span class="sr-home">{{ city.name }} — </span>{{ city.data.tagline }}</h2>
-        <p class="chapter-description">{{ city.data.intro }}</p>
-        <span class="chapter-english latin">{{ city.english_name }}</span>
-        <div class="chapter-actions"><a class="chapter-enter" href="{% url 'main:city_detail' slug=city.slug %}">ادخل الحكاية <span aria-hidden="true">↖</span></a>{% include 'includes/save.html' %}</div>
-      </div>
-      <div class="chapter-visual reveal" aria-label="تصور فني مستوحى من {{ city.name }}">
-        <p class="chapter-city-name {% if city.data.name_lines|length > 1 %}is-long{% endif %}" aria-hidden="true">{% for line in city.data.name_lines %}<span>{{ line }}</span>{% endfor %}</p>
-        <div class="chapter-cutout {% if city.data.chapter_art.columns == 2 %}is-portrait{% endif %}" style="--art-columns:{{ city.data.chapter_art.columns }};--art-rows:{{ city.data.chapter_art.rows }};--art-x:{{ city.data.chapter_art.x }};--art-y:{{ city.data.chapter_art.y }};--art-ratio:{{ city.data.chapter_art.ratio }}">
-          <img src="{% static city.data.chapter_art.file %}" alt="" aria-hidden="true" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}" decoding="async" {% if forloop.first %}fetchpriority="high"{% endif %}>
-        </div>
-      </div>
-    </div>
-    <span class="chapter-ghost-number latin" aria-hidden="true">{{ city.number }}</span>
-  </section>
-{% empty %}
-  <section class="chapters-empty th-wrap"><span aria-hidden="true">◇</span><h2>{% if only_saved and not saved_count %}مساحة لحكايتك القادمة.{% else %}نبحث عن حكاية أخرى؟{% endif %}</h2><p>{% if only_saved and not saved_count %}احفظ مدينة من الفصول، وستجدها هنا.{% else %}لم نجد مدينة بهذه الاختيارات. جرّب منطقة أو كلمة أخرى.{% endif %}</p><a href="{% url 'main:cities' %}">اكتشف كل المدن ↖</a></section>
-{% endfor %}
+<div class="directory-wrap">
+  <section class="directory-intro"><p class="directory-kicker">تَليد / فهرس الأماكن</p><div><h1>{% if only_saved %}حكاياتٌ احتفظت بها.{% else %}لكل مدينة،<br>بابٌ إلى حكايتها.{% endif %}</h1><p>١٣ مدينة رئيسية، ومحافظتان أو ثلاث مختارة من كل منطقة.<br>ابدأ من ملامح المدينة، وتوغّل في تفاصيل المكان.</p></div><span class="directory-seal" aria-hidden="true">أطلس<br>المملكة<br><bdi>13 / {{ total_governorates }}</bdi></span></section>
+  <form method="get" class="directory-filters" role="search" aria-label="تصفّح أطالس المدن">
+    {% if only_saved %}<input type="hidden" name="saved" value="1">{% endif %}
+    <div class="directory-search"><label for="city-search">إلى أين تأخذك الحكاية؟</label><div><input type="search" id="city-search" name="q" value="{{ query }}" maxlength="100" placeholder="اسم مدينة أو محافظة…"><button type="submit" aria-label="البحث عن مكان">ابحث ↖</button></div></div>
+    <div class="directory-direction"><label for="city-region">جهة المملكة</label><select name="region" id="city-region"><option value="">كل الجهات</option>{% for item in regions %}<option value="{{ item.key }}" {% if region == item.key %}selected{% endif %}>{{ item.label }}</option>{% endfor %}</select></div>
+    <button class="directory-apply" type="submit">اعرض الأماكن ←</button>
+  </form>
+  <div class="directory-index"><div><a href="{% url 'main:cities' %}" {% if not only_saved %}aria-current="page"{% endif %}>كل المدن</a><a href="{% url 'main:cities' %}?saved=1" {% if only_saved %}aria-current="page"{% endif %}>حكاياتي <span data-saved-count>{{ saved_count }}</span></a></div><p><bdi>{{ result_count }}</bdi> {% if only_saved %}مكان محفوظ{% else %}مدينة{% endif %}{% if query %} · نتائج «{{ query }}»{% endif %}</p></div>
+  <section class="place-grid" aria-label="أطالس المدن">{% for card in city_cards %}{% include 'includes/place_plate.html' %}{% empty %}<div class="directory-empty"><span aria-hidden="true">✳</span><h2>{% if only_saved %}حكايتك الأولى بانتظارك.{% else %}لم نجد مكانًا بهذا الاسم.{% endif %}</h2><p>{% if only_saved %}احفظ مدينة أو محافظة بعلامة ◇ لتعود إليها هنا.{% else %}جرّب اسم المدينة أو المحافظة، أو ارجع إلى الفهرس كاملًا.{% endif %}</p><a href="{% url 'main:cities' %}">اكتشف كل المدن ←</a></div>{% endfor %}</section>
+  <p class="directory-colophon">مدن رئيسية تمثل المناطق الثلاث عشرة. المحافظات المعروضة مختارات من كل منطقة، وترتبط إداريًا بالمنطقة.</p>
 </div>
-<section class="chapters-ending"><div class="th-wrap"><span class="latin">DIFFERENT PLACES. SHARED ROOTS.</span><p>نختلف في التفاصيل.<br>ونلتقي في الحكاية.</p><a href="{% url 'main:sources' %}">المصادر ورسوم الفصول ↗</a></div></section>
 {% endblock %}
 {% block footer %}{% include 'includes/editorial_footer.html' %}{% endblock %}

@@ -1,0 +1,13 @@
+{% load static %}
+<article class="place-plate" id="chapter-{{ card.key }}">
+  <div class="place-plate-top"><span class="latin">{{ card.number }} / {% if card.kind == 'city' %}CITY{% else %}PLACE{% endif %}</span>
+  <form class="save-form" method="post" action="{{ card.save_url }}" data-city="{{ card.key }}">{% csrf_token %}<input type="hidden" name="next" value="{{ request.get_full_path }}"><button class="save-button {% if card.saved %}is-saved{% endif %}" type="submit" aria-pressed="{% if card.saved %}true{% else %}false{% endif %}" aria-label="حفظ {{ card.name }}"><span class="save-symbol" aria-hidden="true">{% if card.saved %}◆{% else %}◇{% endif %}</span><span class="save-label">{% if card.saved %}محفوظة{% else %}احفظ الحكاية{% endif %}</span></button></form></div>
+  <a class="place-plate-link" href="{{ card.url }}">
+    <div class="place-plate-scene {% if card.image %}has-photo{% endif %}"><span class="plate-arch" aria-hidden="true"></span><span class="plate-draft" aria-hidden="true"></span>
+      {% if card.image %}{% include 'includes/image.html' with image=card.image alt=card.image_caption image_class='place-photo' %}
+      {% else %}<div class="place-sprite" style="--art-columns:{{ card.art.columns }};--art-rows:{{ card.art.rows }};--art-x:{{ card.art.x }};--art-y:{{ card.art.y }};--art-ratio:{{ card.art.ratio }}"><img src="{% static card.art.file %}" alt="تكوين فني مستوحى من {% if card.kind == 'city' %}{{ card.name }}{% else %}{{ card.region }}{% endif %}" loading="lazy" decoding="async"></div>{% endif %}
+      <span class="plate-scene-label">{% if card.image %}سجلّ مصوّر{% elif card.kind == 'city' %}ملامح المكان · رسم تصوّري{% else %}رسم تصوّري للمنطقة{% endif %}</span>
+    </div>
+    <div class="place-plate-copy"><p>{{ card.region }}</p><h3>{{ card.name }} <span aria-hidden="true">↖</span></h3><p class="plate-tagline">{{ card.caption }}</p><span class="plate-open">{% if card.kind == 'city' %}أطلس المدينة{% if card.governorate_count %} · {{ card.governorate_count }} محافظات مختارة{% endif %}{% else %}افتح أطلس المحافظة{% endif %}</span>{% if card.governorate_names %}<p class="plate-governorates">{{ card.governorate_names }}</p>{% endif %}</div>
+  </a>
+</article>

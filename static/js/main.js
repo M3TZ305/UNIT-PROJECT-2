@@ -158,6 +158,10 @@
     image.dataset.fallback = source.dataset.fallback;
     image.alt = source.alt; image.src = source.currentSrc || source.src;
     gallery.querySelector('.lightbox-caption').textContent = source.alt;
+    const photoCredit = gallery.querySelector('[data-gallery-credit]');
+    const photoSource = gallery.querySelector('[data-gallery-source]');
+    if (photoCredit) photoCredit.textContent = galleryButtons[selected].dataset.photoCredit || '';
+    if (photoSource) photoSource.href = galleryButtons[selected].dataset.photoSource || '#';
     gallery.querySelector('.gallery-counter').textContent = `${String(selected + 1).padStart(2, '0')} / ${String(galleryButtons.length).padStart(2, '0')}`;
   }
   galleryButtons.forEach((button, index) => button.addEventListener('click', () => {

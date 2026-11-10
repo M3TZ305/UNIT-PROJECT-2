@@ -1,0 +1,47 @@
+/* A free collection of objects, continuing Taleed's architectural atlas. */
+.taleed-home .th-introduction::after { background:var(--th-cream); }
+.th-collection { position:relative; isolation:isolate; background:var(--th-cream); padding-block:60px 35px; --collection-rust:#9b4d2c; }
+[data-theme=dark] .th-collection { --collection-rust:#e5a17c; }
+.th-collection::before { content:''; position:absolute; inset:0; z-index:-1; pointer-events:none; opacity:.3; background:url('../images/taleed/paper-grain.svg'); mix-blend-mode:multiply; }
+.th-collection-heading { max-width:900px; margin-bottom:45px; }
+.th-collection-eyebrow { font-size:11px; color:var(--collection-rust); margin-bottom:13px; }
+.th-collection-heading h2 { font:500 clamp(48px,5.5vw,78px)/1.4 var(--serif); letter-spacing:-1.5px; }
+.th-collection-heading>p:last-child { font-size:15px; margin-top:10px; color:var(--th-muted); }
+.th-collection-grid { display:grid; grid-template-columns:1.12fr 1fr 1fr; gap:4%; align-items:start; }
+.th-pathway { display:block; min-width:0; text-align:center; border-radius:2px; }
+.th-pathway-crafts { margin-top:115px; }.th-pathway-food { margin-top:65px; }
+.th-pathway-visual { position:relative; display:grid; place-items:center; height:420px; isolation:isolate; }
+.th-pathway-crafts .th-pathway-visual { height:305px; }.th-pathway-food .th-pathway-visual { height:285px; }
+.th-pathway-index { position:absolute; right:6%; top:0; font-size:24px; line-height:1; color:var(--collection-rust); z-index:3; }
+.th-pathway-index::after { content:''; position:absolute; width:48px; height:30px; border-top:1px solid currentColor; border-left:1px solid currentColor; top:29px; right:18px; transform:skewX(-25deg); opacity:.7; }
+.th-pathway-drawing { position:absolute; inset:0 -8% 0; z-index:-1; opacity:.23; background:url('../images/taleed/atlas-drawing.svg') center/contain no-repeat; }
+[data-theme=dark] .th-pathway-drawing { filter:invert(1); opacity:.2; }
+.th-pathway-sprite { display:block; position:relative; width:100%; max-width:390px; aspect-ratio:2160 / 2184; overflow:hidden; transition:transform .55s cubic-bezier(.2,.65,.2,1); filter:drop-shadow(0 16px 12px #2c281b18); }
+.th-pathway-sprite>img { position:absolute; top:0; width:300%; height:auto; max-width:none; left:-200%; }
+.th-pathway-crafts .th-pathway-sprite { width:95%; max-width:300px; }.th-pathway-crafts .th-pathway-sprite>img { left:-100%; }
+.th-pathway-patch { position:absolute; width:78%; aspect-ratio:1; background:var(--th-sage); border-radius:49% 45% 51% 46%; left:7%; top:0; z-index:-1; opacity:.45; transform:rotate(-13deg); transition:transform .6s,opacity .4s; }
+.th-pathway-food .th-pathway-patch { width:58%; left:18%; top:8%; background:#b96b41; opacity:.23; border-radius:50%; }
+.th-house-table-art { display:block; width:112%; max-width:none; height:auto; object-fit:contain; position:relative; z-index:1; transition:transform .55s cubic-bezier(.2,.65,.2,1); filter:drop-shadow(0 12px 10px #2c281b16); }
+.th-pathway-copy { padding-top:25px; position:relative; }
+.th-pathway-copy::before { content:''; position:absolute; top:-7px; left:50%; height:26px; width:1px; background:var(--collection-rust); }
+.th-pathway-copy::after { content:''; position:absolute; top:-9px; left:calc(50% - 2px); width:5px; height:5px; background:var(--collection-rust); border-radius:50%; }
+.th-pathway h3 { font:500 clamp(31px,3.3vw,45px)/1.5 var(--serif); letter-spacing:-1px; }
+.th-pathway-copy>p { font-size:13px; margin-top:3px; color:var(--th-muted); }
+.th-pathway-cta { display:inline-flex; align-items:center; gap:17px; font-size:11px; margin-top:19px; padding-bottom:4px; border-bottom:1px solid var(--th-muted); transition:color .25s,border-color .25s; }
+.th-pathway-cta>span { display:grid; place-items:center; height:29px; width:29px; border:1px solid currentColor; border-radius:50%; font-size:19px; transition:transform .3s; }
+.th-pathway:is(:hover,:focus-visible) .th-pathway-sprite,.th-pathway:is(:hover,:focus-visible) .th-house-table-art { transform:translateY(-9px) rotate(-1.5deg); }
+.th-pathway:is(:hover,:focus-visible) .th-pathway-patch { opacity:.7; transform:rotate(-5deg) scale(1.04); }
+.th-pathway:is(:hover,:focus-visible) .th-pathway-cta { color:var(--collection-rust); border-color:currentColor; }
+.th-pathway:is(:hover,:focus-visible) .th-pathway-cta>span { transform:rotate(-35deg); }
+.th-collection-foot { display:flex; justify-content:space-between; align-items:center; gap:25px; margin-top:70px; padding-top:15px; border-top:1px solid color-mix(in srgb,var(--th-ink) 30%,transparent); color:var(--th-muted); font-size:10px; }
+.th-collection-foot>.latin { font-size:9px; letter-spacing:.18em; }
+@media(max-width:1050px) {
+ .th-collection-grid { gap:3%; }.th-pathway-visual { height:340px; }.th-pathway-crafts .th-pathway-visual { height:250px; }.th-pathway-food .th-pathway-visual { height:235px; }.th-pathway-crafts { margin-top:90px; }.th-pathway-food { margin-top:55px; }.th-pathway h3 { font-size:33px; }.th-pathway-copy>p { font-size:11px; }.th-pathway-cta { font-size:10px; gap:10px; }.th-pathway-index { font-size:20px; }
+}
+@media(max-width:760px) {
+ .th-collection { padding-top:40px; }.th-collection-heading { margin-bottom:35px; }.th-collection-heading h2 { font-size:50px; }.th-collection-heading>p:last-child { font-size:13px; }.th-collection-grid { grid-template-columns:1fr; gap:45px; max-width:470px; margin:auto; }.th-pathway-crafts,.th-pathway-food { margin-top:0; }.th-pathway { padding-inline:20px; }.th-pathway-visual { height:365px; }.th-pathway-crafts .th-pathway-visual { height:300px; }.th-pathway-food .th-pathway-visual { height:265px; }.th-pathway-sprite { max-width:350px; }.th-pathway-crafts .th-pathway-sprite { max-width:300px; }.th-house-table-art { width:100%; max-width:420px; }.th-pathway-patch { width:68%; left:12%; }.th-pathway-food .th-pathway-patch { width:55%; top:0; left:22%; }.th-pathway-index { font-size:22px; right:8%; }.th-pathway h3 { font-size:40px; }.th-pathway-copy>p { font-size:13px; }.th-pathway-cta { font-size:12px; margin-top:15px; }.th-pathway-copy { padding-top:23px; }.th-collection-foot { margin-top:50px; gap:14px; flex-wrap:wrap; }
+}
+@media(max-width:400px) {
+ .th-collection-heading h2 { font-size:42px; }.th-collection-heading>p:last-child { font-size:12px; }.th-pathway { padding-inline:5px; }.th-pathway-visual { height:310px; }.th-pathway-crafts .th-pathway-visual { height:270px; }.th-pathway-food .th-pathway-visual { height:230px; }.th-pathway h3 { font-size:36px; }.th-collection-foot { font-size:9px; }.th-collection-foot>.latin { font-size:8px; }
+}
+@media(prefers-reduced-motion:reduce) { .th-collection *,.th-collection *::before,.th-collection *::after { transition:none!important; animation:none!important; }.th-pathway:is(:hover,:focus-visible) .th-pathway-sprite,.th-pathway:is(:hover,:focus-visible) .th-house-table-art { transform:none; } }

@@ -1,7 +1,7 @@
 /* TALEED — cinematic cultural editorial, RTL first. */
 @view-transition { navigation: auto; }
 ::view-transition-group(*) { animation-duration:.65s; animation-timing-function:cubic-bezier(.22,.7,.2,1); }
-:root { --paper:#eae9e5; --ink:#491f2b; --muted:#786b70; --line:#b9adb0; --soft:#dcdad7; --blue:#a3adc3; --blue-dark:#586781; --surface:#f3f1ec; --contrast:#fbf4ec; --serif:'Noto Naskh Arabic',Georgia,serif; --sans:'IBM Plex Sans Arabic',Tahoma,sans-serif; color-scheme:light; }
+:root { --paper:#eae9e5; --ink:#491f2b; --muted:#786b70; --line:#b9adb0; --soft:#dcdad7; --blue:#a3adc3; --blue-dark:#586781; --surface:#f3f1ec; --contrast:#fbf4ec; --logo:'Aref Ruqaa',serif; --serif:'Markazi Text',Georgia,serif; --sans:'Readex Pro',Tahoma,sans-serif; color-scheme:light; }
 :root[data-theme=dark] { --paper:#211b21; --ink:#eee2dc; --muted:#bcaeb5; --line:#64515b; --soft:#31272f; --blue:#66728e; --blue-dark:#c3cde5; --surface:#2b232a; --contrast:#211b21; color-scheme:dark; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; scroll-padding-top:120px; }

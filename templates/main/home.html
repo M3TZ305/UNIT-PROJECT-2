@@ -1,14 +1,15 @@
-{% extends 'base.html' %}{% load static %}
+{% extends 'base.html' %}{% load static site_assets %}
 {% block body_class %}taleed-theme taleed-home{% endblock %}
 {% block browser_color %}{% if theme == 'dark' %}#173337{% else %}#28494c{% endif %}{% endblock %}
-{% block extra_css %}<link rel="stylesheet" href="{% static 'css/editorial.css' %}">{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% asset 'css/editorial.css' %}"><link rel="stylesheet" href="{% asset 'css/pathways.css' %}">{% endblock %}
 {% block content %}
 <section class="th-hero" aria-labelledby="home-title" data-parallax>
   <div class="th-sky" aria-hidden="true"></div>
   <div class="th-hero-inner">
-    <p class="th-edition latin">CITIES. CULTURES. SHARED ROOTS.</p>
+    <div class="th-hero-copy"><p class="th-edition latin">CITIES. CULTURES. SHARED ROOTS.</p>
     <h1 class="th-wordmark" id="home-title">تليد<span class="sr-home"> — موروث المدن، وحكايات أهلها</span></h1>
     <div class="th-welcome"><p>موروث المدن،<br>وحكايات أهلها.</p><a class="th-discover" href="{% url 'main:cities' %}">اكتشف المدن <span aria-hidden="true">↖</span></a></div>
+    </div>
     <div class="th-scene-layer"><img class="th-scene" src="{% static 'images/taleed/cities-collage-haramain-v2.png' %}" width="1672" height="941" fetchpriority="high" decoding="async" alt="تكوين فني رمزي يجمع المسجد الحرام والكعبة في مكة المكرمة، والمسجد النبوي بقُبّته الخضراء في المدينة المنورة، ورموز ثقافات المدن السعودية"></div>
   </div>
   <a class="th-scroll-cue" href="#introduction" aria-label="تعرّف على تليد">↓</a>
@@ -16,21 +17,28 @@
 <section class="th-introduction" id="introduction" aria-labelledby="intro-title">
   <p class="th-city-caption">إشارات من ثقافات المملكة، ومعالم مكة المكرمة والمدينة المنورة.</p>
   <div class="th-intro-grid th-wrap">
-    <div class="th-intro-copy reveal"><p class="th-overline">من تفاصيل المكان، نبدأ</p><h2 id="intro-title">إرثٌ<br>يعيش معنا.</h2><p class="th-intro-text">نقترب من ثقافات المدن السعودية؛<br>من تفاصيل البيوت والحِرف، إلى حكايات أهلها.</p><a class="th-about-link" href="{% url 'main:about' %}">عن تليد <span aria-hidden="true">↖</span></a></div>
+    <div class="th-intro-copy reveal"><p class="th-overline">من تفاصيل المكان، نبدأ</p><h2 id="intro-title">إرثٌ يعيش معنا.</h2><p class="th-intro-text">نقترب من ثقافات المدن السعودية؛<br>من تفاصيل البيوت والحِرف، إلى حكايات أهلها.</p><a class="th-about-link" href="{% url 'main:about' %}">عن تليد <span aria-hidden="true">↖</span></a></div>
     <figure class="th-door-art reveal"><img src="{% static 'images/taleed/door-and-cup.png' %}" alt="رسم تصوّري لباب خشبي مزخرف وفنجان قهوة" width="1086" height="1448" loading="lazy" decoding="async"><figcaption><span class="latin">01 /</span> تفاصيل تعبر الأجيال</figcaption></figure>
   </div>
 </section>
-<section class="th-pathways" id="ways" aria-labelledby="ways-title">
+<section class="th-collection" id="ways" aria-labelledby="ways-title">
   <div class="th-wrap">
-    <div class="th-pathways-heading reveal"><h2 id="ways-title">من أي باب نبدأ؟</h2><p>اختر ما يشبه فضولك.</p></div>
-    <div class="th-scroll reveal">
-      <span class="th-paper-roll" aria-hidden="true"></span>
-      <div class="th-scroll-paper">
-        <a class="th-portal" href="{% url 'main:cities' %}?category=architecture"><span class="th-object th-object-architecture" aria-hidden="true"><img src="{% static 'images/taleed/culture-objects.png' %}" alt="" loading="lazy" decoding="async"></span><h3>عمارة تحكي</h3><p>بيوتٌ تحفظ هوية أهلها.</p><span class="th-portal-arrow" aria-hidden="true">↖</span></a>
-        <a class="th-portal" href="{% url 'main:cities' %}?category=crafts"><span class="th-object th-object-crafts" aria-hidden="true"><img src="{% static 'images/taleed/culture-objects.png' %}" alt="" loading="lazy" decoding="async"></span><h3>حِرف تبقى</h3><p>معرفةٌ تسكن الأيدي.</p><span class="th-portal-arrow" aria-hidden="true">↖</span></a>
-        <a class="th-portal" href="{% url 'main:cities' %}?category=food"><span class="th-object th-object-food" aria-hidden="true"><img src="{% static 'images/taleed/culture-objects.png' %}" alt="" loading="lazy" decoding="async"></span><h3>ذاكرة المذاق</h3><p>حكاياتٌ على المائدة.</p><span class="th-portal-arrow" aria-hidden="true">↖</span></a>
-      </div>
+    <div class="th-collection-heading reveal"><p class="th-collection-eyebrow">من تفاصيل المكان</p><h2 id="ways-title">لكل مدينة، تفاصيلها.</h2><p>نافذة، وصنعة، ومذاق… اتبع ما يلفت انتباهك.</p></div>
+    <div class="th-collection-grid">
+      <a class="th-pathway th-pathway-architecture reveal" href="{% url 'main:culture_topic' topic='architecture' %}">
+        <div class="th-pathway-visual" aria-hidden="true"><span class="th-pathway-index latin">01</span><span class="th-pathway-drawing"></span><span class="th-pathway-sprite"><img src="{% static 'images/taleed/culture-objects.png' %}" alt="" loading="lazy" decoding="async"></span></div>
+        <div class="th-pathway-copy"><h3>عمارة تحكي</h3><p>بيوتٌ تحفظ هوية أهلها.</p><span class="th-pathway-cta">اكتشف العمارة <span aria-hidden="true">↗</span></span></div>
+      </a>
+      <a class="th-pathway th-pathway-crafts reveal" href="{% url 'main:culture_topic' topic='crafts' %}">
+        <div class="th-pathway-visual" aria-hidden="true"><span class="th-pathway-index latin">02</span><span class="th-pathway-patch"></span><span class="th-pathway-sprite"><img src="{% static 'images/taleed/culture-objects.png' %}" alt="" loading="lazy" decoding="async"></span></div>
+        <div class="th-pathway-copy"><h3>حِرف تبقى</h3><p>معرفةٌ تسكن الأيدي.</p><span class="th-pathway-cta">اقترب من الحِرف <span aria-hidden="true">↗</span></span></div>
+      </a>
+      <a class="th-pathway th-pathway-food reveal" href="{% url 'main:culture_topic' topic='food' %}">
+        <div class="th-pathway-visual" aria-hidden="true"><span class="th-pathway-index latin">03</span><span class="th-pathway-patch"></span><img class="th-house-table-art" src="{% static 'images/taleed/house-table-bread-dates.png' %}" alt="" width="1774" height="887" loading="lazy" decoding="async"></div>
+        <div class="th-pathway-copy"><h3>من مائدة الدار</h3><p>لكل مدينة، نكهة من بيوتها.</p><span class="th-pathway-cta">اكتشف حكايات المائدة <span aria-hidden="true">↗</span></span></div>
+      </a>
     </div>
+    <div class="th-collection-foot"><span class="latin">TALEED / DETAILS OF PLACE</span><span>موروثٌ نقترب منه، تفصيلًا تفصيلًا.</span></div>
   </div>
 </section>
 {% endblock %}

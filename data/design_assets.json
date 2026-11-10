@@ -30,5 +30,26 @@
   {
     "name": "رسوم فصول: خميس مشيط، ينبع",
     "file": "images/taleed/chapters-05.png"
+  },
+  {
+    "name": "من مائدة الدار — صحن فخاري بخبز وتمر ونسيج تراثي",
+    "file": "images/taleed/house-table-bread-dates.png",
+    "type": "conceptual-illustration",
+    "generator": "OpenAI built-in image generation",
+    "prompt_file": "data/art_prompts/house-table-bread-dates.txt"
+  },
+  {
+    "name": "رسوم توضيحية للخوص والبشت والفخار والقط العسيري",
+    "file": "images/taleed/topic-crafts.png",
+    "type": "conceptual-illustration",
+    "generator": "OpenAI built-in image generation",
+    "prompt_file": "data/art_prompts/cultural-topics.json"
+  },
+  {
+    "name": "رسوم توضيحية للرقش والمغش",
+    "file": "images/taleed/topic-regional-food.png",
+    "type": "conceptual-illustration",
+    "generator": "OpenAI built-in image generation",
+    "prompt_file": "data/art_prompts/cultural-topics.json"
   }
 ]

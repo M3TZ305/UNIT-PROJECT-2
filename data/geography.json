@@ -1,0 +1,522 @@
+{
+  "checked_on": "2026-11-10",
+  "scope": "محافظتان أو ثلاث مختارة من كل منطقة؛ ليست قائمة شاملة للمحافظات السعودية.",
+  "region_count": 13,
+  "governorate_count": 35,
+  "regions": {
+    "madinah": {
+      "label": "منطقة المدينة المنورة",
+      "capital_slug": "madinah",
+      "source": "https://saudipedia.com/قائمة-محافظات-منطقة-المدينة-المنورة",
+      "source_label": "سعوديبيديا — قائمة محافظات منطقة المدينة المنورة",
+      "governorate_count": 3,
+      "governorates": [
+        {
+          "name": "العلا",
+          "slug": "alula",
+          "region_key": "madinah",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-المدينة-المنورة",
+          "article_candidate": "https://saudipedia.com/محافظة-العلا",
+          "article_validated": false,
+          "existing_city_slug": "alula",
+          "aliases": []
+        },
+        {
+          "name": "ينبع",
+          "slug": "yanbu",
+          "region_key": "madinah",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-المدينة-المنورة",
+          "article_candidate": "https://saudipedia.com/محافظة-ينبع",
+          "article_validated": false,
+          "existing_city_slug": "yanbu",
+          "aliases": []
+        },
+        {
+          "name": "خيبر",
+          "slug": "khaybar",
+          "region_key": "madinah",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-المدينة-المنورة",
+          "article_candidate": "https://saudipedia.com/محافظة-خيبر",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        }
+      ]
+    },
+    "makkah": {
+      "label": "منطقة مكة المكرمة",
+      "capital_slug": "makkah",
+      "source": "https://saudipedia.com/قائمة-محافظات-منطقة-مكة-المكرمة",
+      "source_label": "سعوديبيديا — قائمة محافظات منطقة مكة المكرمة",
+      "governorate_count": 3,
+      "governorates": [
+        {
+          "name": "جدة",
+          "slug": "jeddah",
+          "region_key": "makkah",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-مكة-المكرمة",
+          "article_candidate": "https://saudipedia.com/محافظة-جدة",
+          "article_validated": false,
+          "existing_city_slug": "jeddah",
+          "aliases": []
+        },
+        {
+          "name": "الطائف",
+          "slug": "taif",
+          "region_key": "makkah",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-مكة-المكرمة",
+          "article_candidate": "https://saudipedia.com/محافظة-الطائف",
+          "article_validated": false,
+          "existing_city_slug": "taif",
+          "aliases": []
+        },
+        {
+          "name": "القنفذة",
+          "slug": "al-qunfudhah",
+          "region_key": "makkah",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-مكة-المكرمة",
+          "article_candidate": "https://saudipedia.com/محافظة-القنفذة",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": [
+            "القنفذه"
+          ]
+        }
+      ]
+    },
+    "riyadh": {
+      "label": "منطقة الرياض",
+      "capital_slug": "riyadh",
+      "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الرياض",
+      "source_label": "سعوديبيديا — قائمة محافظات منطقة الرياض",
+      "governorate_count": 3,
+      "governorates": [
+        {
+          "name": "الدرعية",
+          "slug": "diriyah",
+          "region_key": "riyadh",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الرياض",
+          "article_candidate": "https://saudipedia.com/محافظة-الدرعية",
+          "article_validated": false,
+          "existing_city_slug": "diriyah",
+          "aliases": []
+        },
+        {
+          "name": "الخرج",
+          "slug": "al-kharj",
+          "region_key": "riyadh",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الرياض",
+          "article_candidate": "https://saudipedia.com/محافظة-الخرج",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        },
+        {
+          "name": "شقراء",
+          "slug": "shaqra",
+          "region_key": "riyadh",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الرياض",
+          "article_candidate": "https://saudipedia.com/محافظة-شقراء",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        }
+      ]
+    },
+    "eastern": {
+      "label": "المنطقة الشرقية",
+      "capital_slug": "dammam",
+      "source": "https://saudipedia.com/قائمة-محافظات-المنطقة-الشرقية",
+      "source_label": "سعوديبيديا — قائمة محافظات المنطقة الشرقية",
+      "governorate_count": 3,
+      "governorates": [
+        {
+          "name": "الأحساء",
+          "slug": "al-ahsa",
+          "region_key": "eastern",
+          "source": "https://saudipedia.com/قائمة-محافظات-المنطقة-الشرقية",
+          "article_candidate": "https://saudipedia.com/محافظة-الأحساء",
+          "article_validated": false,
+          "existing_city_slug": "hofuf",
+          "aliases": [
+            "الإحساء"
+          ]
+        },
+        {
+          "name": "القطيف",
+          "slug": "qatif",
+          "region_key": "eastern",
+          "source": "https://saudipedia.com/قائمة-محافظات-المنطقة-الشرقية",
+          "article_candidate": "https://saudipedia.com/محافظة-القطيف",
+          "article_validated": false,
+          "existing_city_slug": "qatif",
+          "aliases": []
+        },
+        {
+          "name": "الخبر",
+          "slug": "khobar",
+          "region_key": "eastern",
+          "source": "https://saudipedia.com/قائمة-محافظات-المنطقة-الشرقية",
+          "article_candidate": "https://saudipedia.com/محافظة-الخبر",
+          "article_validated": false,
+          "existing_city_slug": "khobar",
+          "aliases": []
+        }
+      ]
+    },
+    "qassim": {
+      "label": "منطقة القصيم",
+      "capital_slug": "buraidah",
+      "source": "https://saudipedia.com/قائمة-محافظات-منطقة-القصيم",
+      "source_label": "سعوديبيديا — قائمة محافظات منطقة القصيم",
+      "governorate_count": 3,
+      "governorates": [
+        {
+          "name": "عنيزة",
+          "slug": "unaizah",
+          "region_key": "qassim",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-القصيم",
+          "article_candidate": "https://saudipedia.com/محافظة-عنيزة",
+          "article_validated": false,
+          "existing_city_slug": "unaizah",
+          "aliases": []
+        },
+        {
+          "name": "الرس",
+          "slug": "ar-rass",
+          "region_key": "qassim",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-القصيم",
+          "article_candidate": "https://saudipedia.com/محافظة-الرس",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        },
+        {
+          "name": "البكيرية",
+          "slug": "al-bukayriyah",
+          "region_key": "qassim",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-القصيم",
+          "article_candidate": "https://saudipedia.com/محافظة-البكيرية",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        }
+      ]
+    },
+    "asir": {
+      "label": "منطقة عسير",
+      "capital_slug": "abha",
+      "source": "https://saudipedia.com/قائمة-محافظات-منطقة-عسير",
+      "source_label": "سعوديبيديا — قائمة محافظات منطقة عسير",
+      "governorate_count": 3,
+      "governorates": [
+        {
+          "name": "رجال ألمع",
+          "slug": "rijal-almaa",
+          "region_key": "asir",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-عسير",
+          "article_candidate": "https://saudipedia.com/محافظة-رجال-ألمع",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        },
+        {
+          "name": "النماص",
+          "slug": "an-namas",
+          "region_key": "asir",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-عسير",
+          "article_candidate": "https://saudipedia.com/محافظة-النماص",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        },
+        {
+          "name": "خميس مشيط",
+          "slug": "khamis-mushait",
+          "region_key": "asir",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-عسير",
+          "article_candidate": "https://saudipedia.com/محافظة-خميس-مشيط",
+          "article_validated": false,
+          "existing_city_slug": "khamis-mushait",
+          "aliases": []
+        }
+      ]
+    },
+    "tabuk": {
+      "label": "منطقة تبوك",
+      "capital_slug": "tabuk",
+      "source": "https://saudipedia.com/إمارة-منطقة-تبوك",
+      "source_label": "سعوديبيديا — إمارة منطقة تبوك",
+      "governorate_count": 3,
+      "governorates": [
+        {
+          "name": "تيماء",
+          "slug": "tayma",
+          "region_key": "tabuk",
+          "source": "https://saudipedia.com/إمارة-منطقة-تبوك",
+          "article_candidate": "https://saudipedia.com/محافظة-تيماء",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        },
+        {
+          "name": "أملج",
+          "slug": "umluj",
+          "region_key": "tabuk",
+          "source": "https://saudipedia.com/إمارة-منطقة-تبوك",
+          "article_candidate": "https://saudipedia.com/محافظة-أملج",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        },
+        {
+          "name": "ضباء",
+          "slug": "duba",
+          "region_key": "tabuk",
+          "source": "https://saudipedia.com/إمارة-منطقة-تبوك",
+          "article_candidate": "https://saudipedia.com/محافظة-ضباء",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": [
+            "ضبا"
+          ]
+        }
+      ]
+    },
+    "hail": {
+      "label": "منطقة حائل",
+      "capital_slug": "hail",
+      "source": "https://saudipedia.com/قائمة-محافظات-منطقة-حائل",
+      "source_label": "سعوديبيديا — قائمة محافظات منطقة حائل",
+      "governorate_count": 2,
+      "governorates": [
+        {
+          "name": "الحائط",
+          "slug": "al-hait",
+          "region_key": "hail",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-حائل",
+          "article_candidate": "https://saudipedia.com/محافظة-الحائط",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        },
+        {
+          "name": "الشنان",
+          "slug": "ash-shinan",
+          "region_key": "hail",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-حائل",
+          "article_candidate": "https://saudipedia.com/محافظة-الشنان",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        }
+      ]
+    },
+    "northern": {
+      "label": "منطقة الحدود الشمالية",
+      "capital_slug": "arar",
+      "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الحدود-الشمالية",
+      "source_label": "سعوديبيديا — قائمة محافظات منطقة الحدود الشمالية",
+      "governorate_count": 2,
+      "governorates": [
+        {
+          "name": "رفحاء",
+          "slug": "rafha",
+          "region_key": "northern",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الحدود-الشمالية",
+          "article_candidate": "https://saudipedia.com/محافظة-رفحاء",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        },
+        {
+          "name": "طريف",
+          "slug": "turaif",
+          "region_key": "northern",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الحدود-الشمالية",
+          "article_candidate": "https://saudipedia.com/محافظة-طريف",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        }
+      ]
+    },
+    "jazan": {
+      "label": "منطقة جازان",
+      "capital_slug": "jazan",
+      "source": "https://saudipedia.com/قائمة-محافظات-منطقة-جازان",
+      "source_label": "سعوديبيديا — قائمة محافظات منطقة جازان",
+      "governorate_count": 3,
+      "governorates": [
+        {
+          "name": "جزر فرسان",
+          "slug": "farasan",
+          "region_key": "jazan",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-جازان",
+          "article_candidate": "https://saudipedia.com/محافظة-جزر-فرسان",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": [
+            "فرسان"
+          ]
+        },
+        {
+          "name": "فيفاء",
+          "slug": "fayfa",
+          "region_key": "jazan",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-جازان",
+          "article_candidate": "https://saudipedia.com/محافظة-فيفاء",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": [
+            "فيفا"
+          ]
+        },
+        {
+          "name": "الدائر",
+          "slug": "ad-dair",
+          "region_key": "jazan",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-جازان",
+          "article_candidate": "https://saudipedia.com/محافظة-الدائر",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        }
+      ]
+    },
+    "najran": {
+      "label": "منطقة نجران",
+      "capital_slug": "najran",
+      "source": "https://saudipedia.com/قائمة-محافظات-منطقة-نجران",
+      "source_label": "سعوديبيديا — قائمة محافظات منطقة نجران",
+      "governorate_count": 2,
+      "governorates": [
+        {
+          "name": "بدر الجنوب",
+          "slug": "badr-al-janub",
+          "region_key": "najran",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-نجران",
+          "article_candidate": "https://saudipedia.com/محافظة-بدر-الجنوب",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        },
+        {
+          "name": "شرورة",
+          "slug": "sharurah",
+          "region_key": "najran",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-نجران",
+          "article_candidate": "https://saudipedia.com/محافظة-شرورة",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        }
+      ]
+    },
+    "baha": {
+      "label": "منطقة الباحة",
+      "capital_slug": "al-baha",
+      "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الباحة",
+      "source_label": "سعوديبيديا — قائمة محافظات منطقة الباحة",
+      "governorate_count": 3,
+      "governorates": [
+        {
+          "name": "المخواة",
+          "slug": "al-makhwah",
+          "region_key": "baha",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الباحة",
+          "article_candidate": "https://saudipedia.com/محافظة-المخواة",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        },
+        {
+          "name": "بلجرشي",
+          "slug": "baljurashi",
+          "region_key": "baha",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الباحة",
+          "article_candidate": "https://saudipedia.com/محافظة-بلجرشي",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": [
+            "بالجرشي"
+          ]
+        },
+        {
+          "name": "المندق",
+          "slug": "al-mandaq",
+          "region_key": "baha",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الباحة",
+          "article_candidate": "https://saudipedia.com/محافظة-المندق",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        }
+      ]
+    },
+    "jouf": {
+      "label": "منطقة الجوف",
+      "capital_slug": "sakaka",
+      "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الجوف",
+      "source_label": "سعوديبيديا — قائمة محافظات منطقة الجوف",
+      "governorate_count": 2,
+      "governorates": [
+        {
+          "name": "دومة الجندل",
+          "slug": "dumat-al-jandal",
+          "region_key": "jouf",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الجوف",
+          "article_candidate": "https://saudipedia.com/محافظة-دومة-الجندل",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        },
+        {
+          "name": "القريات",
+          "slug": "al-qurayyat",
+          "region_key": "jouf",
+          "source": "https://saudipedia.com/قائمة-محافظات-منطقة-الجوف",
+          "article_candidate": "https://saudipedia.com/محافظة-القريات",
+          "article_validated": false,
+          "existing_city_slug": null,
+          "aliases": []
+        }
+      ]
+    }
+  },
+  "notes": [
+    "أبانات في القصيم والفرشة في عسير وصوير في الجوف مدرجة في القوائم الحالية، وتغيب عن بعض القوائم الأقدم.",
+    "لا تُعرض فئات أ/ب لأن أعدادها في نثر بعض صفحات المصادر تختلف عن صفوف الجداول، دون تأثير على أسماء المحافظات.",
+    "قائمة تبوك المستقلة لم تفتح؛ استُخدمت مقالة الإمارة ومقالة مناطق السعودية، وكلتاهما تعدد ست محافظات.",
+    "استُبعدت شرما: ورود عابر باسم محافظة في مقالة البدع يتعارض مع القوائم الإدارية الصريحة؛ المراكز الإدارية تسرد شرماء ضمن ضباء.",
+    "الظهران مدينة وليست محافظة في قائمة الشرقية؛ الهفوف مدينة ضمن محافظة الأحساء.",
+    "مصادر article_candidate مرشحة غير متحقق منها؛ source هو المصدر الإداري المتحقق منه لكل محافظة."
+  ],
+  "capital_slugs": [
+    "madinah",
+    "makkah",
+    "riyadh",
+    "abha",
+    "dammam",
+    "hail",
+    "buraidah",
+    "tabuk",
+    "sakaka",
+    "arar",
+    "jazan",
+    "najran",
+    "al-baha"
+  ],
+  "legacy_city_keys": {
+    "alula": "gov:madinah:alula",
+    "yanbu": "gov:madinah:yanbu",
+    "jeddah": "gov:makkah:jeddah",
+    "taif": "gov:makkah:taif",
+    "diriyah": "gov:riyadh:diriyah",
+    "hofuf": "gov:eastern:al-ahsa",
+    "qatif": "gov:eastern:qatif",
+    "khobar": "gov:eastern:khobar",
+    "unaizah": "gov:qassim:unaizah",
+    "khamis-mushait": "gov:asir:khamis-mushait"
+  }
+}

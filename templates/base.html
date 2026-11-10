@@ -1,4 +1,4 @@
-{% load static %}
+{% load static site_assets %}
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" data-theme="{{ theme|default:'light' }}">
 <head>
@@ -8,12 +8,16 @@
   <meta name="description" content="{% block description %}تَليد — رحلة بصرية في ثقافات المدن السعودية، من العمارة والحرف إلى حكايات المائدة.{% endblock %}">
   <title>{% block title %}تَليد — موروث المدن، وحكايات أهلها{% endblock %}</title>
   <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://thumb.wikimedia.org">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="preload" href="{% static 'fonts/aref-ruqaa-arabic-d79f7a86.woff2' %}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{% static 'fonts/markazi-text-arabic-31a13b8e.woff2' %}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{% static 'fonts/readex-pro-arabic-b8c67426.woff2' %}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{% asset 'css/fonts.css' %}">
+  <link rel="stylesheet" href="{% asset 'css/style.css' %}">
   {% block extra_css %}{% endblock %}
+  <link rel="stylesheet" href="{% asset 'css/typography.css' %}">
+  <link rel="stylesheet" href="{% asset 'css/composition.css' %}">
+  {% block layout_css %}{% endblock %}
   <script src="{% static 'js/media.js' %}"></script>
   <script src="{% static 'js/main.js' %}" defer></script>
 </head>

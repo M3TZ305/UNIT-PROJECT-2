@@ -1,40 +1,77 @@
-{% extends 'base.html' %}{% load static %}
-{% block title %}{{ city.name }} — تَليد{% endblock %}
-{% block description %}{{ city.summary }} اكتشف العمارة والحرف والمذاق من ثقافة {{ city.name }}.{% endblock %}
-{% block body_class %}taleed-theme taleed-city-story{% endblock %}
+{% extends 'base.html' %}{% load static site_assets %}
+{% block title %}أطلس {{ city.name }} — تَليد{% endblock %}
+{% block description %}تاريخ {{ city.name }} ومعالمها وموروث أهلها في أطلس تليد المصوّر. {{ city.summary }}{% endblock %}
+{% block body_class %}taleed-theme taleed-atlas{% endblock %}
 {% block browser_color %}{% if theme == 'dark' %}#292e28{% else %}#d8d2b8{% endif %}{% endblock %}
-{% block extra_css %}<link rel="stylesheet" href="{% static 'css/editorial.css' %}"><link rel="stylesheet" href="{% static 'css/story.css' %}">{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% asset 'css/editorial.css' %}"><link rel="stylesheet" href="{% asset 'css/atlas.css' %}"><script src="{% static 'js/atlas.js' %}" defer></script>{% endblock %}
+{% block layout_css %}<link rel="stylesheet" href="{% asset 'css/hierarchy.css' %}">{% endblock %}
 {% block content %}
-<article class="city-story" style="--city-accent:{{ city.data.accent }}">
-  <div class="city-breadcrumb wrap"><a href="{% url 'main:cities' %}">المدن</a><span aria-hidden="true">/</span><span>{{ city.name }}</span>{% include 'includes/save.html' %}</div>
-  <section class="story-cover wrap" aria-labelledby="story-title">
-    <div class="story-cover-copy"><p class="eyebrow">{{ city.number }} / {{ total_cities }} — {{ city.region }}</p><h1 id="story-title">{% for line in city.data.name_lines %}<span>{{ line }}</span>{% endfor %}</h1><p class="story-cover-tagline">{{ city.data.tagline }}</p><a class="circle-arrow" href="#city-intro" aria-label="اقرأ حكاية المدينة">↓</a></div>
-    <div class="story-cover-art {% if city.data.chapter_art.columns == 2 %}is-portrait{% endif %}" role="img" aria-label="رسم تصوري مستوحى من {{ city.name }}" style="--art-columns:{{ city.data.chapter_art.columns }};--art-rows:{{ city.data.chapter_art.rows }};--art-x:{{ city.data.chapter_art.x }};--art-y:{{ city.data.chapter_art.y }};--art-ratio:{{ city.data.chapter_art.ratio }}"><img src="{% static city.data.chapter_art.file %}" alt="" fetchpriority="high" decoding="async"></div>
-  </section>
-  <nav class="chapter-nav wrap" aria-label="فصول الحكاية"><a href="#city-intro">المكان</a><a href="#culture">موروث المدينة</a><a href="#gallery">بعين أقرب</a><a href="#memory">الذاكرة</a>{% if city.data.video %}<a href="#film">شاهد الحكاية</a>{% endif %}</nav>
-  <section class="section wrap story-intro" id="city-intro"><div class="reveal"><p class="eyebrow">٠١ / روح المكان</p><h2>{{ city.summary }}</h2></div><div class="reveal"><p class="body-large">{{ city.data.intro }}</p><span class="micro latin">{{ city.data.label }}</span></div></section>
-  <section class="section wrap" id="culture"><div class="section-heading reveal"><div><p class="eyebrow">٠٢ / موروث المدينة</p><h2>التفاصيل التي<br><span class="muted">تصنع الاختلاف.</span></h2></div><span class="micro latin">ARCHITECTURE / CRAFT / TASTE</span></div>
-    <div class="culture-chapters">{% for section in city.data.sections %}<details class="culture-chapter reveal" {% if forloop.first %}open{% endif %}><summary><span class="chapter-number latin">0{{ forloop.counter }}</span><h3>{{ section.title }}</h3><span class="chapter-symbol" aria-hidden="true">+</span></summary><div class="chapter-body"><p>{{ section.text }}</p></div></details>{% endfor %}</div>
-  </section>
-  <section class="quote-band"><div class="wrap reveal"><span class="quote-mark" aria-hidden="true">“</span><blockquote>{{ city.data.quote }}</blockquote><span class="micro">من قراءة تَليد للمكان</span></div></section>
-  <section class="section wrap" id="gallery"><div class="section-heading reveal"><div><p class="eyebrow">٠٣ / بعين أقرب</p><h2>لكل زاوية،<br><span class="muted">حكايتها.</span></h2></div><span class="micro">اضغط على الصورة لتقترب أكثر ↖</span></div>
-    <div class="story-gallery {% if city.data.gallery|length == 1 %}is-single{% endif %}">{% for image in city.data.gallery %}<figure class="gallery-item reveal"><button class="gallery-open photo-frame" type="button" data-gallery-index="{{ forloop.counter0 }}" aria-label="تكبير: {{ image.caption }}">{% include 'includes/image.html' with image=image alt=image.caption %}<span class="photo-arrow" aria-hidden="true">↗</span></button><figcaption><span class="latin">0{{ forloop.counter }}</span>{{ image.caption }}</figcaption></figure>{% endfor %}</div>
-  </section>
-  <section class="section wrap landmarks"><div class="reveal"><p class="eyebrow">٠٤ / عناوين في المكان</p><h2>ابدأ من هنا.</h2></div><div class="landmark-list">{% for item in city.data.landmarks %}<div class="landmark reveal"><span class="micro latin">0{{ forloop.counter }}</span><div><h3>{{ item.name }}</h3><p>{{ item.text }}</p></div></div>{% endfor %}</div></section>
-  <section class="section wrap" id="memory"><div class="section-heading reveal"><div><p class="eyebrow">٠٥ / ذاكرة المكان</p><h2>أثرٌ يمتد.<br><span class="muted">وحكاية تستمر.</span></h2></div></div><div class="timeline">{% for moment in city.data.timeline %}<div class="timeline-stop reveal"><span class="timeline-dot" aria-hidden="true"></span><p class="timeline-label">{{ moment.label }}</p><h3>{{ moment.title }}</h3><p>{{ moment.text }}</p></div>{% endfor %}</div></section>
-{% if city.data.video %}
-  <section class="film-section" id="film"><div class="wrap film-layout"><div class="film-copy reveal"><p class="eyebrow">٠٦ / الحكاية تتحرّك</p><h2>بعض الحكايات<br>تستحق أن <em>تُشاهد.</em></h2><p>{{ city.data.video.context }}</p><span class="micro">{{ city.data.video.publisher }}</span><a class="text-link" href="https://www.youtube.com/watch?v={{ city.data.video.id }}" target="_blank" rel="noopener noreferrer">شاهد على YouTube ↗</a></div><button class="film-poster photo-frame reveal" type="button" data-video-id="{{ city.data.video.id }}" data-video-title="{{ city.data.video.title }}" aria-label="تشغيل {{ city.data.video.title }}">{% include 'includes/image.html' with image=city.data.hero alt=city.data.video.title %}<span class="play-button" aria-hidden="true">▷</span><span class="film-caption">{{ city.data.video.title }}</span></button></div></section>
+<article class="atlas hierarchy-atlas {% if is_governorate %}governorate-atlas{% endif %}" data-atlas="{{ city.slug }}">
+  <section class="atlas-cover" id="place" aria-labelledby="atlas-title">
+    <div class="atlas-wrap atlas-breadcrumb"><a href="{% url 'main:cities' %}{% if directory_slug %}#chapter-{{ directory_slug }}{% endif %}">اكتشف المدن <span aria-hidden="true">/</span></a>{% if parent_city %}<a href="{{ parent_city.get_absolute_url }}#governorates">{{ parent_city.name }} · محافظات المنطقة /</a>{% endif %}<span>أطلس {{ city.name }}</span>{% include 'includes/save.html' %}</div>
+    <div class="atlas-wrap atlas-cover-grid">
+      <div class="atlas-cover-copy">
+        <p class="atlas-eyebrow"><span class="atlas-rule"></span>أطلس تَليد <bdi>{{ city.number }} / {% if is_governorate %}{{ region_info.governorate_count }}{% else %}{{ total_cities }}{% endif %}</bdi>{% if is_governorate %} · محافظة{% endif %}</p>
+        <h1 id="atlas-title">{% for line in city.data.name_lines %}<span>{{ line }}</span>{% endfor %}</h1>
+        <p class="atlas-cover-tagline">{{ city.data.tagline }}</p>
+        <p class="atlas-cover-intro">{{ atlas.intro }}</p>
+        <a class="atlas-outline-link" href="#time">افتح الحكاية <span aria-hidden="true">←</span></a>
+        <p class="atlas-location"><span class="atlas-compass" aria-hidden="true">✳</span>{{ city.region }}<span class="latin">{{ city.english_name }}</span></p>
+      </div>
+      <div class="atlas-cover-visual" data-parallax>
+        <div class="atlas-arch" aria-hidden="true"></div><div class="atlas-drawing" aria-hidden="true"></div>
+        <span class="atlas-plate-number latin" aria-hidden="true">PLATE / {{ city.number }}</span>
+        {% if is_governorate and city.data.hero %}<figure class="governorate-cover-photo">{% include 'includes/image.html' with image=city.data.hero alt=atlas.history_caption eager=True %}<figcaption>{{ atlas.history_caption }}</figcaption></figure>
+        {% else %}        <div class="atlas-sprite {% if city.data.chapter_art.columns == 2 %}is-portrait{% endif %}" style="--art-columns:{{ city.data.chapter_art.columns }};--art-rows:{{ city.data.chapter_art.rows }};--art-x:{{ city.data.chapter_art.x }};--art-y:{{ city.data.chapter_art.y }};--art-ratio:{{ city.data.chapter_art.ratio }}"><img src="{% static city.data.chapter_art.file %}" alt="تكوين فني تصوّري مستوحى من {% if is_governorate %}{{ city.region }}{% else %}{{ city.name }}{% endif %}" fetchpriority="high" decoding="async"></div>
 {% endif %}
-  <section class="section wrap experiences"><div class="reveal"><p class="eyebrow">٠٧ / خذ وقتك</p><h2>عِش التفاصيل.</h2><p class="muted">اقتراحات للتعرّف على الثقافة؛ ليست جدول فعاليات أو حجوزات.</p></div><ol>{% for item in city.data.experiences %}<li class="reveal">{{ item }}</li>{% endfor %}</ol></section>
-  <section class="wrap story-sources"><h2>للحكاية مصادر</h2><div>{% for source in city.data.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }} ↗</a>{% endfor %}</div><a href="{% url 'main:sources' %}">حقوق الصور ومصادر الميديا ↗</a></section>
-  <a class="next-story" href="{% url 'main:city_detail' slug=next_city.slug %}"><div class="wrap"><span class="eyebrow">الحكاية مستمرة / المدينة التالية</span><span class="next-city">{{ next_city.name }}</span><span class="next-arrow" aria-hidden="true">↖</span></div></a>
+        <div class="atlas-annotations">{% for landmark in atlas.landmarks %}<a class="atlas-annotation annotation-{{ forloop.counter }}" href="#landmark-{{ forloop.counter }}"><bdi>0{{ forloop.counter }}</bdi><span>{{ landmark.name }}</span><i aria-hidden="true"></i></a>{% endfor %}</div>
+        <p class="atlas-art-note">{% if is_governorate and city.data.hero %}صورة موثّقة من المحافظة{% elif is_governorate %}تكوين فني مستوحى من المنطقة — ليس صورة لمعالم المحافظة{% else %}تكوين فني للمكان — الصور الموثّقة في قسم المعالم{% endif %}</p>
+      </div>
+    </div>
+    <div class="atlas-wrap atlas-cover-foot"><span>{{ atlas.setting }}</span><a href="#time">مرّر لتقرأ الأثر <span aria-hidden="true">↓</span></a><span class="latin">A CITY, THROUGH ITS STORIES</span></div>
+  </section>
+
+  <nav class="atlas-nav" aria-label="أبواب أطلس المدينة"><div class="atlas-wrap"><a href="#place" aria-current="location"><bdi>01</bdi> المكان</a><a href="#time"><bdi>02</bdi> الزمن</a><a href="#landmarks"><bdi>03</bdi> المعالم</a><a href="#people"><bdi>04</bdi> الناس</a>{% if governorate_cards %}<a href="#governorates"><bdi>05</bdi> محافظات المنطقة</a>{% endif %}<span class="atlas-nav-city">{{ city.name }}</span></div><span class="atlas-reading-progress" aria-hidden="true"></span></nav>
+
+  <section class="atlas-section atlas-wrap" id="time" aria-labelledby="time-title">
+    <div class="atlas-section-heading reveal"><div><p class="atlas-eyebrow">٠٢ / الزمن</p><h2 id="time-title">{% if is_governorate %}المكان،<br>وذاكرته.{% else %}مدينةٌ،<br>تعبر الأزمنة.{% endif %}</h2></div><p>محطات لفهم ما نراه اليوم.<br>افتح محطة، واقرأ أثرها في المكان.</p></div>
+    <div class="atlas-time-layout">
+      {% if atlas.history_image %}<figure class="atlas-time-photo reveal">{% include 'includes/image.html' with image=atlas.history_image alt=atlas.history_caption %}<figcaption><span class="latin">VISUAL RECORD / {{ city.number }}</span><span>{{ atlas.history_caption }}</span></figcaption></figure>{% endif %}
+      <div class="atlas-timeline reveal">{% for moment in atlas.history %}<details class="atlas-moment" name="history-{{ city.slug }}" {% if forloop.first %}open{% endif %}><summary><span class="atlas-time-dot" aria-hidden="true"></span><span class="atlas-time-era">{{ moment.era }}</span><span class="atlas-time-symbol" aria-hidden="true">+</span></summary><div class="atlas-time-content"><span class="atlas-stamp">محطة ٠{{ forloop.counter }}</span><h3>{{ moment.title }}</h3><p>{{ moment.text }}</p><a href="{{ moment.source.url }}" target="_blank" rel="noopener noreferrer" class="atlas-source-link">{{ moment.source.label }} ↗</a></div></details>{% endfor %}</div>
+    </div>
+  </section>
+
+  <section class="atlas-section atlas-wrap atlas-landmarks-section" id="landmarks" aria-labelledby="landmarks-title">
+    <div class="atlas-section-heading reveal"><div><p class="atlas-eyebrow">٠٣ / المعالم</p><h2 id="landmarks-title">معالم تحفظ<br>الذاكرة.</h2></div><p>صورة تقرّب المكان، وحكاية تكشفه.<br>اضغط على الصورة لتراها بحجم أكبر.</p></div>
+    <div class="atlas-landmarks">{% for landmark in atlas.landmarks %}<article id="landmark-{{ forloop.counter }}" class="atlas-landmark {% if forloop.first %}is-featured{% endif %} reveal">
+      {% if landmark.image %}<figure><button type="button" class="atlas-photo-button" data-gallery-index="{{ landmark.gallery_index }}" aria-label="تكبير: {{ landmark.caption }}">{% include 'includes/image.html' with image=landmark.image alt=landmark.caption %}<span class="atlas-photo-expand" aria-hidden="true">↗</span></button><figcaption><bdi>0{{ forloop.counter }}</bdi><span>{{ landmark.caption }}</span></figcaption></figure>{% endif %}
+      <div class="atlas-landmark-copy"><p class="atlas-place-scope">{{ landmark.scope }}</p><h3>{{ landmark.name }}</h3><p>{{ landmark.text }}</p><div class="atlas-landmark-links"><a href="{{ landmark.map_url }}" target="_blank" rel="noopener noreferrer">الموقع على الخريطة ↗</a><a href="{{ landmark.source.url }}" target="_blank" rel="noopener noreferrer">عن المعلم ↗</a></div></div>
+    </article>{% endfor %}</div>
+    {% if atlas.extra_gallery %}<details class="atlas-more-photos"><summary>من زوايا أخرى <span aria-hidden="true">+</span></summary><div class="atlas-extra-gallery">{% for image in atlas.extra_gallery %}<figure><button class="atlas-photo-button" type="button" data-gallery-index="{{ image.gallery_index }}" aria-label="تكبير: {{ image.caption }}">{% include 'includes/image.html' with image=image alt=image.caption %}<span class="atlas-photo-expand" aria-hidden="true">↗</span></button><figcaption>{{ image.caption }}</figcaption></figure>{% endfor %}</div></details>{% endif %}
+  </section>
+
+  <section class="atlas-people" id="people" aria-labelledby="people-title"><div class="atlas-wrap">
+    <div class="atlas-section-heading reveal"><div><p class="atlas-eyebrow">٠٤ / الناس</p><h2 id="people-title">{{ city.name }}<br>بأهلها.</h2></div><p>من المائدة إلى مهارة اليد؛<br>موروثٌ يُفهم من تفاصيل الحياة.</p></div>
+    <div class="atlas-people-layout" data-atlas-tabs>
+      <div class="atlas-people-still-life reveal" aria-hidden="true"><span class="atlas-object-mark latin">OBJECTS / MEMORY</span><div class="atlas-culture-object" data-culture-art="food"><img src="{% static 'images/taleed/culture-objects.png' %}" alt="" loading="lazy"></div><span class="atlas-still-caption">من تفاصيل الموروث — رسم تصوّري</span></div>
+      <div class="atlas-people-copy reveal"><div class="atlas-tabs-controls" aria-label="موروث أهل المدينة" hidden>{% for item in atlas.people %}<button type="button" id="people-tab-{{ item.key }}" data-tab-target="people-{{ item.key }}" data-art="{{ item.key }}">{{ item.label }}</button>{% endfor %}</div>
+      {% for item in atlas.people %}<section id="people-{{ item.key }}" class="atlas-culture-panel" data-atlas-panel><p class="atlas-eyebrow">{{ item.label }}</p><h3>{{ item.title }}</h3><p>{{ item.text }}</p><a href="{{ item.source.url }}" class="atlas-source-link" target="_blank" rel="noopener noreferrer">اقرأ من المصدر ↗</a></section>{% endfor %}
+      </div>
+    </div>
+  </div></section>
+
+  {% if governorate_cards %}<section class="region-governorates atlas-wrap" id="governorates" aria-labelledby="governorates-title"><div class="region-governorates-heading"><div><p class="directory-kicker">٠٥ / خارج حدود المدينة</p><h2 id="governorates-title">ومن هنا، تتّسع الحكاية.</h2></div><p>محافظات مختارة من {{ region_info.label }}.<br>لكل واحدة تفاصيلها، وأطلسها المستقل.</p></div><div class="place-grid">{% for card in governorate_cards %}{% include 'includes/place_plate.html' %}{% endfor %}</div><p class="directory-colophon">المحافظات تتبع المنطقة إداريًا؛ تُعرض هنا من بوابة مدينتها الرئيسية لتسهيل الاستكشاف.</p></section>{% endif %}
+
+  {% if city.data.video %}<section class="atlas-film atlas-wrap atlas-section" aria-labelledby="film-title"><div><p class="atlas-eyebrow">الحكاية تتحرّك</p><h2 id="film-title">نافذةٌ على المكان.</h2><p>{{ city.data.video.context }}</p><p class="atlas-place-scope">{{ city.data.video.publisher }}</p><a class="atlas-source-link" href="https://www.youtube.com/watch?v={{ city.data.video.id }}" target="_blank" rel="noopener noreferrer">مشاهدة على YouTube ↗</a></div><button class="atlas-film-button" type="button" data-video-id="{{ city.data.video.id }}" data-video-title="{{ city.data.video.title }}" aria-label="تشغيل {{ city.data.video.title }}">{% include 'includes/image.html' with image=city.data.hero alt=city.data.video.title %}<span class="atlas-film-play" aria-hidden="true">▷</span></button></section>{% endif %}
+
+  <section class="atlas-wrap atlas-notes"><details><summary><span>هوامش الأطلس ومصادره</span><span aria-hidden="true">+</span></summary><div class="atlas-notes-grid"><div><h2>وراء الحكاية</h2><ul>{% for source in atlas.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }} ↗</a></li>{% endfor %}</ul></div><div><h2>الصورة وأصحابها</h2><p>الافتتاحية وعناصر الموروث رسوم تصوّرية. صور المعالم موثّقة؛ يظهر اسم المصوّر والترخيص أسفل كل صورة في المعرض المكبّر.</p><a class="atlas-source-link" href="{% url 'main:sources' %}">جميع المصادر وحقوق الصور ↗</a><p class="atlas-place-scope">المعالم خارج المدينة مبيّنة في وصف الموقع. المعلومات الثقافية تصف موروثًا محليًا أو إقليميًا، ولا تعمّم صفات على جميع السكان.</p></div></div></details></section>
+
+  <a class="atlas-next" href="{{ next_city.get_absolute_url }}"><div class="atlas-wrap"><div><span class="atlas-eyebrow">اتبع أثرًا آخر / {% if is_governorate %}المحافظة التالية{% else %}المدينة التالية{% endif %}</span><span class="atlas-next-name">{{ next_city.name }}</span><span class="atlas-next-caption">افتح الأطلس <span aria-hidden="true">←</span></span></div><div class="atlas-next-art" style="--art-columns:{{ next_city.data.chapter_art.columns }};--art-rows:{{ next_city.data.chapter_art.rows }};--art-x:{{ next_city.data.chapter_art.x }};--art-y:{{ next_city.data.chapter_art.y }};--art-ratio:{{ next_city.data.chapter_art.ratio }}"><img src="{% static next_city.data.chapter_art.file %}" alt="" loading="lazy"></div></div></a>
 </article>
 {% endblock %}
 {% block dialogs %}
-<dialog class="media-dialog gallery-dialog" aria-label="معرض صور المدينة"><div class="dialog-toolbar"><span class="gallery-counter latin"></span><button class="dialog-close" type="button" aria-label="إغلاق معرض الصور">إغلاق ×</button></div><div class="lightbox-stage"><button class="gallery-prev" type="button" aria-label="الصورة السابقة">→</button><img class="lightbox-image" alt=""><button class="gallery-next" type="button" aria-label="الصورة التالية">←</button></div><p class="lightbox-caption" aria-live="polite"></p></dialog>
-{% if city.data.video %}
-<dialog class="media-dialog video-dialog" aria-label="فيلم المدينة"><div class="dialog-toolbar"><span>{{ city.data.video.title }}</span><button class="dialog-close" type="button" aria-label="إغلاق الفيديو">إغلاق ×</button></div><div class="video-container"></div><p class="video-fallback">إذا تعذّر التشغيل، <a href="https://www.youtube.com/watch?v={{ city.data.video.id }}" target="_blank" rel="noopener noreferrer">شاهد الفيلم على YouTube ↗</a></p></dialog>
-{% endif %}
+<dialog class="media-dialog gallery-dialog atlas-gallery-dialog" aria-label="معرض صور {{ city.name }}"><div class="dialog-toolbar"><span class="gallery-counter latin"></span><button class="dialog-close" type="button" aria-label="إغلاق معرض الصور">إغلاق ×</button></div><div class="lightbox-stage"><button class="gallery-prev" type="button" aria-label="الصورة السابقة">→</button><img class="lightbox-image" alt=""><button class="gallery-next" type="button" aria-label="الصورة التالية">←</button></div><p class="lightbox-caption" aria-live="polite"></p><p class="atlas-lightbox-credit" data-atlas-photo-credit></p><a class="atlas-source-link" data-atlas-photo-source target="_blank" rel="noopener noreferrer">الصورة الأصلية والترخيص ↗</a></dialog>
+{{ atlas.gallery_credits|json_script:'atlas-photo-credits' }}
+{% if city.data.video %}<dialog class="media-dialog video-dialog" aria-label="فيلم المدينة"><div class="dialog-toolbar"><span>{{ city.data.video.title }}</span><button class="dialog-close" type="button" aria-label="إغلاق الفيديو">إغلاق ×</button></div><div class="video-container"></div><p class="video-fallback">إذا تعذّر التشغيل، <a href="https://www.youtube.com/watch?v={{ city.data.video.id }}" target="_blank" rel="noopener noreferrer">شاهد الفيلم على YouTube ↗</a></p></dialog>{% endif %}
 {% endblock %}
-
 {% block footer %}{% include 'includes/editorial_footer.html' %}{% endblock %}
