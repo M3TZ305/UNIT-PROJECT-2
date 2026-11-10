@@ -1,25 +1,30 @@
-{% extends 'base.html' %}
-{% block title %}{{ city.name }} — ملامح{% endblock %}
+{% extends 'base.html' %}{% load static %}
+{% block title %}{{ city.name }} — تَليد{% endblock %}
 {% block description %}{{ city.summary }} اكتشف العمارة والحرف والمذاق من ثقافة {{ city.name }}.{% endblock %}
+{% block body_class %}taleed-theme taleed-city-story{% endblock %}
+{% block browser_color %}{% if theme == 'dark' %}#292e28{% else %}#d8d2b8{% endif %}{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/editorial.css' %}"><link rel="stylesheet" href="{% static 'css/story.css' %}">{% endblock %}
 {% block content %}
 <article class="city-story" style="--city-accent:{{ city.data.accent }}">
   <div class="city-breadcrumb wrap"><a href="{% url 'main:cities' %}">المدن</a><span aria-hidden="true">/</span><span>{{ city.name }}</span>{% include 'includes/save.html' %}</div>
-  <section class="city-hero wrap">
-    <div class="city-hero-image photo-frame" style="view-transition-name:city-{{ city.slug }}">{% include 'includes/image.html' with image=city.data.hero alt=city.data.gallery.0.caption eager=True %}<span class="city-hero-en latin">{{ city.english_name }}</span></div>
-    <div class="city-hero-copy"><p class="eyebrow">{{ city.number }} / 06 — {{ city.region }}</p><h1>{{ city.name }}</h1><p class="city-tagline">{{ city.data.tagline }}</p><a class="circle-arrow" href="#city-intro" aria-label="اقرأ حكاية المدينة">↓</a></div>
+  <section class="story-cover wrap" aria-labelledby="story-title">
+    <div class="story-cover-copy"><p class="eyebrow">{{ city.number }} / {{ total_cities }} — {{ city.region }}</p><h1 id="story-title">{% for line in city.data.name_lines %}<span>{{ line }}</span>{% endfor %}</h1><p class="story-cover-tagline">{{ city.data.tagline }}</p><a class="circle-arrow" href="#city-intro" aria-label="اقرأ حكاية المدينة">↓</a></div>
+    <div class="story-cover-art {% if city.data.chapter_art.columns == 2 %}is-portrait{% endif %}" role="img" aria-label="رسم تصوري مستوحى من {{ city.name }}" style="--art-columns:{{ city.data.chapter_art.columns }};--art-rows:{{ city.data.chapter_art.rows }};--art-x:{{ city.data.chapter_art.x }};--art-y:{{ city.data.chapter_art.y }};--art-ratio:{{ city.data.chapter_art.ratio }}"><img src="{% static city.data.chapter_art.file %}" alt="" fetchpriority="high" decoding="async"></div>
   </section>
-  <nav class="chapter-nav wrap" aria-label="فصول الحكاية"><a href="#city-intro">المكان</a><a href="#culture">ملامح الثقافة</a><a href="#gallery">بعين أقرب</a><a href="#memory">الذاكرة</a><a href="#film">شاهد الحكاية</a></nav>
+  <nav class="chapter-nav wrap" aria-label="فصول الحكاية"><a href="#city-intro">المكان</a><a href="#culture">موروث المدينة</a><a href="#gallery">بعين أقرب</a><a href="#memory">الذاكرة</a>{% if city.data.video %}<a href="#film">شاهد الحكاية</a>{% endif %}</nav>
   <section class="section wrap story-intro" id="city-intro"><div class="reveal"><p class="eyebrow">٠١ / روح المكان</p><h2>{{ city.summary }}</h2></div><div class="reveal"><p class="body-large">{{ city.data.intro }}</p><span class="micro latin">{{ city.data.label }}</span></div></section>
-  <section class="section wrap" id="culture"><div class="section-heading reveal"><div><p class="eyebrow">٠٢ / ملامح الثقافة</p><h2>التفاصيل التي<br><span class="muted">تصنع الاختلاف.</span></h2></div><span class="micro latin">ARCHITECTURE / CRAFT / TASTE</span></div>
+  <section class="section wrap" id="culture"><div class="section-heading reveal"><div><p class="eyebrow">٠٢ / موروث المدينة</p><h2>التفاصيل التي<br><span class="muted">تصنع الاختلاف.</span></h2></div><span class="micro latin">ARCHITECTURE / CRAFT / TASTE</span></div>
     <div class="culture-chapters">{% for section in city.data.sections %}<details class="culture-chapter reveal" {% if forloop.first %}open{% endif %}><summary><span class="chapter-number latin">0{{ forloop.counter }}</span><h3>{{ section.title }}</h3><span class="chapter-symbol" aria-hidden="true">+</span></summary><div class="chapter-body"><p>{{ section.text }}</p></div></details>{% endfor %}</div>
   </section>
-  <section class="quote-band"><div class="wrap reveal"><span class="quote-mark" aria-hidden="true">“</span><blockquote>{{ city.data.quote }}</blockquote><span class="micro">من قراءة ملامح للمكان</span></div></section>
+  <section class="quote-band"><div class="wrap reveal"><span class="quote-mark" aria-hidden="true">“</span><blockquote>{{ city.data.quote }}</blockquote><span class="micro">من قراءة تَليد للمكان</span></div></section>
   <section class="section wrap" id="gallery"><div class="section-heading reveal"><div><p class="eyebrow">٠٣ / بعين أقرب</p><h2>لكل زاوية،<br><span class="muted">حكايتها.</span></h2></div><span class="micro">اضغط على الصورة لتقترب أكثر ↖</span></div>
-    <div class="story-gallery">{% for image in city.data.gallery %}<figure class="gallery-item reveal"><button class="gallery-open photo-frame" type="button" data-gallery-index="{{ forloop.counter0 }}" aria-label="تكبير: {{ image.caption }}">{% include 'includes/image.html' with image=image alt=image.caption %}<span class="photo-arrow" aria-hidden="true">↗</span></button><figcaption><span class="latin">0{{ forloop.counter }}</span>{{ image.caption }}</figcaption></figure>{% endfor %}</div>
+    <div class="story-gallery {% if city.data.gallery|length == 1 %}is-single{% endif %}">{% for image in city.data.gallery %}<figure class="gallery-item reveal"><button class="gallery-open photo-frame" type="button" data-gallery-index="{{ forloop.counter0 }}" aria-label="تكبير: {{ image.caption }}">{% include 'includes/image.html' with image=image alt=image.caption %}<span class="photo-arrow" aria-hidden="true">↗</span></button><figcaption><span class="latin">0{{ forloop.counter }}</span>{{ image.caption }}</figcaption></figure>{% endfor %}</div>
   </section>
   <section class="section wrap landmarks"><div class="reveal"><p class="eyebrow">٠٤ / عناوين في المكان</p><h2>ابدأ من هنا.</h2></div><div class="landmark-list">{% for item in city.data.landmarks %}<div class="landmark reveal"><span class="micro latin">0{{ forloop.counter }}</span><div><h3>{{ item.name }}</h3><p>{{ item.text }}</p></div></div>{% endfor %}</div></section>
   <section class="section wrap" id="memory"><div class="section-heading reveal"><div><p class="eyebrow">٠٥ / ذاكرة المكان</p><h2>أثرٌ يمتد.<br><span class="muted">وحكاية تستمر.</span></h2></div></div><div class="timeline">{% for moment in city.data.timeline %}<div class="timeline-stop reveal"><span class="timeline-dot" aria-hidden="true"></span><p class="timeline-label">{{ moment.label }}</p><h3>{{ moment.title }}</h3><p>{{ moment.text }}</p></div>{% endfor %}</div></section>
+{% if city.data.video %}
   <section class="film-section" id="film"><div class="wrap film-layout"><div class="film-copy reveal"><p class="eyebrow">٠٦ / الحكاية تتحرّك</p><h2>بعض الحكايات<br>تستحق أن <em>تُشاهد.</em></h2><p>{{ city.data.video.context }}</p><span class="micro">{{ city.data.video.publisher }}</span><a class="text-link" href="https://www.youtube.com/watch?v={{ city.data.video.id }}" target="_blank" rel="noopener noreferrer">شاهد على YouTube ↗</a></div><button class="film-poster photo-frame reveal" type="button" data-video-id="{{ city.data.video.id }}" data-video-title="{{ city.data.video.title }}" aria-label="تشغيل {{ city.data.video.title }}">{% include 'includes/image.html' with image=city.data.hero alt=city.data.video.title %}<span class="play-button" aria-hidden="true">▷</span><span class="film-caption">{{ city.data.video.title }}</span></button></div></section>
+{% endif %}
   <section class="section wrap experiences"><div class="reveal"><p class="eyebrow">٠٧ / خذ وقتك</p><h2>عِش التفاصيل.</h2><p class="muted">اقتراحات للتعرّف على الثقافة؛ ليست جدول فعاليات أو حجوزات.</p></div><ol>{% for item in city.data.experiences %}<li class="reveal">{{ item }}</li>{% endfor %}</ol></section>
   <section class="wrap story-sources"><h2>للحكاية مصادر</h2><div>{% for source in city.data.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }} ↗</a>{% endfor %}</div><a href="{% url 'main:sources' %}">حقوق الصور ومصادر الميديا ↗</a></section>
   <a class="next-story" href="{% url 'main:city_detail' slug=next_city.slug %}"><div class="wrap"><span class="eyebrow">الحكاية مستمرة / المدينة التالية</span><span class="next-city">{{ next_city.name }}</span><span class="next-arrow" aria-hidden="true">↖</span></div></a>
@@ -27,5 +32,9 @@
 {% endblock %}
 {% block dialogs %}
 <dialog class="media-dialog gallery-dialog" aria-label="معرض صور المدينة"><div class="dialog-toolbar"><span class="gallery-counter latin"></span><button class="dialog-close" type="button" aria-label="إغلاق معرض الصور">إغلاق ×</button></div><div class="lightbox-stage"><button class="gallery-prev" type="button" aria-label="الصورة السابقة">→</button><img class="lightbox-image" alt=""><button class="gallery-next" type="button" aria-label="الصورة التالية">←</button></div><p class="lightbox-caption" aria-live="polite"></p></dialog>
+{% if city.data.video %}
 <dialog class="media-dialog video-dialog" aria-label="فيلم المدينة"><div class="dialog-toolbar"><span>{{ city.data.video.title }}</span><button class="dialog-close" type="button" aria-label="إغلاق الفيديو">إغلاق ×</button></div><div class="video-container"></div><p class="video-fallback">إذا تعذّر التشغيل، <a href="https://www.youtube.com/watch?v={{ city.data.video.id }}" target="_blank" rel="noopener noreferrer">شاهد الفيلم على YouTube ↗</a></p></dialog>
+{% endif %}
 {% endblock %}
+
+{% block footer %}{% include 'includes/editorial_footer.html' %}{% endblock %}

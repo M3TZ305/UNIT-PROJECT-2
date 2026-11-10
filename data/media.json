@@ -178,5 +178,205 @@
     "license": "CC BY 2.0",
     "license_url": "https://creativecommons.org/licenses/by/2.0",
     "bytes": 124084
+  },
+  "city-madinah": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Al-Masjid_An-Nabawi_%28Bird%27s_Eye_View%29.jpg/960px-Al-Masjid_An-Nabawi_%28Bird%27s_Eye_View%29.jpg",
+    "fallback": "images/cities/madinah.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Al-Masjid_An-Nabawi_(Bird%27s_Eye_View).jpg",
+    "title": "Al-Masjid An-Nabawi (Bird's Eye View).jpg",
+    "author": "Konevi",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "bytes": 191567
+  },
+  "city-makkah": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Great_Mosque_of_Mecca1.jpg/960px-Great_Mosque_of_Mecca1.jpg",
+    "fallback": "images/cities/makkah.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Mecca1.jpg",
+    "title": "Great Mosque of Mecca1.jpg",
+    "author": "Saudipics.com",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 252877
+  },
+  "city-taif": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81_%D9%85%D9%86_%D8%AC%D8%A8%D9%84_%D8%A7%D9%84%D9%87%D8%AF%D9%891.jpg/960px-%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81_%D9%85%D9%86_%D8%AC%D8%A8%D9%84_%D8%A7%D9%84%D9%87%D8%AF%D9%891.jpg",
+    "fallback": "images/cities/taif.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81_%D9%85%D9%86_%D8%AC%D8%A8%D9%84_%D8%A7%D9%84%D9%87%D8%AF%D9%891.jpg",
+    "title": "الطائف من جبل الهدى1.jpg",
+    "author": "عباد ديرانية",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "bytes": 92280
+  },
+  "city-diriyah": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/At-Turaif_District_in_ad-Dir%27iyah_%2812%29.jpg/960px-At-Turaif_District_in_ad-Dir%27iyah_%2812%29.jpg",
+    "fallback": "images/cities/diriyah.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:At-Turaif_District_in_ad-Dir%27iyah_(12).jpg",
+    "title": "At-Turaif District in ad-Dir'iyah (12).jpg",
+    "author": "Radosław Botev",
+    "license": "CC BY 3.0 pl",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/pl/deed.en",
+    "bytes": 185939
+  },
+  "city-dammam": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/%D9%88%D8%B3%D8%B7_%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.jpg/960px-%D9%88%D8%B3%D8%B7_%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.jpg",
+    "fallback": "images/cities/dammam.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%88%D8%B3%D8%B7_%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85.jpg",
+    "title": "وسط الدمام.jpg",
+    "author": "علي عدنان الرمضان",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 269084
+  },
+  "city-khobar": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Khobar_water_tower.jpg/960px-Khobar_water_tower.jpg",
+    "fallback": "images/cities/khobar.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Khobar_water_tower.jpg",
+    "title": "Khobar water tower.jpg",
+    "author": "Francisco Anzola",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 91120
+  },
+  "city-dhahran": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/King_Abdulaziz_Center_for_World_Culture_%28Ithra%29_%28cropped%29.png/960px-King_Abdulaziz_Center_for_World_Culture_%28Ithra%29_%28cropped%29.png",
+    "fallback": "images/cities/dhahran.png",
+    "source": "https://commons.wikimedia.org/wiki/File:King_Abdulaziz_Center_for_World_Culture_(Ithra)_(cropped).png",
+    "title": "King Abdulaziz Center for World Culture (Ithra) (cropped).png",
+    "author": "Ali Lajami",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 1507153
+  },
+  "city-jubail": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/%D9%85%D8%B1%D8%B3%D9%89_%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B1%D8%A8_%D8%A8%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84_%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9.jpg/960px-%D9%85%D8%B1%D8%B3%D9%89_%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B1%D8%A8_%D8%A8%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84_%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9.jpg",
+    "fallback": "images/cities/jubail.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%B1%D8%B3%D9%89_%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B1%D8%A8_%D8%A8%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%84_%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9.jpg",
+    "title": "مرسى القوارب بالجبيل الصناعية.jpg",
+    "author": "Aaiq2005",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 206383
+  },
+  "city-qatif": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/A_Farm_in_Qatif%2C_1978_05.jpg/960px-A_Farm_in_Qatif%2C_1978_05.jpg",
+    "fallback": "images/cities/qatif.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:A_Farm_in_Qatif,_1978_05.jpg",
+    "title": "A Farm in Qatif, 1978 05.jpg",
+    "author": "Abu Jack",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:A_Farm_in_Qatif,_1978_05.jpg",
+    "bytes": 348062
+  },
+  "city-hafar-al-batin": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Hafar_Al-Batin_in_Winter_002.jpg",
+    "fallback": "images/cities/hafar-al-batin.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hafar_Al-Batin_in_Winter_002.jpg",
+    "title": "Hafar Al-Batin in Winter 002.jpg",
+    "author": "Drh104 at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "bytes": 171457
+  },
+  "city-buraidah": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Buraidah.jpg",
+    "fallback": "images/cities/buraidah.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Buraidah.jpg",
+    "title": "Buraidah.jpg",
+    "author": "Daydream-Pho",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "bytes": 545142
+  },
+  "city-unaizah": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/A_picture_of_the_internal_ring_road_in_Al-shrimyah_district_in_Unaizah.jpg/960px-A_picture_of_the_internal_ring_road_in_Al-shrimyah_district_in_Unaizah.jpg",
+    "fallback": "images/cities/unaizah.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:A_picture_of_the_internal_ring_road_in_Al-shrimyah_district_in_Unaizah.jpg",
+    "title": "A picture of the internal ring road in Al-shrimyah district in Unaizah.jpg",
+    "author": "Abdullah Al-akshan",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 108259
+  },
+  "city-tabuk": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Tabuk_Fortress_2022.jpg/960px-Tabuk_Fortress_2022.jpg",
+    "fallback": "images/cities/tabuk.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tabuk_Fortress_2022.jpg",
+    "title": "Tabuk Fortress 2022.jpg",
+    "author": "amanderson2",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 125063
+  },
+  "city-sakaka": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Zabalcastle1.jpg/960px-Zabalcastle1.jpg",
+    "fallback": "images/cities/sakaka.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Zabalcastle1.jpg",
+    "title": "Zabalcastle1.jpg",
+    "author": "saudipics",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 172474
+  },
+  "city-arar": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/ADFNIGDFSN.jpg/960px-ADFNIGDFSN.jpg",
+    "fallback": "images/cities/arar.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:ADFNIGDFSN.jpg",
+    "title": "ADFNIGDFSN.jpg",
+    "author": "Unknown authorUnknown author",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "bytes": 158176
+  },
+  "city-jazan": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Jizan.jpg/960px-Jizan.jpg",
+    "fallback": "images/cities/jazan.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Jizan.jpg",
+    "title": "Jizan.jpg",
+    "author": "AliAlghamdi12",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 161296
+  },
+  "city-najran": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/%D9%82%D9%84%D8%B9%D8%A9_%D8%B1%D8%B9%D9%88%D9%85.jpg/960px-%D9%82%D9%84%D8%B9%D8%A9_%D8%B1%D8%B9%D9%88%D9%85.jpg",
+    "fallback": "images/cities/najran.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%82%D9%84%D8%B9%D8%A9_%D8%B1%D8%B9%D9%88%D9%85.jpg",
+    "title": "قلعة رعوم.jpg",
+    "author": "Mansour mohsen",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 146691
+  },
+  "city-al-baha": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Sarawat_Mountains%2C_Baha_Region%2C_Saudi_Arabia_%2815%29.jpg/960px-Sarawat_Mountains%2C_Baha_Region%2C_Saudi_Arabia_%2815%29.jpg",
+    "fallback": "images/cities/al-baha.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sarawat_Mountains,_Baha_Region,_Saudi_Arabia_(15).jpg",
+    "title": "Sarawat Mountains, Baha Region, Saudi Arabia (15).jpg",
+    "author": "Richard Mortel",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "bytes": 175209
+  },
+  "city-khamis-mushait": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Khamis_Mushayt_Heritage_area_Statue_of_coffee.jpg/960px-Khamis_Mushayt_Heritage_area_Statue_of_coffee.jpg",
+    "fallback": "images/cities/khamis-mushait.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Khamis_Mushayt_Heritage_area_Statue_of_coffee.jpg",
+    "title": "Khamis Mushayt Heritage area Statue of coffee.jpg",
+    "author": "Aiman titi",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "bytes": 238399
+  },
+  "city-yanbu": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Yanbu_Beach_1.jpg",
+    "fallback": "images/cities/yanbu.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Yanbu_Beach_1.jpg",
+    "title": "Yanbu Beach 1.jpg",
+    "author": "Abdullah Imran (Pakistan)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "bytes": 207076
   }
 }

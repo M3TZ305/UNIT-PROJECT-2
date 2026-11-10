@@ -4,27 +4,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="{% if theme == 'dark' %}#211b21{% else %}#eae9e5{% endif %}">
-  <meta name="description" content="{% block description %}ملامح — رحلة بصرية في ثقافات المدن السعودية، من العمارة والحرف إلى حكايات المائدة.{% endblock %}">
-  <title>{% block title %}ملامح — أماكن تسكننا{% endblock %}</title>
+  <meta name="theme-color" content="{% block browser_color %}{% if theme == 'dark' %}#211b21{% else %}#eae9e5{% endif %}{% endblock %}">
+  <meta name="description" content="{% block description %}تَليد — رحلة بصرية في ثقافات المدن السعودية، من العمارة والحرف إلى حكايات المائدة.{% endblock %}">
+  <title>{% block title %}تَليد — موروث المدن، وحكايات أهلها{% endblock %}</title>
   <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://thumb.wikimedia.org">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% block extra_css %}{% endblock %}
   <script src="{% static 'js/media.js' %}"></script>
   <script src="{% static 'js/main.js' %}" defer></script>
 </head>
-<body id="top">
+<body id="top" class="{% block body_class %}{% endblock %}">
   <a class="skip-link" href="#main-content">انتقل إلى المحتوى</a>
   <header class="site-header wrap">
-    <a class="brand" href="{% url 'main:home' %}" aria-label="ملامح — الرئيسية">ملامح<span class="brand-dot" aria-hidden="true">◆</span></a>
+    <a class="brand" href="{% url 'main:home' %}" aria-label="تَليد — الرئيسية">تَليد<span class="brand-dot" aria-hidden="true">◆</span></a>
     <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">القائمة <span aria-hidden="true">☰</span></button>
     <nav id="site-nav" class="site-nav" aria-label="التنقل الرئيسي">
       <a href="{% url 'main:home' %}" {% if nav == 'home' %}aria-current="page"{% endif %}>الرئيسية</a>
       <a href="{% url 'main:cities' %}" {% if nav == 'cities' %}aria-current="page"{% endif %}>اكتشف المدن</a>
-      <a href="{% url 'main:about' %}" {% if nav == 'about' %}aria-current="page"{% endif %}>عن ملامح</a>
+      <a href="{% url 'main:about' %}" {% if nav == 'about' %}aria-current="page"{% endif %}>عن تَليد</a>
     </nav>
     <div class="header-tools">
       <a class="saved-link" href="{% url 'main:cities' %}?saved=1" aria-label="المدن المحفوظة">حكاياتي <span data-saved-count>{{ saved_count }}</span></a>
@@ -35,10 +36,12 @@
     </div>
   </header>
   <main id="main-content">{% block content %}{% endblock %}</main>
+  {% block footer %}
   <footer class="site-footer wrap">
-    <div class="footer-top"><a class="brand" href="{% url 'main:home' %}">ملامح<span class="brand-dot" aria-hidden="true">◆</span></a><p>نقترب من المكان.<br>فنكتشف ما يسكننا فيه.</p><a class="text-link" href="{% url 'main:cities' %}">حكايتك التالية <span aria-hidden="true">↖</span></a></div>
-    <div class="footer-bottom"><span>من المملكة، بكل ملامحها. <bdi>2026 ©</bdi></span><div><a href="{% url 'main:about' %}">عن المشروع</a><a href="{% url 'main:sources' %}">المصادر وحقوق الصور</a><a href="#top">إلى الأعلى ↑</a></div><span class="micro latin">CULTURE, IN MOTION.</span></div>
+    <div class="footer-top"><a class="brand" href="{% url 'main:home' %}">تَليد<span class="brand-dot" aria-hidden="true">◆</span></a><p>نقترب من المكان.<br>فنكتشف ما يسكننا فيه.</p><a class="text-link" href="{% url 'main:cities' %}">حكايتك التالية <span aria-hidden="true">↖</span></a></div>
+    <div class="footer-bottom"><span>من المملكة، بإرثها وحكاياتها. <bdi>2026 ©</bdi></span><div><a href="{% url 'main:about' %}">عن المشروع</a><a href="{% url 'main:sources' %}">المصادر وحقوق الصور</a><a href="#top">إلى الأعلى ↑</a></div><span class="micro latin">CULTURE, IN MOTION.</span></div>
   </footer>
+  {% endblock %}
   <div class="toast" role="status" aria-live="polite"></div>
   {% block dialogs %}{% endblock %}
 </body>

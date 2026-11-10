@@ -6,7 +6,7 @@ from django.urls import reverse
 from django.utils.http import url_has_allowed_host_and_scheme
 from django.views.decorators.http import require_POST
 
-from .content import get_catalog, get_media, search_key
+from .content import get_catalog, get_media, search_key, read_data
 from .models import City
 
 
@@ -19,7 +19,7 @@ def saved_slugs(request):
         return []
     valid = get_catalog()['cities']
     return list(dict.fromkeys(value for value in values
-                             if isinstance(value, str) and value in valid))[:6]
+                             if isinstance(value, str) and value in valid))[:len(valid)]
 
 
 def common_context(request):
@@ -29,14 +29,14 @@ def common_context(request):
         'theme': theme if theme in ('light', 'dark') else 'light',
         'saved_slugs': saved, 'saved_count': len(saved),
         'categories': get_catalog()['categories'],
+        'total_cities': len(get_catalog()['cities']),
     }
 
 
 def home(request):
     return render(request, 'main/home.html', {
         **common_context(request),
-        'featured': get_object_or_404(City, slug='jeddah'),
-        'media': {key.replace('-', '_'): value for key, value in get_media().items()}, 'nav': 'home',
+        'nav': 'home',
     })
 
 
@@ -44,6 +44,7 @@ def city_list(request):
     query = request.GET.get('q', '').strip()[:100]
     category = request.GET.get('category', '')
     region = request.GET.get('region', '')
+    province = request.GET.get('province', '')
     only_saved = request.GET.get('saved') == '1'
     catalog = get_catalog()
     if category not in [item['key'] for item in catalog['categories']]:
@@ -53,7 +54,13 @@ def city_list(request):
                {'key': 'east', 'label': 'الشرق'}]
     if region not in [item['key'] for item in regions]:
         region = ''
+    provinces = catalog.get('provinces', [])
+    province_map = {item['key']: item['label'] for item in provinces}
+    if province not in province_map:
+        province = ''
     cities = City.objects.all()
+    if province:
+        cities = cities.filter(region=province_map[province])
     if region:
         cities = cities.filter(region_key=region)
     if only_saved:
@@ -66,6 +73,7 @@ def city_list(request):
     return render(request, 'main/cities.html', {
         **common_context(request), 'cities': cities, 'query': query,
         'category': category, 'region': region, 'regions': regions,
+        'province': province, 'provinces': provinces,
         'only_saved': only_saved, 'result_count': len(cities), 'nav': 'cities',
     })
 
@@ -90,7 +98,7 @@ def about(request):
 def sources(request):
     return render(request, 'main/sources.html', {
         **common_context(request), 'cities': City.objects.all(),
-        'credits': get_media().values(), 'nav': 'sources',
+        'credits': get_media().values(), 'illustrations': read_data('design_assets.json'), 'nav': 'sources',
     })
 
 

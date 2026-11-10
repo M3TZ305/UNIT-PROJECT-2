@@ -55,6 +55,46 @@
     });
   }
 
+  // Changing a category or region keeps the other GET fields and lands at results.
+  document.querySelectorAll('[data-filter-form]').forEach(form => {
+    form.addEventListener('change', event => {
+      if (event.target.matches('select[name="region"], select[name="province"], select[name="category"], input[name="category"]')) {
+        form.requestSubmit();
+      }
+    });
+  });
+
+  // Chapter anchors remain usable without JavaScript; active navigation follows reading.
+  const cityChapters = [...document.querySelectorAll('[data-city-chapter]')];
+  const chapterLinks = [...document.querySelectorAll('[data-chapter-link]')];
+  const chapterJump = document.querySelector('[data-chapter-jump]');
+  chapterJump?.addEventListener('change', () => {
+    const section = document.getElementById('chapter-' + chapterJump.value);
+    if (section) { history.replaceState(null, '', '#chapter-' + chapterJump.value); section.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' }); }
+  });
+  if (cityChapters.length && 'IntersectionObserver' in window) {
+    const cityObserver = new IntersectionObserver(entries => {
+      const visible = entries.filter(entry => entry.isIntersecting).sort((a,b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      if (!visible.length) return;
+      const slug = visible[0].target.dataset.cityChapter;
+      chapterLinks.forEach(link => {
+        if (link.dataset.chapterLink === slug) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+      if (chapterJump) chapterJump.value = slug;
+      const activeLink = chapterLinks.find(link => link.dataset.chapterLink === slug);
+      const rail = activeLink?.parentElement;
+      if (activeLink && rail && rail.clientWidth) {
+        const itemBox = activeLink.getBoundingClientRect();
+        const railBox = rail.getBoundingClientRect();
+        if (itemBox.left < railBox.left || itemBox.right > railBox.right) {
+          rail.scrollBy({ left: itemBox.left - railBox.left - (railBox.width - itemBox.width) / 2, behavior: reduced ? 'auto' : 'smooth' });
+        }
+      }
+    }, { rootMargin: '-20% 0px -50% 0px', threshold: 0 });
+    cityChapters.forEach(section => cityObserver.observe(section));
+  }
+
   async function postForm(form, submitter) {
     const data = new FormData(form);
     if (submitter?.name) data.set(submitter.name, submitter.value);
@@ -74,7 +114,8 @@
           document.documentElement.dataset.theme = result.theme;
           button.value = result.theme === 'dark' ? 'light' : 'dark';
           button.setAttribute('aria-label', result.theme === 'dark' ? 'تفعيل الوضع النهاري' : 'تفعيل الوضع الليلي');
-          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', result.theme === 'dark' ? '#211b21' : '#eae9e5');
+          const browserColor = getComputedStyle(document.body).getPropertyValue('--browser-theme').trim();
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', browserColor || (result.theme === 'dark' ? '#211b21' : '#eae9e5'));
         };
         if (document.startViewTransition && !reduced) document.startViewTransition(apply); else apply();
       } catch { announce('تعذّر حفظ الوضع. جرّب مرة أخرى.'); }

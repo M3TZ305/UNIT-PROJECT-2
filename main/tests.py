@@ -11,7 +11,7 @@ from .content import get_catalog, get_media
 from .models import City
 
 
-class MalamihTests(TestCase):
+class TaleedTests(TestCase):
     @classmethod
     def setUpTestData(cls):
         call_command('sync_cities', verbosity=0)
@@ -44,7 +44,9 @@ class MalamihTests(TestCase):
 
     def test_filters_combine(self):
         response = self.client.get('/cities/', {'region': 'east', 'category': 'crafts'})
-        self.assertEqual([city.slug for city in response.context['cities']], ['hofuf'])
+        cities = response.context['cities']
+        self.assertIn('hofuf', [city.slug for city in cities])
+        self.assertTrue(all(city.region_key == 'east' and 'crafts' in city.topics for city in cities))
 
     def test_empty_search_has_recovery_link(self):
         response = self.client.get('/cities/', {'q': 'not-a-real-city'})
@@ -117,12 +119,14 @@ class MalamihTests(TestCase):
 
     def test_city_content_and_media_are_complete(self):
         catalog, media = get_catalog(), get_media()
-        self.assertEqual(City.objects.count(), 6)
-        self.assertEqual(len(catalog['cities']), 6)
+        self.assertEqual(City.objects.count(), len(catalog['cities']))
+        self.assertGreaterEqual(City.objects.count(), 26)
         for city in City.objects.all():
             self.assertEqual(len(city.data['sections']), 3)
-            self.assertGreaterEqual(len(city.data['gallery']), 3)
-            self.assertTrue(re.fullmatch(r'[A-Za-z0-9_-]{11}', city.data['video']['id']))
+            self.assertGreaterEqual(len(city.data['gallery']), 1)
+            if city.data['video']:
+                self.assertTrue(re.fullmatch(r'[A-Za-z0-9_-]{11}', city.data['video']['id']))
+            self.assertTrue((settings.BASE_DIR / 'static' / city.data['chapter_art']['file']).is_file())
             self.assertTrue(city.data['sources'])
             self.assertTrue(city.data['timeline'])
         for item in media.values():
@@ -135,3 +139,31 @@ class MalamihTests(TestCase):
         original = list(City.objects.values_list('slug', 'pk'))
         call_command('sync_cities', verbosity=0)
         self.assertEqual(list(City.objects.values_list('slug', 'pk')), original)
+
+    def test_chapters_start_with_madinah_and_cover_thirteen_regions(self):
+        response = self.client.get('/cities/')
+        cities = response.context['cities']
+        self.assertEqual(cities[0].slug, 'madinah')
+        self.assertEqual(len({city.region for city in cities}), 13)
+        self.assertContains(response, 'id="chapter-madinah"')
+        self.assertContains(response, 'data-chapter-link="madinah"')
+
+    def test_administrative_province_filter(self):
+        response = self.client.get('/cities/', {'province': 'madinah'})
+        self.assertEqual([city.slug for city in response.context['cities']], ['madinah', 'alula', 'yanbu'])
+        response = self.client.get('/cities/', {'province': 'not-real'})
+        self.assertEqual(response.context['province'], '')
+
+    def test_more_than_six_saved_cities(self):
+        slugs = list(City.objects.values_list('slug', flat=True))[:9]
+        for slug in slugs:
+            response = self.client.post(reverse('main:toggle_saved', kwargs={'slug': slug}), HTTP_ACCEPT='application/json')
+            self.assertTrue(response.json()['saved'])
+        response = self.client.get('/cities/', {'saved': 1})
+        self.assertEqual(response.context['result_count'], 9)
+
+    def test_missing_film_does_not_render_empty_player_link(self):
+        response = self.client.get('/cities/madinah/')
+        self.assertEqual(response.status_code, 200)
+        self.assertNotContains(response, 'class="film-section"')
+        self.assertNotContains(response, 'https://www.youtube.com/watch?v="')
