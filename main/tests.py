@@ -18,7 +18,7 @@ class TaleedTests(TestCase):
         call_command('sync_geography', verbosity=0)
 
     def test_all_pages_use_shared_template(self):
-        paths = ['/', '/cities/', '/about/', '/culture/architecture/', '/culture/crafts/', '/culture/food/']
+        paths = ['/home/', '/cities/', '/about/', '/culture/architecture/', '/culture/crafts/', '/culture/food/']
         paths += [reverse('main:city_detail', kwargs={'slug': city.slug}) for city in City.objects.all()]
         for path in paths:
             with self.subTest(path=path):
@@ -27,13 +27,17 @@ class TaleedTests(TestCase):
                 self.assertTemplateUsed(response, 'base.html')
                 self.assertNotContains(response, 'src=""')
 
+    def test_root_redirects_to_home(self):
+        response = self.client.get('/')
+        self.assertRedirects(response, '/home/', fetch_redirect_response=False)
+
     def test_path_parameter_and_named_url(self):
         url = reverse('main:city_detail', kwargs={'slug': 'jeddah'})
         self.assertEqual(resolve(url).kwargs, {'slug': 'jeddah'})
         self.assertTemplateUsed(self.client.get(url), 'main/city_detail.html')
 
     def test_home_stays_editorial_without_city_grid(self):
-        response = self.client.get('/')
+        response = self.client.get('/home/')
         self.assertNotContains(response, 'cities-grid')
         self.assertContains(response, reverse('main:culture_topic', kwargs={'topic': 'crafts'}))
 
@@ -68,18 +72,18 @@ class TaleedTests(TestCase):
         response = self.client.post('/preferences/theme/', {'theme': 'dark', 'next': '/cities/'})
         self.assertRedirects(response, '/cities/')
         self.assertTrue(response.cookies['theme']['httponly'])
-        self.assertContains(self.client.get('/'), 'data-theme="dark"')
+        self.assertContains(self.client.get('/home/'), 'data-theme="dark"')
 
     def test_invalid_theme_falls_back(self):
         self.client.cookies['theme'] = 'invalid'
-        self.assertContains(self.client.get('/'), 'data-theme="light"')
+        self.assertContains(self.client.get('/home/'), 'data-theme="light"')
         response = self.client.post('/preferences/theme/', {'theme': 'invalid'})
         self.assertEqual(response.cookies['theme'].value, 'light')
 
     def test_preference_redirect_rejects_external_url(self):
         for target in ['https://evil.example/', '//evil.example/']:
             response = self.client.post('/preferences/theme/', {'theme': 'dark', 'next': target})
-            self.assertEqual(response['Location'], '/')
+            self.assertEqual(response['Location'], '/home/')
 
     def test_ajax_theme_response(self):
         response = self.client.post('/preferences/theme/', {'theme': 'dark'}, HTTP_ACCEPT='application/json')
@@ -107,7 +111,7 @@ class TaleedTests(TestCase):
         for url in ['/preferences/theme/', '/cities/jeddah/save/']:
             self.assertEqual(secure_client.get(url).status_code, 405)
             self.assertEqual(secure_client.post(url, {'theme': 'dark'}).status_code, 403)
-        secure_client.get('/')
+        secure_client.get('/home/')
         csrf = secure_client.cookies['csrftoken'].value
         response = secure_client.post('/preferences/theme/', {'theme': 'dark', 'csrfmiddlewaretoken': csrf})
         self.assertEqual(response.status_code, 302)
@@ -232,7 +236,7 @@ class TaleedTests(TestCase):
                 self.assertIn('maps/search/?api=1&query=', landmark['map_url'])
 
     def test_home_cultural_options_open_subject_pages(self):
-        response = self.client.get('/')
+        response = self.client.get('/home/')
         for topic in ('architecture', 'crafts', 'food'):
             self.assertContains(response, reverse('main:culture_topic', kwargs={'topic': topic}))
             self.assertNotContains(response, f'?category={topic}')

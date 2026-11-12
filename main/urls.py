@@ -1,11 +1,13 @@
 from django.urls import path
+from django.views.generic import RedirectView
 from django.views.i18n import set_language
 from . import views
 
 app_name = 'main'
 urlpatterns = [
     path('preferences/language/', set_language, name='set_language'),
-    path('', views.home, name='home'),
+    path('home/', views.home, name='home'),
+    path('', RedirectView.as_view(url='home/', permanent=False)),
     path('culture/<slug:topic>/', views.culture_topic, name='culture_topic'),
     path('cities/', views.city_list, name='cities'),
     path('cities/<slug:capital_slug>/governorates/<slug:slug>/', views.governorate_detail, name='governorate_detail'),

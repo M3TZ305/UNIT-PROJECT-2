@@ -3,10 +3,10 @@ body.taleed-theme{
  --th-cream:#e6dfca;--th-sage:#b4bfaa;--th-peach:#e2c4ad;--th-teal:#244647;
  --th-ink:#29352e;--th-muted:#535e50;--th-ivory:#faf0dc;
  --tone-accent:#914b2d;--tone-line:color-mix(in srgb,var(--th-ink) 20%,transparent);
- --type-title:clamp(36px,3.3vw,50px);--type-section:clamp(29px,2.5vw,37px);--type-item:clamp(25px,2vw,30px);
- --font-heading:'Markazi Text',Georgia,serif;--font-story:'Readex Pro',Tahoma,sans-serif;
- --font-expression:'Aref Ruqaa','Markazi Text',serif;--font-ui:'Readex Pro',Tahoma,sans-serif;
- font-family:var(--font-story);font-weight:400;line-height:1.95;
+ --type-title:clamp(38px,3.8vw,56px);--type-section:clamp(30px,2.8vw,40px);--type-item:clamp(24px,2.2vw,32px);
+ --font-heading:'Amiri','Markazi Text',Georgia,serif;--font-story:'Readex Pro',Tahoma,sans-serif;
+ --font-expression:'Aref Ruqaa','Amiri',serif;--font-ui:'Readex Pro',Tahoma,sans-serif;
+ font-family:var(--font-story);font-weight:400;line-height:2.0;
 }
 html[data-theme=dark] body.taleed-theme{
  --th-cream:#252f2a;--th-sage:#35483d;--th-peach:#4b4035;--th-teal:#173b3c;
@@ -16,27 +16,28 @@ html[lang=en] body.taleed-theme{
  --font-heading:Georgia,'Times New Roman',serif;--font-expression:Georgia,'Times New Roman',serif;
  --font-story:'Readex Pro',Arial,sans-serif;--font-ui:'Readex Pro',Arial,sans-serif;
  --type-title:clamp(30px,3vw,44px);--type-section:clamp(25px,2.2vw,33px);--type-item:clamp(21px,1.8vw,26px);
- line-height:1.8;
+ line-height:1.85;
 }
-html body.taleed-theme :is(h1,h2,h3,h4,h5,h6){font-family:var(--font-heading);font-weight:400;letter-spacing:0;line-height:1.45;text-wrap:balance;overflow-wrap:break-word}
-html body.taleed-theme :is(.doors-heading,.about-opening,.topic-hero-copy,.page-intro) h1{font-size:var(--type-title);line-height:1.4}
+html body.taleed-theme :is(h1,h2,h3,h4,h5,h6){font-family:var(--font-heading);font-weight:500;letter-spacing:0;line-height:1.4;text-wrap:balance;overflow-wrap:break-word}
+html body.taleed-theme :is(.doors-heading,.about-opening,.topic-hero-copy,.page-intro) h1{font-size:var(--type-title);line-height:1.35}
 html body.taleed-theme :is(.atlas-section-heading,.region-governorates-heading,.about-windows,.about-name,.about-start,.th-intro-copy,.topic-collection) h2,
-html body.taleed-theme .place-view-stage-title{font-size:var(--type-section);line-height:1.5}
-html body.taleed-theme :is(.city-door-copy h2,.place-plate h3,.culture-card-copy h4,.atlas-landmark-copy h3,.atlas-time-content h3,.heritage-entry h3,.about-window h3,.th-pathway h3,.topic-piece h3){font-family:var(--font-heading);font-size:var(--type-item);font-weight:400;line-height:1.5;margin-block:8px 12px}
+html body.taleed-theme .place-view-stage-title{font-size:var(--type-section);line-height:1.45}
+html body.taleed-theme :is(.city-door-copy h2,.place-plate h3,.culture-card-copy h4,.atlas-landmark-copy h3,.atlas-time-content h3,.heritage-entry h3,.about-window h3,.th-pathway h3,.topic-piece h3){font-family:var(--font-heading);font-size:var(--type-item);font-weight:500;line-height:1.45;margin-block:8px 12px}
 html body.taleed-theme .city-door-featured h2,
-html body.taleed-theme .hierarchy-atlas.has-cover-photo .atlas-cover-copy h1{font-size:var(--type-title);line-height:1.45}
-html body.taleed-theme :is(.city-door-verse,.atlas-cover-tagline,.chapter-tagline,.topic-subtitle){font-family:var(--font-expression);font-size:clamp(20px,1.6vw,24px);font-weight:400;line-height:1.95;letter-spacing:0;text-wrap:pretty;padding-block:3px}
-html[lang=en] body.taleed-theme :is(.city-door-verse,.atlas-cover-tagline,.chapter-tagline,.topic-subtitle){font-size:clamp(17px,1.4vw,21px);font-style:italic;line-height:1.7}
-html body.taleed-theme :is(.landmark-story-lead,.atlas-time-content p,.culture-card-copy p,.heritage-entry p,.topic-story,.topic-intro,.about-definition,.about-support,.place-fame>p:not(.atlas-eyebrow),.atlas-place-intro>p,.place-overview-summary,.th-intro-text){font-family:var(--font-story);font-size:15px;line-height:2;letter-spacing:0;font-weight:400;text-align:start;text-wrap:pretty;max-width:72ch}
-html[lang=en] body.taleed-theme :is(.landmark-story-lead,.atlas-time-content p,.culture-card-copy p,.heritage-entry p,.topic-story,.topic-intro,.about-definition,.about-support,.atlas-place-intro>p,.place-overview-summary,.th-intro-text){line-height:1.85;font-size:15px}
+html body.taleed-theme .hierarchy-atlas.has-cover-photo .atlas-cover-copy h1{font-size:var(--type-title);line-height:1.4}
+html body.taleed-theme :is(.city-door-verse,.atlas-cover-tagline,.chapter-tagline,.topic-subtitle){font-family:var(--font-expression);font-size:clamp(21px,1.7vw,26px);font-weight:400;line-height:2.0;letter-spacing:0;text-wrap:pretty;padding-block:3px}
+html[lang=en] body.taleed-theme :is(.city-door-verse,.atlas-cover-tagline,.chapter-tagline,.topic-subtitle){font-size:clamp(17px,1.4vw,21px);font-style:italic;line-height:1.75}
+html body.taleed-theme :is(.landmark-story-lead,.atlas-time-content p,.culture-card-copy p,.heritage-entry p,.topic-story,.topic-intro,.about-definition,.about-support,.place-fame>p:not(.atlas-eyebrow),.atlas-place-intro>p,.place-overview-summary,.th-intro-text){font-family:var(--font-story);font-size:15px;line-height:2.05;letter-spacing:0;font-weight:400;text-align:start;text-wrap:pretty;max-width:72ch}
+html[lang=en] body.taleed-theme :is(.landmark-story-lead,.atlas-time-content p,.culture-card-copy p,.heritage-entry p,.topic-story,.topic-intro,.about-definition,.about-support,.atlas-place-intro>p,.place-overview-summary,.th-intro-text){line-height:1.9;font-size:15px}
 html body.taleed-theme :is(.atlas-eyebrow,.doors-eyebrow,.about-kicker,.directory-kicker,.place-culture-label,.city-door-meta,.th-collection-eyebrow){font-family:var(--font-ui);font-size:12px;line-height:1.8;font-weight:400;letter-spacing:0}
 html[lang=en] body.taleed-theme :is(.atlas-eyebrow,.doors-eyebrow,.about-kicker,.directory-kicker,.th-collection-eyebrow){letter-spacing:.055em}
-html body.taleed-theme :is(.photo-credit,.city-door-credit,.culture-picture figcaption,.about-document figcaption,.atlas-source-link,.place-dress-scope-note,.place-culture-note){font-family:var(--font-ui);font-size:12px;line-height:1.8;overflow-wrap:anywhere}
+html body.taleed-theme :is(.photo-credit,.city-door-credit,.culture-picture figcaption,.about-document figcaption,.atlas-source-link,.place-dress-scope-note,.place-culture-note){font-family:var(--font-ui);font-size:12px;line-height:1.85;overflow-wrap:anywhere}
 html body.taleed-theme :is(.site-nav,.atlas-nav,.topic-switcher,.doors-navigation,.city-door-enter,.th-pathway-cta,.about-start-button,button,input,select){font-family:var(--font-ui);font-weight:400;letter-spacing:0}
-html body.taleed-theme :is(.atlas-nav a,.site-nav a,.doors-navigation a,.topic-switcher a,.city-door-enter,.th-pathway-cta){font-size:13px;line-height:1.7}
+html body.taleed-theme :is(.atlas-nav a,.site-nav a,.doors-navigation a,.topic-switcher a,.city-door-enter,.th-pathway-cta){font-size:13px;line-height:1.75}
 html body.taleed-theme .atlas-nav a{padding-block:12px;white-space:nowrap;min-height:44px}
 html body.taleed-theme .atlas-nav a[aria-current]{color:var(--tone-accent);border-bottom-color:var(--tone-accent);background:color-mix(in srgb,var(--tone-accent) 8%,transparent)}
 body.taleed-theme :is(.doors-eyebrow,.about-kicker,.directory-kicker){color:var(--tone-accent)}
+body.taleed-theme .th-footer{background:var(--th-sage);color:var(--th-ink)}
 body.taleed-theme .city-doors{--door-accent:var(--tone-accent);--door-border:var(--tone-line)}
 body.taleed-theme .doors-journey{--door-accent:#efbf96}
 body.taleed-theme .about-start .about-kicker{color:#efbf96}

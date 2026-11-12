@@ -4520,17 +4520,17 @@ msgstr "Locally documented — Yanbu Al Bahr"
 msgid "توثيق محلي — ينبع النخل"
 msgstr "Locally documented — Yanbu Al Nakhl"
 
-msgid "توثيق محلي — ٠٢ / الزمن"
-msgstr "Locally documented — 02 / HISTORY"
+msgid "توثيق محلي — الزمن"
+msgstr "Locally documented — History"
 
-msgid "توثيق محلي — ٠٣ / المعالم"
-msgstr "Locally documented — 03 / LANDMARKS"
+msgid "توثيق محلي — المعالم"
+msgstr "Locally documented — Landmarks"
 
-msgid "توثيق محلي — ٠٤ / الموروث"
-msgstr "Locally documented — 04 / HERITAGE"
+msgid "توثيق محلي — الموروث"
+msgstr "Locally documented — Heritage"
 
-msgid "توثيق محلي — ٠٥ / خارج حدود المدينة"
-msgstr "Locally documented — 05 / BEYOND THE CITY"
+msgid "توثيق محلي — خارج حدود المدينة"
+msgstr "Locally documented — Beyond the City"
 
 msgid "توثيق محلي — — تتنوع تفاصيل الزي والتطريز"
 msgstr "Locally documented — — dress and embroidery details vary"
@@ -10250,20 +10250,20 @@ msgstr "01"
 msgid "٠٢"
 msgstr "02"
 
-msgid "٠٢ / الزمن"
-msgstr "02 / HISTORY"
+msgid "الزمن"
+msgstr "History"
 
 msgid "٠٣"
 msgstr "03"
 
-msgid "٠٣ / المعالم"
-msgstr "03 / LANDMARKS"
+msgid "المعالم"
+msgstr "Landmarks"
 
-msgid "٠٤ / الموروث"
-msgstr "04 / HERITAGE"
+msgid "الموروث"
+msgstr "Heritage"
 
-msgid "٠٥ / خارج حدود المدينة"
-msgstr "05 / BEYOND THE CITY"
+msgid "خارج حدود المدينة"
+msgstr "Beyond the City"
 
 msgid "١ هـ / ٦٢٢م"
 msgstr "1 AH / 622 AD"
@@ -11581,8 +11581,8 @@ msgstr "Local crafts"
 msgid "عمرانها"
 msgstr "Its architecture"
 
-msgid "أزياء أهلها"
-msgstr "Local dress"
+msgid "اللباس التقليدي"
+msgstr "Traditional Clothing"
 
 msgid "مائدة أهلها"
 msgstr "Local cuisine"

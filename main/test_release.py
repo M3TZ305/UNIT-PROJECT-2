@@ -21,14 +21,14 @@ class LanguageReleaseTests(TestCase):
         call_command('sync_geography', verbosity=0)
 
     def test_arabic_default_and_explicit_english_cookie(self):
-        self.assertContains(self.client.get('/'), 'lang="ar" dir="rtl"')
+        self.assertContains(self.client.get('/home/'), 'lang="ar" dir="rtl"')
         response = self.client.post(reverse('main:set_language'), {'language': 'en', 'next': '/cities/'})
         self.assertEqual(response.status_code, 302)
         self.assertEqual(response['Location'], '/cities/')
         self.assertEqual(response.cookies[settings.LANGUAGE_COOKIE_NAME].value, 'en')
         self.assertTrue(response.cookies[settings.LANGUAGE_COOKIE_NAME]['httponly'])
         self.assertEqual(response.cookies[settings.LANGUAGE_COOKIE_NAME]['samesite'], 'Lax')
-        home = self.client.get('/')
+        home = self.client.get('/home/')
         self.assertContains(home, 'lang="en" dir="ltr"')
         self.assertContains(home, 'Taleed')
         self.assertContains(home, 'Explore cities')
@@ -38,11 +38,11 @@ class LanguageReleaseTests(TestCase):
     def test_language_switch_requires_csrf_and_rejects_external_redirect(self):
         client = Client(enforce_csrf_checks=True)
         self.assertEqual(client.post(reverse('main:set_language'), {'language': 'en'}).status_code, 403)
-        client.get('/')
+        client.get('/home/')
         token = client.cookies['csrftoken'].value
         response = client.post(reverse('main:set_language'), {'language': 'en', 'next': 'https://example.invalid/'}, HTTP_X_CSRFTOKEN=token)
         self.assertEqual(response['Location'], '/')
-        response = self.client.post(reverse('main:set_language'), {'language': 'xx', 'next': '/'})
+        response = self.client.post(reverse('main:set_language'), {'language': 'xx', 'next': '/home/'})
         self.assertNotIn(settings.LANGUAGE_COOKIE_NAME, response.cookies)
 
     def test_english_place_names_cuisine_and_theme_work_together(self):
@@ -54,14 +54,14 @@ class LanguageReleaseTests(TestCase):
         self.assertContains(page, 'data-theme="dark"')
         self.assertNotContains(page, 'Cradle of gold')
         self.assertContains(page, 'khawadah-v1-cutout.webp')
-        self.client.post(reverse('main:set_language'), {'language': 'ar', 'next': '/'})
-        self.assertContains(self.client.get('/'), 'lang="ar" dir="rtl"')
+        self.client.post(reverse('main:set_language'), {'language': 'ar', 'next': '/home/'})
+        self.assertContains(self.client.get('/home/'), 'lang="ar" dir="rtl"')
 
     def test_every_place_renders_in_english(self):
         self.client.cookies[settings.LANGUAGE_COOKIE_NAME] = 'en'
         urls = {place.get_absolute_url() for place in City.objects.all()}
         urls.update(place.get_absolute_url() for place in Governorate.objects.select_related('capital'))
-        urls.update(['/', '/cities/', '/about/', '/culture/architecture/', '/culture/crafts/', '/culture/food/'])
+        urls.update(['/home/', '/cities/', '/about/', '/culture/architecture/', '/culture/crafts/', '/culture/food/'])
         self.assertEqual(len(urls), 57)
         for url in urls:
             with self.subTest(url=url):
@@ -72,7 +72,7 @@ class LanguageReleaseTests(TestCase):
 
     def test_sources_catalogue_is_removed_but_inline_credits_remain(self):
         self.assertEqual(self.client.get('/sources/').status_code, 404)
-        for url in ['/', '/about/', '/cities/', '/cities/madinah/']:
+        for url in ['/home/', '/about/', '/cities/', '/cities/madinah/']:
             page = self.client.get(url)
             self.assertNotContains(page, 'href="/sources/"')
         page = self.client.get('/cities/madinah/')
