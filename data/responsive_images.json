@@ -1,0 +1,284 @@
+{
+  "images/abha.webp": [
+    {
+      "file": "images/abha-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/hail-city.jpg": [
+    {
+      "file": "images/hail-city-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/cities/dammam.jpg": [
+    {
+      "file": "images/cities/dammam-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/cities/dhahran.webp": [
+    {
+      "file": "images/cities/dhahran-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/local-city-madinah-2.webp": [
+    {
+      "file": "images/landmarks/local-city-madinah-2-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/record-city-makkah-3.webp": [
+    {
+      "file": "images/landmarks/record-city-makkah-3-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/selected-gov-makkah-taif-2.jpg": [
+    {
+      "file": "images/landmarks/selected-gov-makkah-taif-2-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/selected-gov-makkah-taif-6.jpg": [
+    {
+      "file": "images/landmarks/selected-gov-makkah-taif-6-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/selected-gov-hail-ash-shinan-10.jpg": [
+    {
+      "file": "images/landmarks/selected-gov-hail-ash-shinan-10-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/selected-gov-jouf-dumat-al-jandal-13.jpg": [
+    {
+      "file": "images/landmarks/selected-gov-jouf-dumat-al-jandal-13-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/selected-gov-asir-rijal-almaa-15.jpg": [
+    {
+      "file": "images/landmarks/selected-gov-asir-rijal-almaa-15-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/heritage-photo-umluj.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-umluj-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/landmarks/heritage-photo-umluj-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/landmarks/heritage-photo-arar.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-arar-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/landmarks/heritage-photo-arar-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/landmarks/heritage-photo-buraidah-palace.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-buraidah-palace-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/landmarks/heritage-photo-buraidah-palace-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/landmarks/heritage-photo-qunfudhah.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-qunfudhah-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/landmarks/heritage-photo-qunfudhah-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/landmarks/heritage-photo-umluj-palace.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-umluj-palace-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/heritage-photo-rafha.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-rafha-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/heritage-photo-commons-2.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-commons-2-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/heritage-photo-commons-3.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-commons-3-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/heritage-photo-giyar.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-giyar-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/heritage-photo-shaher.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-shaher-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/landmarks/heritage-photo-shaher-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/landmarks/heritage-photo-turaif-correct.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-turaif-correct-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/landmarks/heritage-photo-turaif-correct-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/landmarks/heritage-photo-dadan.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-dadan-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/heritage-photo-badr.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-badr-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/landmarks/heritage-photo-badr-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/landmarks/heritage-photo-namas.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-namas-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/landmarks/heritage-photo-namas-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/landmarks/heritage-photo-yanbu-house.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-yanbu-house-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/heritage-photo-khobar-museum.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-khobar-museum-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/landmarks/heritage-photo-hafar-museum.webp": [
+    {
+      "file": "images/landmarks/heritage-photo-hafar-museum-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/city-views/madinah.webp": [
+    {
+      "file": "images/city-views/madinah-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/city-views/madinah-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/city-views/abha.webp": [
+    {
+      "file": "images/city-views/abha-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/city-views/abha-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/city-views/buraidah.webp": [
+    {
+      "file": "images/city-views/buraidah-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/city-views/buraidah-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/city-views/arar.webp": [
+    {
+      "file": "images/city-views/arar-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/city-views/jazan.webp": [
+    {
+      "file": "images/city-views/jazan-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/city-views/jazan-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/city-views/najran.webp": [
+    {
+      "file": "images/city-views/najran-w640.webp",
+      "width": 640
+    }
+  ],
+  "images/city-views/tabuk.webp": [
+    {
+      "file": "images/city-views/tabuk-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/city-views/tabuk-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/city-views/riyadh.webp": [
+    {
+      "file": "images/city-views/riyadh-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/city-views/riyadh-w1280.webp",
+      "width": 1280
+    }
+  ],
+  "images/city-views/sakaka.webp": [
+    {
+      "file": "images/city-views/sakaka-w640.webp",
+      "width": 640
+    },
+    {
+      "file": "images/city-views/sakaka-w1280.webp",
+      "width": 1280
+    }
+  ]
+}

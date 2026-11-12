@@ -1,0 +1,376 @@
+/* shared-chrome.css */
+/* Original Taleed chrome, shared by every page. No page-specific header geometry. */
+body.taleed-theme{background:var(--th-cream);--paper:var(--th-cream);--ink:var(--th-ink);--muted:var(--th-muted)}
+body.taleed-theme .site-header{position:relative;inset:auto;display:grid;grid-template-columns:1fr auto 1fr;gap:30px;width:min(1360px,calc(100% - 96px));min-height:104px;margin-inline:auto;padding-block:14px;background:var(--th-cream);color:var(--th-ink);--ink:var(--th-ink);--paper:var(--th-cream);border:0;border-bottom:1px solid color-mix(in srgb,var(--th-ink) 18%,transparent)}
+body.taleed-theme .site-header .brand{justify-self:start}
+body.taleed-theme .site-header .site-nav{display:flex;position:static;order:initial;width:auto;margin:0;gap:40px;padding:0;font-size:13px;justify-content:center}
+body.taleed-theme .site-header .site-nav a[aria-current]{display:inline-block}
+body.taleed-theme .site-header .site-nav a::after{background:currentColor}
+body.taleed-theme .site-header .header-tools{justify-self:end}
+body.taleed-theme .site-header .theme-toggle{border-color:var(--th-ink)}
+body.taleed-theme .site-header .theme-knob{background:var(--th-ink)}
+body.taleed-theme .site-header .theme-sun{color:var(--th-cream)}
+body.taleed-theme .site-header .theme-moon{color:var(--th-ink)}
+[data-theme=dark] body.taleed-theme .site-header .theme-sun{color:var(--th-ink)}
+[data-theme=dark] body.taleed-theme .site-header .theme-moon{color:var(--th-cream)}
+body.taleed-theme .site-header .menu-toggle{display:none}
+body.taleed-theme .th-footer{background:var(--th-sage);color:var(--th-ink)}
+@media(max-width:760px){body.taleed-theme .site-header{width:calc(100% - 40px);grid-template-columns:1fr auto;gap:10px;min-height:104px;padding-block:12px}body.taleed-theme .site-header .header-tools{grid-column:2;grid-row:1}body.taleed-theme .site-header .site-nav{grid-column:1/-1;grid-row:2;gap:28px;font-size:11px}body.taleed-theme .site-header .site-nav a{padding-block:8px}}
+.photo-credit{position:static;inset:auto;text-shadow:none;display:block;font-size:10px;line-height:1.8;color:var(--th-muted);overflow-wrap:anywhere;text-align:start;letter-spacing:normal}.photo-credit a{text-decoration:none;border-bottom:1px solid color-mix(in srgb,currentColor 28%,transparent)}.photo-credit a:hover{color:var(--th-ink)}.place-plate>.photo-credit{margin-top:13px;padding-top:10px;border-top:1px solid var(--plate-line)}
+
+
+/* language.css */
+/* Preserve Taleed's identity while giving English a natural reading direction. */
+.language-form{margin:0}.language-toggle{font:inherit;font-size:12px;border:1px solid currentColor;padding:7px 10px;background:transparent;color:inherit;cursor:pointer;white-space:nowrap;min-height:36px}.language-toggle:focus-visible{outline:2px solid currentColor;outline-offset:4px}.header-tools{gap:12px}
+html[lang="en"] body{font-family:Arial,Helvetica,sans-serif;line-height:1.7}html[lang="en"] body :is(h1,h2,h3,h4,h5,h6),html[lang="en"] body.taleed-theme :is(h1,h2,h3,h4,h5,h6){font-family:Georgia,'Times New Roman',serif;line-height:1.25;letter-spacing:-.02em}html[lang="en"] body.taleed-theme .site-header .brand{font-family:Georgia,serif;font-size:27px;letter-spacing:-1px}html[lang="en"] .th-wordmark{font-family:Georgia,serif!important;font-size:clamp(50px,6vw,86px)!important;line-height:1.1!important}html[lang="en"] .th-welcome>p{font-family:Georgia,serif;line-height:1.3}html[lang="en"] .atlas-section-heading h2,html[lang="en"] .place-culture-heading h3{white-space:normal}html[lang="en"] .atlas-cover h1{font-size:clamp(30px,4vw,50px)}html[lang="en"] .place-culture-card h4{font-size:24px}html[lang="en"] .th-intro-copy,html[lang="en"] .atlas-landmark-copy,html[lang="en"] .place-culture-card{text-align:start}html[lang="en"] .atlas-breadcrumb{direction:ltr}html[lang="en"] .th-collection-eyebrow{letter-spacing:.08em}html[lang="en"] .th-pathway-copy h3{font-size:27px}html[lang="en"] .atlas-nav>div{overflow-x:auto}html[lang="en"] .th-door-art,html[lang="en"] .atlas-cover-visual{direction:ltr}
+@media(max-width:760px){.language-toggle{font-size:11px;padding:5px 7px}.header-tools{gap:8px}html[lang="en"] body.taleed-theme .site-header .site-nav{gap:16px;font-size:11px}html[lang="en"] body.taleed-theme .site-header .brand{font-size:23px}html[lang="en"] .th-pathway-copy h3{font-size:24px}}
+/* A compact, consistent language control shared by every page. */
+.header-tools .language-toggle{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:5px 9px;border:1px solid currentColor;border-radius:30px;background:transparent;color:inherit;font:12px/1.2 Arial,sans-serif;direction:ltr;cursor:pointer}
+.language-globe{width:16px;height:16px}.language-toggle span[lang]{opacity:.5;min-width:19px;text-align:center}.language-toggle span.is-current{opacity:1;font-weight:700}.language-divider{height:13px;width:1px;background:currentColor;opacity:.3}.language-toggle:hover{background:color-mix(in srgb,currentColor 9%,transparent)}.language-toggle:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+
+
+/* section-spacing.css */
+/* Shared section rhythm; colors, typography and navigation retain their page styles. */
+.taleed-theme{--section-space:clamp(64px,6vw,100px);--section-inset:clamp(48px,5vw,80px);--content-gap:clamp(24px,3vw,44px)}
+/* Give the exhibition a complete pause before entering the green gallery. */
+
+
+
+
+
+
+
+
+
+
+/* Homepage transitions have their own breathing room, including the paper edge. */
+.taleed-home .th-introduction{padding-top:32px;padding-bottom:var(--content-gap)}
+.taleed-home .th-intro-grid{padding-block:var(--section-inset);column-gap:clamp(40px,8vw,110px);row-gap:40px}
+.taleed-home .th-collection{padding-top:var(--section-inset);padding-bottom:var(--section-space)}
+.taleed-home .th-collection-heading{margin-bottom:clamp(40px,5vw,68px)}
+.taleed-home .th-pathway-copy{padding-top:28px}
+.taleed-home .th-collection-foot{margin-top:var(--section-inset);padding-top:24px}
+/* City and governorate chapters: separate chapter boundaries from card spacing. */
+.taleed-atlas .atlas-cover{padding-bottom:32px}
+.taleed-atlas .atlas-cover-foot{margin-top:24px;padding-block:28px}
+.taleed-atlas .atlas-section{padding-block:var(--section-inset)}
+.taleed-atlas .atlas-section-heading{margin-bottom:var(--content-gap)}
+.taleed-atlas .atlas-landmarks-section{margin-top:32px;margin-bottom:var(--content-gap)}
+.taleed-atlas .atlas-landmarks{row-gap:clamp(48px,5vw,76px);column-gap:var(--content-gap)}
+.taleed-atlas .atlas-landmark-copy{padding-top:24px}
+.taleed-atlas .place-culture{margin-block:var(--content-gap);padding-block:var(--section-inset)}
+.taleed-atlas .place-fame{margin-bottom:var(--content-gap);padding-block:28px}
+.taleed-atlas :is(.place-dress,.place-dishes,.place-fruits){margin-block:36px;padding-block:36px}
+.taleed-atlas .place-culture-heading{margin-bottom:28px}
+.taleed-atlas .place-culture-grid{gap:32px var(--content-gap)}
+.taleed-atlas .place-culture-card{padding-block:28px;column-gap:28px}
+.taleed-atlas .region-governorates{margin-block:var(--content-gap);padding-block:var(--section-inset)}
+.taleed-atlas .region-governorates-heading{margin-bottom:36px}
+.taleed-atlas .atlas-notes{padding-block:var(--section-inset)}
+.taleed-atlas .atlas-next{margin-top:var(--content-gap);margin-bottom:var(--section-inset)}
+/* About and thematic stories follow the same section cadence. */
+.taleed-about .about-opening{padding-block:var(--section-inset);row-gap:40px}
+.taleed-about .about-row{padding-block:var(--section-inset);row-gap:32px}
+.taleed-about .about-find-grid{gap:var(--content-gap)}
+.taleed-about .about-methods article+article{margin-top:30px;padding-top:24px}
+.taleed-about .about-start{margin-block:var(--section-inset);padding:clamp(28px,4vw,50px)}
+.taleed-topic .topic-hero{padding-bottom:var(--section-inset)}
+.taleed-topic .topic-collection{padding-top:var(--section-inset);padding-bottom:var(--section-inset)}
+.taleed-topic .topic-collection-heading{margin-bottom:var(--content-gap)}
+.taleed-topic .topic-item+.topic-item{margin-top:var(--section-space)}
+.taleed-topic .topic-footnotes{padding-block:32px;margin-bottom:var(--content-gap)}
+.taleed-topic .topic-next{padding-block:var(--section-inset);margin-bottom:var(--section-inset)}
+@media(max-width:760px){
+ .taleed-theme{--section-space:56px;--section-inset:40px;--content-gap:28px}
+ 
+ 
+ 
+ .taleed-home .th-introduction{padding-top:16px}.taleed-home .th-intro-grid{row-gap:36px}
+ .taleed-home .th-collection-grid{row-gap:48px}
+ .taleed-atlas :is(.place-dress,.place-dishes,.place-fruits){margin-block:28px;padding-block:28px}
+ .taleed-atlas .place-culture-card{column-gap:20px;padding-block:24px}
+ .taleed-atlas .atlas-next{margin-bottom:40px}
+ .taleed-about .about-opening,.taleed-about .about-row{row-gap:28px}
+}
+
+
+/* pathway-interaction.css */
+/* Reserve each caption's space, so interacting with one icon cannot move its neighbours. */
+.taleed-home .th-pathway .pathway-detail{height:64px;min-height:64px;max-height:64px;margin:10px 0 0;opacity:0;visibility:hidden;overflow:hidden;transition:opacity .22s}
+.taleed-home .th-pathway .th-pathway-cta{opacity:0;visibility:hidden;transform:translateY(5px);color:var(--th-ink);border-color:var(--th-muted);transition:opacity .22s,transform .22s,color .22s}
+.taleed-home .th-pathway .th-pathway-cta>span{transform:none}
+.taleed-home .th-pathway .th-pathway-vignette{transform:none;transition:transform .35s,filter .35s}
+.taleed-home .th-pathway.is-exploring .pathway-detail{opacity:1;visibility:visible}
+.taleed-home .th-pathway.is-exploring .th-pathway-cta{opacity:1;visibility:visible;transform:none;color:var(--collection-rust);border-color:currentColor}
+.taleed-home .th-pathway.is-exploring .th-pathway-cta>span{transform:rotate(-35deg)}
+.taleed-home .th-pathway.is-exploring .th-pathway-vignette{transform:translateY(-8px);filter:drop-shadow(0 9px 8px #26241418)}
+/* The same three vignette slices continue into their corresponding subject pages. */
+.taleed-topic .topic-hero-art{width:min(88%,330px);max-width:330px;aspect-ratio:1922 / 2454;filter:none}
+.taleed-topic .topic-hero-orbit{display:none}
+@media(any-hover:none){.taleed-home .th-pathway .th-pathway-cta{opacity:1;visibility:visible;transform:none}.taleed-home .th-pathway .pathway-detail{height:0;min-height:0;max-height:0;margin:0}}
+@media(prefers-reduced-motion:reduce){.taleed-home .th-pathway .th-pathway-vignette,.taleed-home .th-pathway .th-pathway-cta,.taleed-home .th-pathway .pathway-detail{transition:none}.taleed-home .th-pathway.is-exploring .th-pathway-vignette{transform:none}}
+
+
+/* place-heritage.css */
+/* Shared presentation of each place's craft and architecture records. */
+.place-heritage{padding-block:var(--section-inset,64px);margin-block:var(--content-gap,32px);scroll-margin-top:125px;border-block:1px solid var(--atlas-line);background:color-mix(in srgb,var(--th-sage) 16%,var(--th-cream))}
+.place-heritage.heritage-architecture{background:var(--th-cream);border-top:0}
+.heritage-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:36px}
+.heritage-heading h2{font:400 clamp(29px,3.5vw,40px)/1.5 var(--serif);margin:8px 0 0}
+.heritage-heading>span{font-size:12px;color:var(--th-muted)}
+.heritage-entries{display:grid;gap:44px}
+.heritage-entry{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:6%;align-items:center;min-width:0}
+.heritage-entry+.heritage-entry{padding-top:36px;border-top:1px solid var(--atlas-line)}
+.heritage-visual{grid-column:2;grid-row:1;min-width:0;margin:0;display:flex;flex-direction:column;align-items:center;gap:14px}
+.heritage-visual>img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;filter:none;mix-blend-mode:normal}
+.heritage-visual .topic-art{display:block;position:relative;width:min(100%,300px);aspect-ratio:1;overflow:hidden}
+.heritage-visual .topic-art>img{position:absolute;display:block;max-width:none;width:calc(var(--art-columns)*100%);height:calc(var(--art-rows)*100%);left:calc(var(--art-x)*-100%);top:calc(var(--art-y)*-100%);object-fit:fill}
+.heritage-visual figcaption{font-size:10px;line-height:1.9;color:var(--th-muted);width:100%;text-align:start}
+.heritage-visual.is-illustration figcaption{text-align:center}
+.heritage-copy{grid-column:1;grid-row:1;min-width:0}
+.heritage-scope{font-size:10px;line-height:1.9;color:var(--th-muted);padding-inline-start:10px;border-inline-start:2px solid var(--atlas-rust)}
+.heritage-copy h3{font:400 clamp(27px,2.8vw,34px)/1.6 var(--serif);margin:15px 0 14px}
+.heritage-story{font-size:14px;line-height:2.05;max-width:59ch}
+.heritage-materials{display:flex;gap:10px 20px;flex-wrap:wrap;list-style:none;padding:0;margin:20px 0;color:var(--th-muted);font-size:11px}
+.heritage-materials li{border-bottom:1px solid var(--atlas-line);padding-bottom:5px}
+.heritage-scope-note{font-size:11px;line-height:1.9;color:var(--th-muted);max-width:60ch;margin:15px 0}
+.heritage-links{display:flex;gap:15px 25px;flex-wrap:wrap;margin-top:24px}.heritage-links a{font-size:11px;line-height:1.9;border-bottom:1px solid var(--atlas-line);padding-bottom:3px;text-decoration:none}
+.heritage-links a:focus-visible,.heritage-collection-filter :focus-visible{outline:2px solid currentColor;outline-offset:5px}
+.heritage-collection-filter{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-bottom:30px;padding-block:18px;border-block:1px solid var(--topic-line)}
+.heritage-collection-filter label{font-size:12px}.heritage-collection-filter select,.heritage-collection-filter button{font:inherit;font-size:12px;background:transparent;color:var(--th-ink);padding:10px 16px;border:1px solid var(--topic-line);border-radius:0}
+.heritage-collection-filter select option{background:var(--th-cream);color:var(--th-ink)}
+.taleed-topic .heritage-place-link small{font-size:9px;opacity:.75;font-weight:400;margin-inline:5px}
+.taleed-topic .topic-related>div{gap:12px 20px}.taleed-topic .topic-piece-figure>.photo-credit{padding-top:12px}
+@media(max-width:760px){.heritage-entry{grid-template-columns:1fr;gap:28px}.heritage-visual{grid-column:1;grid-row:1;width:100%;max-width:480px;justify-self:center}.heritage-copy{grid-column:1;grid-row:2}.heritage-visual .topic-art{width:min(78%,250px)}.heritage-visual>img{max-height:300px}.heritage-heading{margin-bottom:28px}.heritage-heading h2{font-size:30px}.heritage-copy h3{font-size:28px}.heritage-story{font-size:13px}.heritage-entries{gap:36px}.heritage-links{gap:12px 20px}.heritage-collection-filter{gap:12px}.heritage-collection-filter select{flex:1;min-width:150px}}
+/* Food objects use the very same alpha artwork as their place pages. */
+.topic-food .topic-illustration{background:transparent}
+.topic-food .topic-illustration .topic-art{width:min(100%,300px);max-height:none;filter:none;mix-blend-mode:normal}
+.topic-food .topic-piece.is-featured .topic-illustration .topic-art{width:min(100%,380px)}
+.food-collection-tabs{display:flex;gap:28px;margin:0 0 24px;border-bottom:1px solid var(--topic-line)}
+.food-collection-tabs a{font-size:13px;padding:12px 0;border-bottom:2px solid transparent}
+.food-collection-tabs a[aria-current]{border-color:var(--topic-rust);color:var(--topic-rust)}
+.topic-food .topic-index{max-height:150px;overflow-y:auto;padding:12px 0;align-content:start}
+.food-place-records{display:grid;gap:15px;margin:16px 0 24px}
+.food-place-records p{padding-bottom:14px;border-bottom:1px solid var(--topic-line);display:grid;gap:5px;font-size:12px;line-height:1.95}
+.food-place-records strong{font-size:13px;font-weight:400}.food-place-records a{font-size:10px;color:var(--th-muted);width:fit-content}
+@media(max-width:760px){.topic-food .topic-index{max-height:125px}.food-collection-tabs{gap:24px}.topic-food .topic-piece.is-featured .topic-illustration .topic-art{width:min(100%,300px)}}
+/* Region chooser: editorial navigation, not an operating-system select menu. */
+.region-filter-bar{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin:0 0 32px;padding-block:20px;border-block:1px solid var(--topic-line)}
+.region-filter-label{font-size:11px;color:var(--th-muted)}
+.region-picker{position:relative;min-width:280px;z-index:25}
+.region-picker summary{display:flex;align-items:center;gap:15px;list-style:none;cursor:pointer;padding:14px 18px;border:1px solid var(--topic-line);background:color-mix(in srgb,var(--th-sage) 14%,var(--th-cream));color:var(--th-ink);font-size:13px;border-radius:3px;transition:border-color .2s,background .2s}
+.region-picker summary::-webkit-details-marker{display:none}.region-picker summary::marker{content:''}
+.region-picker summary>span{flex:1}.region-picker-compass{width:23px;height:23px;color:var(--topic-rust);flex:none}.region-picker-chevron{width:17px;height:17px;transition:transform .2s;flex:none}
+.region-picker[open] summary{border-color:var(--topic-rust);background:var(--th-cream)}.region-picker[open] .region-picker-chevron{transform:rotate(180deg)}
+.region-picker-panel{position:absolute;top:calc(100% + 12px);inset-inline-start:0;width:min(540px,calc(100vw - 48px));padding:18px;background:var(--th-cream);color:var(--th-ink);border:1px solid var(--topic-line);border-top:2px solid var(--topic-rust);border-radius:4px;box-shadow:0 20px 50px #12231c26;max-height:min(530px,65svh);overflow-y:auto;overscroll-behavior:contain;animation:region-panel-in .18s ease-out}
+.region-picker-panel a{display:flex;align-items:center;gap:10px;padding:14px 10px;text-decoration:none;font-size:12px;line-height:1.8;border-radius:2px;transition:background .2s,color .2s}
+.region-picker-all{margin-bottom:12px;border-bottom:1px solid var(--topic-line)}.region-picker-all>span:first-child{flex:1}
+.region-picker-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 14px}
+.region-picker-grid a>span:nth-child(2){flex:1}.region-picker-number{font:10px Georgia,serif;color:var(--th-muted)}.region-picker-mark{font-size:13px;color:var(--topic-rust);opacity:.5}
+.region-picker-panel a:hover{background:color-mix(in srgb,var(--th-sage) 28%,transparent)}
+.region-picker-panel a[aria-current]{background:var(--th-teal);color:var(--th-ivory)}.region-picker-panel a[aria-current] :is(.region-picker-number,.region-picker-mark){color:inherit;opacity:1}
+.region-filter-reset{font-size:10px;line-height:1.9;color:var(--th-muted);border-bottom:1px solid var(--topic-line);padding:7px 0}
+.region-picker :is(summary,a):focus-visible{outline:2px solid var(--topic-rust);outline-offset:3px}
+@keyframes region-panel-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media(max-width:640px){.region-filter-bar{gap:12px}.region-picker{min-width:0;flex:1}.region-picker-panel{width:min(540px,calc(100vw - 60px));inset-inline-start:auto;inset-inline-end:0;padding:12px}.region-picker-grid{gap:3px 8px}.region-picker-panel a{font-size:11px;padding:12px 8px}.region-picker-grid a{gap:7px}.region-picker summary{font-size:12px;padding:12px}.region-picker-number{font-size:9px}.region-filter-reset{flex-basis:100%;width:fit-content;flex-grow:0}}
+@media(max-width:380px){.region-picker-grid{grid-template-columns:1fr}.region-picker-panel{max-height:55svh}}
+@media(prefers-reduced-motion:reduce){.region-picker-panel{animation:none}.region-picker summary,.region-picker-panel a,.region-picker-chevron{transition:none}}
+
+.food-pagination{display:flex;justify-content:center;align-items:center;gap:12px;margin-block:24px 40px;flex-wrap:wrap}
+.food-pagination a{display:inline-flex;align-items:center;justify-content:center;min-width:42px;min-height:42px;padding:8px 13px;border:1px solid var(--topic-line);font-size:12px;text-decoration:none}
+.food-pagination a[aria-current]{background:var(--th-teal);color:var(--th-ivory);border-color:var(--th-teal)}
+.food-pagination a:focus-visible{outline:2px solid var(--topic-rust);outline-offset:4px}
+
+/* Native disclosures keep the complete record available without a long wall of cards. */
+.heritage-disclosure>summary{cursor:pointer;list-style:none;position:relative;gap:20px}
+.heritage-disclosure>summary::-webkit-details-marker{display:none}
+.heritage-disclosure>summary:focus-visible{outline:2px solid var(--th-copper);outline-offset:8px;border-radius:4px}
+.heritage-disclosure.place-heritage{padding-block:24px;margin-block:0;border-block:0;border-bottom:1px solid var(--atlas-line)}
+.heritage-disclosure>.heritage-heading{width:var(--atlas-width,86%);max-width:1320px;margin:0 auto;min-height:64px}
+.heritage-disclosure .heritage-heading h2{font-size:28px;margin:0}
+.heritage-disclosure .heritage-heading .atlas-eyebrow{display:none}
+.heritage-disclosure[open]>.heritage-entries{padding-block:32px 24px}
+.heritage-heading b,.disclosure-mark{font-size:24px;font-weight:400;display:inline-block;margin-inline-start:16px;transition:transform .2s}
+.heritage-disclosure[open]>.heritage-heading b,.heritage-disclosure[open]>.place-culture-heading .disclosure-mark{transform:rotate(45deg)}
+.place-culture .heritage-disclosure{padding-block:20px;border-top:1px solid var(--atlas-line);margin-block:0}
+.place-culture .heritage-disclosure>.place-culture-heading{margin:0;min-height:60px;display:flex;align-items:center;flex-wrap:wrap}
+.place-culture .heritage-disclosure>.place-culture-heading h3{font-size:28px;margin:0}
+.place-culture .heritage-disclosure>.place-culture-heading p{flex:1;margin:0;font-size:13px}
+.place-culture .heritage-disclosure[open]>.place-culture-grid{margin-block:28px}
+.taleed-atlas .atlas-cover-intro,.taleed-atlas .atlas-time-content p,.taleed-atlas .landmark-story-lead,.taleed-atlas .heritage-story,.taleed-atlas .culture-card-copy>p{font-size:15px;line-height:2;max-width:65ch}
+.taleed-atlas :is(.heritage-scope,.heritage-scope-note,.heritage-visual figcaption,.culture-picture figcaption,.place-dress-scope-note,.atlas-source-link,.landmark-photo-credit,.atlas-art-note){font-size:12px;line-height:1.9}
+.taleed-atlas .atlas-landmark-copy h3,.taleed-atlas .culture-card-copy h4{font-size:27px}
+.taleed-atlas .atlas-annotations{display:none}
+@media(max-width:700px){.heritage-disclosure>.heritage-heading{width:90%}.place-culture .heritage-disclosure>.place-culture-heading p{flex-basis:100%;order:3}.disclosure-mark{margin-inline-start:auto}.heritage-disclosure .heritage-heading h2,.place-culture .heritage-disclosure>.place-culture-heading h3{font-size:25px}}
+@media(prefers-reduced-motion:reduce){.heritage-heading b,.disclosure-mark{transition:none}}
+
+/* Consistent reading and attribution size across the exhibition. */
+body.taleed-theme :is(.city-door-credit,.heritage-visual figcaption,.culture-picture figcaption,.topic-piece-figure>figcaption,.th-door-art figcaption,.atlas-time-photo figcaption,.landmark-photo-credit,.photo-credit){font-size:12px;line-height:1.8}
+body.taleed-theme :is(.topic-story,.topic-intro,.about-body,.th-intro-text){font-size:15px;line-height:2}
+body.taleed-theme :is(button,.atlas-outline-link,.topic-related a){min-height:44px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}::view-transition-group(*){animation:none}}
+
+/* Measured anchors and consistent visual rhythm across reading pages. */
+html{scroll-padding-top:0}
+main [id]{scroll-margin-top:var(--anchor-offset,88px)}
+.taleed-atlas details.heritage-crafts{background:color-mix(in srgb,var(--th-sage) 26%,var(--th-cream))}
+.taleed-atlas details.heritage-architecture{background:color-mix(in srgb,var(--th-peach) 28%,var(--th-cream))}
+.taleed-atlas .heritage-disclosure>.heritage-heading{width:min(1840px,calc(100% - clamp(32px,5vw,112px)));max-width:none}
+.taleed-atlas .heritage-disclosure>summary:focus-visible{outline-color:var(--atlas-rust)}
+.taleed-topic .topic-hero{padding-top:32px}
+.taleed-topic .topic-hero-grid{min-height:0;gap:40px;padding-block:24px 40px}
+.taleed-topic .topic-hero-copy{padding:0}
+.taleed-topic .topic-pieces{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.taleed-topic .topic-piece,.taleed-topic .topic-piece.is-featured{display:flex;flex-direction:column;grid-column:auto;gap:20px;padding:24px;border:1px solid var(--topic-line);border-radius:16px;background:color-mix(in srgb,var(--th-sage) 18%,var(--th-cream))}
+.taleed-topic .topic-piece:nth-child(even){background:color-mix(in srgb,var(--th-peach) 25%,var(--th-cream))}
+.taleed-topic .topic-piece-figure{width:100%;margin:0}
+.taleed-topic .topic-piece .topic-photo{aspect-ratio:3/2;height:auto;border-radius:10px}
+.taleed-topic .topic-piece .topic-photo>img{object-fit:contain;transform:none}
+.taleed-topic .topic-illustration{aspect-ratio:4/3;min-height:0;padding:16px;border-radius:10px;background:var(--th-cream)}
+.taleed-topic .topic-illustration .topic-art.is-sheet,.taleed-topic.topic-food .topic-piece.is-featured .topic-illustration .topic-art{width:min(100%,260px);height:auto;max-height:none;aspect-ratio:var(--art-ratio,1)}
+.taleed-topic .topic-piece h3{font-size:28px;line-height:1.6}
+.taleed-topic .topic-story{font-size:15px;line-height:2}
+.taleed-topic .topic-index{display:flex;overflow-x:auto;flex-wrap:nowrap;gap:12px;max-height:none;padding-block:16px;margin-block:20px 32px}
+.taleed-topic .topic-index a{flex-shrink:0;font-size:13px;padding:8px 12px;border:1px solid var(--topic-line);border-radius:24px;min-height:44px}
+.taleed-about .about-document-image{aspect-ratio:auto;overflow:visible;border-radius:16px}
+.taleed-about .about-document-image img{height:auto;object-fit:contain;border-radius:16px}
+.taleed-home .th-pathway-crafts,.taleed-home .th-pathway-food{margin-top:0}
+.taleed-home .th-collection-grid{align-items:start}
+.taleed-home .th-pathway .th-pathway-visual{height:auto;aspect-ratio:1;display:grid;place-items:center;min-height:0;overflow:visible}
+.taleed-home .th-pathway-sprite{width:90%;max-width:320px;transform:none}
+.taleed-home .th-house-table-art{width:100%;max-width:320px;transform:none}
+.taleed-home .th-pathway-index{top:4%;right:4%}
+@media(max-width:760px){
+ .taleed-atlas .heritage-disclosure>.heritage-heading{width:calc(100% - 32px)}
+ .taleed-topic .topic-pieces,.taleed-topic .topic-hero-grid{grid-template-columns:1fr}
+ .taleed-topic .topic-piece,.taleed-topic .topic-piece.is-featured{padding:18px;gap:16px}
+ .taleed-topic .topic-hero-visual{min-height:0;padding-block:24px}
+ .taleed-topic .topic-hero-art{width:min(100%,300px)}
+ .taleed-home .th-pathway .th-pathway-visual{width:min(100%,330px);margin:auto}
+}
+
+/* Compact heritage exhibits: size illustrations by the viewing height, not the page width. */
+.taleed-atlas .heritage-entry{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:center}
+.taleed-atlas .heritage-visual{gap:10px;max-width:420px;justify-self:center;width:100%}
+.taleed-atlas .heritage-visual>img{width:100%;height:auto;max-height:min(280px,36svh);object-fit:contain}
+.taleed-atlas .heritage-visual .topic-art{width:min(100%,230px);aspect-ratio:var(--art-ratio,1);max-width:100%}
+.taleed-atlas .heritage-copy{max-width:75ch}
+.taleed-atlas .heritage-copy h3{font-size:27px;line-height:1.5;margin-block:6px 12px}
+.taleed-atlas .heritage-story{font-size:14px;line-height:1.95}
+.taleed-atlas .heritage-materials{margin-block:12px;gap:8px 16px}
+.taleed-atlas .heritage-entries{gap:24px}
+.taleed-atlas .heritage-disclosure[open]>.heritage-entries{padding-block:24px}
+.taleed-atlas .place-dress .place-culture-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.taleed-atlas .place-dress .place-culture-card{padding:16px;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:20px;align-items:center}
+.taleed-atlas .place-dress .culture-picture{min-height:0;gap:8px}
+.taleed-atlas .place-dress .culture-picture-window{width:min(100%,176px)}
+.taleed-atlas .place-dress .culture-card-copy{padding:0}
+.taleed-atlas .place-dress .culture-card-copy h4{font-size:25px;margin-block:6px 10px;line-height:1.5}
+.taleed-atlas .place-dress .culture-card-copy>p{font-size:14px;line-height:1.85;margin-block:8px}
+.taleed-atlas .place-dress .place-dress-scope{margin-block:6px;padding:4px 8px}
+.taleed-atlas .place-dress .culture-card-copy .atlas-source-link{margin-top:8px}
+@media(max-width:1100px){.taleed-atlas .place-dress .place-culture-grid{grid-template-columns:1fr}.taleed-atlas .place-dress .place-culture-card{grid-template-columns:minmax(140px,.6fr) minmax(0,1.4fr)}}
+@media(max-width:760px){
+ .taleed-atlas .heritage-entry{grid-template-columns:1fr;gap:20px}
+ .taleed-atlas .heritage-visual{grid-column:1;grid-row:1;max-width:360px}
+ .taleed-atlas .heritage-copy{grid-column:1;grid-row:2}
+ .taleed-atlas .heritage-visual>img{max-height:min(220px,30svh)}
+ .taleed-atlas .heritage-visual .topic-art{width:min(100%,190px)}
+ .taleed-atlas .place-dress .place-culture-card{grid-template-columns:minmax(100px,.65fr) minmax(0,1.35fr);gap:16px}
+ .taleed-atlas .place-dress .culture-picture-window{width:min(100%,145px)}
+ .taleed-atlas .place-dress .culture-card-copy h4{font-size:23px}
+}
+@media(max-width:420px){.taleed-atlas .place-dress .place-culture-card{grid-template-columns:1fr}.taleed-atlas .place-dress .culture-picture-window{width:min(100%,140px)}}
+
+/* A single full-width exhibit is selected by the place navigation. No content is clipped. */
+.has-section-views .atlas-reading-progress{display:none}
+.has-section-views .atlas-nav{top:0}
+.has-section-views .place-view-stage{width:100%;background:var(--th-cream)}
+.has-section-views .place-view-panel{min-height:calc(100svh - var(--anchor-offset,88px));box-sizing:border-box;margin-block:0;scroll-margin-top:var(--anchor-offset,88px)}
+.has-section-views .place-view-panel[hidden]{display:none!important}
+.has-section-views .place-view-panel>summary{display:none}
+.has-section-views .place-view-panel:not(.atlas-wrap){padding-block:24px}
+.has-section-views .place-view-panel>.heritage-entries{padding-block:8px 24px}
+.has-section-views .place-view-panel .heritage-entry{min-height:clamp(320px,55svh,560px);grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px}
+.has-section-views .place-view-panel .heritage-visual>img{max-height:min(42svh,360px)}
+.has-section-views .place-view-panel .heritage-visual .topic-art{width:min(100%,260px)}
+.has-section-views #time,.has-section-views #landmarks,.has-section-views #governorates{width:min(1840px,calc(100% - clamp(32px,5vw,112px)));padding:24px;margin-block:0;border-radius:0}
+.has-section-views .atlas-section-heading{margin-bottom:20px;gap:16px}
+.has-section-views .atlas-section-heading h2,.has-section-views .region-governorates-heading h2{font-size:30px;line-height:1.5}
+.has-section-views .atlas-section-heading h2 br{display:none}
+.has-section-views .atlas-section-heading .atlas-eyebrow{margin-bottom:6px}
+.has-section-views .atlas-section-heading>p{font-size:13px}
+.has-section-views .atlas-landmarks{display:grid;grid-template-columns:repeat(var(--landmark-count,3),minmax(0,1fr));gap:18px;align-items:start}
+.has-section-views .atlas-landmark{padding:14px;border-radius:12px}
+.has-section-views .atlas-landmark .atlas-photo-button{height:clamp(130px,19svh,210px);aspect-ratio:auto}
+.has-section-views .atlas-landmark-copy{padding-top:12px}
+.has-section-views .atlas-landmark-copy h3{font-size:24px;line-height:1.5;margin-bottom:8px}
+.has-section-views .landmark-story-lead{font-size:14px;line-height:1.9}
+.has-section-views .landmark-photo-credit{font-size:11px;line-height:1.7}
+.has-section-views #people{padding-block:28px}
+.has-section-views #people .place-fame{max-width:none;margin:0}
+.has-section-views #dress,.has-section-views #dishes{width:100%;padding:28px clamp(16px,2.5vw,56px);background:var(--th-teal);color:var(--th-ivory);--th-ink:var(--th-ivory);--th-muted:#d4d0bc;--atlas-line:#f6e9d640}
+.has-section-views #dress .place-culture-grid,.has-section-views #dishes>.place-culture-grid{width:100%;max-width:1840px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.has-section-views #dress .place-culture-card,.has-section-views #dishes .place-culture-card{background:color-mix(in srgb,var(--th-cream) 10%,var(--th-teal));padding:24px;border:1px solid var(--atlas-line);border-radius:14px;align-items:center;gap:24px;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+.has-section-views #dress .culture-picture-window{width:min(100%,180px)}
+.has-section-views #dishes .culture-picture-window{width:min(100%,220px)}
+.has-section-views #dress .culture-card-copy h4,.has-section-views #dishes .culture-card-copy h4{font-size:27px}
+.has-section-views #dress .culture-card-copy p,.has-section-views #dishes .culture-card-copy p{font-size:14px;line-height:1.9}
+.has-section-views #governorates .place-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.has-section-views #governorates .place-plate-scene{max-height:32svh}
+.has-section-views .region-governorates-heading{margin-bottom:24px}
+.has-section-views .atlas-next{margin-top:0}
+@media(max-width:1100px){.has-section-views .atlas-landmarks{grid-template-columns:repeat(2,minmax(0,1fr))}.has-section-views #dress .place-culture-grid,.has-section-views #dishes>.place-culture-grid{grid-template-columns:1fr}}
+@media(max-width:760px){
+ .has-section-views #time,.has-section-views #landmarks,.has-section-views #governorates{width:calc(100% - 32px);padding:20px 12px}
+ .has-section-views .place-view-panel .heritage-entry{grid-template-columns:1fr;min-height:0;gap:20px}
+ .has-section-views .place-view-panel .heritage-visual>img{max-height:30svh}
+ .has-section-views #governorates .place-grid{grid-template-columns:1fr}
+ .has-section-views #dress .place-culture-card,.has-section-views #dishes .place-culture-card{padding:16px;gap:16px;grid-template-columns:minmax(100px,.7fr) minmax(0,1.3fr)}
+ .has-section-views #dress .culture-card-copy h4,.has-section-views #dishes .culture-card-copy h4{font-size:24px}
+}
+@media(max-width:500px){.has-section-views .atlas-landmarks{grid-template-columns:1fr}.has-section-views #dress .place-culture-card,.has-section-views #dishes .place-culture-card{grid-template-columns:1fr}}
+
+.has-section-views .place-view-stage-title{width:min(1840px,calc(100% - clamp(32px,5vw,112px)));margin:0 auto;padding-block:24px 12px;font-size:30px;line-height:1.5}
+.has-section-views .place-view-stage[data-active="dress"],.has-section-views .place-view-stage[data-active="dishes"]{background:var(--th-teal);color:var(--th-ivory)}
+.has-section-views .place-view-stage[data-active="crafts"]{background:color-mix(in srgb,var(--th-sage) 26%,var(--th-cream))}
+.has-section-views .place-view-stage[data-active="architecture"]{background:color-mix(in srgb,var(--th-peach) 28%,var(--th-cream))}
+@media(max-width:760px){.has-section-views .place-view-stage-title{width:calc(100% - 32px);font-size:27px;padding-top:20px}}
+
+.has-section-views .place-view-stage:has(.place-view-stage-title:not([hidden]))>.place-view-panel{min-height:calc(100svh - var(--anchor-offset,88px) - 80px)}
+
+/* Shared header controls: language destination and a single appearance icon. */
+body.taleed-theme .header-tools{gap:10px}
+body.taleed-theme .site-header .language-toggle,body.taleed-theme .site-header .theme-toggle{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:9px;height:44px;min-height:44px;min-width:44px;width:auto;padding:0 14px;border:1px solid color-mix(in srgb,var(--th-ink) 22%,transparent);border-radius:12px;background:color-mix(in srgb,var(--th-sage) 15%,var(--th-cream));color:var(--th-ink);box-shadow:none;overflow:visible;transition:background .2s,border-color .2s,transform .2s}
+body.taleed-theme .site-header .theme-toggle{width:44px;padding:0;flex:none}
+body.taleed-theme .site-header .language-toggle::before,body.taleed-theme .site-header .language-toggle::after,body.taleed-theme .site-header .theme-toggle::before,body.taleed-theme .site-header .theme-toggle::after{display:none}
+body.taleed-theme .site-header .language-globe{width:19px;height:19px;flex:none}
+body.taleed-theme .site-header .language-label{font-size:13px;line-height:1.4;font-weight:400;letter-spacing:0}
+body.taleed-theme .site-header .theme-toggle svg{position:static;width:21px;height:21px;transform:none;color:inherit}
+body.taleed-theme .site-header .appearance-sun{display:none}
+body.taleed-theme .site-header .appearance-moon{display:block}
+[data-theme=dark] body.taleed-theme .site-header .appearance-sun{display:block}
+[data-theme=dark] body.taleed-theme .site-header .appearance-moon{display:none}
+body.taleed-theme .site-header :is(.language-toggle,.theme-toggle):hover{background:color-mix(in srgb,var(--th-sage) 40%,var(--th-cream));border-color:var(--th-muted);transform:translateY(-1px)}
+body.taleed-theme .site-header :is(.language-toggle,.theme-toggle):focus-visible{outline:2px solid var(--th-muted);outline-offset:4px}
+body.taleed-theme .site-header :is(.language-toggle,.theme-toggle):active{transform:scale(.96)}
+@media(max-width:480px){body.taleed-theme .header-tools{gap:6px}body.taleed-theme .site-header .language-toggle{padding-inline:10px;gap:6px}body.taleed-theme .site-header .language-label{font-size:12px}}
+@media(prefers-reduced-motion:reduce){body.taleed-theme .site-header :is(.language-toggle,.theme-toggle){transition:none;transform:none}}
+
+/* Open produce subsection shares the table's card rhythm and readable palette. */
+.taleed-atlas #dishes .place-fruits{max-width:1840px;margin:32px auto 0;padding:28px 0 0;border-top:1px solid var(--atlas-line)}
+.taleed-atlas #dishes .place-fruits>.place-culture-heading{margin-bottom:20px}
+.taleed-atlas #dishes .place-fruits .place-culture-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.taleed-atlas #dishes .place-fruits h3{font-size:28px;line-height:1.5;margin:0}
+.taleed-atlas #dishes .place-fruits .culture-picture-window{width:min(100%,180px)}
+.taleed-atlas .place-overview-summary{font-size:15px;line-height:1.95;max-width:62ch;margin:16px 0 0;text-wrap:pretty}
+.taleed-atlas .has-cover-photo .place-overview-summary{color:#f6edda}
+.taleed-atlas .hierarchy-atlas.has-cover-photo .atlas-cover-grid{min-height:0}
+.taleed-atlas .hierarchy-atlas.has-cover-photo .atlas-cover-copy{padding-block:24px;max-width:none}
+.taleed-atlas .hierarchy-atlas.has-cover-photo .atlas-cover-copy h1{font-size:clamp(32px,3vw,48px)}
+.taleed-atlas .hierarchy-atlas .atlas-place-intro{display:grid;grid-template-columns:minmax(180px,.65fr) minmax(0,2fr);gap:32px;align-items:start;padding:28px clamp(20px,3vw,48px);margin-block:20px 32px;background:color-mix(in srgb,var(--th-sage) 24%,var(--th-cream));border:1px solid var(--atlas-line);border-radius:12px}
+.taleed-atlas .atlas-place-intro h2{font-size:30px;line-height:1.5;margin:6px 0 0}
+.taleed-atlas .atlas-place-intro>p{margin:0;max-width:90ch;font-size:15px;line-height:2}
+.taleed-atlas .atlas-place-intro[hidden]{display:none!important}
+@media(max-width:1100px){.taleed-atlas #dishes .place-fruits .place-culture-grid{grid-template-columns:1fr}}
+@media(max-width:760px){.taleed-atlas .hierarchy-atlas .atlas-place-intro{grid-template-columns:1fr;gap:12px;padding:24px 20px}.taleed-atlas .has-cover-photo .atlas-cover-copy{position:relative}.taleed-atlas .place-overview-summary{font-size:14px}.taleed-atlas #dishes .place-fruits>.place-culture-heading{display:block}}

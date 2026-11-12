@@ -1,0 +1,11 @@
+{% load i18n site_assets %}
+<article class="city-door{% if featured %} city-door-featured{% endif %}" id="chapter-{{ card.key }}" style="--city-focus:{{ card.image_position }}">
+  <figure class="city-door-visual">
+    <div class="city-door-frame"><a href="{{ card.url }}" class="city-door-window" aria-label="{% translate 'اكتشف المدينة' %}: {{ card.name|localize }}">{% if featured %}{% include 'includes/image.html' with image=card.image alt=card.image_caption image_class='city-door-photo' eager=True sizes='(min-width: 1100px) 64vw, (min-width: 761px) 58vw, 100vw' %}{% else %}{% include 'includes/image.html' with image=card.image alt=card.image_caption image_class='city-door-photo' sizes='(min-width: 1100px) 32vw, (min-width: 761px) 40vw, 90vw' %}{% endif %}<span class="city-door-light" aria-hidden="true"></span></a></div>
+    <span class="city-door-ground" aria-hidden="true"></span>
+    <figcaption class="city-door-credit">{% include 'includes/photo_credit.html' with image=card.image %}</figcaption>
+  </figure>
+  <div class="city-door-copy"><div class="city-door-meta"><span><bdi>{{ card.number|localize }}</bdi> / {{ card.region|localize }}</span><form class="save-form" method="post" action="{{ card.save_url }}" data-city="{{ card.key }}">{% csrf_token %}<input type="hidden" name="next" value="{{ request.get_full_path }}"><button class="save-button{% if card.saved %} is-saved{% endif %}" type="submit" aria-pressed="{% if card.saved %}true{% else %}false{% endif %}" aria-label="{% translate 'حفظ' %} {{ card.name|localize }}"><span class="save-symbol" aria-hidden="true">{% if card.saved %}◆{% else %}◇{% endif %}</span><span class="save-label">{% if card.saved %}{% translate 'محفوظة' %}{% else %}{% translate 'احفظ الحكاية' %}{% endif %}</span></button></form></div>
+    <h2><a href="{{ card.url }}">{{ card.name|localize }}</a></h2><p class="city-door-verse">{{ card.caption|localize }}</p><a href="{{ card.url }}" class="city-door-enter">{% translate "اكتشف المدينة" %}<span aria-hidden="true">↖</span></a>
+  </div>
+</article>

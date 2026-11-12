@@ -1,5 +1,8 @@
 (() => {
   'use strict';
+  const messages = JSON.parse(document.getElementById('site-messages')?.textContent || '{}');
+  const tr = text => messages[text] || text;
+  const isRTL = document.documentElement.dir === 'rtl';
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const toast = document.querySelector('.toast');
   let toastTimer;
@@ -55,6 +58,22 @@
     });
   }
 
+  // Only one pathway responds at a time; focus and pointer share the same state.
+  const pathways = [...document.querySelectorAll('.th-pathway')];
+  const activatePathway = selected => pathways.forEach(card => {
+    card.classList.toggle('is-exploring', card === selected);
+  });
+  pathways.forEach(card => {
+    card.addEventListener('pointerenter', event => {
+      if (event.pointerType !== 'touch') activatePathway(card);
+    });
+    card.addEventListener('pointerleave', () => {
+      activatePathway(card.matches(':focus-visible') ? card : null);
+    });
+    card.addEventListener('focus', () => activatePathway(card));
+    card.addEventListener('blur', () => activatePathway(null));
+  });
+
   // Changing a category or region keeps the other GET fields and lands at results.
   document.querySelectorAll('[data-filter-form]').forEach(form => {
     form.addEventListener('change', event => {
@@ -63,37 +82,6 @@
       }
     });
   });
-
-  // Chapter anchors remain usable without JavaScript; active navigation follows reading.
-  const cityChapters = [...document.querySelectorAll('[data-city-chapter]')];
-  const chapterLinks = [...document.querySelectorAll('[data-chapter-link]')];
-  const chapterJump = document.querySelector('[data-chapter-jump]');
-  chapterJump?.addEventListener('change', () => {
-    const section = document.getElementById('chapter-' + chapterJump.value);
-    if (section) { history.replaceState(null, '', '#chapter-' + chapterJump.value); section.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' }); }
-  });
-  if (cityChapters.length && 'IntersectionObserver' in window) {
-    const cityObserver = new IntersectionObserver(entries => {
-      const visible = entries.filter(entry => entry.isIntersecting).sort((a,b) => a.boundingClientRect.top - b.boundingClientRect.top);
-      if (!visible.length) return;
-      const slug = visible[0].target.dataset.cityChapter;
-      chapterLinks.forEach(link => {
-        if (link.dataset.chapterLink === slug) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-      if (chapterJump) chapterJump.value = slug;
-      const activeLink = chapterLinks.find(link => link.dataset.chapterLink === slug);
-      const rail = activeLink?.parentElement;
-      if (activeLink && rail && rail.clientWidth) {
-        const itemBox = activeLink.getBoundingClientRect();
-        const railBox = rail.getBoundingClientRect();
-        if (itemBox.left < railBox.left || itemBox.right > railBox.right) {
-          rail.scrollBy({ left: itemBox.left - railBox.left - (railBox.width - itemBox.width) / 2, behavior: reduced ? 'auto' : 'smooth' });
-        }
-      }
-    }, { rootMargin: '-20% 0px -50% 0px', threshold: 0 });
-    cityChapters.forEach(section => cityObserver.observe(section));
-  }
 
   async function postForm(form, submitter) {
     const data = new FormData(form);
@@ -113,12 +101,12 @@
         const apply = () => {
           document.documentElement.dataset.theme = result.theme;
           button.value = result.theme === 'dark' ? 'light' : 'dark';
-          button.setAttribute('aria-label', result.theme === 'dark' ? 'تفعيل الوضع النهاري' : 'تفعيل الوضع الليلي');
+          button.setAttribute('aria-label', result.theme === 'dark' ? tr("تفعيل الوضع النهاري") : tr("تفعيل الوضع الليلي"));
           const browserColor = getComputedStyle(document.body).getPropertyValue('--browser-theme').trim();
           document.querySelector('meta[name="theme-color"]')?.setAttribute('content', browserColor || (result.theme === 'dark' ? '#211b21' : '#eae9e5'));
         };
         if (document.startViewTransition && !reduced) document.startViewTransition(apply); else apply();
-      } catch { announce('تعذّر حفظ الوضع. جرّب مرة أخرى.'); }
+      } catch { announce(tr("تعذّر حفظ الوضع. جرّب مرة أخرى.")); }
       finally { button.disabled = false; }
     });
   });
@@ -136,12 +124,12 @@
           control.classList.toggle('is-saved', result.saved);
           control.setAttribute('aria-pressed', String(result.saved));
           control.querySelector('.save-symbol').textContent = result.saved ? '◆' : '◇';
-          control.querySelector('.save-label').textContent = result.saved ? 'محفوظة' : 'احفظ الحكاية';
+          control.querySelector('.save-label').textContent = result.saved ? tr("محفوظة") : tr("احفظ الحكاية");
         });
         document.querySelectorAll('[data-saved-count]').forEach(counter => counter.textContent = result.count);
-        announce(result.saved ? 'حُفظت الحكاية. تجدها في «حكاياتي».' : 'أُزيلت المدينة من حكاياتك.');
+        announce(result.saved ? tr("حُفظت الحكاية. تجدها في «حكاياتي».") : tr("أُزيلت المدينة من حكاياتك."));
         if (!result.saved && new URL(location.href).searchParams.get('saved') === '1') location.reload();
-      } catch { announce('تعذّر حفظ الحكاية. جرّب مرة أخرى.'); }
+      } catch { announce(tr("تعذّر حفظ الحكاية. جرّب مرة أخرى.")); }
       finally { button.disabled = false; }
     });
   });
@@ -170,8 +158,8 @@
   gallery?.querySelector('.gallery-prev').addEventListener('click', () => showImage(selected - 1));
   gallery?.querySelector('.gallery-next').addEventListener('click', () => showImage(selected + 1));
   gallery?.addEventListener('keydown', event => {
-    if (event.key === 'ArrowLeft') { event.preventDefault(); showImage(selected + 1); }
-    if (event.key === 'ArrowRight') { event.preventDefault(); showImage(selected - 1); }
+    if (event.key === 'ArrowLeft') { event.preventDefault(); showImage(selected + (isRTL ? 1 : -1)); }
+    if (event.key === 'ArrowRight') { event.preventDefault(); showImage(selected + (isRTL ? -1 : 1)); }
   });
 
   const videoDialog = document.querySelector('.video-dialog');
@@ -196,17 +184,79 @@
     });
   });
 
-  const chapters = [...document.querySelectorAll('.chapter-nav a')];
-  if (chapters.length && 'IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        chapters.forEach(link => {
-          if (link.hash === '#' + entry.target.id) link.setAttribute('aria-current', 'location');
-          else link.removeAttribute('aria-current');
-        });
-      });
-    }, { rootMargin: '-10% 0px -55% 0px', threshold: 0 });
-    chapters.forEach(link => { const section = document.querySelector(link.hash); if (section) observer.observe(section); });
+  document.querySelectorAll('[data-region-picker]').forEach(picker => {
+    const trigger = picker.querySelector('summary');
+    const links = [...picker.querySelectorAll('.region-picker-panel a')];
+    const closePicker = () => { picker.open = false; trigger.focus(); };
+    picker.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && picker.open) {
+        event.preventDefault(); closePicker(); return;
+      }
+      if (!['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault(); picker.open = true;
+      const current = links.indexOf(document.activeElement);
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? links.length - 1
+        : event.key === 'ArrowDown' ? (current + 1) % links.length
+        : (current - 1 + links.length) % links.length;
+      links[next].focus();
+    });
+    document.addEventListener('click', event => {
+      if (picker.open && !picker.contains(event.target)) picker.open = false;
+    });
+  });
+
+})();
+
+
+/* Align deep links after disclosures open, using the actual sticky navigation height. */
+(() => {
+  const sticky = document.querySelector('.atlas-nav, .topic-switcher');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const offset = () => {
+    if (!sticky) return 24;
+    const position = getComputedStyle(sticky).position;
+    return (position === 'sticky' || position === 'fixed' ? sticky.getBoundingClientRect().height : 0) + 24;
+  };
+  function targetFor(hash) {
+    try { return document.getElementById(decodeURIComponent(hash.slice(1))); }
+    catch { return null; }
+  }
+  function navigate(hash, focus = false, animate = false) {
+    const target = targetFor(hash);
+    if (!target) return false;
+    target.closest('[data-atlas]')?.dispatchEvent(new CustomEvent('taleed:activate', { detail: target }));
+    for (let node = target; node && node !== document.body; node = node.parentElement) {
+      if (node.matches('details')) node.open = true;
+    }
+    target.classList.add('is-visible');
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      const destination = target.matches('.place-view-panel') ? target.closest('.place-view-stage') || target : target;
+      const top = Math.max(0, destination.getBoundingClientRect().top + scrollY - offset());
+      window.scrollTo({ top, behavior: animate && !reduced.matches ? 'smooth' : 'instant' });
+      if (focus) {
+        if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+      }
+    }));
+    return true;
+  }
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[href]');
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || link.target || link.hasAttribute('download')) return;
+    const url = new URL(link.href, location.href);
+    if (url.origin !== location.origin || url.pathname !== location.pathname || url.search !== location.search || !url.hash || !targetFor(url.hash)) return;
+    event.preventDefault();
+    if (location.hash !== url.hash) history.pushState(null, '', url.hash);
+    navigate(url.hash, true, true);
+  });
+  addEventListener('hashchange', () => navigate(location.hash));
+  const initial = () => {
+    if (!location.hash) return;
+    Promise.resolve(document.fonts?.ready).then(() => navigate(location.hash));
+  };
+  if (document.readyState === 'complete') initial();
+  else addEventListener('load', initial, { once: true });
+  if (sticky && 'ResizeObserver' in window) {
+    new ResizeObserver(() => document.documentElement.style.setProperty('--anchor-offset', offset() + 'px')).observe(sticky);
   }
 })();

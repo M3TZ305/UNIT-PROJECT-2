@@ -1,43 +1,47 @@
+{% load i18n site_assets %}
 {% load static site_assets %}
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-theme="{{ theme|default:'light' }}">
+<html lang="{{ site_language }}" dir="{{ text_direction }}" data-theme="{{ theme|default:'light'|localize }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="{% block browser_color %}{% if theme == 'dark' %}#292e28{% else %}#d8d2b8{% endif %}{% endblock %}">
-  <meta name="description" content="{% block description %}تَليد — رحلة بصرية في ثقافات المدن السعودية، من العمارة والحرف إلى حكايات المائدة.{% endblock %}">
-  <title>{% block title %}تَليد — موروث المدن، وحكايات أهلها{% endblock %}</title>
-  <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
+  <meta name="description" content="{% block description %}{% translate "تَليد — رحلة بصرية في ثقافات المدن السعودية، من العمارة والحرف إلى حكايات المائدة." %}{% endblock %}">
+  <title>{% block title %}{% translate "تَليد — موروث المدن، وحكايات أهلها" %}{% endblock %}</title>
+  <link rel="icon" href="{% asset 'images/favicon.svg' %}" type="image/svg+xml">
   <link rel="preconnect" href="https://thumb.wikimedia.org">
   <link rel="preload" href="{% static 'fonts/aref-ruqaa-arabic-d79f7a86.woff2' %}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{% static 'fonts/markazi-text-arabic-31a13b8e.woff2' %}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{% static 'fonts/readex-pro-arabic-b8c67426.woff2' %}" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="{% asset 'css/fonts.css' %}">
-  <link rel="stylesheet" href="{% asset 'css/style.css' %}">
-  <link rel="stylesheet" href="{% asset 'css/editorial.css' %}">
+  <link rel="stylesheet" href="{% asset 'css/foundation.css' %}">
   {% block extra_css %}{% endblock %}
-  <link rel="stylesheet" href="{% asset 'css/typography.css' %}">
-  <link rel="stylesheet" href="{% asset 'css/composition.css' %}">
+  <link rel="stylesheet" href="{% asset 'css/reading.css' %}">
   {% block layout_css %}{% endblock %}
-  <link rel="stylesheet" href="{% asset 'css/shared-chrome.css' %}">
+  <link rel="stylesheet" href="{% asset 'css/interface.css' %}">
+  <link rel="stylesheet" href="{% asset 'css/editorial-system.css' %}">
+  {{ client_messages|json_script:'site-messages' }}
   <script src="{% static 'js/media.js' %}"></script>
-  <script src="{% static 'js/main.js' %}" defer></script>
+  <script src="{% asset 'js/main.js' %}" defer></script>
 </head>
 <body id="top" class="{% block body_class %}taleed-theme{% endblock %}">
-  <a class="skip-link" href="#main-content">انتقل إلى المحتوى</a>
+  <a class="skip-link" href="#main-content">{% translate "انتقل إلى المحتوى" %}</a>
   <header class="site-header wrap">
-    <a class="brand" href="{% url 'main:home' %}" aria-label="تَليد — الرئيسية">تَليد<span class="brand-dot" aria-hidden="true">◆</span></a>
-    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">القائمة <span aria-hidden="true">☰</span></button>
-    <nav id="site-nav" class="site-nav" aria-label="التنقل الرئيسي">
-      <a href="{% url 'main:home' %}" {% if nav == 'home' %}aria-current="page"{% endif %}>الرئيسية</a>
-      <a href="{% url 'main:cities' %}" {% if nav == 'cities' %}aria-current="page"{% endif %}>اكتشف المدن</a>
-      <a href="{% url 'main:about' %}" {% if nav == 'about' %}aria-current="page"{% endif %}>عن تَليد</a>
+    <a class="brand" href="{% url 'main:home' %}" aria-label="{% translate "تَليد — الرئيسية" %}">{% translate "تَليد" %}<span class="brand-dot" aria-hidden="true">◆</span></a>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">{% translate "القائمة" %} <span aria-hidden="true">☰</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="{% translate "التنقل الرئيسي" %}">
+      <a href="{% url 'main:home' %}" {% if nav == 'home' %}aria-current="page"{% endif %}>{% translate "الرئيسية" %}</a>
+      <a href="{% url 'main:cities' %}" {% if nav == 'cities' %}aria-current="page"{% endif %}>{% translate "اكتشف المدن" %}</a>
+      <a href="{% url 'main:about' %}" {% if nav == 'about' %}aria-current="page"{% endif %}>{% translate "عن تَليد" %}</a>
     </nav>
     <div class="header-tools">
-      <a class="saved-link" href="{% url 'main:cities' %}?saved=1" aria-label="المدن المحفوظة">حكاياتي <span data-saved-count>{{ saved_count }}</span></a>
-      <form class="theme-form" method="post" action="{% url 'main:set_theme' %}">
+      <form class="language-form" method="post" action="{% url 'main:set_language' %}">
         {% csrf_token %}<input type="hidden" name="next" value="{{ request.get_full_path }}">
-        <button class="theme-toggle" type="submit" name="theme" value="{% if theme == 'dark' %}light{% else %}dark{% endif %}" aria-label="{% if theme == 'dark' %}تفعيل الوضع النهاري{% else %}تفعيل الوضع الليلي{% endif %}"><span class="theme-sun" aria-hidden="true">☼</span><span class="theme-moon" aria-hidden="true">☾</span><span class="theme-knob" aria-hidden="true"></span></button>
+        <button class="language-toggle" type="submit" name="language" value="{% if site_language == 'ar' %}en{% else %}ar{% endif %}" lang="{% if site_language == 'ar' %}en{% else %}ar{% endif %}" aria-label="{% if site_language == 'ar' %}Switch to English{% else %}التبديل إلى العربية{% endif %}"><svg class="language-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 7h14M5 17h14"/></svg><span class="language-label">{% if site_language == 'ar' %}English{% else %}العربية{% endif %}</span></button>
+      </form>
+      <a class="saved-link" href="{% url 'main:cities' %}?saved=1" aria-label="{% translate "المدن المحفوظة" %}">{% translate "حكاياتي" %} <span data-saved-count>{{ saved_count|localize }}</span></a>
+      <form class="theme-form" method="post" action="{% url 'main:set_theme' %}">
+        {% csrf_token %}<input type="hidden" name="next" value="{{ request.get_full_path|localize }}">
+        <button class="theme-toggle" type="submit" name="theme" value="{% if theme == 'dark' %}light{% else %}dark{% endif %}" aria-label="{% if theme == 'dark' %}{% translate "تفعيل الوضع النهاري" %}{% else %}{% translate "تفعيل الوضع الليلي" %}{% endif %}"><svg class="appearance-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="appearance-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.7 8.7 0 0 1 9.8 3.5 8.7 8.7 0 1 0 20.5 14.2Z"/></svg></button>
       </form>
     </div>
   </header>

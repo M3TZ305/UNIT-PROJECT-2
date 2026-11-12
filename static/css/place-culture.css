@@ -1,37 +1,191 @@
-/* Extend the original paper-and-ink identity, without changing site chrome. */
-.place-culture{background:var(--th-cream);--culture-paper:var(--th-cream);--culture-paper-ink:#53594a}
+/* Taleed's place pages: transparent artwork, readable stories and quiet surfaces. */
+.place-culture{background:var(--th-cream);padding-block:55px 45px}
 .place-culture .atlas-section-heading{margin-bottom:30px}
-.place-fame{border-block:1px solid var(--atlas-line);padding:28px 0 30px;max-width:780px;margin-bottom:42px}
+.place-fame{border-block:1px solid var(--atlas-line);border-inline-start:2px solid var(--atlas-rust);padding:24px;max-width:none;margin-bottom:32px;background:color-mix(in srgb,var(--th-sage) 12%,transparent)}
 .place-fame h3{font-size:29px;font-weight:400;line-height:1.5;margin:7px 0 10px}
-.place-fame>p:not(.atlas-eyebrow){font-size:14px;line-height:2;max-width:700px}
+.place-fame>p:not(.atlas-eyebrow){font-size:14px;line-height:2;max-width:70ch}
 .place-culture-heading{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:18px}
-.place-culture-heading h3{font-size:30px;font-weight:400;white-space:nowrap}
-.place-culture-heading p{max-width:600px;font-size:11px;line-height:1.9;color:var(--th-muted)}
+.place-culture-heading h3{font-size:30px;font-weight:400;line-height:1.5}
+.place-culture-heading p{max-width:55ch;font-size:11px;line-height:1.9;color:var(--th-muted)}
 .place-culture-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
-.place-culture-card{padding:0 0 24px;border:0;border-bottom:1px solid var(--atlas-line);background:transparent;min-width:0}
+.place-culture-card{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.2fr);align-items:center;gap:20px;padding:24px 0;border:0;border-bottom:1px solid var(--atlas-line);background:transparent;min-width:0;isolation:isolate}
+.culture-card-copy{min-width:0;padding:8px 0;text-align:start}
+.culture-card-copy h4{font-family:var(--serif);font-size:25px;font-weight:400;margin:9px 0;line-height:1.5}
+.culture-card-copy p{font-size:12px;line-height:1.95;max-width:55ch}
+.culture-card-copy .atlas-source-link{display:inline-block;margin-top:12px}
 .place-culture-label{font-size:10px;color:var(--th-muted)}
-.place-culture-card h4{font-family:var(--serif);font-size:27px;font-weight:400;line-height:1.5;margin:10px 0}
-.place-culture-card p{font-size:13px;line-height:2;max-width:550px}
-.place-dishes{margin-top:36px}.place-culture-note{font-size:11px;line-height:1.9;color:var(--th-muted);max-width:850px;margin-top:24px}
-.local-count{font-size:11px;color:var(--th-muted);margin:0 0 22px}.local-empty{font-size:13px;line-height:2;color:var(--th-muted);border:1px dashed var(--atlas-line);padding:25px}
-.hierarchy-atlas .atlas-landmark:not(:has(figure)){display:block;padding:22px;border:1px solid var(--atlas-line);border-inline-start:2px solid var(--atlas-rust)}
-.hierarchy-atlas .atlas-landmark.is-featured:not(:has(figure)){grid-row:auto}
-.hierarchy-atlas .atlas-time-layout:not(:has(.atlas-time-photo)){grid-template-columns:1fr}
-@media(max-width:640px){.place-culture-grid{grid-template-columns:1fr;gap:16px}.place-culture-heading{display:block}.place-culture-heading p{margin-top:8px}.place-culture-card{padding:0 0 20px}.place-fame h3{font-size:27px}}
-
-/* Image windows follow the same paper, ink and restrained proportions. */
-.culture-picture{display:grid;justify-items:center;gap:12px;margin:0 0 22px;padding:20px 12px 12px;background:var(--culture-paper);overflow:hidden}
-.culture-picture-window{position:relative;width:min(100%,280px);aspect-ratio:var(--picture-ratio);overflow:hidden;isolation:isolate;background:var(--culture-paper);clip-path:inset(2px)}
-.culture-picture-window>img{position:absolute;max-width:none;width:calc(var(--picture-columns) * 100%);height:calc(var(--picture-rows) * 100%);left:calc(var(--picture-x) * -100%);top:calc(var(--picture-y) * -100%);object-fit:fill;mix-blend-mode:darken}
-.culture-picture.is-clothing .culture-picture-window{width:min(100%,240px)}
-.culture-photo-window{width:min(100%,280px);aspect-ratio:1;overflow:hidden}
-.culture-photo-window>img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.85)}
-.culture-picture figcaption{color:var(--culture-paper-ink);font-size:9px;line-height:1.8;text-align:center;max-width:100%;padding:0 12px 12px}
+.place-dress,.place-dishes,.place-fruits{padding-block:28px;margin-block:24px;scroll-margin-top:130px}
+.place-dishes{border-block:1px solid var(--atlas-line);background:color-mix(in srgb,var(--th-sage) 24%,transparent);padding:30px clamp(12px,3vw,32px)}
+.place-culture-note{font-size:11px;line-height:1.9;color:var(--th-muted);max-width:75ch;margin-top:24px}
+.place-culture-pending{border-block:1px solid var(--atlas-line);padding:24px 0;max-width:75ch}
+.place-culture-pending p,.local-empty{font-size:13px;line-height:2;color:var(--th-muted)}
+.place-dress-scope{display:block;width:fit-content;margin:10px 0;padding:5px 9px;border:1px solid var(--atlas-line);font-size:10px;line-height:1.7;color:var(--th-muted)}
+.place-dress-scope[data-dress-scope="local"]{color:var(--th-ink)}
+.culture-card-copy .place-dress-scope-note{font-size:11px;line-height:1.9;color:var(--th-muted);margin:10px 0 16px}
+/* Actual alpha replaces the former paper rectangles, radial masks and blend modes. */
+.culture-picture{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-width:0;width:100%;margin:0;padding:0;background:transparent;mix-blend-mode:normal;filter:none;mask-image:none}
+.culture-picture-window{position:relative;flex:none;width:min(100%,260px);aspect-ratio:var(--picture-ratio);overflow:hidden;contain:paint;isolation:isolate;background:transparent;mask-image:none;clip-path:none;filter:none}
+.culture-picture-window>img{position:absolute;display:block;max-width:none;width:calc(var(--picture-columns) * 100%);height:calc(var(--picture-rows) * 100%);left:calc(var(--picture-x) * -100%);top:calc(var(--picture-y) * -100%);object-fit:fill;mix-blend-mode:normal;filter:none;transform:none}
+.culture-picture.is-clothing{min-height:320px}
+.culture-picture.is-clothing .culture-picture-window{width:min(100%,var(--picture-max-width,240px))}
+.culture-picture figcaption{color:var(--th-muted);font-size:9px;line-height:1.8;text-align:center;max-width:28ch;padding:0}
 .culture-picture figcaption a{text-underline-offset:3px}
-@media(max-width:640px){.culture-picture.is-clothing .culture-picture-window{width:min(100%,220px)}}
+.culture-photo-window{width:min(100%,260px);aspect-ratio:1;overflow:hidden;background:transparent;border-radius:2px}
+.culture-photo-window>img{display:block;width:100%;height:100%;object-fit:cover;filter:none;mix-blend-mode:normal}
+/* Dark mode changes the page palette, never the image colors or its alpha. */
+[data-theme="dark"] .culture-picture,[data-theme="dark"] .culture-picture-window,[data-theme="dark"] .culture-photo-window{background:transparent;filter:none;mask-image:none;mix-blend-mode:normal}
+.hierarchy-atlas .atlas-landmarks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 36px;align-items:start}
+.hierarchy-atlas .atlas-landmark{min-width:0;border:0;border-top:1px solid var(--atlas-line);padding-top:18px}
+.hierarchy-atlas .atlas-landmark.is-featured{grid-row:auto;grid-column:auto}
+.hierarchy-atlas .atlas-landmark figure{margin:0}
+.hierarchy-atlas .atlas-photo-button{display:block;width:100%;background:transparent;border-radius:2px;overflow:hidden}
+.hierarchy-atlas .atlas-photo-button>img,.hierarchy-atlas .atlas-landmark.is-featured .atlas-photo-button>img{display:block;width:100%;height:100%;max-height:none;aspect-ratio:auto;object-fit:contain;filter:none;mix-blend-mode:normal;transition:none}
+.hierarchy-atlas .atlas-photo-button:hover>img{transform:none}
+.hierarchy-atlas .atlas-landmark-copy{padding:18px 0 0}
+.hierarchy-atlas .atlas-landmark-copy h3{font-size:29px;font-weight:400;margin:0 0 12px;line-height:1.5}
+.hierarchy-atlas .landmark-story-lead{max-width:60ch;font-size:15px;line-height:2;margin:0;text-wrap:pretty}
+.hierarchy-atlas .atlas-landmark .landmark-photo-credit{display:block;padding:9px 0;border:0}
+.hierarchy-atlas .atlas-time-layout{align-items:start;gap:40px}
+.hierarchy-atlas .atlas-time-layout:not(:has(.atlas-time-photo)){grid-template-columns:1fr}
+.hierarchy-atlas .atlas-time-photo{margin:0;position:static}
+.hierarchy-atlas .atlas-time-photo>img{clip-path:none;border-radius:2px;aspect-ratio:4/3;height:auto;object-fit:cover;filter:none}
+.hierarchy-atlas .atlas-time-content h3{font-size:27px}
+.hierarchy-atlas .atlas-cover-visual{overflow:visible;contain:none}
+.hierarchy-atlas .atlas-sprite{max-width:92%}
+.hierarchy-atlas .atlas-annotations{display:none}
+.governorate-cover-photo .photo-credit{margin-top:7px}
+@media(max-width:1000px){.place-culture-grid{grid-template-columns:1fr}.place-culture-card{grid-template-columns:minmax(130px,.6fr) minmax(0,1.4fr)}.hierarchy-atlas .atlas-time-photo{position:static}}
+@media(max-width:640px){.place-culture-heading{display:block}.place-culture-heading h3{font-size:27px}.place-culture-heading p{margin-top:8px}.place-culture-card{grid-template-columns:minmax(105px,.75fr) minmax(0,1.25fr);gap:16px}.culture-card-copy h4{font-size:24px}.culture-picture.is-clothing{min-height:0}.place-dishes{padding-inline:12px}.hierarchy-atlas .atlas-landmarks{grid-template-columns:1fr;gap:32px}.hierarchy-atlas .atlas-landmark-copy h3{font-size:27px}.hierarchy-atlas .landmark-story-lead{font-size:15px}.hierarchy-atlas .atlas-landmark .atlas-photo-button>img{max-height:360px}.hierarchy-atlas .atlas-time-layout{grid-template-columns:1fr}.hierarchy-atlas .atlas-cover-visual{height:420px}}
+@media(max-width:380px){.place-culture-card{grid-template-columns:1fr}.culture-card-copy{padding-inline:8px}.culture-picture-window{max-width:180px}}
 
+.hierarchy-atlas .governorate-cover-photo img{filter:none;mix-blend-mode:normal}
 
-.place-culture-card>.place-culture-label,.place-culture-card>h4,.place-culture-card>p,.place-culture-card>.atlas-source-link{margin-inline:18px}
-.place-culture .place-culture-grid{gap:32px}
-[data-theme="dark"] .place-culture{--culture-paper:#d8d2b8;--culture-paper-ink:#53594a}
-@media(max-width:640px){.place-culture .place-culture-grid{gap:24px}.culture-picture{padding-top:16px}}
+/* Governorate previews and their opening share one current photograph and caption. */
+.region-governorates .place-plate-scene.has-photo{height:auto;padding-bottom:28px;border:0;overflow:hidden}
+.region-governorates .place-plate-scene.has-photo .place-photo{width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;object-position:center;filter:none;border-radius:65px 65px 2px 2px;background:transparent}
+.region-governorates .place-plate-scene.has-photo :is(.plate-arch,.plate-draft){display:none}
+.region-governorates .place-plate-copy{padding-top:22px}
+.region-governorates .place-plate-copy h3{line-height:1.6;margin-block:10px 12px}
+.region-governorates .place-plate>.photo-credit{margin-top:8px;padding-top:8px}
+.hierarchy-atlas .governorate-cover-photo img{height:auto;max-height:420px;aspect-ratio:4/3;object-fit:contain;object-position:center;filter:none;background:transparent}
+@media(max-width:640px){.region-governorates .place-plate-scene.has-photo .place-photo{border-radius:50px 50px 2px 2px}.region-governorates .place-plate-copy{padding-top:18px}.hierarchy-atlas .governorate-cover-photo img{max-height:330px}}
+
+/* Place layout: shared scale for city and governorate records. */
+.taleed-atlas .atlas{overflow:visible}
+.taleed-atlas .atlas-wrap{width:min(1240px,calc(100% - 64px))}
+.hierarchy-atlas .atlas-cover{padding-top:24px;background:var(--th-cream)}
+.hierarchy-atlas .atlas-cover-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;min-height:0;padding-block:32px 48px}
+.hierarchy-atlas .atlas-cover-copy{padding:0;min-width:0}
+.hierarchy-atlas .atlas-cover h1{font-size:clamp(34px,4vw,52px);line-height:1.5;letter-spacing:0}
+.hierarchy-atlas .atlas-cover-tagline{font-size:26px;line-height:1.7;margin-top:16px}
+.hierarchy-atlas .atlas-cover-intro{font-size:15px;line-height:2;max-width:52ch}
+.hierarchy-atlas .atlas-cover-visual{height:auto;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 0;isolation:isolate}
+.hierarchy-atlas .atlas-sprite,.hierarchy-atlas .atlas-sprite.is-portrait{position:relative;left:auto;bottom:auto;translate:none;width:min(100%,440px);max-width:100%;transform:none;margin:0 auto}
+.hierarchy-atlas .atlas-sprite.is-portrait{width:min(100%,340px)}
+.hierarchy-atlas .atlas-art-note{position:relative;inset:auto;margin-top:16px;font-size:12px;line-height:1.8}
+.hierarchy-atlas .atlas-plate-number,.hierarchy-atlas .atlas-drawing{display:none}
+.hierarchy-atlas .atlas-arch{top:5%;left:12%;width:76%;height:82%;transform:none;opacity:.18}
+.hierarchy-atlas .governorate-cover-photo{width:100%;margin:0}
+.hierarchy-atlas .governorate-cover-photo img{width:100%;height:auto;aspect-ratio:auto;max-height:none;object-fit:contain;border-radius:24px;background:var(--plate-tile)}
+.hierarchy-atlas .governorate-cover-photo figcaption{margin-top:14px;font-size:12px;line-height:1.8}
+.hierarchy-atlas .atlas-cover-foot{flex-wrap:wrap;align-items:center;font-size:12px;padding-block:20px;line-height:1.8}
+.hierarchy-atlas .atlas-section{padding-block:64px}
+.hierarchy-atlas .atlas-section-heading{gap:24px;margin-bottom:32px;align-items:start}
+.hierarchy-atlas .atlas-section-heading h2,.hierarchy-atlas .atlas-people h2{font-size:clamp(28px,3vw,38px);line-height:1.5}
+.hierarchy-atlas .atlas-section-heading>p{font-size:14px;line-height:1.9;max-width:40ch}
+.hierarchy-atlas .atlas-time-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+.hierarchy-atlas .atlas-time-photo>img{height:auto;aspect-ratio:auto;border-radius:16px;object-fit:contain;max-height:none}
+.hierarchy-atlas .atlas-landmarks{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 32px;align-items:stretch}
+.hierarchy-atlas .atlas-landmark{padding:20px;border:1px solid var(--atlas-line);border-radius:16px;background:var(--plate-tile);display:flex;flex-direction:column;min-width:0}
+.hierarchy-atlas .atlas-landmark .atlas-photo-button{aspect-ratio:3/2;height:auto;display:grid;place-items:center;border-radius:10px;background:color-mix(in srgb,var(--th-sage) 24%,var(--th-cream));padding:0}
+.hierarchy-atlas .atlas-landmark .atlas-photo-button>img,.hierarchy-atlas .atlas-landmark.is-featured .atlas-photo-button>img{width:100%;height:100%;max-height:none;object-fit:contain;aspect-ratio:auto}
+.hierarchy-atlas .atlas-landmark-copy{padding:20px 0 0}.hierarchy-atlas .atlas-landmark-copy h3{font-size:28px}
+.hierarchy-atlas .landmark-story-lead{font-size:15px;line-height:2}
+.hierarchy-atlas .place-culture{padding-block:56px;background:color-mix(in srgb,var(--th-sage) 30%,var(--th-cream))}
+.hierarchy-atlas .place-fame{background:var(--plate-tile);border-radius:12px;padding:24px;margin-bottom:28px}
+.hierarchy-atlas .place-culture-grid{gap:24px;align-items:stretch}
+.hierarchy-atlas .place-culture-card{padding:20px;gap:20px;background:var(--th-cream);border:1px solid var(--atlas-line);border-radius:12px;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:center}
+.hierarchy-atlas .culture-picture.is-clothing{min-height:0}
+.hierarchy-atlas .culture-picture-window{width:min(100%,240px)}
+.hierarchy-atlas .culture-card-copy h4{font-size:26px;line-height:1.6;overflow-wrap:anywhere}
+.hierarchy-atlas .culture-card-copy>p{font-size:14px;line-height:2}
+.hierarchy-atlas .place-dishes{background:transparent;padding-inline:0}
+.hierarchy-atlas .region-governorates{padding-block:64px}
+.hierarchy-atlas .region-governorates .place-plate-scene.has-photo{aspect-ratio:3/2;padding:0;height:auto;background:var(--plate-tile);border-radius:16px;display:grid;place-items:center}
+.hierarchy-atlas .region-governorates .place-plate-scene.has-photo .place-photo{height:100%;width:100%;aspect-ratio:auto;object-fit:contain;border-radius:0}
+.hierarchy-atlas .atlas-next-art{width:min(100%,320px);max-height:none;align-self:center;margin:0;transform:none}
+.hierarchy-atlas .atlas-next>.atlas-wrap{padding-block:32px;min-height:0;gap:32px}
+.hierarchy-atlas .atlas-nav>.atlas-wrap{gap:24px;overflow-x:auto;scrollbar-width:thin;min-height:64px;justify-content:start}
+.hierarchy-atlas .atlas-nav a{white-space:nowrap;flex-shrink:0;min-height:48px;font-size:13px}
+.hierarchy-atlas .atlas-nav bdi{display:none}
+@media(max-width:1000px){.hierarchy-atlas .place-culture-grid{grid-template-columns:1fr}}
+@media(max-width:760px){
+ .taleed-atlas .atlas-wrap{width:calc(100% - 32px)}
+ .hierarchy-atlas .atlas-cover-grid{grid-template-columns:1fr;gap:24px;padding-block:24px 32px}
+ .hierarchy-atlas .atlas-cover-visual{padding:16px 0;height:auto}
+ .hierarchy-atlas .atlas-cover-copy{padding:0}.hierarchy-atlas .atlas-cover-intro{max-width:none}
+ .hierarchy-atlas .atlas-time-layout,.hierarchy-atlas .atlas-landmarks{grid-template-columns:1fr;gap:24px}
+ .hierarchy-atlas .atlas-time-photo,.hierarchy-atlas .atlas-timeline{grid-column:auto;grid-row:auto}
+ .hierarchy-atlas .atlas-section{padding-block:40px}
+ .hierarchy-atlas .atlas-landmark.is-featured{grid-column:auto;grid-row:auto}
+ .hierarchy-atlas .atlas-section-heading{flex-direction:column;margin-bottom:24px;gap:12px}
+ .hierarchy-atlas .atlas-section-heading>p{max-width:none}
+ .hierarchy-atlas .atlas-next>.atlas-wrap{grid-template-columns:1fr 1fr;gap:16px}
+ .hierarchy-atlas .atlas-next-name{font-size:30px}
+ .hierarchy-atlas .region-governorates{padding-block:40px}
+}
+@media(max-width:440px){.hierarchy-atlas .place-culture-card{grid-template-columns:1fr}.hierarchy-atlas .culture-picture-window{width:min(100%,200px)}.hierarchy-atlas .culture-card-copy{padding:0}}
+
+/* Shared wide place opening and alternating Taleed surfaces. */
+.taleed-atlas .atlas-wrap{width:min(1840px,calc(100% - clamp(32px,5vw,112px)))}
+.hierarchy-atlas.has-cover-photo .atlas-cover-grid{display:grid;grid-template-columns:1fr 1fr;position:relative;padding-block:24px 0;gap:0;isolation:isolate}
+.hierarchy-atlas.has-cover-photo .atlas-cover-visual{grid-column:1/-1;grid-row:1;display:block;padding:0;z-index:0;min-width:0}
+.place-cover-photo{position:relative;margin:0;border-radius:12px;overflow:hidden;background:var(--th-teal)}
+.place-cover-photo>img{width:100%;height:clamp(440px,36vw,660px);object-fit:cover;object-position:var(--cover-focus,center)}
+.place-cover-photo::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(12,39,37,.97),rgba(12,39,37,.65) 32%,transparent 76%);z-index:1}
+.place-cover-photo figcaption{position:relative;z-index:2;background:var(--th-teal);color:#e9e0cb;padding:14px 24px;font-size:12px;line-height:1.8}
+.place-cover-photo .photo-credit{color:inherit}
+.hierarchy-atlas.has-cover-photo .atlas-cover-copy{grid-column:1;grid-row:1;align-self:end;z-index:2;padding:32px clamp(24px,3vw,56px);margin-bottom:76px;color:#f6edda}
+.hierarchy-atlas.has-cover-photo .atlas-cover-copy h1{font-size:clamp(36px,3.4vw,58px);line-height:1.5;color:inherit}
+.hierarchy-atlas.has-cover-photo .atlas-cover-copy .atlas-eyebrow,.hierarchy-atlas.has-cover-photo .atlas-cover-copy .atlas-location{color:#e7dac1}
+.hierarchy-atlas.has-cover-photo .atlas-cover-tagline{color:#f0d0aa;font-size:clamp(22px,1.8vw,30px);margin-top:10px}
+.hierarchy-atlas.has-cover-photo .atlas-cover-tagline::before{display:none}
+.hierarchy-atlas.has-cover-photo .atlas-location{margin-top:18px}
+.hierarchy-atlas.has-cover-photo .atlas-outline-link{margin-top:18px;border-color:#e7dac17a}
+.hierarchy-atlas .atlas-place-intro{padding-block:36px;border-bottom:1px solid var(--atlas-line)}
+.hierarchy-atlas .atlas-place-intro p{max-width:95ch;font-size:16px;line-height:2.1}
+.hierarchy-atlas #time{padding:40px;margin-block:40px;background:color-mix(in srgb,var(--th-sage) 54%,var(--th-cream));border-radius:12px}
+.hierarchy-atlas #time .atlas-time-layout{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+.hierarchy-atlas #landmarks{padding-block:48px}
+.hierarchy-atlas #landmarks .atlas-landmark:nth-child(even){background:color-mix(in srgb,var(--th-peach) 45%,var(--th-cream))}
+.hierarchy-atlas #landmarks .atlas-landmark:nth-child(odd){background:color-mix(in srgb,var(--th-sage) 24%,var(--th-cream))}
+.hierarchy-atlas .place-culture{background:var(--th-teal);color:var(--th-ivory);--th-ink:var(--th-ivory);--th-muted:#d4d0bc;--atlas-line:#f6e9d640}
+.hierarchy-atlas .place-culture .place-fame,.hierarchy-atlas .place-culture .place-culture-card{background:color-mix(in srgb,var(--th-cream) 10%,var(--th-teal));color:var(--th-ivory)}
+.hierarchy-atlas .place-culture .place-fame{border-inline-start:3px solid #d9ac82}
+.hierarchy-atlas .place-culture .place-dishes{background:color-mix(in srgb,var(--th-cream) 5%,transparent);padding-inline:24px;border-radius:12px}
+.hierarchy-atlas #governorates{padding:40px;margin-block:40px;background:color-mix(in srgb,var(--th-peach) 48%,var(--th-cream));border-radius:12px}
+.hierarchy-atlas .atlas-next>.atlas-wrap{grid-template-columns:1fr 1fr;padding-block:36px;align-items:center}
+.atlas-next-cover{width:100%;min-width:0}
+.atlas-next-cover>a>img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:var(--cover-focus,center);border-radius:10px}
+.atlas-next-cover .atlas-next-art{width:min(100%,320px);margin:0 auto}
+@media(max-width:1000px){.hierarchy-atlas.has-cover-photo .atlas-cover-copy{grid-column:1/-1;max-width:75%}.hierarchy-atlas #time .atlas-time-layout{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){
+ .taleed-atlas .atlas-wrap{width:calc(100% - 32px)}
+ .hierarchy-atlas.has-cover-photo .atlas-cover-grid{grid-template-columns:1fr;padding-top:16px}
+ .hierarchy-atlas.has-cover-photo .atlas-cover-copy{max-width:none;padding:24px;margin-bottom:84px}
+ .place-cover-photo>img{height:460px;object-position:var(--cover-focus,center)}
+ .hierarchy-atlas.has-cover-photo .atlas-cover-copy h1{font-size:34px}
+ .hierarchy-atlas.has-cover-photo .atlas-cover-tagline{font-size:23px}
+ .place-cover-photo figcaption{padding:12px 16px;font-size:11px}
+ .hierarchy-atlas #time,.hierarchy-atlas #governorates{padding:24px 18px;margin-block:28px}
+ .hierarchy-atlas #time .atlas-time-layout{grid-template-columns:1fr}
+ .hierarchy-atlas .atlas-place-intro{padding-block:28px}
+ .hierarchy-atlas .atlas-place-intro p{font-size:15px}
+ .hierarchy-atlas .atlas-next>.atlas-wrap{grid-template-columns:1fr;gap:24px}
+ .hierarchy-atlas .place-culture .place-dishes{padding-inline:12px}
+}
+
+.atlas-next-cover{margin:0}.atlas-next-cover>a{display:block}.atlas-next-cover figcaption{margin-top:12px;font-size:12px}.atlas-next-cover .photo-credit{color:#e7dcc6}
+
+.hierarchy-atlas #time .atlas-time-photo>img{width:100%;height:clamp(280px,28vw,480px);object-fit:contain;background:color-mix(in srgb,var(--th-cream) 45%,var(--th-sage));border-radius:12px}
+@media(max-width:760px){.hierarchy-atlas #time .atlas-time-photo>img{height:300px}}

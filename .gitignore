@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Generated deployment output and private upload credentials
+staticfiles/
+release/
+
+# English gettext catalog is required at runtime
+!locale/**/django.mo

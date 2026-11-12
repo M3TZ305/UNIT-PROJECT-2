@@ -1,83 +1,109 @@
 [
   {
-    "name": "واحة تليد — افتتاحية المشهد السعودي، معدّلة من المرجع بإزالة واجهة الاستخدام",
-    "file": "images/taleed/oasis-hero-v1.png"
-  },
-  {
-    "name": "افتتاحية ثقافات المدن والمسجد الحرام والمسجد النبوي",
-    "file": "images/taleed/cities-collage-haramain-v2.png"
-  },
-  {
-    "name": "الباب والفنجان",
-    "file": "images/taleed/door-and-cup.png"
-  },
-  {
-    "name": "عناصر العمارة والحِرف والمذاق",
-    "file": "images/taleed/culture-objects.png"
-  },
-  {
     "name": "رسوم فصول: المدينة المنورة، مكة المكرمة، جدّة، أبها، الرياض، الهفوف",
-    "file": "images/taleed/chapters-01.png"
+    "file": "images/taleed/chapters-01.webp"
   },
   {
     "name": "رسوم فصول: حائل، العُلا، الطائف، الدرعية، الدمام، الخُبر",
-    "file": "images/taleed/chapters-02.png"
+    "file": "images/taleed/chapters-02.webp"
   },
   {
     "name": "رسوم فصول: الظهران، الجبيل، القطيف، حفر الباطن، بريدة، عنيزة",
-    "file": "images/taleed/chapters-03.png"
+    "file": "images/taleed/chapters-03.webp"
   },
   {
     "name": "رسوم فصول: تبوك، سكاكا، عرعر، جازان، نجران، الباحة",
-    "file": "images/taleed/chapters-04.png"
+    "file": "images/taleed/chapters-04.webp"
   },
   {
     "name": "رسوم فصول: خميس مشيط، ينبع",
-    "file": "images/taleed/chapters-05.png"
-  },
-  {
-    "name": "من مائدة الدار — صحن فخاري بخبز وتمر ونسيج تراثي",
-    "file": "images/taleed/house-table-bread-dates.png",
-    "type": "conceptual-illustration",
-    "generator": "OpenAI built-in image generation",
-    "prompt_file": "data/art_prompts/house-table-bread-dates.txt"
-  },
-  {
-    "name": "رسوم توضيحية للخوص والبشت والفخار والقط العسيري",
-    "file": "images/taleed/topic-crafts.png",
-    "type": "conceptual-illustration",
-    "generator": "OpenAI built-in image generation",
-    "prompt_file": "data/art_prompts/cultural-topics.json"
-  },
-  {
-    "name": "رسوم توضيحية للرقش والمغش",
-    "file": "images/taleed/topic-regional-food.png",
-    "type": "conceptual-illustration",
-    "generator": "OpenAI built-in image generation",
-    "prompt_file": "data/art_prompts/cultural-topics.json"
+    "file": "images/taleed/chapters-05.webp"
   },
   {
     "name": "الزي الرجالي — رسوم تعليمية تصورية",
-    "file": "images/culture/dress-men-v1.jpg",
+    "file": "images/culture/dress-men-v1-cutout.webp",
     "type": "conceptual-illustration",
-    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية."
+    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية.",
+    "transparent": true
   },
   {
     "name": "الزي النسائي — رسوم تعليمية تصورية",
-    "file": "images/culture/dress-women-v1.jpg",
+    "file": "images/culture/dress-women-v1-cutout.webp",
     "type": "conceptual-illustration",
-    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية."
+    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية.",
+    "transparent": true
   },
   {
     "name": "الأطباق المناطقية — المجموعة الأولى، رسوم تصورية",
-    "file": "images/culture/dishes-a-v1.jpg",
+    "file": "images/culture/dishes-a-v1-cutout.webp",
     "type": "conceptual-illustration",
-    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية."
+    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية.",
+    "transparent": true
   },
   {
     "name": "الأطباق المناطقية — المجموعة الثانية، رسوم تصورية",
-    "file": "images/culture/dishes-b-v1.jpg",
+    "file": "images/culture/dishes-b-v1-cutout.webp",
     "type": "conceptual-illustration",
-    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية."
+    "note": "أُنشئت بالذكاء الاصطناعي بناءً على أوصاف تعريفية؛ ليست صورًا توثيقية لقطع أو أطباق أصلية.",
+    "transparent": true
+  },
+  {
+    "name": "رسوم الأطباق المحلية — تسعة نماذج تعريفية",
+    "file": "images/culture/local-dishes-v2-cutout.webp",
+    "type": "conceptual-illustration",
+    "note": "رسوم مولّدة بالذكاء الاصطناعي مستوحاة من أوصاف الأطباق؛ ليست توثيقًا فوتوغرافيًا.",
+    "transparent": true
+  },
+  {
+    "name": "رسوم الثمار المحلية — تسعة عشر نموذجًا تعريفيًا",
+    "file": "images/culture/local-fruits-v1-cutout.webp",
+    "type": "conceptual-illustration",
+    "note": "رسوم مولّدة بالذكاء الاصطناعي للتعريف بالثمار؛ لا توثّق عينة محصول أو صنفًا محليًا بعينه.",
+    "transparent": true
+  },
+  {
+    "name": "الخواضة مع التمر — مائدة مهد الذهب",
+    "file": "images/culture/khawadah-v1-cutout.webp",
+    "type": "conceptual-illustration",
+    "note": "رسم مولّد بالذكاء الاصطناعي، مستوحى من وصف الدخن المحموس والسمن مع التمر في تقرير عكاظ؛ ليس صورة توثيقية.",
+    "transparent": true
+  },
+  {
+    "name": "نماذج أزياء محلية — الطائف والقطيف وفيفاء وفرسان",
+    "file": "images/culture/local-dress-v2-cutout.webp",
+    "type": "conceptual-illustration",
+    "note": "رسوم تعريفية تقريبية مولدة بالذكاء الاصطناعي، ليست توثيقًا لقطع متحفية أو تفاصيل تطريز أصلية.",
+    "transparent": true
+  },
+  {
+    "name": "المحموص القطيفي — رسم تعريفي",
+    "file": "images/culture/qatif-mahmoos-v1-cutout.webp",
+    "type": "conceptual-illustration",
+    "note": "رسم تصوّري للأرز والبصل المحمص مع السمك؛ ليس صورة توثيقية.",
+    "transparent": true
+  },
+  {
+    "name": "رسوم تعريفية لتسع حرف تقليدية",
+    "file": "images/culture/heritage-crafts-cutout.webp",
+    "type": "conceptual-illustration",
+    "transparent": true,
+    "generator": "OpenAI built-in image generation",
+    "prompt_file": "data/art_prompts/place-crafts.txt"
+  },
+  {
+    "name": "رسوم أطباق تعريفية بخلفية شفافة",
+    "file": "images/culture/local-dishes-v3-cutout.webp",
+    "type": "conceptual-illustration",
+    "transparent": true,
+    "generator": "OpenAI built-in image generation",
+    "prompt_file": "data/art_prompts/local-dishes-v3.txt"
+  },
+  {
+    "name": "رسوم أطباق تعريفية بخلفية شفافة",
+    "file": "images/culture/adhan-al-shayeb-cutout.webp",
+    "type": "conceptual-illustration",
+    "transparent": true,
+    "generator": "OpenAI built-in image generation",
+    "prompt_file": "data/art_prompts/adhan-al-shayeb.txt"
   }
 ]

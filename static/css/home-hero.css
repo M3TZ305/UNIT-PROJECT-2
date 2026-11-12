@@ -1,3 +1,26 @@
+/* Text and artwork occupy separate tracks; no city names sit behind images. */
+.th-hero { height:auto; min-height:0; padding-block:150px 65px; }
+.th-hero-inner { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.35fr); width:min(1240px,calc(100% - 112px)); gap:6%; height:auto; align-items:center; }
+.th-hero-copy { min-width:0; position:relative; z-index:3; }
+.th-edition { position:static; width:auto; font-size:9px; text-align:start; margin-bottom:16px; letter-spacing:.12em; }
+.th-wordmark { position:static; width:auto; text-align:start; }
+.th-welcome { position:static; width:auto; padding:0; margin-top:12px; text-align:start; }
+.th-welcome>p br { display:none; }.th-welcome>p { max-width:320px; }
+.th-discover { margin-top:23px; font-size:13px; padding:10px 17px; }
+.th-scene-layer { position:static; width:100%; transform:none; margin:0; }
+.th-scene { width:100%; height:auto; }
+.th-scroll-cue { bottom:25px; }
+.th-intro-grid { padding-block:55px; gap:10%; }
+.th-intro-copy h2 br { display:none; }
+.th-intro-text { font-size:15px; margin-top:20px; }
+.th-door-art { width:min(290px,100%); }
+.th-collection-heading { margin-bottom:35px; }
+.th-pathway-visual { height:350px; }.th-pathway-crafts .th-pathway-visual { height:270px; }.th-pathway-food .th-pathway-visual { height:240px; }
+.th-pathway-crafts { margin-top:80px; }.th-pathway-food { margin-top:45px; }
+.th-pathway-sprite { max-width:330px; }.th-pathway-crafts .th-pathway-sprite { max-width:270px; }
+.th-house-table-art { width:100%; }.th-pathway-copy { padding-top:25px; }
+.th-pathway-cta { font-size:11px; }
+
 /* Full-width oasis opening. Copy stays live HTML; mobile keeps the complete scene. */
 .taleed-home .th-hero{height:calc(90svh - 104px);min-height:560px;padding:0;isolation:isolate;background:var(--th-teal);overflow:hidden}
 .taleed-home .th-hero-inner{position:relative;display:block;width:100%;max-width:none;height:100%;margin:0}
@@ -44,3 +67,54 @@
 .taleed-home .th-hero::after{height:clamp(38px,4vw,64px);bottom:-1px;background:var(--th-cream);mask:url('../images/taleed/hero-paper-edge.svg') center bottom/100% 100% no-repeat;-webkit-mask:url('../images/taleed/hero-paper-edge.svg') center bottom/100% 100% no-repeat}
 .taleed-home .th-scroll-cue{bottom:60px}
 @media(max-width:760px){.taleed-home .th-scroll-cue{bottom:35px}}
+
+/* The approved cutout stays within the original introduction artwork column. */
+.taleed-home .th-door-art.is-heritage-collage{width:min(410px,100%);min-height:360px;display:flex;flex-direction:column;justify-content:center}
+.taleed-home .th-door-art.is-heritage-collage>img{display:block;width:100%;height:auto;max-height:360px;object-fit:contain;filter:none}
+@media(max-width:760px){.taleed-home .th-door-art.is-heritage-collage{width:min(340px,100%);min-height:0}.taleed-home .th-door-art.is-heritage-collage>img{max-height:310px}}
+
+/* Only the three discovery illustrations and their labels are replaced. */
+.taleed-home .th-collection-vignettes .th-pathway-visual{height:330px}
+.th-pathway-vignette{position:relative;display:block;height:100%;width:auto;max-width:100%;aspect-ratio:var(--vignette-ratio);overflow:hidden;transition:transform .45s}
+.th-pathway-vignette>img{position:absolute;max-width:none;width:300%;height:100%;left:calc(-100% * var(--vignette-x));top:0;object-fit:fill}
+.th-pathway:is(:hover,:focus-visible) .th-pathway-vignette{transform:translateY(-7px)}
+@media(max-width:760px){.taleed-home .th-collection-vignettes .th-pathway-visual{height:320px}}
+@media(max-width:400px){.taleed-home .th-collection-vignettes .th-pathway-visual{height:285px}}
+@media(prefers-reduced-motion:reduce){.th-pathway-vignette{transition:none}.th-pathway:is(:hover,:focus-visible) .th-pathway-vignette{transform:none}}
+
+/* Final home hierarchy: one focal scene, quiet introduction, aligned discovery. */
+.home-purpose{font-size:15px;line-height:1.9;margin:12px 0 18px;max-width:330px}
+.taleed-home .th-edition{display:none}
+.taleed-home .th-welcome>p{display:none}
+.taleed-home .th-hero-copy{width:27%;max-width:380px}
+.taleed-home .th-door-art.is-heritage-collage{width:min(320px,100%);min-height:300px}
+.taleed-home .th-collection-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;align-items:stretch}
+.taleed-home .th-pathway{margin-top:0;display:flex;flex-direction:column}
+.taleed-home .th-collection-vignettes .th-pathway-visual{height:300px}
+.taleed-home .th-pathway-copy{flex:1;display:flex;flex-direction:column;align-items:center}
+.taleed-home .th-pathway-copy>p{font-size:14px;line-height:1.9}
+.taleed-home .th-pathway-cta{font-size:14px;margin-top:auto;padding-top:20px}
+.taleed-home .th-pathway-index{font-size:20px}
+.taleed-home .th-city-caption,.taleed-home .th-door-art figcaption{font-size:12px}
+.taleed-home .th-pathway-vignette{filter:saturate(.82)}
+.footer-discovery{display:flex;gap:24px;flex-wrap:wrap}.th-footer .footer-discovery a{font-size:13px}
+@media(max-width:760px){.taleed-home .th-hero-copy{width:calc(100% - 48px);max-width:480px}.home-purpose{margin:12px auto 0;font-size:15px;max-width:340px}.taleed-home .th-collection-grid{grid-template-columns:1fr;gap:40px}.taleed-home .th-collection-vignettes .th-pathway-visual{height:285px}.taleed-home .th-pathway-cta{margin-top:18px;padding-top:0}}
+
+.pathway-detail{font-size:13px;line-height:1.8;color:var(--th-muted);max-height:0;opacity:0;overflow:hidden;transition:opacity .2s,max-height .2s;margin:0}
+.th-pathway:is(:hover,:focus-visible,.is-exploring) .pathway-detail{max-height:90px;opacity:1;margin-top:10px}
+@media(hover:none){.pathway-detail{max-height:none;opacity:1;margin-top:10px}}
+@media(prefers-reduced-motion:reduce){.pathway-detail{transition:none}}
+
+/* Clean panorama: preserve the birds and scenery without a painted overlay. */
+.taleed-home .th-scene-layer::after,.taleed-home .th-hero-inner::after{display:none}
+.taleed-home .th-scene{object-fit:contain;object-position:center;filter:none}
+@media(min-width:761px){
+ .taleed-home .th-hero{height:auto;min-height:0;aspect-ratio:1896 / 830;padding:0}
+ .taleed-home .th-hero-inner{position:absolute;inset:0;height:100%;width:100%}
+ .taleed-home .th-hero-copy{inset-inline-start:5%;width:25%;max-width:380px;top:50%;translate:0 -25%}
+}
+@media(min-width:761px) and (max-width:1100px){
+ .taleed-home h1.th-wordmark{font-size:44px}.taleed-home .home-purpose{font-size:12px;margin:5px 0 10px}
+ .taleed-home .th-discover{margin-top:14px;padding:10px 14px;font-size:12px}
+}
+@media(max-width:760px){.taleed-home .th-scene-layer,.taleed-home .th-scene{aspect-ratio:1896 / 830}}

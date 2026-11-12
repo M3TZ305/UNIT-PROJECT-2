@@ -1,1 +1,2 @@
-{% load static %}<img src="{{ image.url }}" data-fallback="{% static image.fallback %}" alt="{{ alt|default:image.title }}" class="{{ image_class }}" loading="{% if eager %}eager{% else %}lazy{% endif %}" decoding="async" {% if eager %}fetchpriority="high"{% endif %}>
+{% load i18n site_assets %}
+{% load static %}<img src="{{ image.url|localize }}" data-fallback="{% static image.fallback %}" alt="{{ alt|default:image.title|localize:"landmark" }}" class="{{ image_class|localize }}" loading="{% if eager %}eager{% else %}lazy{% endif %}" {% if image.srcset %}srcset="{{ image.srcset }}" sizes="{{ sizes|default:'(max-width: 700px) 90vw, (max-width: 1100px) 60vw, 640px' }}"{% endif %} decoding="async" {% if eager %}fetchpriority="high"{% endif %}>

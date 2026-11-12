@@ -38,12 +38,12 @@ def normalized_saved_keys(values):
 
 def governorate_data(place):
     raw = record_for_governorate(place.region_key, place.slug)
-    media = get_media()
+    cover = place.atlas
     legacy = get_catalog()['cities'].get(raw.get('legacy_city_slug'), {})
     return {
         'name_lines': [place.name], 'chapter_art': raw['art'],
         'tagline': raw['tagline'], 'intro': raw['intro'],
-        'hero': media.get(raw.get('image_key')),
+        'hero': cover.get('history_image'),
         'video': legacy.get('video'), 'sources': raw['sources'],
     }
 
@@ -77,16 +77,33 @@ def governorate_atlas(place):
     return atlas
 
 
+def place_cover(place):
+    """The same place identity in directories, openings and next-place links."""
+    if hasattr(place, 'capital_id'):
+        atlas = place.atlas
+        raw = record_for_governorate(place.region_key, place.slug)
+        return {'image': atlas.get('history_image'), 'caption': atlas.get('history_caption', ''),
+                'position': '50% 50%', 'art': raw['art']}
+    raw = get_catalog()['cities'][place.slug]
+    doorway = read_data('city_doors.json').get(place.slug, {})
+    return {'image': get_media().get(doorway.get('image_key', raw.get('hero_key'))),
+            'caption': doorway.get('image_caption', place.name),
+            'position': doorway.get('image_position', '50% 50%'), 'art': raw['chapter_art']}
+
+
 def city_plate(city, saved):
     region = region_for_capital(city.slug)
     names = [g['name'] for g in region['governorates']] if region else []
     data = city.data
+    doorway = read_data('city_doors.json').get(city.slug, {})
+    image = place_cover(city)['image']
     return {
         'key': city.slug, 'name': city.name, 'kind': 'city', 'kind_label': 'مدينة',
         'url': city.get_absolute_url(), 'save_url': city.get_save_url(),
         'number': city.number, 'region': city.region, 'province': data.get('province', ''),
         'direction': city.region_key, 'art': data['chapter_art'],
-        'image': None, 'caption': data['tagline'], 'saved': city.slug in saved,
+        'image': image, 'image_caption': doorway.get('image_caption', city.name), 'image_position': doorway.get('image_position', '50% 60%'),
+        'caption': doorway.get('verse', data['tagline']), 'saved': city.slug in saved,
         'governorate_count': len(names), 'governorate_names': ' · '.join(names),
         'search': search_key(' '.join([city.name, city.english_name, city.region, *names, *[g['slug'].replace('-', ' ') for g in (region['governorates'] if region else [])]])),
     }
@@ -94,14 +111,15 @@ def city_plate(city, saved):
 
 def governorate_plate(place, saved):
     raw = record_for_governorate(place.region_key, place.slug)
+    cover = place.atlas
     return {
         'key': place.saved_key, 'name': place.name, 'kind': 'governorate',
         'kind_label': 'محافظة', 'url': place.get_absolute_url(),
         'save_url': place.get_save_url(), 'number': place.number,
         'region': place.region, 'province': place.region_key,
         'direction': raw['direction'], 'art': raw['art'],
-        'image': get_media().get(raw.get('image_key')), 'is_map': raw.get('image_is_map', False),
-        'image_caption': raw.get('image_caption', ''), 'caption': raw['tagline'],
+        'image': cover.get('history_image'), 'is_map': False,
+        'image_caption': cover.get('history_caption', ''), 'caption': raw['tagline'],
         'saved': place.saved_key in saved,
         'search': search_key(' '.join([place.name, place.english_name, place.region, *raw.get('aliases', [])])),
     }

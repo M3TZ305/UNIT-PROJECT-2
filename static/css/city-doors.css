@@ -1,0 +1,72 @@
+/* Panoramic city exhibition, sized to the viewport rather than a narrow document. */
+.city-doors{--door-accent:#a65f38;--door-surface:#e5ddc5;--door-border:#293b352b;background:var(--th-cream);color:var(--th-ink)}
+[data-theme=dark] .city-doors{--door-accent:#e0b18b;--door-surface:#354238;--door-border:#eee7d72b}
+.doors-wrap{width:calc(100% - clamp(32px,5vw,112px));max-width:1840px;margin-inline:auto;padding-block:32px 48px}
+.doors-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:24px;max-width:none}
+.doors-eyebrow{font-size:12px;color:var(--door-accent);margin-bottom:8px}
+.doors-heading h1{font-size:clamp(32px,3.2vw,52px);line-height:1.5;margin:0 0 8px;font-weight:400}
+.doors-heading p:not(.doors-eyebrow){font-size:15px;color:var(--th-muted);line-height:1.9}
+.doors-navigation{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:12px 0 16px;margin-bottom:24px;border-bottom:1px solid var(--door-border)}
+.doors-regions,.doors-saved{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.doors-navigation a{display:inline-flex;align-items:center;min-height:44px;font-size:13px;border-bottom:2px solid transparent}
+.doors-navigation a[aria-current]{border-color:var(--door-accent);color:var(--door-accent)}
+.doors-opening{--opening-height:clamp(500px,36vw,640px);display:grid;grid-template-columns:minmax(0,2.2fr) minmax(0,1fr);gap:28px;align-items:start;padding-bottom:32px}
+.city-door{position:relative;min-width:0;background:transparent;border:0;scroll-margin-top:24px}
+.city-door-visual{position:relative;min-width:0;margin:0}
+.city-door-frame{position:relative;aspect-ratio:16/9;height:auto;padding:0}
+.city-door-window{position:relative;display:block;height:100%;width:100%;clip-path:none;overflow:hidden;background:var(--th-sage);border-radius:8px}
+.city-door-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:var(--city-focus,center);transition:transform .6s cubic-bezier(.2,.7,.3,1)}
+.city-door-window:hover .city-door-photo{transform:scale(1.025)}
+.city-door-light,.city-door-ground{display:none}
+.city-door-credit{position:static;min-height:22px;font-size:11px;line-height:1.8;color:var(--th-muted);margin-top:8px;text-align:start;overflow-wrap:anywhere}
+.city-door-credit .photo-credit{position:static;inset:auto;display:block;font-size:11px;text-shadow:none;line-height:1.8;color:inherit;text-align:inherit}
+.city-door-copy{position:relative;min-width:0;padding:16px 0 0}
+.city-door-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--th-muted)}
+.city-door-meta .save-button{display:grid;place-items:center;width:40px;min-height:40px;border:1px solid var(--door-border);border-radius:50%;background:var(--th-cream);color:var(--th-ink);padding:0;font-size:21px}
+.city-door-meta .save-label{display:none}
+.city-door-copy h2{font-size:32px;line-height:1.5;margin:8px 0 10px;font-weight:400}
+.city-door-verse{font-size:15px;line-height:1.9;color:var(--th-muted);margin:0 0 12px;max-width:50ch}
+.city-door-enter{display:inline-flex;align-items:center;gap:32px;min-height:44px;padding:8px 0;border-bottom:1px solid var(--door-accent);font-size:13px}
+.city-door-enter span{color:var(--door-accent)}
+.city-door-featured .city-door-frame{height:var(--opening-height);aspect-ratio:auto}
+.city-door-featured .city-door-window{border-radius:8px}
+.city-door-featured .city-door-light{display:block;position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,38,36,.96),rgba(10,38,36,.46) 35%,transparent 70%);pointer-events:none}
+.city-door-featured .city-door-copy{position:absolute;inset-inline:clamp(24px,3vw,52px);bottom:68px;padding:0;color:#f6edda;pointer-events:none}
+.city-door-featured .city-door-copy a,.city-door-featured .save-form{pointer-events:auto}
+.city-door-featured .city-door-meta{color:#eee4ce;font-size:13px}
+.city-door-featured .city-door-meta .save-button{background:#163a38cc;border-color:#eee4ce70;color:#fff1da}
+.city-door-featured .city-door-copy h2{font-size:clamp(36px,3.5vw,58px);margin-block:12px 8px;line-height:1.5}
+.city-door-featured .city-door-verse{font-size:clamp(17px,1.3vw,22px);color:#f0d2ad;margin-bottom:12px;line-height:1.8}
+.city-door-featured .city-door-enter{border-color:#f0d2ad70;font-size:15px}
+.city-door-featured .city-door-enter span{color:#f0d2ad}
+.doors-preview{display:grid;grid-template-columns:1fr;gap:22px}
+.doors-preview .city-door-frame{height:calc((var(--opening-height) - 190px)/2);aspect-ratio:auto}
+.doors-preview .city-door-copy{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 16px;padding-top:4px}
+.doors-preview .city-door-copy h2{font-size:30px;margin:2px 0 4px}
+.doors-preview .city-door-verse{font-size:14px;margin:0;grid-column:1}
+.doors-preview .city-door-enter{grid-column:2;grid-row:1/3;align-self:center;font-size:12px;gap:14px}
+.doors-preview .city-door-meta{position:absolute;top:calc(-1 * ((var(--opening-height) - 190px)/2) - 26px);inset-inline-end:12px;z-index:2}
+.doors-preview .city-door-meta>span{display:none}
+.doors-preview .city-door-meta .save-button{background:var(--th-cream);box-shadow:0 2px 12px #10282426}
+.doors-journey{position:relative;background:var(--th-teal);color:var(--th-ivory);padding:40px clamp(20px,3vw,48px);margin-top:24px;border-radius:8px;--th-muted:#d2cfbb;--door-accent:#e6b68c;--door-border:#f6edda38;--door-surface:#284c48}
+.doors-journey-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:32px}.doors-journey-heading .doors-eyebrow{font-size:14px;margin:0}
+.doors-exhibition{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 28px}
+.doors-exhibition .city-door-copy{display:grid;grid-template-columns:1fr auto;gap:0 16px;padding:12px 0 0}
+.doors-exhibition .city-door-meta{grid-column:1/-1}
+.doors-exhibition .city-door-copy h2{font-size:30px;grid-column:1;margin:4px 0 8px}
+.doors-exhibition .city-door-verse{grid-column:1/-1;font-size:14px;margin:0}
+.doors-exhibition .city-door-enter{grid-column:2;grid-row:2;font-size:12px;gap:12px;align-self:center}
+.doors-exhibition .city-door-meta .save-button{background:#214641;color:#f6edda;border-color:var(--door-border)}
+.doors-exhibition .city-door:nth-child(3n+2){background:color-mix(in srgb,var(--th-sage) 16%,transparent);padding:16px;border-radius:8px}
+.doors-exhibition .city-door:nth-child(3n+2) .city-door-frame{aspect-ratio:16/9}
+.doors-colophon{font-size:12px;color:var(--th-muted);text-align:center;padding-top:24px}
+.doors-empty{padding-block:48px;min-height:300px}.doors-empty p{margin-block:20px}
+@media(min-width:1800px){.doors-opening{--opening-height:640px}}
+@media(max-width:1100px){.doors-opening{grid-template-columns:1.6fr 1fr;--opening-height:520px;gap:24px}.doors-preview .city-door-copy{display:block}.doors-preview .city-door-copy h2{font-size:27px}.doors-preview .city-door-verse{font-size:13px}.doors-preview .city-door-enter{min-height:36px}.doors-preview .city-door-frame{height:155px}.doors-preview .city-door-meta{top:-184px}.doors-exhibition{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.doors-wrap{width:calc(100% - 32px);padding-top:24px}.doors-opening{grid-template-columns:1fr;--opening-height:440px;padding-bottom:16px;gap:28px}.doors-preview{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.doors-preview .city-door-frame{height:auto;aspect-ratio:4/3}.doors-preview .city-door-copy{display:block}.doors-preview .city-door-meta{top:auto;bottom:100%;margin-bottom:32px}.city-door-featured .city-door-copy{inset-inline:24px;bottom:54px}.city-door-featured .city-door-copy h2{font-size:36px}.doors-regions{gap:16px}.doors-navigation{margin-bottom:24px}.doors-exhibition{grid-template-columns:1fr;gap:32px}.doors-journey{padding:28px 20px}.doors-exhibition .city-door:nth-child(3n+2){padding:0;background:transparent}.doors-heading h1{font-size:32px}}
+@media(max-width:440px){.doors-preview{grid-template-columns:1fr;gap:24px}.doors-preview .city-door-frame{aspect-ratio:16/9}.doors-preview .city-door-copy{display:grid}.doors-preview .city-door-copy h2{font-size:28px}.city-door-featured .city-door-copy h2{font-size:32px}}
+@media(prefers-reduced-motion:reduce){.city-door-photo{transition:none}.city-door-window:hover .city-door-photo{transform:none}}
+
+/* Keep save controls attached to the image corner at every viewport size. */
+.doors-preview .city-door-copy{position:static}
+.doors-preview .city-door-meta{position:absolute;top:12px;bottom:auto;inset-inline-end:12px;margin:0;z-index:3}

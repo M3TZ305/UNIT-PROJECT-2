@@ -1,4 +1,4 @@
-"""Sourced local landmarks and explicitly scoped regional dress and cuisine."""
+"""Sourced local heritage; cultural facts never inherit from a parent region."""
 from copy import deepcopy
 from .content import read_data, get_media
 
@@ -12,22 +12,28 @@ def canonical_key(key):
 
 def profile_for(key):
     profile = deepcopy(read_data('place_profiles.json')[canonical_key(key)])
-    profile['culture'] = deepcopy(read_data('regional_culture.json')[profile['region_key']])
+    profile['culture'] = deepcopy(read_data('local_culture.json')[canonical_key(key)])
+    from .heritage import heritage_for
     media = get_media()
-    items = [profile['culture']['dress']['men'], profile['culture']['dress']['women'], *profile['culture']['dishes']]
+    profile['heritage'] = heritage_for(canonical_key(key), media)
+    items = [profile['culture']['dress']['men'], profile['culture']['dress']['women'], *profile['culture']['dishes'], *profile['culture']['fruits']]
     for item in items:
-        if item.get('image_key'):
+        if item and item.get('image_key') and not item.get('illustration'):
             item['image'] = media[item['image_key']]
     return profile
 
 
 def source_list(profile):
     culture = profile['culture']
-    return [profile['fame']['source'],
-            culture['dress']['men']['source'], culture['dress']['women']['source'],
-            *culture['dress']['men'].get('additional_sources', []),
-            *[item['source'] for item in culture['dishes']],
-            *[item['source'] for item in profile['landmarks']]]
+    items = [culture['dress']['men'], culture['dress']['women'],
+             *culture['dishes'], *culture['fruits']]
+    heritage_sources = [entry['source'] for entries in profile.get('heritage', {}).values() for entry in entries]
+    return [*heritage_sources, profile['fame']['source'],
+            *[item['source'] for item in items if item],
+            *[source for item in items if item for source in item.get('additional_sources', [])],
+            *[item['source'] for item in profile['landmarks']],
+            *[source for item in profile['landmarks'] for source in item.get('story_sources', [])],
+            *[part['source'] for item in profile['landmarks'] for part in item.get('narrative', [])]]
 
 
 def apply_profile(entry, key):

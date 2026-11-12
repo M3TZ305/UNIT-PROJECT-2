@@ -1,0 +1,928 @@
+{
+  "gov:tabuk:tayma": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-تبوك"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "north",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:jouf:al-qurayyat": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/الحرف-اليدوية-في-منطقة-الجوف"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "north",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:jouf:dumat-al-jandal": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "local",
+        "source": {
+          "label": "واس — حرفة السدو في دومة الجندل",
+          "url": "https://www.spa.gov.sa/2279977"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "north",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:asir:rijal-almaa": {
+    "crafts": [
+      {
+        "id": "qatt",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-عسير"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "asdar",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:asir:an-namas": {
+    "crafts": [
+      {
+        "id": "qatt",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-عسير"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "sarawat",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:asir:khamis-mushait": {
+    "crafts": [
+      {
+        "id": "qatt",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-عسير"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "khamis",
+        "scope": "local"
+      }
+    ]
+  },
+  "gov:tabuk:umluj": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-تبوك"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "tabuk-coast",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:tabuk:duba": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-تبوك"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "tabuk-coast",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:hail:ash-shinan": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-حائل"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najdi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:hail:al-hait": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-حائل"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najdi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:najran:badr-al-janub": {
+    "crafts": [
+      {
+        "id": "janabi",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-نجران"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najran",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:najran:sharurah": {
+    "crafts": [
+      {
+        "id": "janabi",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-نجران"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najran",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:baha:al-makhwah": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "واس — صناعة الخوص بالباحة",
+          "url": "https://www.spa.gov.sa/N2236698"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "foothills",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:baha:baljurashi": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "واس — صناعة الخوص بالباحة",
+          "url": "https://www.spa.gov.sa/N2236698"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "sarawat",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:baha:al-mandaq": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "واس — صناعة الخوص بالباحة",
+          "url": "https://www.spa.gov.sa/N2236698"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "sarawat",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:jazan:fayfa": {
+    "crafts": [
+      {
+        "id": "pottery",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-جازان"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "sarawat",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:jazan:ad-dair": {
+    "crafts": [
+      {
+        "id": "pottery",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-جازان"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "sarawat",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:northern:turaif": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/الحرف-اليدوية-في-منطقة-الحدود-الشمالية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "north",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:northern:rafha": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/الحرف-اليدوية-في-منطقة-الحدود-الشمالية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "north",
+        "scope": "regional"
+      }
+    ]
+  },
+  "city:abha": {
+    "crafts": [
+      {
+        "id": "qatt",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-عسير"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "abha",
+        "scope": "local"
+      }
+    ]
+  },
+  "city:tabuk": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-تبوك"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "north",
+        "scope": "regional"
+      }
+    ]
+  },
+  "city:hail": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-حائل"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najdi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "city:arar": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/الحرف-اليدوية-في-منطقة-الحدود-الشمالية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "north",
+        "scope": "regional"
+      }
+    ]
+  },
+  "city:jazan": {
+    "crafts": [
+      {
+        "id": "pottery",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-جازان"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "tihama",
+        "scope": "regional"
+      }
+    ]
+  },
+  "city:najran": {
+    "crafts": [
+      {
+        "id": "janabi",
+        "scope": "local",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/الحرف-اليدوية-في-السعودية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najran",
+        "scope": "regional"
+      }
+    ]
+  },
+  "city:al-baha": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "واس — صناعة الخوص بالباحة",
+          "url": "https://www.spa.gov.sa/N2236698"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "sarawat",
+        "scope": "regional"
+      }
+    ]
+  },
+  "city:sakaka": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/الحرف-اليدوية-في-منطقة-الجوف"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "north",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:jazan:farasan": {
+    "crafts": [
+      {
+        "id": "pottery",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-جازان"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "farasan",
+        "scope": "local"
+      }
+    ]
+  },
+  "gov:riyadh:shaqra": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-عشر-حرف-يدوية-في-منطقة-الرياض"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najdi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:qassim:ar-rass": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-عشر-حرف-يدوية-في-منطقة-القصيم"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najdi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:qassim:al-bukayriyah": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-عشر-حرف-يدوية-في-منطقة-القصيم"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najdi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:riyadh:al-kharj": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-عشر-حرف-يدوية-في-منطقة-الرياض"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najdi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:eastern:al-ahsa": {
+    "crafts": [
+      {
+        "id": "bisht",
+        "scope": "local",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/المشلح-الحساوي"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "ahsa",
+        "scope": "local"
+      }
+    ]
+  },
+  "gov:makkah:taif": {
+    "crafts": [
+      {
+        "id": "rose",
+        "scope": "local",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/تقطير-الورد"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "taif",
+        "scope": "local"
+      }
+    ]
+  },
+  "gov:madinah:yanbu": {
+    "crafts": [
+      {
+        "id": "pottery",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/الحرف-اليدوية-في-السعودية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "hejazi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:makkah:al-qunfudhah": {
+    "crafts": [
+      {
+        "id": "pottery",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/الحرف-اليدوية-في-منطقة-مكة-المكرمة"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "hejazi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:makkah:jeddah": {
+    "crafts": [
+      {
+        "id": "rawashin",
+        "scope": "local",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/الرواشين"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "hejazi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:madinah:alula": {
+    "crafts": [
+      {
+        "id": "pottery",
+        "scope": "local",
+        "source": {
+          "label": "واس — مدرسة الديرة في العلا",
+          "url": "https://www.spa.gov.sa/N2254915"
+        }
+      },
+      {
+        "id": "khous",
+        "scope": "local",
+        "source": {
+          "label": "استكشف العلا — مدرسة الديرة",
+          "url": "https://www.experiencealula.com/ar/about/features/shop-alula-artisan-heritage-madrasat-addeera-store"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "rural-madinah",
+        "scope": "regional"
+      }
+    ]
+  },
+  "city:madinah": {
+    "crafts": [
+      {
+        "id": "pottery",
+        "scope": "local",
+        "source": {
+          "label": "منصة المدينة — الفخار",
+          "url": "https://www.visitmadinahsa.com/sa-ar/destinations/الفخار"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "madinah",
+        "scope": "local"
+      }
+    ]
+  },
+  "city:makkah": {
+    "crafts": [
+      {
+        "id": "kiswa",
+        "scope": "local",
+        "source": {
+          "label": "واس — صناعة كسوة الكعبة",
+          "url": "https://spa.gov.sa/N2346525"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "makkah",
+        "scope": "local"
+      }
+    ]
+  },
+  "city:riyadh": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-عشر-حرف-يدوية-في-منطقة-الرياض"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najdi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "city:buraidah": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-عشر-حرف-يدوية-في-منطقة-القصيم"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najdi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:eastern:qatif": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-المنطقة-الشرقية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "qatif",
+        "scope": "local"
+      }
+    ]
+  },
+  "city:dammam": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-المنطقة-الشرقية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "east-coast",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:eastern:khobar": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-المنطقة-الشرقية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "east-coast",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:qassim:unaizah": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "local",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-عشر-حرف-يدوية-في-منطقة-القصيم"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najdi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "gov:riyadh:diriyah": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-عشر-حرف-يدوية-في-منطقة-الرياض"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "najdi",
+        "scope": "regional"
+      }
+    ]
+  },
+  "city:dhahran": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-المنطقة-الشرقية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "ithra",
+        "scope": "local"
+      }
+    ]
+  },
+  "city:jubail": {
+    "crafts": [
+      {
+        "id": "khous",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-المنطقة-الشرقية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "east-coast",
+        "scope": "regional"
+      }
+    ]
+  },
+  "city:hafar-al-batin": {
+    "crafts": [
+      {
+        "id": "sadu",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-المنطقة-الشرقية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "hafar",
+        "scope": "local"
+      }
+    ]
+  },
+  "gov:madinah:mahd-al-dhahab": {
+    "crafts": [
+      {
+        "id": "pottery",
+        "scope": "regional",
+        "source": {
+          "label": "سعوديبيديا",
+          "url": "https://saudipedia.com/الحرف-اليدوية-في-السعودية"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "rural-madinah",
+        "scope": "regional"
+      }
+    ]
+  }
+}

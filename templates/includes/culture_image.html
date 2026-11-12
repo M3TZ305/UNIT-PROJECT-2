@@ -1,10 +1,11 @@
+{% load i18n site_assets %}
 {% load static %}
-<figure class="culture-picture {% if clothing %}is-clothing{% else %}is-food{% endif %}">
+{% if item.image or item.illustration %}<figure class="culture-picture {% if clothing %}is-clothing{% elif fruit %}is-fruit{% else %}is-food{% endif %}">
 {% if item.image %}
   <div class="culture-photo-window">{% include 'includes/image.html' with image=item.image alt=label %}</div>
-  <figcaption><a href="{{ item.image.source }}" target="_blank" rel="noopener noreferrer">{{ item.image.author }} · {{ item.image.license }} ↗</a></figcaption>
+  <figcaption><a href="{{ item.image.source|localize }}" target="_blank" rel="noopener noreferrer">{{ item.image.author|localize }} · {{ item.image.license|localize }} ↗</a></figcaption>
 {% elif item.illustration %}
-  <div class="culture-picture-window" role="img" aria-label="{{ label }} — رسم تعريفي تصوّري" style="--picture-columns:{{ item.illustration.columns }};--picture-rows:{{ item.illustration.rows }};--picture-x:{{ item.illustration.x }};--picture-y:{{ item.illustration.y }};--picture-ratio:{{ item.illustration.ratio }}"><img src="{% static item.illustration.file %}" alt="" loading="lazy" decoding="async"></div>
-  <figcaption>رسم تعريفي تصوّري{% if clothing %} — تتنوع تفاصيل الزي{% endif %}</figcaption>
+  <div class="culture-picture-window" role="img" aria-label="{{ label|localize }} {% translate "— رسم تعريفي تصوّري" %}" style="--picture-max-width:{{ item.illustration.display_width|default:'240px'|localize }};--picture-columns:{{ item.illustration.columns|localize }};--picture-rows:{{ item.illustration.rows|localize }};--picture-x:{{ item.illustration.x|localize }};--picture-y:{{ item.illustration.y|localize }};--picture-ratio:{{ item.illustration.ratio|localize }}"><img src="{% asset item.illustration.file %}" data-fallback="{% static item.illustration.file %}" alt="" loading="lazy" decoding="async"></div>
+  <figcaption>{% translate "رسم تعريفي تصوّري" %}{% if clothing %} {% translate "— تتنوع تفاصيل الزي والتطريز" %}{% elif fruit %} {% translate "— قد تختلف الأصناف المحلية" %}{% endif %}</figcaption>
 {% endif %}
-</figure>
+</figure>{% endif %}

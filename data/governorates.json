@@ -6,7 +6,7 @@
     "aliases": [],
     "direction": "west",
     "art": {
-      "file": "images/taleed/chapters-02.png",
+      "file": "images/taleed/chapters-02.webp",
       "columns": 3,
       "rows": 2,
       "x": 1,
@@ -167,7 +167,7 @@
     "aliases": [],
     "direction": "west",
     "art": {
-      "file": "images/taleed/chapters-05.png",
+      "file": "images/taleed/chapters-05.webp",
       "columns": 2,
       "rows": 1,
       "x": 1,
@@ -323,7 +323,7 @@
     "aliases": [],
     "direction": "west",
     "art": {
-      "file": "images/taleed/chapters-01.png",
+      "file": "images/taleed/chapters-01.webp",
       "columns": 3,
       "rows": 2,
       "x": 2,
@@ -496,7 +496,7 @@
     "aliases": [],
     "direction": "west",
     "art": {
-      "file": "images/taleed/chapters-02.png",
+      "file": "images/taleed/chapters-02.webp",
       "columns": 3,
       "rows": 2,
       "x": 2,
@@ -646,7 +646,7 @@
     ],
     "direction": "west",
     "art": {
-      "file": "images/taleed/chapters-01.png",
+      "file": "images/taleed/chapters-01.webp",
       "columns": 3,
       "rows": 2,
       "x": 1,
@@ -749,7 +749,7 @@
     "aliases": [],
     "direction": "central",
     "art": {
-      "file": "images/taleed/chapters-02.png",
+      "file": "images/taleed/chapters-02.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,
@@ -913,7 +913,7 @@
     "aliases": [],
     "direction": "central",
     "art": {
-      "file": "images/taleed/chapters-01.png",
+      "file": "images/taleed/chapters-01.webp",
       "columns": 3,
       "rows": 2,
       "x": 1,
@@ -1016,7 +1016,7 @@
     "aliases": [],
     "direction": "central",
     "art": {
-      "file": "images/taleed/chapters-01.png",
+      "file": "images/taleed/chapters-01.webp",
       "columns": 3,
       "rows": 2,
       "x": 1,
@@ -1121,7 +1121,7 @@
     ],
     "direction": "east",
     "art": {
-      "file": "images/taleed/chapters-01.png",
+      "file": "images/taleed/chapters-01.webp",
       "columns": 3,
       "rows": 2,
       "x": 2,
@@ -1277,7 +1277,7 @@
     "aliases": [],
     "direction": "east",
     "art": {
-      "file": "images/taleed/chapters-03.png",
+      "file": "images/taleed/chapters-03.webp",
       "columns": 3,
       "rows": 2,
       "x": 2,
@@ -1425,7 +1425,7 @@
     "aliases": [],
     "direction": "east",
     "art": {
-      "file": "images/taleed/chapters-02.png",
+      "file": "images/taleed/chapters-02.webp",
       "columns": 3,
       "rows": 2,
       "x": 2,
@@ -1581,7 +1581,7 @@
     "aliases": [],
     "direction": "central",
     "art": {
-      "file": "images/taleed/chapters-03.png",
+      "file": "images/taleed/chapters-03.webp",
       "columns": 3,
       "rows": 2,
       "x": 2,
@@ -1742,7 +1742,7 @@
     "aliases": [],
     "direction": "central",
     "art": {
-      "file": "images/taleed/chapters-03.png",
+      "file": "images/taleed/chapters-03.webp",
       "columns": 3,
       "rows": 2,
       "x": 1,
@@ -1845,7 +1845,7 @@
     "aliases": [],
     "direction": "central",
     "art": {
-      "file": "images/taleed/chapters-03.png",
+      "file": "images/taleed/chapters-03.webp",
       "columns": 3,
       "rows": 2,
       "x": 1,
@@ -1948,7 +1948,7 @@
     "aliases": [],
     "direction": "south",
     "art": {
-      "file": "images/taleed/chapters-01.png",
+      "file": "images/taleed/chapters-01.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,
@@ -2052,7 +2052,7 @@
     "aliases": [],
     "direction": "south",
     "art": {
-      "file": "images/taleed/chapters-01.png",
+      "file": "images/taleed/chapters-01.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,
@@ -2155,7 +2155,7 @@
     "aliases": [],
     "direction": "south",
     "art": {
-      "file": "images/taleed/chapters-05.png",
+      "file": "images/taleed/chapters-05.webp",
       "columns": 2,
       "rows": 1,
       "x": 0,
@@ -2299,7 +2299,7 @@
     "aliases": [],
     "direction": "north",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,
@@ -2402,7 +2402,7 @@
     "aliases": [],
     "direction": "north",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,
@@ -2507,7 +2507,7 @@
     ],
     "direction": "north",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,
@@ -2610,7 +2610,7 @@
     "aliases": [],
     "direction": "north",
     "art": {
-      "file": "images/taleed/chapters-02.png",
+      "file": "images/taleed/chapters-02.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,
@@ -2717,7 +2717,7 @@
     "aliases": [],
     "direction": "north",
     "art": {
-      "file": "images/taleed/chapters-02.png",
+      "file": "images/taleed/chapters-02.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,
@@ -2820,7 +2820,7 @@
     "aliases": [],
     "direction": "north",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 2,
@@ -2923,7 +2923,7 @@
     "aliases": [],
     "direction": "north",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 2,
@@ -3028,7 +3028,7 @@
     ],
     "direction": "south",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,
@@ -3134,7 +3134,7 @@
     ],
     "direction": "south",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,
@@ -3237,7 +3237,7 @@
     "aliases": [],
     "direction": "south",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,
@@ -3340,7 +3340,7 @@
     "aliases": [],
     "direction": "south",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 1,
@@ -3443,7 +3443,7 @@
     "aliases": [],
     "direction": "south",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 1,
@@ -3546,7 +3546,7 @@
     "aliases": [],
     "direction": "south",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 2,
@@ -3652,7 +3652,7 @@
     ],
     "direction": "south",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 2,
@@ -3755,7 +3755,7 @@
     "aliases": [],
     "direction": "south",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 2,
@@ -3858,7 +3858,7 @@
     "aliases": [],
     "direction": "north",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 1,
@@ -3961,7 +3961,7 @@
     "aliases": [],
     "direction": "north",
     "art": {
-      "file": "images/taleed/chapters-04.png",
+      "file": "images/taleed/chapters-04.webp",
       "columns": 3,
       "rows": 2,
       "x": 1,
@@ -4068,7 +4068,7 @@
     ],
     "direction": "west",
     "art": {
-      "file": "images/taleed/chapters-01.png",
+      "file": "images/taleed/chapters-01.webp",
       "columns": 3,
       "rows": 2,
       "x": 0,

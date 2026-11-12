@@ -1,0 +1,80 @@
+{
+  "madinah": {
+    "verse": "بين أُحدٍ والنخيل، للسكينة دار.",
+    "image_key": "city-view-madinah",
+    "image_caption": "إطلالة على المدينة المنورة",
+    "image_position": "50% 65%"
+  },
+  "makkah": {
+    "verse": "في بطن الوادي، تلتقي خُطى القلوب.",
+    "image_key": "city-view-makkah",
+    "image_caption": "إطلالة على مكة المكرمة",
+    "image_position": "50% 65%"
+  },
+  "riyadh": {
+    "verse": "من طين نجد، قامت حكاية وطن.",
+    "image_key": "city-view-riyadh",
+    "image_caption": "إطلالة على الرياض",
+    "image_position": "50% 65%"
+  },
+  "abha": {
+    "verse": "على كتف السراة، يطرّز الضباب حكاياته.",
+    "image_key": "city-view-abha",
+    "image_caption": "إطلالة على أبها",
+    "image_position": "50% 65%"
+  },
+  "dammam": {
+    "verse": "على ضفّة الخليج، للبحر ذاكرة أهل.",
+    "image_key": "city-dammam",
+    "image_caption": "الدمام",
+    "image_position": "50% 60%"
+  },
+  "hail": {
+    "verse": "بين أجا وسلمى، للنار موعدٌ مع الضيف.",
+    "image_key": "hail-city",
+    "image_caption": "حائل",
+    "image_position": "50% 60%"
+  },
+  "buraidah": {
+    "verse": "من ظلّ النخيل، تمضي حكايات العقيلات.",
+    "image_key": "city-view-buraidah",
+    "image_caption": "إطلالة على بريدة",
+    "image_position": "50% 65%"
+  },
+  "tabuk": {
+    "verse": "عند القلعة، تستريح ذاكرة القوافل.",
+    "image_key": "city-view-tabuk",
+    "image_caption": "إطلالة على تبوك",
+    "image_position": "50% 65%"
+  },
+  "sakaka": {
+    "verse": "في ظلّ زعبل، للنخل جذورٌ وللحكاية امتداد.",
+    "image_key": "city-view-sakaka",
+    "image_caption": "إطلالة على سكاكا",
+    "image_position": "50% 65%"
+  },
+  "arar": {
+    "verse": "على درب الشمال، تُروى الحكاية بدفء المجلس.",
+    "image_key": "city-view-arar",
+    "image_caption": "إطلالة على عرعر",
+    "image_position": "50% 65%"
+  },
+  "jazan": {
+    "verse": "عند الدوسرية، يعانق الملحُ ذاكرةَ الحجر.",
+    "image_key": "city-view-jazan",
+    "image_caption": "إطلالة على جازان",
+    "image_position": "50% 65%"
+  },
+  "najran": {
+    "verse": "على ضفاف الوادي، تحفظ البيوت الطينية أسماء أهلها.",
+    "image_key": "city-view-najran",
+    "image_caption": "إطلالة على نجران",
+    "image_position": "50% 65%"
+  },
+  "al-baha": {
+    "verse": "بين حجر السراة ومدرّجاتها، للمطر رائحة بيت.",
+    "image_key": "city-view-al-baha",
+    "image_caption": "إطلالة على الباحة",
+    "image_position": "50% 65%"
+  }
+}

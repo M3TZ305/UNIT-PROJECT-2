@@ -5,7 +5,7 @@ from functools import lru_cache
 from django.conf import settings
 
 
-@lru_cache(maxsize=16)
+@lru_cache(maxsize=32)
 def _read_json(path, modified):
     with path.open(encoding='utf-8') as source:
         return json.load(source)
@@ -21,7 +21,12 @@ def get_catalog():
 
 
 def get_media():
-    return read_data('media.json')
+    from .media_delivery import cdn_url
+    from django.templatetags.static import static
+    mapping = read_data('cdn_manifest.json')
+    variants = read_data('responsive_images.json')
+    return {key: {**value, 'srcset': ', '.join(static(item['file']) + ' ' + str(item['width']) + 'w' for item in variants.get(value['fallback'], [])) if value.get('prefer_local') else '', 'url': cdn_url(value['fallback'], mapping) or (static(value['fallback']) if value.get('prefer_local') else value['url'])}
+            for key, value in read_data('media.json').items()}
 
 
 def search_key(text):

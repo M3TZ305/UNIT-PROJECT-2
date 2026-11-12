@@ -1,0 +1,22 @@
+/* Taleed: a concise cultural introduction with distinct editorial surfaces. */
+.taleed-about{background:var(--th-cream)}
+.about-wrap{width:min(1760px,calc(100% - clamp(32px,6vw,112px)));margin:auto}
+.about-opening{display:grid;grid-template-columns:1fr 1.15fr;align-items:center;gap:6%;padding-block:48px}
+.about-kicker{font-size:12px;color:var(--th-muted);margin-bottom:12px}
+.taleed-about h1{font-size:clamp(34px,3.4vw,54px);line-height:1.5;max-width:20ch;margin-bottom:22px}
+.about-definition{font-size:17px;line-height:2;max-width:55ch}.about-support{font-size:14px;line-height:2;color:var(--th-muted);margin-top:16px;max-width:60ch}
+.about-coverage{display:flex;flex-wrap:wrap;gap:28px;padding:20px 0;margin-top:24px;list-style:none;border-block:1px solid color-mix(in srgb,var(--th-ink) 20%,transparent);font-size:13px}.about-coverage bdi{font-size:24px;margin-inline-end:8px}
+.about-document{margin:0;min-width:0}.taleed-about .about-document-image{height:auto;aspect-ratio:auto;padding:16px;background:color-mix(in srgb,var(--th-peach) 45%,var(--th-cream));border-radius:8px;overflow:visible}
+.taleed-about .about-document-image img{position:static;display:block;width:100%;height:auto;max-height:520px;object-fit:contain;border-radius:0}
+.about-document figcaption{font-size:12px;line-height:1.9;color:var(--th-muted);padding-top:12px}.about-credit{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:6px}.about-credit a{text-decoration:underline}
+.about-name{display:grid;grid-template-columns:.6fr 1.4fr;align-items:center;gap:8%;padding:40px clamp(24px,5vw,80px);background:var(--th-sage);border-radius:8px}
+.about-name-sign{font-family:var(--logo);font-size:clamp(60px,8vw,120px);text-align:center;line-height:1.8;color:var(--th-ink)}
+.taleed-about h2{font-size:clamp(28px,2.7vw,38px);line-height:1.5;margin-bottom:16px}.about-name p:not(.about-kicker){font-size:16px;line-height:2;max-width:70ch}
+.about-windows{padding-block:48px}.about-window-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:24px}
+.about-window{display:flex;align-items:center;gap:24px;padding:24px;background:color-mix(in srgb,var(--th-peach) 35%,var(--th-cream));border-radius:8px;transition:transform .2s}.about-window:nth-child(2){background:color-mix(in srgb,var(--th-sage) 35%,var(--th-cream))}.about-window-art{position:relative;display:block;width:38%;flex:none;aspect-ratio:1922/2454;overflow:hidden}.about-window-art img{position:absolute;max-width:none;width:300%;height:100%;left:calc(var(--window-x) * -100%);top:0;object-fit:fill}.about-window h3{font-size:28px;line-height:1.5;margin-bottom:8px}.about-window h3 span{font-size:18px}.about-window p{font-size:14px;line-height:1.9;color:var(--th-muted)}.about-window:hover{transform:translateY(-4px)}
+.about-start{display:flex;align-items:center;justify-content:space-between;gap:48px;padding:clamp(28px,4vw,64px);background:var(--th-teal);color:var(--th-ivory);border-radius:8px}.about-start .about-kicker{color:#d8bea1}.about-start p:last-child{font-size:16px;line-height:2;max-width:70ch}.about-start-button{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;flex-shrink:0;padding:16px 22px;min-height:48px;background:var(--th-ivory);color:#243d37;border-radius:6px;font-size:14px}
+.about-preferences{padding-block:28px 40px}.about-preferences summary{cursor:pointer;font-size:14px;padding:12px 0}.about-preferences p{font-size:14px;line-height:2;max-width:80ch;padding-top:12px;color:var(--th-muted)}
+.taleed-about :is(a,summary):focus-visible{outline:2px solid currentColor;outline-offset:5px}
+@media(max-width:1100px){.about-window{flex-direction:column;align-items:start;gap:16px}.about-window-art{width:130px;align-self:center}.about-start{flex-direction:column;align-items:start;gap:24px}}
+@media(max-width:760px){.about-wrap{width:calc(100% - 32px)}.about-opening{grid-template-columns:1fr;gap:28px;padding-block:28px}.about-name{grid-template-columns:1fr;gap:12px;padding:24px}.about-name-sign{font-size:64px;text-align:start}.about-window-grid{grid-template-columns:1fr;gap:16px}.about-window{flex-direction:row;align-items:center;padding:20px}.about-window-art{width:100px}.about-windows{padding-block:32px}.about-definition{font-size:16px}.about-document-image img{max-height:400px}}
+@media(prefers-reduced-motion:reduce){.about-window{transition:none}.about-window:hover{transform:none}}

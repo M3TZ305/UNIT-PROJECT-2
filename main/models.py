@@ -26,7 +26,9 @@ class City(models.Model):
     def data(self):
         data = get_catalog()['cities'][self.slug].copy()
         media = get_media()
-        data['hero'] = media[data['hero_key']]
+        from .content import read_data
+        doorway = read_data('city_doors.json').get(self.slug, {})
+        data['hero'] = media[doorway.get('image_key', data['hero_key'])]
         data['gallery'] = [{**media[item['key']], 'caption': item['caption']}
                            for item in data['gallery']]
         return data

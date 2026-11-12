@@ -1,0 +1,627 @@
+{
+  "crafts": {
+    "khous": {
+      "key": "khous",
+      "title": "نسج الخوص",
+      "intro": "تُجدل شرائح السعف وتتشابك حتى تتكوّن السلال والسُّفر والمراوح. معرفة تبدأ بتهيئة الخوص، وتنتهي بأدوات تحمل أثر النخلة واليد التي صنعتها.",
+      "materials": [
+        "سعف النخيل",
+        "التجديل"
+      ],
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/صناعة-الخوص-في-السعودية"
+      },
+      "art": {
+        "file": "images/culture/heritage-crafts-cutout.webp",
+        "columns": 3,
+        "rows": 3,
+        "x": 0,
+        "y": 0,
+        "ratio": "1 / 1",
+        "transparent": true,
+        "type": "conceptual-illustration"
+      },
+      "photo_key": null,
+      "caption": "نسج الخوص — رسم تعريفي",
+      "detail_title": "من المادة إلى الصنعة",
+      "steps": []
+    },
+    "sadu": {
+      "key": "sadu",
+      "title": "حياكة السدو",
+      "intro": "يتحوّل الصوف والشعر والوبر إلى خيوط، ثم تُنسج على النول في شرائط مزخرفة. حضرت هذه المنسوجات في بيوت الشعر والمجالس وأدوات الترحال.",
+      "materials": [
+        "الصوف والوبر",
+        "النول"
+      ],
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/السدو"
+      },
+      "art": {
+        "file": "images/culture/heritage-crafts-cutout.webp",
+        "columns": 3,
+        "rows": 3,
+        "x": 1,
+        "y": 0,
+        "ratio": "1 / 1",
+        "transparent": true,
+        "type": "conceptual-illustration"
+      },
+      "photo_key": null,
+      "caption": "حياكة السدو — رسم تعريفي",
+      "detail_title": "من المادة إلى الصنعة",
+      "steps": []
+    },
+    "bisht": {
+      "key": "bisht",
+      "title": "حياكة البشت الحساوي",
+      "intro": "على حواف البشت، تجمع غرز الزري بين الدقة والصبر. حفظت أسر في الأحساء هذه المهارة بالتعليم والممارسة، من تركيب الأجزاء إلى إتقان الحاشية.",
+      "materials": [
+        "القماش",
+        "خيوط الزري"
+      ],
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/المشلح-الحساوي"
+      },
+      "art": {
+        "file": "images/culture/heritage-crafts-cutout.webp",
+        "columns": 3,
+        "rows": 3,
+        "x": 2,
+        "y": 0,
+        "ratio": "1 / 1",
+        "transparent": true,
+        "type": "conceptual-illustration"
+      },
+      "photo_key": null,
+      "caption": "حياكة البشت الحساوي — رسم تعريفي",
+      "detail_title": "من المادة إلى الصنعة",
+      "steps": []
+    },
+    "pottery": {
+      "key": "pottery",
+      "title": "تشكيل الفخار",
+      "intro": "تأخذ كتلة الطين شكلها بيد الصانع، لتصبح جرة أو إناءً لحفظ الماء والطعام. بقيت الأواني الفخارية شاهدًا على صلة الحرفة بحاجات البيت اليومية.",
+      "materials": [
+        "الطين",
+        "التشكيل اليدوي"
+      ],
+      "source": {
+        "label": "منصة المدينة — الفخار",
+        "url": "https://www.visitmadinahsa.com/sa-ar/destinations/الفخار"
+      },
+      "art": {
+        "file": "images/culture/heritage-crafts-cutout.webp",
+        "columns": 3,
+        "rows": 3,
+        "x": 0,
+        "y": 1,
+        "ratio": "1 / 1",
+        "transparent": true,
+        "type": "conceptual-illustration"
+      },
+      "photo_key": null,
+      "caption": "تشكيل الفخار — رسم تعريفي",
+      "detail_title": "من المادة إلى الصنعة",
+      "steps": []
+    },
+    "qatt": {
+      "key": "qatt",
+      "title": "القَط العسيري",
+      "intro": "خطوط وأشكال هندسية ملوّنة تزيّن الجدران الداخلية. توارثت نساء عسير هذا الفن، وجعلن من جدران البيوت مساحة للذوق والمعرفة المتناقلة.",
+      "materials": [
+        "الألوان",
+        "الجدران الداخلية"
+      ],
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-عسير"
+      },
+      "art": {
+        "file": "images/culture/heritage-crafts-cutout.webp",
+        "columns": 3,
+        "rows": 3,
+        "x": 1,
+        "y": 1,
+        "ratio": "1 / 1",
+        "transparent": true,
+        "type": "conceptual-illustration"
+      },
+      "photo_key": null,
+      "caption": "القَط العسيري — رسم تعريفي",
+      "detail_title": "من المادة إلى الصنعة",
+      "steps": []
+    },
+    "rawashin": {
+      "key": "rawashin",
+      "title": "نجارة الرواشين",
+      "intro": "تُركّب قطع الخشب في شبكات دقيقة تمنح البيت ظلًا وتهوية وخصوصية. في الروشان تلتقي مهارة النجّار بوظيفة النافذة وجمال الواجهة.",
+      "materials": [
+        "الخشب",
+        "التعشيق والزخرفة"
+      ],
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/الرواشين"
+      },
+      "art": {
+        "file": "images/culture/heritage-crafts-cutout.webp",
+        "columns": 3,
+        "rows": 3,
+        "x": 2,
+        "y": 1,
+        "ratio": "1 / 1",
+        "transparent": true,
+        "type": "conceptual-illustration"
+      },
+      "photo_key": null,
+      "caption": "نجارة الرواشين — رسم تعريفي",
+      "detail_title": "من المادة إلى الصنعة",
+      "steps": []
+    },
+    "kiswa": {
+      "key": "kiswa",
+      "title": "تطريز كسوة الكعبة",
+      "intro": "في مكة تُنسج الكسوة وتُجهّز للتطريز، وتُثبت خيوط الزخارف بعناية. عمل متكامل يجمع خبرة النسّاج والمطرّز والفنّي في مجمع كسوة الكعبة.",
+      "materials": [
+        "الحرير",
+        "خيوط التطريز"
+      ],
+      "source": {
+        "label": "واس — صناعة كسوة الكعبة",
+        "url": "https://spa.gov.sa/N2346525"
+      },
+      "art": {
+        "file": "images/culture/heritage-crafts-cutout.webp",
+        "columns": 3,
+        "rows": 3,
+        "x": 0,
+        "y": 2,
+        "ratio": "1 / 1",
+        "transparent": true,
+        "type": "conceptual-illustration"
+      },
+      "photo_key": null,
+      "caption": "تطريز كسوة الكعبة — رسم تعريفي",
+      "detail_title": "من المادة إلى الصنعة",
+      "steps": []
+    },
+    "rose": {
+      "key": "rose",
+      "title": "تقطير الورد الطائفي",
+      "intro": "من الورد المقطوف إلى القدور ثم التبريد والتكثيف، تُحفظ رائحة الموسم في ماء الورد ودهنه. يتطلب التقطير متابعة الحرارة وحسن التعامل مع الزهرة.",
+      "materials": [
+        "الورد الطائفي",
+        "أوعية التقطير"
+      ],
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/تقطير-الورد"
+      },
+      "art": {
+        "file": "images/culture/heritage-crafts-cutout.webp",
+        "columns": 3,
+        "rows": 3,
+        "x": 1,
+        "y": 2,
+        "ratio": "1 / 1",
+        "transparent": true,
+        "type": "conceptual-illustration"
+      },
+      "photo_key": null,
+      "caption": "تقطير الورد الطائفي — رسم تعريفي",
+      "detail_title": "من المادة إلى الصنعة",
+      "steps": []
+    },
+    "janabi": {
+      "key": "janabi",
+      "title": "صناعة الجنابي",
+      "intro": "تلتقي مهارات المعدن والخشب والجلد في صناعة الجنبية وغمدها وصيانتهما. وفي أسواق نجران، بقيت هذه الصنعة جزءًا ظاهرًا من الموروث المحلي.",
+      "materials": [
+        "المعدن",
+        "الخشب والجلد"
+      ],
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/قائمة-الحرف-اليدوية-في-منطقة-نجران"
+      },
+      "art": {
+        "file": "images/culture/heritage-crafts-cutout.webp",
+        "columns": 3,
+        "rows": 3,
+        "x": 2,
+        "y": 2,
+        "ratio": "1 / 1",
+        "transparent": true,
+        "type": "conceptual-illustration"
+      },
+      "photo_key": null,
+      "caption": "صناعة الجنابي — رسم تعريفي",
+      "detail_title": "من المادة إلى الصنعة",
+      "steps": []
+    }
+  },
+  "architecture": {
+    "najdi": {
+      "key": "najdi",
+      "title": "العمارة النجدية",
+      "intro": "جدران طينية سميكة، وفتحات صغيرة، وأفنية داخلية؛ عناصر تساعد على تلطيف المناخ وحفظ خصوصية البيت. وتمنح الأبواب الخشبية والزخارف الهندسية الواجهة هويتها.",
+      "materials": [
+        "الطين",
+        "الأبواب الخشبية"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/central-najdi-architecture"
+      },
+      "photo_key": "city-diriyah",
+      "art": null,
+      "caption": "مثال مصوّر: حي الطريف في الدرعية",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "north": {
+      "key": "north",
+      "title": "العمارة النجدية الشمالية",
+      "intro": "يحفظ الطين السميك حرارة البيت، وتحيط الغرف بفناء داخلي. تظهر الفتحات الصغيرة والزخارف الهندسية والحجر والخشب ضمن ملامح هذا الطراز الشمالي.",
+      "materials": [
+        "الطين والحجر",
+        "الأفنية"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/northern-najdi-architecture"
+      },
+      "photo_key": "city-sakaka",
+      "art": null,
+      "caption": "مثال مصوّر: قلعة زعبل في سكاكا",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "madinah": {
+      "key": "madinah",
+      "title": "عمارة المدينة المنورة",
+      "intro": "يتصل النسيج التاريخي بمحيط المسجد النبوي. ومن ملامحه الحجر الداكن في قواعد المباني، والواجهات الفاتحة، والرواشين والسواتر الخشبية والأبواب المقوسة.",
+      "materials": [
+        "الحجر الداكن",
+        "الخشب"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/inner-city-architecture"
+      },
+      "photo_key": "about-madinah-1880",
+      "art": null,
+      "caption": "مثال مصوّر: الباب الشامي وسور المدينة المنورة، ١٨٨٠م",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "rural-madinah": {
+      "key": "rural-madinah",
+      "title": "عمارة ريف المدينة المنورة",
+      "intro": "طراز مرتبط بالقرى والأودية ومواد البيئة المحلية. تُقرأ فيه علاقة المباني بالأرض الزراعية ومسارات الحركة، وتختلف التفاصيل بين التجمعات الريفية.",
+      "materials": [
+        "المواد المحلية",
+        "النسيج الريفي"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/rural-medina-architecture"
+      },
+      "photo_key": "alula-old",
+      "art": null,
+      "caption": "مثال مصوّر: البلدة القديمة في العلا",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "makkah": {
+      "key": "makkah",
+      "title": "عمارة مكة التاريخية",
+      "intro": "امتد عمران مكة بين الجبال وحول المسجد الحرام. تحفظ مبانيها التاريخية شواهد على البيوت والقصور وحركة القادمين إلى المدينة، مع تنوع الأدوار والطرز عبر الزمن.",
+      "materials": [
+        "النسيج الحضري",
+        "الواجهات التاريخية"
+      ],
+      "source": {
+        "label": "سعوديبيديا",
+        "url": "https://saudipedia.com/مدينة-مكة-المكرمة"
+      },
+      "photo_key": "record-city-makkah-2",
+      "art": null,
+      "caption": "مثال مصوّر: قصر السقاف في مكة المكرمة",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "hejazi": {
+      "key": "hejazi",
+      "title": "العمارة الحجازية الساحلية",
+      "intro": "بيوت متقاربة ورواشين بارزة تعالج الضوء والهواء والخصوصية. ويظهر أثر الحجر والخشب والطلاء الفاتح في واجهات المدن المتصلة بالبحر الأحمر.",
+      "materials": [
+        "الحجر",
+        "الرواشين"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/hejazi-coastal-architecture"
+      },
+      "photo_key": "jeddah",
+      "art": null,
+      "caption": "مثال مصوّر: نسيج جدة التاريخية",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "taif": {
+      "key": "taif",
+      "title": "عمارة الطائف",
+      "intro": "تظهر في البيوت والقصور واجهات متناظرة ومداخل عميقة وفتحات مزخرفة. ويتصل استخدام الحجر والخشب بمناخ المرتفعات وموادها المحلية.",
+      "materials": [
+        "الحجر",
+        "الخشب"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/taif-highlands-architecture"
+      },
+      "photo_key": "atlas-taif-1",
+      "art": null,
+      "caption": "مثال مصوّر: قصر شبرا في الطائف",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "abha": {
+      "key": "abha",
+      "title": "عمارة مرتفعات أبها",
+      "intro": "قواعد حجرية وكتل مدمجة وفتحات محدودة، مع أحزمة أفقية تساعد على حماية الجدران من المطر. وتُبرز الألوان المداخل والفتحات في المباني التقليدية.",
+      "materials": [
+        "الحجر والطين",
+        "الأحزمة الأفقية"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/design-guidelines/عِمَارَة-مرتفعات-أبها"
+      },
+      "photo_key": "abha-palace",
+      "art": null,
+      "caption": "مثال مصوّر: قصر شدا في أبها",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "sarawat": {
+      "key": "sarawat",
+      "title": "عمارة جبال السروات",
+      "intro": "تتقارب المباني الحجرية على المنحدرات، بفتحات صغيرة وتفاصيل خشبية. يجمع البناء بين متانة الحجر والاستجابة للتضاريس والأمطار.",
+      "materials": [
+        "الحجر المحلي",
+        "الخشب"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/sarawat-mountains-architecture"
+      },
+      "photo_key": "heritage-photo-namas",
+      "art": null,
+      "caption": "مثال مصوّر: قصر ثربان في النماص",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "asdar": {
+      "key": "asdar",
+      "title": "عمارة أصدار عسير",
+      "intro": "أبراج حجرية متقاربة وفتحات صغيرة تتبع تضاريس شديدة الانحدار. وتظهر إطارات الجص والزخارف الحجرية في الواجهات والأسطح.",
+      "materials": [
+        "الحجر",
+        "الجص"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/asdar-asir-architecture"
+      },
+      "photo_key": "asir",
+      "art": null,
+      "caption": "مثال مصوّر: قرية رجال ألمع",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "khamis": {
+      "key": "khamis",
+      "title": "عمارة خميس مشيط التراثية",
+      "intro": "تتيح القصور الباقية قراءة توزيع الكتل والفتحات وتفاصيل الواجهات. قصر شاهر أحد الشواهد المصوّرة التي نقترب بها من تراث البناء في المحافظة.",
+      "materials": [
+        "الكتل والفتحات",
+        "تفاصيل الواجهات"
+      ],
+      "source": {
+        "label": "واس — قصر شاهر",
+        "url": "https://cc.spa.gov.sa/en/news/2324907"
+      },
+      "photo_key": "heritage-photo-shaher",
+      "art": null,
+      "caption": "مثال مصوّر: قصر شاهر في خميس مشيط",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "tihama": {
+      "key": "tihama",
+      "title": "عمارة ساحل تهامة",
+      "intro": "مبانٍ منخفضة وفتحات تستقبل الهواء، مع حضور الحجر والطين ومواد الساحل. تختلف أشكال البيوت بحسب موقعها قرب الأودية أو الحافة البحرية.",
+      "materials": [
+        "الحجر والطين",
+        "التهوية"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/tihamah-coastal-architecture"
+      },
+      "photo_key": "atlas-jazan-1",
+      "art": null,
+      "caption": "مثال مصوّر: القلعة الدوسرية في جازان",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "foothills": {
+      "key": "foothills",
+      "title": "عمارة سفوح تهامة",
+      "intro": "تجمع القرى الحجر والجص والأزقة الضيقة والساحات الداخلية. يستجيب البناء لمرحلة الانتقال بين السهل الساحلي والمرتفعات الجبلية.",
+      "materials": [
+        "الحجر والجص",
+        "الأزقة والساحات"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/tihamah-hills-architecture"
+      },
+      "photo_key": "atlas-al-baha-2",
+      "art": null,
+      "caption": "مثال مصوّر: قرية ذي عين في المخواة",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "farasan": {
+      "key": "farasan",
+      "title": "عمارة جزر فرسان",
+      "intro": "حجر مرجاني وجص وزخارف دقيقة، مع فتحات وأفنية تتصل بنسيم البحر. تكشف الواجهات المنقوشة أثر البيئة البحرية في البناء والحياة.",
+      "materials": [
+        "الحجر المرجاني",
+        "الجص"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/farsan-islands-architecture"
+      },
+      "photo_key": "atlas-jazan-3",
+      "art": null,
+      "caption": "مثال مصوّر: بيت الرفاعي في فرسان",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "tabuk-coast": {
+      "key": "tabuk-coast",
+      "title": "عمارة ساحل تبوك",
+      "intro": "واجهات بسيطة يغلب عليها الحجر والخشب والجير، مع فتحات للتهوية وتصريف المطر. وتظهر الزخارف الخشبية والأعتاب البارزة ضمن تفاصيل بعض المباني.",
+      "materials": [
+        "الحجر والخشب",
+        "الجير"
+      ],
+      "source": {
+        "label": "العمارة السعودية — ساحل تبوك",
+        "url": "https://architsaudi.dasc.gov.sa/ar/design-guidelines/عِمَارَة-ساحل-تبوك"
+      },
+      "photo_key": "heritage-photo-umluj-palace",
+      "art": null,
+      "caption": "مثال مصوّر: قصر الإمارة في أملج",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "najran": {
+      "key": "najran",
+      "title": "عمارة نجران",
+      "intro": "أبراج طينية مرتفعة وكتل متدرجة، تحميها أحزمة المداميك من جريان الماء. وتوضح الواجهات التوازن بين البناء الرأسي والمواد المحلية.",
+      "materials": [
+        "الطين والحجر",
+        "المداميك"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/najran-architecture"
+      },
+      "photo_key": "atlas-najran-3",
+      "art": null,
+      "caption": "مثال مصوّر: قصر العان في نجران",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "ahsa": {
+      "key": "ahsa",
+      "title": "عمارة واحات الأحساء",
+      "intro": "أفنية مظللة وأروقة وأقواس، مع توظيف الطين وأخشاب النخيل والأثل. تتصل هذه العناصر بحياة الواحة والحاجة إلى الظل وحركة الهواء.",
+      "materials": [
+        "الطين",
+        "أخشاب النخيل"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الموجهات التصميمية",
+        "url": "https://architsaudi.dasc.gov.sa/ar/Al-Ahsa-oasis-architecture"
+      },
+      "photo_key": "hofuf",
+      "art": null,
+      "caption": "مثال مصوّر: سوق القيصرية في الأحساء",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "qatif": {
+      "key": "qatif",
+      "title": "عمارة القطيف",
+      "intro": "نوافذ نحيفة وأبواب خشبية وزخارف جصية، مع جدران تتكيف مع الرطوبة والحرارة. ويظهر أثر الواحة والساحل في المواد والفتحات والظل.",
+      "materials": [
+        "الحجر والطين",
+        "الزخارف الجصية"
+      ],
+      "source": {
+        "label": "العمارة السعودية — القطيف",
+        "url": "https://architsaudi.dasc.gov.sa/ar/design-guidelines/عِمَارَة-القطيف-0"
+      },
+      "photo_key": "atlas-qatif-1",
+      "art": null,
+      "caption": "مثال مصوّر: قلعة تاروت في القطيف",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "east-coast": {
+      "key": "east-coast",
+      "title": "عمارة الساحل الشرقي",
+      "intro": "فتحات للهواء وشرفات مظللة وتفاصيل تتصل بالمناخ الساحلي. يجمع الطراز بين الراحة داخل البيت والتعبير البسيط على واجهته.",
+      "materials": [
+        "الظل",
+        "الفتحات والشرفات"
+      ],
+      "source": {
+        "label": "العمارة السعودية — الساحل الشرقي",
+        "url": "https://architsaudi.dasc.gov.sa/ar/design-guidelines/عِمَارَة-الساحل-الشرقي"
+      },
+      "photo_key": "city-dammam",
+      "art": null,
+      "caption": "مشهد عمراني: وسط الدمام",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "ithra": {
+      "key": "ithra",
+      "title": "عمارة الظهران المعاصرة",
+      "intro": "يفتح إثراء فصلًا معاصرًا في عمارة الظهران، حيث يجمع المبنى مساحات للمعرفة والفنون واللقاء. مثال حديث يُعرض بوصفه معاصرًا، إلى جانب الموروث العمراني للمنطقة.",
+      "materials": [
+        "الكتل المعاصرة",
+        "المساحات الثقافية"
+      ],
+      "source": {
+        "label": "إثراء — عن المركز",
+        "url": "https://www.ithra.com/ar/about-ithra"
+      },
+      "photo_key": "city-dhahran",
+      "art": null,
+      "caption": "مثال معاصر: مركز إثراء في الظهران",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    },
+    "hafar": {
+      "key": "hafar",
+      "title": "مجالس حفر الباطن",
+      "intro": "يحفظ مجلس بيت العقيلات ترتيبًا يستحضر المجالس التقليدية. نقرأ هنا علاقة المدخل والجلسة والتفاصيل الخشبية بمكان اللقاء، دون اعتبار مبنى المتحف أثرًا قديمًا.",
+      "materials": [
+        "المجلس",
+        "التفاصيل الخشبية"
+      ],
+      "source": {
+        "label": "الوئام — متحف بيت العقيلات",
+        "url": "https://www.alweeam.com.sa/?p=748616"
+      },
+      "photo_key": "heritage-photo-hafar-museum",
+      "art": null,
+      "caption": "مثال مصوّر: مجلس بيت العقيلات في حفر الباطن",
+      "detail_title": "ملامح البناء",
+      "steps": []
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{% load i18n site_assets %}
+{% for kind, entries in profile.heritage.items %}
+<details class="heritage-disclosure place-heritage heritage-{{ kind }}" id="{{ kind }}" aria-labelledby="heritage-{{ kind }}-title">
+  <summary class="heritage-heading"><div><p class="atlas-eyebrow">{% translate "المادة والصنعة" %}</p><h2 id="heritage-{{ kind }}-title">{% if kind == 'crafts' %}{% translate "صنائع أهلها" %}{% else %}{% translate "عمرانها" %}{% endif %}</h2></div><span>{{ city.name|localize }} <b aria-hidden="true">+</b></span></summary>
+  <div class="heritage-entries atlas-wrap">{% for entry in entries %}<article class="heritage-entry" data-place-heritage="{{ kind }}" data-evidence-scope="{{ entry.evidence_scope }}">
+    <figure class="heritage-visual{% if entry.art %} is-illustration{% endif %}">{% if entry.image %}{% include 'includes/image.html' with image=entry.image alt=entry.caption %}<figcaption>{{ entry.caption|localize }}{% include 'includes/photo_credit.html' with image=entry.image %}</figcaption>{% else %}{% include 'includes/topic_art.html' with art=entry.art label=entry.caption %}<figcaption>{% translate "رسم تعريفي تصوّري" %}</figcaption>{% endif %}</figure>
+    <div class="heritage-copy"><p class="heritage-scope">{{ entry.scope_label|localize }}{% if entry.evidence_scope == 'regional' %} · {{ entry.region|localize }}{% endif %}</p><h3>{{ entry.title|localize }}</h3><p class="heritage-story">{{ entry.intro|localize }}</p><ul class="heritage-materials">{% for material in entry.materials %}<li>{{ material|localize }}</li>{% endfor %}</ul>{% if entry.scope_note %}<p class="heritage-scope-note">{{ entry.scope_note|localize }}</p>{% endif %}<div class="heritage-links"><a href="{% url 'main:culture_topic' topic=kind %}#piece-{{ entry.key }}">{% if kind == 'crafts' %}{% translate "اقرأ الحرفة ضمن مجموعة تليد" %}{% else %}{% translate "اقرأ العمارة ضمن مجموعة تليد" %}{% endif %} ↖</a><a href="{{ entry.source.url }}" target="_blank" rel="noopener noreferrer">{{ entry.source.label|localize }} ↗</a></div></div>
+  </article>{% endfor %}</div>
+</details>
+{% endfor %}
